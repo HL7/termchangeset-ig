@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tinkar-changeset-profile",
+  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/tinkar-changeset-profile",
+  "name": "TinkarChangeSet",
+  "title": "Tinkar Terminology Change Set (CodeSystem)",
+  "status": "draft",
+  "description": "Profile of CodeSystem to enable lossless representation of a terminology change set compliant with Tinkar information model requirements",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.content",
+        "path": "CodeSystem.content",
+        "patternCode": "fragment"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/yyyyMmm/myig.html" ciUrl="http://hl7.org/fhir/ig/HL7/myig" defaultVersion="0.1.0" defaultWorkgroup="" url="https://hl7.org/fhir/uv/tinkar">
+<version code="current" url="http://hl7.org/fhir/ig/HL7/myig"/>
+<version code="0.1.0" url="http://hl7.org/fhir/yyyyMmm/myig.html"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/snomedctVAExtension" key="CodeSystem-snomedctVAExtension" name="SNOMED CT (VA Change Set)"/>
+<artifact id="Provenance/e02b3733-cd66-4f2d-8046-108dd3afb0b0" key="Provenance-e02b3733-cd66-4f2d-8046-108dd3afb0b0" name="Tinkar Change Set Provenance"/>
+<artifact id="StructureDefinition/tinkar-changeset-profile" key="StructureDefinition-tinkar-changeset-profile" name="Tinkar Terminology Change Set (CodeSystem)"/>
+<artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="Tinkar-compliant LOINC Change Set (CodeSystem)"/>
+<artifact id="StructureDefinition/snomed-changeset-profile" key="StructureDefinition-snomed-changeset-profile" name="Tinkar-compliant SNOMED Change Set (CodeSystem)"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="spec" name="Detailed Specification"/>
+<page key="changes" name="IG Change History"/>
+<page key="index" name="MyIG Home Page"/>
+<page key="protobufbackground" name="Protobuf Background"/>
+<page key="protobufexamples" name="Protobuf Examples"/>
+<page key="protobufschema" name="Protobuf Schema"/>
+<page key="spec2" name="Spec sub-page"/>
+<page key="toc" name="Table of Contents"/>
+<page key="TinkarBusinessRequirements" name="Tinkar Business Requirements"/>
+<page key="TinkarModelConcepts" name="Tinkar Model Concepts"/>
+<page key="TinkarOverview" name="Tinkar Overview"/>
+<page key="downloads" name="Useful Downloads"/>
+</specification>
