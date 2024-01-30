@@ -9,9 +9,9 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
+      "identity": "tinkar",
+      "uri": "https://hl7.org/fhir/uv/tinkar",
+      "name": "Tinkar Reference Model"
     },
     {
       "identity": "workflow",
@@ -37,8 +37,11 @@
   "differential": {
     "element": [
       {
-        "id": "CodeSystem",
-        "path": "CodeSystem"
+        "id": "CodeSystem.url",
+        "path": "CodeSystem.url",
+        "short": "& (Coding.system)",
+        "definition": "& This is used in [Coding]{datatypes.html#Coding}.system.",
+        "fixedUri": "http://snomed.info/sct"
       }
     ]
   }
