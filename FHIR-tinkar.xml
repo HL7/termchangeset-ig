@@ -15,8 +15,8 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
 <page key="spec" name="Detailed Specification"/>
+<page key="index" name="HL7.FHIR.UV.Tinkar\Home - FHIR v4.0.1"/>
 <page key="changes" name="IG Change History"/>
-<page key="index" name="MyIG Home Page"/>
 <page key="protobufbackground" name="Protobuf Background"/>
 <page key="protobufexamples" name="Protobuf Examples"/>
 <page key="protobufschema" name="Protobuf Schema"/>

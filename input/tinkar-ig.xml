@@ -6,7 +6,7 @@
     <valueCode value="informative"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/> 
+    <valueInteger value="0"/> 
   </extension>
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
@@ -15,7 +15,7 @@
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
   <name value="tinkar-ig"/>
-  <title value="Standardized Terminology Knowledgebase (Tinkar)"/>
+  <title value="Tinkar Terminology Exchange"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International - Termionology Infrastructure Work Group"/>
