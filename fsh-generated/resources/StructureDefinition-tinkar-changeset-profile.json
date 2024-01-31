@@ -198,17 +198,35 @@
       {
         "id": "CodeSystem.concept.designation.language",
         "path": "CodeSystem.concept.designation.language",
-        "mustSupport": false
+        "mustSupport": false,
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "LANGUAGE, DESCRIPTION_FOR_DIALECT_AND_OR_DESCRIPTION_PAIR"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.designation.use",
         "path": "CodeSystem.concept.designation.use",
-        "mustSupport": false
+        "mustSupport": false,
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE, DESCRIPTION_CASE_SIGNIFICANCE"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.designation.value",
         "path": "CodeSystem.concept.designation.value",
-        "mustSupport": false
+        "mustSupport": false,
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "TEXT_FOR_DESCRIPTION"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.property",
@@ -218,7 +236,13 @@
       {
         "id": "CodeSystem.concept.property.code",
         "path": "CodeSystem.concept.property.code",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.property.value[x]",

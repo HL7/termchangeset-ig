@@ -78,21 +78,29 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.designation.language ^definition = "The language this designation is defined for."
 * concept.designation.language ^comment = "In the absence of a language, the resource language applies."
 * concept.designation.language ^mustSupport = false
+* concept.designation.language ^mapping.identity = "tinkar"
+* concept.designation.language ^mapping.map = "LANGUAGE, DESCRIPTION_FOR_DIALECT_AND_OR_DESCRIPTION_PAIR"
 * concept.designation.use 0..1
 * concept.designation.use ^short = "Details how this designation would be used"
 * concept.designation.use ^definition = "A code that details how this designation would be used."
 * concept.designation.use ^comment = "If no use is provided, the designation can be assumed to be suitable for general display to a human user."
 * concept.designation.use ^mustSupport = false
+* concept.designation.use ^mapping.identity = "tinkar"
+* concept.designation.use ^mapping.map = "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE, DESCRIPTION_CASE_SIGNIFICANCE"
 * concept.designation.value 1..1
 * concept.designation.value ^short = "The text value for this designation"
 * concept.designation.value ^definition = "The text value for this designation."
 * concept.designation.value ^mustSupport = false
+* concept.designation.value ^mapping.identity = "tinkar"
+* concept.designation.value ^mapping.map = "TEXT_FOR_DESCRIPTION"
 * concept.property 0..* MS
 * concept.property ^short = "Property value for the concept"
 * concept.property ^definition = "A property value for this concept."
 * concept.property.code 1..1 MS
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
+* concept.property.code ^mapping.identity = "tinkar"
+* concept.property.code ^mapping.map = "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
 * concept.property.value[x] 1..1 MS
 * concept.property.value[x] only Coding
 * concept.property.value[x] ^short = "Value of the property for this concept"
