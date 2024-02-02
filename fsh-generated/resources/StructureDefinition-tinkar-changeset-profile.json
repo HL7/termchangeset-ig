@@ -213,7 +213,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE, DESCRIPTION_CASE_SIGNIFICANCE"
+            "map": "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE"
           }
         ]
       },

@@ -86,7 +86,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.designation.use ^comment = "If no use is provided, the designation can be assumed to be suitable for general display to a human user."
 * concept.designation.use ^mustSupport = false
 * concept.designation.use ^mapping.identity = "tinkar"
-* concept.designation.use ^mapping.map = "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE, DESCRIPTION_CASE_SIGNIFICANCE"
+* concept.designation.use ^mapping.map = "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE"
 * concept.designation.value 1..1
 * concept.designation.value ^short = "The text value for this designation"
 * concept.designation.value ^definition = "The text value for this designation."
@@ -123,8 +123,13 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * url = "http://snomed.info/sct" (exactly)
 * url ^short = "& (Coding.system)"
 * url ^definition = "& This is used in [Coding]{datatypes.html#Coding}.system."
-
-
+* concept.designation.extension contains
+	description-case-sensitivity named caseSensitivity 0..1 and
+	description-acceptability named acceptability 0..1
+* concept.designation.extension[caseSensitivity] ^mapping.identity = "tinkar"
+* concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
+* concept.designation.extension[acceptability] ^mapping.identity = "tinkar"
+* concept.designation.extension[acceptability] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
 
 
 Profile: LOINCChangeSet

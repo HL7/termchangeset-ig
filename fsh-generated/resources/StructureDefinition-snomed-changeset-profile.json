@@ -42,6 +42,62 @@
         "short": "& (Coding.system)",
         "definition": "& This is used in [Coding]{datatypes.html#Coding}.system.",
         "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension",
+        "path": "CodeSystem.concept.designation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension:caseSensitivity",
+        "path": "CodeSystem.concept.designation.extension",
+        "sliceName": "caseSensitivity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-case-sensitivity"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension:acceptability",
+        "path": "CodeSystem.concept.designation.extension",
+        "sliceName": "acceptability",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "description-case-sensitivity",
+  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-case-sensitivity",
+  "name": "SNOMEDDescriptionsCaseSensitivity",
+  "title": "Description Case Sensitivity",
+  "status": "draft",
+  "description": "Coded value to identify what case sensitivity is reflected in description",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem.content.designation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Description Case Sensitivity",
+        "definition": "Coded value to identify what case sensitivity is reflected in description"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-case-sensitivity"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

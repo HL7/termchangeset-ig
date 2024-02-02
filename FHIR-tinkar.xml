@@ -5,6 +5,8 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
+<artifact id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
 <artifact id="CodeSystem/snomedctVAExtension" key="CodeSystem-snomedctVAExtension" name="SNOMED CT (VA Change Set)"/>
 <artifact id="Provenance/e02b3733-cd66-4f2d-8046-108dd3afb0b0" key="Provenance-e02b3733-cd66-4f2d-8046-108dd3afb0b0" name="Tinkar Change Set Provenance"/>
 <artifact id="StructureDefinition/tinkar-changeset-profile" key="StructureDefinition-tinkar-changeset-profile" name="Tinkar Terminology Change Set (CodeSystem)"/>
