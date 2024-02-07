@@ -167,8 +167,10 @@
         "mustSupport": true
       },
       {
-        "id": "CodeSystem.concept.code",
-        "path": "CodeSystem.concept.code",
+        "id": "CodeSystem.concept.id",
+        "path": "CodeSystem.concept.id",
+        "short": "Tinkar unique identifier for the concept represented by the terminology-specific concept.code",
+        "min": 1,
         "mustSupport": true,
         "mapping": [
           {
@@ -176,6 +178,11 @@
             "map": "UNIVERSALLY_UNIQUE_IDENTIFIER"
           }
         ]
+      },
+      {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.display",
@@ -232,6 +239,62 @@
         "id": "CodeSystem.concept.property",
         "path": "CodeSystem.concept.property",
         "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property.extension",
+        "path": "CodeSystem.concept.property.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/tinkar/StructureDefinition/defining-relationship-type"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "NAVIGATION_PATTERN"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/tinkar/StructureDefinition/el-profile-set-operator"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "EL_PROFILE_SET_OPERATOR"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.property.code",

@@ -48,9 +48,13 @@
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-case-significance-vs"
+        }
       }
     ]
   }

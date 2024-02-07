@@ -18,6 +18,7 @@ Description: "Example of SNOMED CT Tinkar Change Set"
 * copyright = "© 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct"
 * content = #fragment
 * count = 1
-* concept[+].code = #413839001
+* concept[+].id = "61da7e50-f606-5ba0-a0df-83fd524951e7"
+* concept[=].code = #413839001
 * concept[=].display = "Chronic lung disease (Disorder)"
 * concept[=].definition = "Chronic lung disease (Disorder)"

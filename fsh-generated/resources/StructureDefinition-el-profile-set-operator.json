@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "description-acceptability",
-  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability",
-  "name": "SNOMEDDescriptionAcceptability",
-  "title": "Description Acceptability",
+  "id": "el-profile-set-operator",
+  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/el-profile-set-operator",
+  "name": "ElProfileSetOperator",
+  "title": "EL Profile Set Operator",
   "status": "draft",
-  "description": "Boolean value to convey if a designation is case sensitive or not",
+  "description": "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.content.designation"
+      "expression": "CodeSystem.content.property"
     }
   ],
   "type": "Extension",
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Description Acceptability",
-        "definition": "Boolean value to convey if a designation is case sensitive or not"
+        "short": "EL Profile Set Operator",
+        "definition": "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability"
+        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/el-profile-set-operator"
       },
       {
         "id": "Extension.value[x]",
@@ -50,11 +50,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-description-acceptability-vs"
-        }
+        ]
       }
     ]
   }

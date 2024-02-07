@@ -5,7 +5,8 @@ Description: "Coded value to identify what case sensitivity is reflected in desc
 // Limit the context to CodeSystem.content.designation
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.content.designation"
-* value[x] only boolean  // 0 or 1
+* value[x] only CodeableConcept
+* value[x] from CaseSignificanceVS (required)
 
 Extension: SNOMEDDescriptionAcceptability
 Id:        description-acceptability
@@ -14,4 +15,33 @@ Description: "Boolean value to convey if a designation is case sensitive or not"
 // Limit the context to CodeSystem.content.designation
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.content.designation"
-* value[x] only boolean  // 0 or 1
+* value[x] only CodeableConcept
+* value[x] from DescriptionAcceptabilityVS (required)
+
+Extension: SNOMEDRoleGroup
+Id:        role-group
+Title:     "SNOMED Role Group"
+Description: "Where multiple property groupings are assigned for a particular concept, this identifies the group to which this property belongs.  See also SNOMED concept 609096000 Role group (attribute)"
+// Limit the context to CodeSystem.content.property
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.content.property"
+* value[x] only integer
+
+Extension: DefiningRelationshipType
+Id:	   defining-relationship-type
+Title:	   "Defining Relationship Type"
+Description: "Indicator to distinguish between axioms explicitly stated vs. inferred by a reasoner or other logical processes"
+// Limit the context to CodeSystem.content.property
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.content.property"
+* value[x] only CodeableConcept
+* value[x] from DefiningRelationshipTypeVS (required)
+
+Extension: ElProfileSetOperator
+Id:	   el-profile-set-operator
+Title:	   "EL Profile Set Operator"
+Description: "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept"
+// Limit the context to CodeSystem.content.property
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.content.property"
+* value[x] only CodeableConcept

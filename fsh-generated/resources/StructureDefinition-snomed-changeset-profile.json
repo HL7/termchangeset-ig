@@ -44,6 +44,16 @@
         "fixedUri": "http://snomed.info/sct"
       },
       {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "SNOMED CT IDENTIFER SOURCE"
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.concept.designation.extension",
         "path": "CodeSystem.concept.designation.extension",
         "slicing": {
@@ -96,6 +106,27 @@
           {
             "identity": "tinkar",
             "map": "DESCRIPTION_CASE_SIGNIFICANCE"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/tinkar/StructureDefinition/role-group"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "ROLE_GROUP"
           }
         ]
       }

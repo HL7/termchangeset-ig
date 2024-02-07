@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DefiningRelationshipTypeVS",
+  "id": "tinkar-defining-relationship-type-vs",
+  "title": "Tinkar Defining Relationship Type Value Set",
+  "description": "Codes describing the nature of a relationship used to define a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000006009 Defining relationship.",
+  "url": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-defining-relationship-type-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "900000000000006009"
+          }
+        ]
+      }
+    ]
+  }
+}

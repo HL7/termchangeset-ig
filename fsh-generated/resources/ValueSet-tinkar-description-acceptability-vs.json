@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DescriptionAcceptabilityVS",
+  "id": "tinkar-description-acceptability-vs",
+  "title": "Tinkar Description Acceptability Value Set",
+  "description": "Codes describing acceptability of a given description for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability.",
+  "url": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-description-acceptability-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "900000000000511003"
+          }
+        ]
+      }
+    ]
+  }
+}

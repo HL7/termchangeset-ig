@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "description-acceptability",
-  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability",
-  "name": "SNOMEDDescriptionAcceptability",
-  "title": "Description Acceptability",
+  "id": "role-group",
+  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/role-group",
+  "name": "SNOMEDRoleGroup",
+  "title": "SNOMED Role Group",
   "status": "draft",
-  "description": "Boolean value to convey if a designation is case sensitive or not",
+  "description": "Where multiple property groupings are assigned for a particular concept, this identifies the group to which this property belongs.  See also SNOMED concept 609096000 Role group (attribute)",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.content.designation"
+      "expression": "CodeSystem.content.property"
     }
   ],
   "type": "Extension",
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Description Acceptability",
-        "definition": "Boolean value to convey if a designation is case sensitive or not"
+        "short": "SNOMED Role Group",
+        "definition": "Where multiple property groupings are assigned for a particular concept, this identifies the group to which this property belongs.  See also SNOMED concept 609096000 Role group (attribute)"
       },
       {
         "id": "Extension.extension",
@@ -41,20 +41,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability"
+        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/role-group"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "integer"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-description-acceptability-vs"
-        }
+        ]
       }
     ]
   }

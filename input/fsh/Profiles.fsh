@@ -59,11 +59,13 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
+* concept.id 1..1 MS
+* concept.id ^short = "Tinkar unique identifier for the concept represented by the terminology-specific concept.code"
+* concept.id ^mapping.identity = "tinkar"
+* concept.id ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
 * concept.code 1..1 MS
 * concept.code ^short = "Code that identifies concept"
 * concept.code ^definition = "A code - a text symbol - that uniquely identifies the concept within the code system."
-* concept.code ^mapping.identity = "tinkar"
-* concept.code ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
 * concept.display 1..1 MS
 * concept.display ^short = "Text to display to the user"
 * concept.display ^definition = "A human readable string that is the recommended default way to present this concept to a user."
@@ -96,6 +98,13 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.property 0..* MS
 * concept.property ^short = "Property value for the concept"
 * concept.property ^definition = "A property value for this concept."
+* concept.property.extension contains
+	defining-relationship-type named DefiningRelationshipType 0..1 and
+	el-profile-set-operator named elProfileSetOperator 0..1
+* concept.property.extension[DefiningRelationshipType] ^mapping.identity = "tinkar"
+* concept.property.extension[DefiningRelationshipType] ^mapping.map = "NAVIGATION_PATTERN"
+* concept.property.extension[elProfileSetOperator] ^mapping.identity = "tinkar"
+* concept.property.extension[elProfileSetOperator] ^mapping.map = "EL_PROFILE_SET_OPERATOR"
 * concept.property.code 1..1 MS
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
@@ -123,6 +132,8 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * url = "http://snomed.info/sct" (exactly)
 * url ^short = "& (Coding.system)"
 * url ^definition = "& This is used in [Coding]{datatypes.html#Coding}.system."
+* concept.code ^mapping.identity = "tinkar"
+* concept.code ^mapping.map = "SNOMED CT IDENTIFER SOURCE"
 * concept.designation.extension contains
 	description-case-sensitivity named caseSensitivity 0..1 and
 	description-acceptability named acceptability 0..1
@@ -130,6 +141,10 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
 * concept.designation.extension[acceptability] ^mapping.identity = "tinkar"
 * concept.designation.extension[acceptability] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
+* concept.property.extension contains
+	role-group named roleGroup 0..1
+* concept.property.extension[roleGroup] ^mapping.identity = "tinkar"
+* concept.property.extension[roleGroup] ^mapping.map = "ROLE_GROUP"
 
 
 Profile: LOINCChangeSet
