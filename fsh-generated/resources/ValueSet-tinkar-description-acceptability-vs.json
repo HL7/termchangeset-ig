@@ -6,6 +6,7 @@
   "title": "Tinkar Description Acceptability Value Set",
   "description": "Codes describing acceptability of a given description for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability.",
   "url": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-description-acceptability-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

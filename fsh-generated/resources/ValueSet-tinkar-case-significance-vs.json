@@ -6,6 +6,7 @@
   "title": "Tinkar Case Significance Value Set",
   "description": "Codes describing case significance for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000447004 Case significance.",
   "url": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-case-significance-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

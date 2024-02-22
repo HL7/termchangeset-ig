@@ -118,6 +118,13 @@
         "mustSupport": true
       },
       {
+        "id": "CodeSystem.supplements",
+        "path": "CodeSystem.supplements",
+        "short": "Canonical URL of Code System to which the change set applies",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "CodeSystem.count",
         "path": "CodeSystem.count",
         "short": "Total concepts in this changeset for the code system",

@@ -6,6 +6,7 @@
   "title": "Tinkar Defining Relationship Type Value Set",
   "description": "Codes describing the nature of a relationship used to define a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000006009 Defining relationship.",
   "url": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-defining-relationship-type-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

@@ -119,6 +119,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.concept ^definition = "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) - see hierarchyMeaning."
 * concept.concept ^comment = "For Tinkar Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
 * concept.concept ^mustSupport = false
+* supplements 1..1 MS
+* supplements ^short = "Canonical URL of Code System to which the change set applies"
 
 
 

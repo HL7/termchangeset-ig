@@ -3,7 +3,16 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
+The Tinkar Reference Model is a logical model that describes the standardized model for terminology and change
+management, previously published in the <a href="">HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1</a>. 
+Tinkar provides an architecture that delivers integrated terminology to the enterprise and its information
+systems. 
 
+It was designed to support the healthcare enterprise need for an extensive terminology foundation and the ability
+to implement extensions to support diverse informatics systems. It supports standard terminology modules, value sets, and coding systems as well as local
+terms and equivalence mappings.
+
+In this edition, standardized data exchange formats and transactions are defined to specifically enable the exchange Tinkar-compliant Terminology change sets, both in a lossless Protobuf format, as well as utilizing FHIR CodeSystem and Provenance resources.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>
