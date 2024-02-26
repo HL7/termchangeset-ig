@@ -97,6 +97,7 @@ modules, historical timestamp) may reveal substantially different IdentifedCompo
 <p style="text-align:center;color:Gray">
 Figure 3.2. Component Types
 </p>
+<p>
 All Components in Tinkar are uniquely identified using UUIDs. A Component will be represented by an array of 
 UUIDs with at least one UUID, but can be represented by more than one UUID in the case of a concept being 
 derived from multiple sources. For example, the concept Acetaminophen (which exists in SNOMED CT®, LOINC, 
@@ -268,6 +269,6 @@ Pattern would then contain an array of these FieldDefinitions.
 
 <hr />
 <p id="footnote15">
-[15]15.	Abstract syntax tree. Wikipedia; 2020. Available from: https://en.wikipedia.org/wiki/Abstract_syntax_tree.
+[15] Abstract syntax tree. Wikipedia; 2020. Available from: https://en.wikipedia.org/wiki/Abstract_syntax_tree.
 </p>
 </div>
