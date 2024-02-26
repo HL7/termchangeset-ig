@@ -19,7 +19,7 @@ on a self-describing, extensible approach to representing terminology. Therefore
 	The machine-readable terminology could generate human-readable documentation so that business analysts and developers can understand and apply it correctly.
 	</li>
 </ol>
-m<a name="objectives and purpose"> </a>
+<a name="objectives and purpose"> </a>
 <h3>Tinkar Objectives and Purpose - Manage Terminology and Change</h3>
 <p>
 This specification describes the requirements and characteristics of systems required to manage terminology produced by a variety of organizations across a healthcare enterprise. 
@@ -76,8 +76,8 @@ share extensions to the USCDI as well as the underlying terminology systems them
 <p>
 Tinkar is self-describing and completely machine-processed. A self-describing architecture is defined in a report from Queensland University of Technology as follows: 
 “[t]he idea is that self-descriptions of data and other techniques would allow context-understanding programs to selectively find what users want, or for programs to 
-work on behalf of humans and organizations to make them more scalable, efficient and productive.” <a href="#footnote9">[9]</a> Key advantages of a self- describing architecture 
-(or metadata driven architecture) <a href="#footnote10">[10]</a> include the following details: 
+work on behalf of humans and organizations to make them more scalable, efficient and productive.” <a href="#footnote1">[1]</a> Key advantages of a self- describing architecture 
+(or metadata driven architecture) <a href="#footnote2">[2]</a> include the following details: 
 </p>
 
 <p>
@@ -139,7 +139,7 @@ language, and semantic hierarchy. SNOMED CT®, LOINC®, and RxNorm are part of t
 </p>
 <p>
 <b>Statement Model</b> - The Statement Model layer is responsible for defining how data elements are combined to create a statement. This layer reuses the artifacts defined in the Terminology 
-Knowledge layer. The ANF Reference Model [11] belongs in this layer. 
+Knowledge layer. The ANF Reference Model <a href="#footnote3">[3]</a> belongs in this layer. 
 </p>
 <p>
 <b>Assertional Knowledge</b> - The Assertional Knowledge layer makes use of the Terminology Knowledge layer concepts to specify non-defining facts that may be used by procedural knowledge algorithms. 
@@ -184,5 +184,14 @@ the mechanism to create interoperable implementation guides from health IT stand
 workflow decision points consistent with the Assertional and Procedural layers described above. 
 </p>
 <hr />
+<p id="footnote1">
+[1]	Oaks,  P.  Towards  Self  Describing  Web  Services.  Lecture  Notes  in  Computer Science. 2003. 2722. 10.1007/3-540-45068-8_90. Available from: https://www.researchgate.net/ publication/27482447_Towards_Self_Describing_Web_Services.
+</p>
+<p id="footnote2">
+[2] Tharakan V. Metadata Driven Architecture For Application Development. ClaySys Technologies; 2019. Available from: https://www.claysys.com/blog/metadata-driven-application-development/.
+</p>
+<p id="footnote3">
+[3] Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019. http://www.hl7.org/ documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf. mirror link: http:// solor.io/wp-content/uploads/2020/01/ANF-Ballot-Jan-2020.pdf.
+</p>
 
 </div>
