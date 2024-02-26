@@ -266,5 +266,8 @@ describe an SDO's website, the Meaning would be “URL,” DataType of “String
 Pattern would then contain an array of these FieldDefinitions. 
 </p>
 
-
+<hr />
+<p id="footnote15">
+[15]15.	Abstract syntax tree. Wikipedia; 2020. Available from: https://en.wikipedia.org/wiki/Abstract_syntax_tree.
+</p>
 </div>
