@@ -37,7 +37,8 @@ and inherent interoperability should, however, outweigh the complexity added to 
 the foundation of a knowledge architecture that is intended to integrate reference terminology from distributors 
 (e.g., SNOMED CT®, LOINC®, RxNorm) with local concepts to support interoperable information semantics across the enterprise.</p>
 
-<h3>Motivation: Why Tinkar?</h3>
+<a name="motivation"> </a>
+<h3>Motivation: Why Tinkar? </h3>
 <p>
 Information systems that are used across the healthcare enterprise record and manage clinical data using clinical
 statements and clinical terminologies in non-standardized ways. Interoperability specifications aim to require
@@ -45,7 +46,7 @@ terminology bindings to concepts, code systems, and reusable value sets. Current
 data exchange across the enterprise, as existing payloads and clinical statements use inconsistent and highly variable
 enterprise terminologies. The management of the concepts, code systems, and value sets is non-trivial because
 developers, implementers, and end users are forced to manage “unnecessary complexity.” For example:
-  </p>
+</p>
   <ul>
       <li>
         Representation of medications: RxNorm codes overlap with CVX codes. Investigational vaccines from the FDA
@@ -133,7 +134,7 @@ IT glitch.
   	<b>Alert for monitoring thyroid function when taking Amiodarone stopped working.</b>
   	<ul>
   		<li>
-  			Amiodarone is associated with several side effects, including thyroid dysfunction, which is due to amiodarone’s
+  			Amiodarone is associated with several side effects, including thyroid dysfunction, which is due to amiodarone's
 high iodine content and its direct toxic effect on the thyroid.
   		</li>
   		<li>
