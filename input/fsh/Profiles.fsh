@@ -25,7 +25,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * publisher 1..1 MS
 * copyright 1..1 MS
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
-* hierarchyMeaning 1..1
+* hierarchyMeaning 0..1 MS
 * content 1..1 MS
 * content only code
 * content = #fragment (exactly)
@@ -47,12 +47,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * property.uri ^short = "Formal identifier for the property"
 * property.uri ^definition = "Reference to the formal meaning of the property. One possible source of meaning is the [Concept Properties](codesystem-concept-properties.html) code system."
 * property.uri ^mustSupport = false
-* property.description 1..1 MS
-* property.description ^short = "Why the property is defined, and/or what it conveys"
-* property.description ^definition = "A description of the property- why it is defined, and how its value might be used."
 * property.type 1..1 MS
-* property.type only code
-* property.type = #Coding (exactly)
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
 * concept 1..* MS
@@ -75,6 +70,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.definition ^short = "Formal definition"
 * concept.definition ^definition = "The formal definition of the concept. The code system resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept."
 * concept.definition ^mustSupport = false
+* concept.designation 0..*
 * concept.designation.language 0..1
 * concept.designation.language ^short = "Human language of the designation"
 * concept.designation.language ^definition = "The language this designation is defined for."
@@ -111,7 +107,6 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.property.code ^mapping.identity = "tinkar"
 * concept.property.code ^mapping.map = "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
 * concept.property.value[x] 1..1 MS
-* concept.property.value[x] only Coding
 * concept.property.value[x] ^short = "Value of the property for this concept"
 * concept.property.value[x] ^definition = "The value of this property."
 * concept.concept 0..0

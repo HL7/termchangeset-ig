@@ -1,0 +1,215 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <p>Over the past decades, biomedical terminologies have increasingly been recognized as key resources for knowledge
+management, data integration, and decision support [1]. Acceleration and development of Electronic Health Record
+(EHR) systems has precipitated the emergence of “standard terminologies” and their widespread adoption in the
+clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the
+Logical Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. The availability of these clinical
+terminologies through the terminology services of FHIR is facilitating their usage in support of interoperability in
+healthcare.</p>
+<p>
+Interoperability requires standardized semantics based on reference terminology provided by standards development
+organizations, professional organizations, or government agencies. These organizations publish their content with the
+intention of licensing it to health IT vendors, providers, and research organizations. In the U.S., the core clinical
+reference terminology is based on SNOMED CT®, LOINC®, and RxNorm. Healthcare organizations must adopt and
+integrate subsets or modules of various reference terminology and manage references, dependencies, versions, and
+releases. It is important for the integrity of medical records that the change history of concepts and value sets can be
+managed and tracked to allow the exchange of either current or retrospective medical records. Therefore, enterprise
+terminology requires integrated terminology using a common representation and management.</p>
+<p>
+Despite the need to use standard terminologies in a highly integrated way, there is no standard representation across
+SNOMED CT®, LOINC®, RxNorm, etc. Some partnerships have been created among development teams to facilitate
+interoperability and minimize duplication of effort. Further integration has been proposed but will require additional
+resources to bring these terminologies closer together. However, while this evolution leads to greater compatibility
+and interoperability, integration of SNOMED CT®, LOINC®, and RxNorm is non-trivial as these terminologies use
+different formalisms and tools for their representation. Various terminologies have different semantics, models, release
+cycles, and versioning mechanisms <a href="#footnote1">[1]</a>. While there is recognition that terminologies are not standardized at the
+exchange level, there is no consensus about harmonized next steps to solve the challenges.</p>
+<p>
+This document focuses on the need for – and logical specification of – a Terminology Knowledge Architecture (Tinkar).
+The Tinkar Reference Model is a logical model that describes the standardized model for terminology and change
+management. Tinkar provides an architecture that delivers integrated terminology to the enterprise and its information
+systems. In doing so, it addresses the differences in management and structure across reference terminology, local
+concepts, and code lists/value sets.</p>
+<p>
+Tinkar aims to adhere to the following statement from a publication about developments in clinical terminologies in the 
+2018 Yearbook of Medical Informatics <a href="#footnote1">[1]</a>: “The benefits of the integrated terminologies in terms of homogenous semantics 
+and inherent interoperability should, however, outweigh the complexity added to the system.” This specification provides 
+the foundation of a knowledge architecture that is intended to integrate reference terminology from distributors 
+(e.g., SNOMED CT®, LOINC®, RxNorm) with local concepts to support interoperable information semantics across the enterprise.</p>
+
+<a name="motivation"> </a>
+<h3>Motivation: Why Tinkar? </h3>
+<p>
+Information systems that are used across the healthcare enterprise record and manage clinical data using clinical
+statements and clinical terminologies in non-standardized ways. Interoperability specifications aim to require
+terminology bindings to concepts, code systems, and reusable value sets. Currently, there is variation in clinical
+data exchange across the enterprise, as existing payloads and clinical statements use inconsistent and highly variable
+enterprise terminologies. The management of the concepts, code systems, and value sets is non-trivial because
+developers, implementers, and end users are forced to manage “unnecessary complexity.” For example:
+</p>
+  <ul>
+      <li>
+        Representation of medications: RxNorm codes overlap with CVX codes. Investigational vaccines from the FDA
+are not represented in RxNorm, CVX, or SNOMED CT®.
+      </li>
+      <li>
+        Representation of COVID-19 result codes are inconsistent and are not equivalent (e.g., detected, undetected,
+positive, negative, etc.).
+      </li>
+  </ul>
+  <p>
+As a result of these complexities, there are many ways to say the same thing using standard terminologies and standard
+formats. The Institute of Medicine report, Health IT and Patient Safety: Building Safer Systems for Better Care,
+highlighted the unintended consequences of health IT-induced harm that can result in serious injury and death due
+to dosing errors, failure to detect serious illnesses, and delayed treatment due to poor human-computer interactions,
+confusing clinical terminology, or unreliable data quality <a href="#footnote2">[2]</a>. Despite the widespread understanding of the importance
+of the quality of clinical data, there is currently a lack of integration and management of clinical terminologies across
+the healthcare enterprise.
+  </p>
+  <p>
+Tinkar intends to support integration of clinical terminology and local concepts to support increased data quality
+for interoperable clinical information. High-quality clinical data enables healthcare systems across the enterprise to
+conduct robust and meaningful data analysis and increase overall interoperability, which ultimately enhances quality
+of care across all medical facilities.
+  </p>
+  <img src="Motivation_Why_Tinkar.png" alt="Motivation: Why Tinkar"/>
+  <a name="problem"> </a>
+  <h3>The Problem Tinkar Addresses</h3>
+  <p>
+  The following four high level potential deficiencies related to poorly integrated terminology and inefficient change
+management describe preventable harm that Tinkar addresses:
+  </p>
+  <ol>
+  	<li>
+  		<b>Inability to recognize equivalence.</b>
+  		<ul>
+  		Difficulty with determining that codes/terms using standard terminologies from disparate health IT systems
+represent a common clinical idea/concept (e.g., “Feels Feverish” in the Temperature Symptoms SNOMED CT®
+hierarchy versus “Feels Hot/Feverish” in the Observation and Sensation SNOMED CT® hierarchy. Both concepts
+are Findings in SNOMED CT® but there is no unifying way to identify equivalence).
+  		</ul>
+  	</li>
+  	<li>
+  		<b>Inability to represent a pertinent phenomenon.</b>
+  		<ul>
+  		A new set of local terminology may be managed with value sets and concept gaps addressed in quick iterations
+(e.g., “COVID-19 negative test result” was needed in practical use before official SDO releases, or gaps like
+“mild anemia”, which was proposed, but not accepted, by both the international and U.S. SNOMED CT® release).
+  		</ul>
+  	</li>
+   	<li>
+  		<b>Flawed information.</b>
+  		<ul>
+  		Incorrect usage or representation of clinical ideas/concepts from standard terminologies due to a lack of
+harmonization and multiple representations that currently exist (e.g., LOINC® and SNOMED CT® have
+overlapping concepts).
+  		</ul>
+  	</li>
+  	<li>
+  		<b>Inability to reliably and safely evolve over time <a href="#footnote3">[3]</a></b>
+  		<ul>
+  		There is a lack of clear, detailed descriptions of changes to terminologies over time so that changes can be
+understood by implementers. Terminologies often change in ways that are convenient for the creators, but
+complex for the users (e.g., redundancy, major name changes, code reuse, and changed codes).
+  		</ul>
+  	</li>
+  </ol>
+  <p>
+  	<b>Consider the following examples of implementations that have gone wrong:</b> <a href="#footnote4">[4]</a><a href="#footnote5">[5]</a><a href="#footnote6">[6]</a><a href="#footnote7">[7]</a>
+  </p>
+  <ul>
+  	<li>
+  	<b>Computer error may have led to incorrect prescribing of statins to thousands of patients.</b>
+  	<ul>
+  		<li>
+  			Thousands of patients in England may have been incorrectly prescribed or taken off statins because of a major
+IT glitch.
+  		</li>
+  		<li>
+  			Underlying cause: (1) code mapping errors, and (2) brittle means for determining equivalence.
+  		</li>
+  	</ul>
+  	</li>
+  	<li>
+  	<b>Alert for monitoring thyroid function when taking Amiodarone stopped working.</b>
+  	<ul>
+  		<li>
+  			Amiodarone is associated with several side effects, including thyroid dysfunction, which is due to amiodarone's
+high iodine content and its direct toxic effect on the thyroid.
+  		</li>
+  		<li>
+  			Underlying cause: (1) the identifier for the drug amiodarone was changed in another system, and (2) uncoordinated
+means for determining equivalence.
+  		</li>
+  	</ul>
+  	</li>
+  	<li>
+  	<b>62 percent of clinical decision support (CDS) malfunctions were attributable to changes in underlying codes
+or data fields.</b>
+  	<ul>
+  		<li>
+  			Change is a constant feature of providing healthcare.
+  		</li>
+  		<li>
+  			Underlying cause: (1) poorly managed change.
+  		</li>
+  	</ul>	
+  	</li>
+  </ul>
+  <p>
+  Tinkar addresses challenges and problems from the above implementation examples:
+  <table class="grid">
+  	<tr>
+  		<th>
+  			Challenge
+  		</th>
+  		<th>
+  			Tinkar Solution
+  		</th>
+  	</tr>
+  	<tr>
+  		<td>
+  			Uncoordinated or brittle terminology integration
+frequently breaks across systems
+  		</td>
+  		<td>
+  			Standardize (and facilitate sharing) of terminology
+representation across systems
+  		</td>
+  	</tr>
+  </table>
+  </p>
+  <hr />
+	<p id="footnote1">
+		[1] Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical Terminologies - SNOMED CT,
+LOINC, and RxNorm. Yearbook Med Inform. 2018 Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub
+2018 Aug 29. PMID: 30157516; PMCID: PMC6115234.Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/
+PMC6115234/.
+	</p>
+	<p id="footnote2">
+		[2] Institute of Medicine (2012). Health IT and Patient Safety. Building Safer Systems for Better Care. Washington,
+DC: National Academies Press.
+	</p>
+  <p id="footnote3">
+		[3] Cimino JJ. Desiderata for controlled medical vocabularies in the twenty-first century. Methods of information in
+medicine. 1998;37(4-5):394-403.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415631/.
+	</p>
+	<p id="footnote4">
+		[4] CBakken S, Campbell KE, Cimino JJ, Huff SM, Hammond WE. Toward vocabulary domain specifications
+for health level 7-coded data elements. J Am Med Inform Assoc. 2000 Jul-Aug;7(4):333-42. doi: 10.1136/
+jamia.2000.0070333. PMID: 10887162; PMCID: PMC61438.
+	</p>
+	<p id="footnote5">
+		[5] Campbell KE, Oliver DE, Shortliffe EH. The Unified Medical Language System: toward a collaborative
+approach for solving terminologic problems. J Am Med Inform Assoc. 1998 Jan-Feb;5(1):12-6. doi: 10.1136/
+jamia.1998.0050012. PMID: 9452982; PMCID: PMC61272.
+	</p>
+	<p id="footnote6">
+		[6] Campbell KE, Giannangelo K. Language barrier. Getting past the classifications and terminologies roadblock. J
+AHIMA. 2007 Feb;78(2):44-6, 48. PMID: 17366992.
+	</p>
+	<p id="footnote7">
+		[7] Campbell KE, Musen MA. Representation of clinical data using SNOMED III and conceptual graphs. Proc Annu
+Symp Comput Appl Med Care. 1992:354-8. PMID: 1482897; PMCID: PMC2248067.
+	</p>
+</div>

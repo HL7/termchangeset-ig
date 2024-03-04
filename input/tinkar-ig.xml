@@ -73,6 +73,11 @@ In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardiz
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="TinkarBackground.html"/>
+        <title value="Tinkar Background"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="TinkarOverview.html"/>
         <title value="Tinkar Overview"/>
         <generation value="html"/>

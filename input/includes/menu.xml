@@ -1,24 +1,30 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="background.html">Background</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tinkar<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="TinkarOverview.html">Overview</a>
+        <a href="background.html">Tinkar Background</a>
       </li>
       <li>
-        <a href="TinkarModelConcepts.html">Model Concepts</a>
+        <a href="TinkarBackground.html">Tinkar Background</a>
       </li>
       <li>
-        <a href="TinkarBusinessRequirements.html">Business Requirements</a>
+        <a href="TinkarOverview.html">Tinkar Overview</a>
+      </li>
+      <li>
+        <a href="TinkarModelConcepts.html">Tinkar Model Concepts</a>
+      </li>
+      <li>
+        <a href="TinkarBusinessRequirements.html">Tinkar Business Requirements</a>
       </li>
     </ul>
   </li>
-    <li class="dropdown">
+  <li><a href="artifacts.html">FHIR Artifacts</a></li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Protobuf Artifacts<b class="caret">
       </b>
     </a>
@@ -34,7 +40,6 @@
       </li>
     </ul>
   </li>
-  <li><a href="artifacts.html">FHIR Artifacts</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
