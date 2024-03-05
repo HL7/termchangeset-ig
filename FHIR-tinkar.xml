@@ -9,6 +9,7 @@
 <artifact id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
 <artifact id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
+<artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 ChangeSet"/>
 <artifact id="CodeSystem/snomedctVAExtension" key="CodeSystem-snomedctVAExtension" name="SNOMED CT (VA Change Set)"/>
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
 <artifact id="ValueSet/tinkar-case-significance-vs" key="ValueSet-tinkar-case-significance-vs" name="Tinkar Case Significance Value Set"/>

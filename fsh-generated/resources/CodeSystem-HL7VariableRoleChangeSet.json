@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "HL7VariableRoleChangeSet",
+  "meta": {
+    "profile": [
+      "https://hl7.org/fhir/uv/tinkar/StructureDefinition/tinkar-changeset-profile"
+    ]
+  },
+  "content": "fragment",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://terminology.hl7.org/CodeSystem/variable-role_ChangeSetUTG427",
+  "version": "1.0.1",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1457"
+    }
+  ],
+  "name": "EvidenceVariableRole UTG-247 ChangeSet",
+  "title": "EvidenceVariableRole UTG-247 ChangeSet",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The role that the assertion variable plays.",
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/variable-role",
+  "supplements": "http://terminology.hl7.org/CodeSystem/variable-role",
+  "count": 3,
+  "concept": [
+    {
+      "code": "measuredVariableA",
+      "display": "measured variable A",
+      "definition": "variable represents a first of two measured variables to be used in a measured variable that is a mathematical operation of two measured variables."
+    },
+    {
+      "code": "measuredVariableB",
+      "display": "measured variable B",
+      "definition": "variable represents a second of two measured variables to be used in a measured variable that is a mathematical operation of two measured variables."
+    },
+    {
+      "code": "measuredVariableAB",
+      "display": "measured variable A to B",
+      "definition": "variable represents a result of a mathematical operation of two measured variables."
+    }
+  ]
+}
