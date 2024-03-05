@@ -35,5 +35,6 @@
 <page key="TinkarBusinessRequirements" name="Tinkar Business Requirements"/>
 <page key="TinkarModelConcepts" name="Tinkar Model Concepts"/>
 <page key="TinkarOverview" name="Tinkar Overview"/>
+<page key="tinkartofhir" name="Transform to FHIR"/>
 <page key="downloads" name="Useful Downloads"/>
 </specification>

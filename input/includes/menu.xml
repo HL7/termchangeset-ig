@@ -25,18 +25,21 @@
   </li>
   <li><a href="artifacts.html">FHIR Artifacts</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Protobuf Artifacts<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tinkar Representation<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="protobufbackground.html">Background</a>
+        <a href="protobufbackground.html">Protobuf Background</a>
       </li>
       <li>
-        <a href="protobufschema.html">Schema</a>
+        <a href="protobufschema.html">Protobuf Schema</a>
       </li>
       <li>
-        <a href="protobufexamples.html">Examples</a>
+        <a href="protobufexamples.html">Protobuf Examples</a>
+      </li>
+      <li>
+        <a href="tinkartofhir.html">Transform to FHIR</a>
       </li>
     </ul>
   </li>

@@ -108,6 +108,11 @@ In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardiz
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="tinkartofhir.html"/>
+        <title value="Transform to FHIR"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/> 
         </extension> 
