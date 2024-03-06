@@ -41,9 +41,49 @@ the necessary concepts and public ID's that the message is sending. For example,
 might not have the unique Author Public ID in certain cases. If this is the case the specific 
 author coordinate would have to be sent as a TinkarMsg with Primordial Modules + Paths first. 
 </p>
-<div class="box">
+  <div class="box">
     <pre>
       <code class="language-java linenumbers">
+message TinkarMsg { 
+     StampChronology { 
+        PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+
+        // The stamp version. 
+        StampVersion first_stamp_version =  StampVersion { 
+            // Status of the item this STAMP references.
+            PublicId status_public_id = "Active Status Public ID"; 
+
+            // Author of the item this STAMP references. 
+            PublicId author_public_id = "SNOMED CT Author Public ID"; 
+
+            // Module of the item this STAMP references. 
+            PublicId module_public_id = "SNOMED CT US EDITION Public ID"; 
+
+            // Path of the item this STAMP references. 
+            PublicId path_public_id = "Development Path Public ID"; 
+
+            // Creation time of the item this STAMP references. 
+            google.protobuf.Timestamp time = "Current Date/Time";// Or if we wanted to simulate the update this would be the 2021-03-01 Timestamp 
+        };         
+    } 
+} 
+      </code>
+    </pre>
+  </div>
+
+
+
+<a name="Use Case 1 Message 2"> </a>
+<h5>Message 2: Assigning the new SNOMED CT Axiom Definition</h5>
+<p>
+Next we need to assign values and semantics to the newly created concept. 
+In this example protobuf message we assign a new example Axiom Definition 
+using the Axiom Definition Pattern. Axiom Definition Pattern has one FieldDefinition, 
+string_public_id (String of Axiom Definition) 
+</p>
+  <div class="box">
+      <pre>
+        <code class="language-java linenumbers">
 message TinkarMsg { 
      StampChronology { 
         PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
