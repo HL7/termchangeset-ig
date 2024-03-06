@@ -24,13 +24,17 @@ from the 2020-09-01 version to the 2021-03-01 version.
 Figure 1: The 2020-09-01 Version of Chronic Lung Disease 
 </p>
 <p>
-<img src="20200901chroniclungdisease.png" alt="2020 Chronic Lung Disease"/>
+<div>
+  <img src="20200901chroniclungdisease.png" alt="2020 Chronic Lung Disease"/>
+</div>
 </p>
 <p>
 Figure 2: The 2021-03-01 Version of Chronic Lung Disease 
 </p>
 <p>
+<div>
 <img src="20210301chroniclungdisease.png" alt="2021 Chronic Lung Disease"/>
+</div>
 </p>
 <a name="Use Case 1 Message 1"> </a>
 <h5>Message 1: Creating a new Tinkar STAMP Coordinate</h5>
@@ -43,7 +47,7 @@ author coordinate would have to be sent as a TinkarMsg with Primordial Modules +
 </p>
   <div class="box">
     <pre>
-      <code class="language-java linenumbers">
+      <code>
 message TinkarMsg { 
   StampChronology { 
     PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
@@ -70,8 +74,6 @@ message TinkarMsg {
       </code>
     </pre>
   </div>
-
-
 
 <a name="Use Case 1 Message 2"> </a>
 <h5>Message 2: Assigning the new SNOMED CT Axiom Definition</h5>
