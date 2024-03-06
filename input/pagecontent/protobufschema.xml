@@ -2,7 +2,7 @@
 
 <a name="format"> </a>
 <h3> Tinkar Protobuf Format </h3>
-<p> Tinkar's Protobuf format schema can be found below <a href="Protobuf Code">Protobuf Code</a>. Data is sent and received by means of Protobuf Messages. The main
+<p> Tinkar's Protobuf format schema can be found below <a href="#Protobuf Code">Protobuf Code</a>. Data is sent and received by means of Protobuf Messages. The main
     components and types of Tinkar Protobuf Messages are defined below.</p>
 <a name="tinkarmsg"> </a>
 <h4> TinkarMsg </h4>
