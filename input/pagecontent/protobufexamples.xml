@@ -45,27 +45,27 @@ author coordinate would have to be sent as a TinkarMsg with Primordial Modules +
     <pre>
       <code class="language-java linenumbers">
 message TinkarMsg { 
-     StampChronology { 
-        PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+  StampChronology { 
+    PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
 
-        // The stamp version. 
-        StampVersion first_stamp_version =  StampVersion { 
-            // Status of the item this STAMP references.
-            PublicId status_public_id = "Active Status Public ID"; 
+    // The stamp version. 
+    StampVersion first_stamp_version =  StampVersion { 
+      // Status of the item this STAMP references.
+      PublicId status_public_id = "Active Status Public ID"; 
 
-            // Author of the item this STAMP references. 
-            PublicId author_public_id = "SNOMED CT Author Public ID"; 
+      // Author of the item this STAMP references. 
+      PublicId author_public_id = "SNOMED CT Author Public ID"; 
 
-            // Module of the item this STAMP references. 
-            PublicId module_public_id = "SNOMED CT US EDITION Public ID"; 
+      // Module of the item this STAMP references. 
+      PublicId module_public_id = "SNOMED CT US EDITION Public ID"; 
 
-            // Path of the item this STAMP references. 
-            PublicId path_public_id = "Development Path Public ID"; 
+      // Path of the item this STAMP references. 
+      PublicId path_public_id = "Development Path Public ID"; 
 
-            // Creation time of the item this STAMP references. 
-            google.protobuf.Timestamp time = "Current Date/Time";// Or if we wanted to simulate the update this would be the 2021-03-01 Timestamp 
-        };         
-    } 
+      // Creation time of the item this STAMP references. 
+      google.protobuf.Timestamp time = "Current Date/Time";// Or if we wanted to simulate the update this would be the 2021-03-01 Timestamp 
+    };         
+  } 
 } 
       </code>
     </pre>
@@ -85,27 +85,78 @@ string_public_id (String of Axiom Definition)
       <pre>
         <code class="language-java linenumbers">
 message TinkarMsg { 
-     StampChronology { 
-        PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+  SemanticChronology { 
+    // Unique Public id of this semantic chronology. 
+    PublicId public_id = "New Axiom Definition Semantic Chronology Public ID"; 
 
-        // The stamp version. 
-        StampVersion first_stamp_version =  StampVersion { 
-            // Status of the item this STAMP references.
-            PublicId status_public_id = "Active Status Public ID"; 
+    // ID of Concept that this semantic references. 
+    PublicId referenced_component_public_id = "Chronic Lung Disease Public ID"; 
 
-            // Author of the item this STAMP references. 
-            PublicId author_public_id = "SNOMED CT Author Public ID"; 
+    // ID of Pattern that defines the allowable fields in this semantic. 
+    PublicId pattern_for_semantic_public_id = "Axiom Definition Pattern Public ID"; 
 
-            // Module of the item this STAMP references. 
-            PublicId module_public_id = "SNOMED CT US EDITION Public ID"; 
+    // List of versions of this semantic. 
+    repeated SemanticVersion semantic_versions = [ 
+      // Thew New Semantic version 
+      SemanticVersion { 
+        // STAMP chronology public ID for this version. (Message 1) 
+        PublicId stamp_chronology_public_id = "NEW STAMP CHRONOLOGY Public ID"; 
 
-            // Path of the item this STAMP references. 
-            PublicId path_public_id = "Development Path Public ID"; 
+        // Fields for this semantic. Each field defined is defined by 
+        // a matching entry in the pattern field definition list. 
+        repeated Field fields = [ 
+          Field { 
+            string string_value = " EquivalentClasses( 
+              :413839001 |Chronic lung disease (disorder)| 
+              ObjectIntersectionOf( 
+                :64572001 |Disease (disorder)| 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :263502005 |Clinical course (attribute)| 
+                    :90734009 |Chronic (qualifier value)| 
+                  ) 
+                ) 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :363698007 |Finding site (attribute)| 
+                    :39607008 |Lung structure (body structure)| 
+                  ) 
+                ) 
+              ) 
+            ) "; 
+          } 
+        ]; 
+      }, 
 
-            // Creation time of the item this STAMP references. 
-            google.protobuf.Timestamp time = "Current Date/Time";// Or if we wanted to simulate the update this would be the 2021-03-01 Timestamp 
-        };         
-    } 
+      // Then you can re-use all previously assigned version values since the version is repeatable 
+      SemanticVersion { 
+        // STAMP chronology public ID for this OLDER version. 
+        PublicId stamp_chronology_public_id = "OLDER STAMP CHRONOLOGY Public ID"; 
+
+        // Fields for this semantic. Each field defined is defined by
+        // a matching entry in the pattern field definition list. 
+        repeated Field fields = [ 
+          Field { 
+            string string_value = " SubClassOf( 
+              :413839001 |Chronic lung disease (disorder)| 
+              ObjectIntersectionOf( 
+                :17097001 |Chronic disease of respiratory system (disorder)| 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :363698007 |Finding site (attribute)| 
+                    :39607008 |Lung structure (body structure)| 
+                  ) 
+                ) 
+              ) 
+            ) "; 
+          } 
+        ] 
+      }; 
+    ]; 
+  } 
 } 
       </code>
     </pre>
