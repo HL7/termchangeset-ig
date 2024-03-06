@@ -1,106 +1,414 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  <p>Over the past decades, biomedical terminologies have increasingly been recognized as key resources for knowledge
-management, data integration, and decision support [1]. Acceleration and development of Electronic Health Record
-(EHR) systems has precipitated the emergence of “standard terminologies” and their widespread adoption in the
-clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT®), the
-Logical Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. The availability of these clinical
-terminologies through the terminology services of FHIR is facilitating their usage in support of interoperability in
-healthcare.</p>
-<p>
-Interoperability requires standardized semantics based on reference terminology provided by standards development
-organizations, professional organizations, or government agencies. These organizations publish their content with the
-intention of licensing it to health IT vendors, providers, and research organizations. In the U.S., the core clinical
-reference terminology is based on SNOMED CT®, LOINC®, and RxNorm. Healthcare organizations must adopt and
-integrate subsets or modules of various reference terminology and manage references, dependencies, versions, and
-releases. It is important for the integrity of medical records that the change history of concepts and value sets can be
-managed and tracked to allow the exchange of either current or retrospective medical records. Therefore, enterprise
-terminology requires integrated terminology using a common representation and management.</p>
-<p>
-Despite the need to use standard terminologies in a highly integrated way, there is no standard representation across
-SNOMED CT®, LOINC®, RxNorm, etc. Some partnerships have been created among development teams to facilitate
-interoperability and minimize duplication of effort. Further integration has been proposed but will require additional
-resources to bring these terminologies closer together. However, while this evolution leads to greater compatibility
-and interoperability, integration of SNOMED CT®, LOINC®, and RxNorm is non-trivial as these terminologies use
-different formalisms and tools for their representation. Various terminologies have different semantics, models, release
-cycles, and versioning mechanisms [1]. While there is recognition that terminologies are not standardized at the
-exchange level, there is no consensus about harmonized next steps to solve the challenges.</p>
-<p>
-This document focuses on the need for – and logical specification of – a Terminology Knowledge Architecture (Tinkar).
-The Tinkar Reference Model is a logical model that describes the standardized model for terminology and change
-management. Tinkar provides an architecture that delivers integrated terminology to the enterprise and its information
-systems. In doing so, it addresses the differences in management and structure across reference terminology, local
-concepts, and code lists/value sets.</p>
-<p>
-The Capability Maturity Model is a development model and can be viewed as a set of structured levels that describe
-how well the behaviors, practices, and processes of an organization can reliably and sustainably produce required
-outcomes. There are five levels defined along the continuum of the Capability Maturity Model (see below). The model
-provides a theoretical continuum along which process maturity can be developed incrementally from one level to the
-next. An implementation of the Tinkar Specification can provide a single representation for all terminologies required
-in the U.S. and other countries, while also providing a better foundation for maturing change management models as
-described by the Capability Maturity Model [2]:</p>
-    <ol>
-      <li>
-        <b>Initial</b> – Tinkar aims to reduce and eliminate challenges with management of changes to terminology being
-unpredictable, poorly controlled, and reactive.
-      </li>
-      <li>
-        <b>Repeatable</b> – Tinkar provides the foundation for robust configuration management and quality assurance for
-terminologies.
-      </li>
-      <li>
-        <b>Defined</b> – Tinkar allows terminologies to have standardized update and extension processes.
-      </li>
-      <li>
-        <b>Managed</b> – Tinkar represents updates and changes to terminologies so that the changes can be measured and
-controlled.
-      </li>
-      <li>
-        <b>Optimizing</b> – Tinkar aims to allow multiple stakeholders to apply and retrieve changes to shared terminology
-content with equivalent and harmonized results.
-      </li>
-    </ol>
-  <h3>Motivation: Why Tinkar?</h3>
-  <p>
-Information systems that are used across the healthcare enterprise record and manage clinical data using clinical
-statements and clinical terminologies in non-standardized ways. Interoperability specifications aim to require
-terminology bindings to concepts, code systems, and reusable value sets. Currently, there is variation in clinical
-data exchange across the enterprise, as existing payloads and clinical statements use inconsistent and highly variable
-enterprise terminologies. The management of the concepts, code systems, and value sets is non-trivial because
-developers, implementers, and end users are forced to manage “unnecessary complexity.” For example:
-  </p>
-  <ul>
-      <li>
-        Representation of medications: RxNorm codes overlap with CVX codes. Investigational vaccines from the FDA
-are not represented in RxNorm, CVX, or SNOMED CT®.
-      </li>
-      <li>
-        Representation of COVID-19 result codes are inconsistent and are not equivalent (e.g., detected, undetected,
-positive, negative, etc.).
-      </li>
-  </ul>
-  <p>
-As a result of these complexities, there are many ways to say the same thing using standard terminologies and standard
-formats. The Institute of Medicine report, Health IT and Patient Safety: Building Safer Systems for Better Care,
-highlighted the unintended consequences of health IT-induced harm that can result in serious injury and death due
-to dosing errors, failure to detect serious illnesses, and delayed treatment due to poor human-computer interactions,
-confusing clinical terminology, or unreliable data quality [3]. Despite the widespread understanding of the importance
-of the quality of clinical data, there is currently a lack of integration and management of clinical terminologies across
-the healthcare enterprise.
-  </p>
-  <p>
-Tinkar intends to support integration of clinical terminology and local concepts to support increased data quality
-for interoperable clinical information. High-quality clinical data enables healthcare systems across the enterprise to
-conduct robust and meaningful data analysis and increase overall interoperability, which ultimately enhances quality
-of care across all medical facilities.
-  </p>
-  <h3>The Problem Tinkar Addresses</h3>
-  <p>
-  The following four high level potential deficiencies related to poorly integrated terminology and inefficient change
-management describe preventable harm that Tinkar addresses:
-  </p>
-  <ol>
-  </ol>
-	<p>
-		<img height="600" src="anImage.png" alt="A sample image"/>
-	</p>
+
+<a name="format"> </a>
+<h3> Tinkar Protobuf Format </h3>
+<p> Tinkar's Protobuf format schema can be found on the <a href="protobufschema.html">Protobuf
+        Schema</a> page. Data is sent and received by means of Protobuf Messages. The main
+    components and types of Tinkar Protobuf Messages are defined below. </p>
+<a name="tinkarmsg"> </a>
+<h4> TinkarMsg </h4>
+<p> A TinkarMsg is the main way Tinkar's Protobuf sends and receives data. It acts like a
+    container and for one of four different types of messages. A TinkarMsg can be either a
+    StampChronology, ConceptChronology, PatternChronology, or a SemanticChronology </p>
+<a name="stampchronology"> </a>
+<h4> StampChronology </h4>
+<p> A StampChronology is Tinkar's way of referencing a Tinkar STAMP Coordinate. It contains a
+    unique public_id to signify this unique coordinate and one or two StampVersion. </p>
+<a name="stampversion"> </a>
+<h4> StampVersion </h4>
+<p> A StampVersion is assigning the unique STAMP Coordinate Properties. It has a
+    status_public_id, author_public_id, module_public_id, path_public_id all associated to the
+    relevant STAMP component parts as well as a Google Protobuf Timestamp for the time
+    component. </p>
+<a name="conceptchronology"> </a>
+<h4> ConceptChronology </h4>
+<p> A ConceptChronology is a type of message which gives a unique public_id associated to a
+    concept one or more possible ConceptVersion </p>
+<a name="conceptversion"> </a>
+<h4> ConceptVersion </h4>
+<p> A ConceptVersion is a public_id of a StampChronology </p>
+<a name="PatternChronology"> </a>
+<h4> PatternChronology </h4>
+<p> A PatternChronology is message defining a Tinkar Pattern. It has a unique public_id
+    associated to the pattern and one or more PatternVersion </p>
+<a name="PatternVersion"> </a>
+<h4> PatternVersion </h4>
+<p> A PatternVersion is a message containg a StampChronology, a public_id of the pattern's
+    referenced purpose concept, a public_id of the pattern's referenced meaning concept, and one
+    or more FieldDefinition </p>
+<a name="FieldDefinition"> </a>
+<h4> FieldDefinition </h4>
+<p> A FieldDefinition is message containing a public_id of the field's meaning concept, a
+    public_id of the field's data type concept, a public_id of the field's meaning concept, and
+    an integer for the index/order of the field associated to the pattern. </p>
+<a name="SemanticChronology"> </a>
+<h4> SemanticChronology </h4>
+<p> A SemanticChronology is a message assigning values to a pattern's one or more Fields
+    associated to a concept. It contains a unique public_id associated to the semantic, a
+    public_id associated to the concept, a public_id associated to the pattern, and one or more
+    SemanticVersion </p>
+<a name="SemanticVersion"> </a>
+<h4>SemanticVersion </h4>
+<p> A SemanticVersion assigns the values of a pattern to a STAMP coordinate. It contains a
+    public_id assocaited to the StampChronology and one or more Fields (Fields are the DataTypes
+    and can be found in the Protobuf Format) based on how many FieldDefinition's are in the
+    pattern. </p>
+<a name="Protobuf Code"> </a>
+<h3>Protobuf Code</h3>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.ikm.tinkar.schema";
+option java_outer_classname = "TinkarSchema";
+
+option csharp_namespace = "Dev.IKM.Tinkar.Schema";
+
+package dev.ikm.tinkar.schema;
+
+// Vertex UUID message.
+message VertexUUID {
+    // Unique vertex UUID.
+    string uuid = 1;
+}
+
+// Public id message.
+// A public id is the base unique id for Tinkar concepts, semantics, and other publicly
+// identifiable Tinkar items.
+message PublicId {
+    // Unique Public id.
+    repeated string uuids = 1 ;
+}
+
+// Public id list message.
+// A list of public ids.
+message PublicIdList {
+  repeated PublicId public_ids = 1 ;
+}
+
+// Field message.
+// Fields are used in Vertex and SemanticVersion objects to store
+// that can have varying types.
+// Each message contains one field item and the data type of that field item.
+message Field {
+    // Field value. This is one of the types defined in the protobuf message.
+
+    oneof Value {
+        // String value.
+        string string_value = 1;
+
+        // Boolean value.
+        bool boolean_value = 2;
+
+        // Int32 value.
+        sint32 int_value = 3;
+
+        // Single precision floating point value.
+        float float_value = 4;
+
+        // Byte string value.
+        bytes bytes_value = 5;
+
+        // Time value.
+        int64 time_value = 6;
+
+        // Tinkar Public id value.
+        PublicId public_id = 21;
+
+        // Tinkar Vertex uuid value.
+        VertexUUID vertex_uuid = 22;
+
+        // Tinkar Public id list value.
+        PublicIdList public_ids = 23;
+
+        // Tinkar Directed graph value.
+        DiGraph di_graph = 30;
+
+        // Tinkar Directed tree value.
+        DiTree di_tree = 31;
+
+        // Tinkar Graph value.
+        Graph graph = 32;
+
+        // Tinkar Vertex value.
+        Vertex vertex = 33;
+
+        // Tinkar Planar Point value
+        PlanarPoint planar_point = 40;
+
+        // Tinkar Spatial Point value
+        SpatialPoint spatial_point = 41;
+
+        // Tinkar Int to Int Map
+        IntToIntMap int_to_int_map = 50;
+
+        // Tinkar Int to Multiple Int Map
+        IntToMultipleIntMap int_to_multiple_int_map = 51;
+
+        // TODO: Consider future use of a Tinkar Object array.
+    };
+}
+
+// Planar point value.
+// Float point on a 2 dimensional plane.
+message PlanarPoint {
+    // X position of point.
+    float x = 1;
+    // Y position of point.
+    float y = 2;
+}
+
+// Spatial point value.
+// Float point in a 3 dimensional space.
+message SpatialPoint {
+    // X position of point.
+    float x = 1;
+    // Y position of point.
+    float y = 2;
+    // Z position of point.
+    float z = 3;
+}
+
+// Integer to Integer Map.
+// Maps one integer value to another integer value.
+message IntToIntMap {
+    // Source value.
+    int32 source = 1;
+    // Target value.
+    int32 target = 2;
+}
+
+// Integer to Multiple Integer Map.
+// Maps one integer value to multiple other integer values.
+message IntToMultipleIntMap {
+    // Source value.
+    int32 source = 1;
+
+    // Target values.
+    repeated int32 targets = 2;
+}
+
+// Directed Tree message.
+// A directed tree is a tree with a single root. Each vertex in the Tree
+// except the root contains a single predecessor, and may contain zero to many
+// successors.
+message DiTree {
+    // List of all vertices in this DiTree. Each vertex contains a
+    // VertexIndex which must match that vertex's index in this map.
+    repeated Vertex vertices = 1;
+
+    // Root vertex.
+    int32 root = 2;
+
+    // Maps each vertex with a predecessor to its predecessor.
+    repeated IntToIntMap predecessor_map = 3;
+
+    // Maps each vertex with successors to its successors.
+    repeated IntToMultipleIntMap successor_map = 4;
+}
+
+// Directed Graph message.
+// A directed graph is a graph with a multiple roots. Each vertex in the graph
+// may contain zero to many successors and predecessors.
+message DiGraph {
+    // List of all vertices in this DiTree. Each vertex contains a
+    // VertexIndex which must match that vertex's index in this map.
+    repeated Vertex vertices = 1;
+
+    // List of all root vertices.
+    repeated int32 roots = 2;
+
+    // Maps each vertex to its predecessors.
+    repeated IntToMultipleIntMap successor_map = 3;
+
+    // Maps each vertex to its successors.
+    repeated IntToMultipleIntMap predecessor_map = 4;
+}
+
+// Graph message.
+message Graph {
+    // List of all vertices in this graph. Each vertex contains a
+    // VertexIndex which must match that vertex's index in this map
+    repeated Vertex vertices = 1;
+
+    // Maps each vertex to its successors.
+    repeated IntToMultipleIntMap successor_map = 2;
+
+    // List of all root vertices.
+    repeated int32 roots = 3;
+}
+
+// Vertex message.
+message Vertex {
+    // Vertex property message
+    message Property {
+        // Concept identifying this property.
+        PublicId public_id = 1;
+
+        // Value of this property.
+        Field field = 2;
+    }
+
+    // Unique uuid for this vertex.
+    VertexUUID vertex_uuid = 1;
+
+    // Vertex index if containers vertex map.
+    int32 index = 2;
+
+    // Meaning of this vertex.
+    PublicId meaning_public_id = 3;
+
+    // Properties for this vertex.
+    repeated Property properties = 4;
+}
+
+// Stamp Chronology message
+// This contains a list of stamp versions (a chronology)
+message StampChronology {
+    // Unique public id for this STAMP.
+    PublicId public_id = 1;
+
+    // The stamp version.
+    StampVersion first_stamp_version = 2;
+
+    // Second stamp version.
+    optional StampVersion second_stamp_version = 3;
+}
+
+// Stamp Version message
+// This contains the info for a single version of a STAMP, sans the STAMP public id.
+message StampVersion {
+    // Status of the item this STAMP references.
+    PublicId status_public_id = 1;
+
+    // Status of the item this STAMP references.
+    PublicId author_public_id = 2;
+
+    // Module of the item this STAMP references.
+    PublicId module_public_id = 3;
+
+    // Path of the item this STAMP references.
+    PublicId path_public_id = 4;
+
+    // Creation time of the item this STAMP references.
+    int64 time = 5;
+}
+
+// Concept Chronology message.
+// This contains a chronology (multiple versions) of a single concept.
+message ConceptChronology {
+    // Unique Public id of this concept.
+    PublicId public_id = 1;
+
+    // List of concept versions.
+    repeated ConceptVersion concept_versions = 2;
+}
+
+// Concept Version message.
+// This contains a version of a single concept.
+message ConceptVersion {
+    // STAMP chronology public ID for this version.
+    PublicId stamp_chronology_public_id = 1;
+}
+
+
+// Field definition message.
+// Defines the information for a field in a pattern.
+message FieldDefinition {
+    // Meaning of the field.    
+    PublicId meaning_public_id = 1;
+
+    // Data type of the field.
+    PublicId data_type_public_id = 2;
+
+    // Purpose of the field.
+    PublicId purpose_public_id = 3;
+
+    //Index of a given pattern.
+    int32 index = 4;
+}
+
+// Pattern chronology
+// Contains multiple versions of pattern item.
+message PatternChronology {
+    // Unique Public id of this pattern chronology.
+    PublicId public_id = 1;
+
+    // Versions of pattern.
+    repeated PatternVersion pattern_versions = 2;
+}
+
+
+// Pattern Version
+// Single version of pattern item.
+message PatternVersion {
+
+    // STAMP chronology public ID for this version.
+    PublicId stamp_chronology_public_id = 1;
+
+    // Purpose of the Semantic that this pattern references.
+    PublicId referenced_component_purpose_public_id = 2;
+
+    // Meaning of the Semantic that this pattern references.
+    PublicId referenced_component_meaning_public_id = 3;
+
+    // Definitions for each field in the Semantic that this pattern references.
+    repeated FieldDefinition field_definitions = 4;
+}
+
+// Semantic Chronology.
+// Contains list of Semantic versions.
+message SemanticChronology {
+    // Unique Public id of this semantic chronology.
+    PublicId public_id = 1;
+
+    // ID of Concept that this semantic references.
+    PublicId referenced_component_public_id = 2;
+
+    // ID of Pattern that defines the allowable fields in this semantic.
+    PublicId pattern_for_semantic_public_id = 3;
+
+    // List of versions of this semantic.
+    repeated SemanticVersion semantic_versions = 4;
+}
+
+// Semantic Version.
+// Single Semantic versions.
+message SemanticVersion {
+    // STAMP chronology public ID for this version.
+    PublicId stamp_chronology_public_id = 1;
+
+    // Fields for this semantic. Each field defined is defined by
+    // a matching entry in the pattern field definition list.
+    repeated Field fields = 2;
+}
+
+// Tinkar Message. This is a wrapper around the Tinkar messages that may be serialized out to a persistent
+// storage. This wrapper allows any of the indicated message types to be stored and when deserialized the type
+// of the message can be determined.
+message TinkarMsg {
+    // Value of the message. This can be one and only one 
+    // of the indicated types as defined in the protobuf description.
+    oneof Value {
+        // Re-evaluate to see if one-of value can be changed, to help with change-sets and represent more of a "commit-style"
+        // One STAMP_chronology, One or more of the other types of chronologies (concept, pattern, or semantic)
+
+        // Message contains a Concept Chronology.
+        ConceptChronology concept_chronology = 10;
+
+        // Message contains a Semantic Chronology.
+        SemanticChronology semantic_chronology = 20;
+
+        // Message contains a Pattern Chronology.
+        PatternChronology pattern_chronology = 30;
+
+        // Message contains a Stamp Chronology.
+        StampChronology stamp_chronology = 40;
+    };
+}
+      </code>
+    </pre>
+  </div>
 </div>
