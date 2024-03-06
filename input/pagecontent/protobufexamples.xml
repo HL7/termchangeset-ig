@@ -47,7 +47,7 @@ author coordinate would have to be sent as a TinkarMsg with Primordial Modules +
 </p>
   <div class="box">
     <pre>
-      <code>
+      <code class="language-java linenumbers">
 message TinkarMsg { 
   StampChronology { 
     PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
