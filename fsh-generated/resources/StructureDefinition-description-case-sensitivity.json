@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "description-case-sensitivity",
-  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-case-sensitivity",
+  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
   "name": "SNOMEDDescriptionsCaseSensitivity",
   "title": "Description Case Sensitivity",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-case-sensitivity"
+        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-case-significance-vs"
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-case-significance-vs"
         }
       }
     ]
