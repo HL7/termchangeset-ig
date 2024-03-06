@@ -32,6 +32,49 @@
     the evaluation of various options. The goal was to find a serialization method that could effectively 
     address the shortcomings and seamlessly integrate with Tinkar serialization data. 
     </p>
+    <p>
+    <b>Protobuf as a Data Transfer Object Code Generator:</b>
+    Protobuf emerged as a compelling choice, serving 
+    as a Data Transfer Object (DTO) code generator capable of creating classes for the serialization of 
+    data to/from disk, network, or other serial mediums. Its versatility and efficiency in handling 
+    structured data aligned well with the requirements of Tinkar serialization.
+    </p>
+    <a name="key advantages"> </a>
+    <h4>Key Advantages of Protobuf:</h4>
+    <p>
+    <b>Wide Language Support:</b>
+     Protobuf is well-documented, supported by Google, and open source. 
+    It seamlessly integrates with Java and Visual Studio development environments, generating output 
+    classes in numerous languages. 
+    </p>
+    <p>
+    <b>Code Generation Efficiency:</b>
+     Protobuf rapidly generates code from a simple DTO description language, 
+    allowing developers to quickly implement serialization for Tinkar data. 
+    </p>
+    <p>
+    <b>Extensive Testing and Documentation:</b>
+     The framework has undergone thorough testing, resulting in a 
+    robust and well-documented solution with known issues addressed. 
+    </p>
+    <p>
+    <b>Performance:</b>
+     While not equivalent to handcrafted solutions, Protobuf offers reasonable speed and 
+    efficiency in data serialization processes. 
+    </p>
+    <a name="consideration and limitations"> </a>
+    <h4>Considerations and Limitations: </h4>
+    <p>
+    <b>Memory Footprint and Allocations:</b>
+     Protobuf implemented classes may have a larger memory footprint 
+    (approximately 20% larger) and require more distinct memory allocations compared to handcrafted classes. 
+    </p>
+    <p>
+    <b>Hierarchical Relationships:</b>
+     Protobuf classes lack support for clean hierarchical parent-child class 
+    relationships, which may impact the representation of certain data structures. 
+    </p>
+
  
 </div>
 
