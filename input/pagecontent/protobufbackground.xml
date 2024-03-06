@@ -2,14 +2,36 @@
     xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
     <a name="what"> </a>
     <h3> What is Protobuf? </h3>
-    <p> Protocol buffers (Protobuf) are Google’s language-neutral, platform-neutral, extensible
-        mechanism for serializing structured data (<a href="https://protobuf.dev/"
-            >https://protobuf.dev/</a>). It allows us to send and receive structured Tinkar Data
-        across a variety of data streams and using a variety of languages. You can read more about
-        it here: <a href="https://protobuf.dev/overview/">https://protobuf.dev/overview/</a>. </p>
+    <p> 
+    Protocol Buffers (Protobuf) stands as a robust and efficient data serialization framework 
+    crafted by Google. Protocol Buffers Documentation (
+    <a href="https://protobuf.dev/">https://protobuf.dev/</a>). At its core, 
+    Protobuf aims to provide language-agnostic and platform-agnostic means of encoding structured data. 
+    This is achieved through the definition of data structures using a straightforward and human-readable 
+    schema language. The resulting serialization process produces compact binary data, facilitating 
+    seamless transmission between diverse systems and programming languages. One of Protobuf's key 
+    strengths lies in its extensibility, allowing developers to modify data structures over time while 
+    maintaining backward compatibility. The framework's efficiency, both in terms of space utilization 
+    and processing speed, coupled with its support for multiple programming languages, positions Protobuf 
+    as a compelling solution for applications where rapid and interoperable data exchange is a critical 
+    consideration. Further insights into Protobuf's features, applications, and advantages can be explored 
+    in the official documentation, accessible at (<a href="https://protobuf.dev/overview/">
+    https://protobuf.dev/overview/</a>). 
+    </p>
     <a name="why"> </a>
-    <h3> Why Protobuf? </h3>
-    <p> TBD </p>
+    <h3>Why Protobuf?</h3>
+    <p> 
+    <b>Gaps in FHIR Representation for Tinkar Serialization Data:</b> 
+    The need for an effective serialization mechanism for Tinkar data arose due to limitations in the 
+    FHIR representation. Recognizing these gaps, alternative solutions were explored to enhance 
+    serialization efficiency and overcome specific challenges. 
+    </p>
+    <p> 
+    <b>Exploring Options:</b> 
+    In response to the gaps identified in FHIR representation, a search for suitable solutions led to 
+    the evaluation of various options. The goal was to find a serialization method that could effectively 
+    address the shortcomings and seamlessly integrate with Tinkar serialization data. 
+    </p>
  
 </div>
 
