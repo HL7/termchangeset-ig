@@ -3,16 +3,10 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-The Tinkar Reference Model is a logical model that describes the standardized model for terminology and change
-management, previously published in the <a href="">HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1</a>. 
-Tinkar provides an architecture that delivers integrated terminology to the enterprise and its information
-systems. 
-
-It was designed to support the healthcare enterprise need for an extensive terminology foundation and the ability
-to implement extensions to support diverse informatics systems. It supports standard terminology modules, value sets, and coding systems as well as local
-terms and equivalence mappings.
-
-In this edition, standardized data exchange formats and transactions are defined to specifically enable the exchange Tinkar-compliant Terminology change sets, both in a lossless Protobuf format, as well as utilizing FHIR CodeSystem and Provenance resources.
+Custodians of standardized terminologies have developed rich semantic frameworks that can be used to interact with individual concepts in an elegant fashion, utilizing the relationships between terms to dynamically adjust user interfaces or derive clinical patterns. Today, these frameworks are distributed via proprietary formats, tailored to the specific source terminology, and any system looking to utilize the full semantic power of the terminology must build customized data pipelines to process those formats.
+</p>
+<p>
+This IG provides profiles and implementation guidance for exchanging terminology change sets that include full semantic detail from the source terminology utilizing the CodeSystem resource.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include  in a change set is informed by the <a href="TinkarOverview.html">Tinkar Standardized Terminology Knowledgebase Reference Model</a>, and mappings from that architecture are included on CodeSystem profiles.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "description-acceptability",
-  "url": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability",
+  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
   "name": "SNOMEDDescriptionAcceptability",
   "title": "Description Acceptability",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/tinkar/StructureDefinition/description-acceptability"
+        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/tinkar/ValueSet/tinkar-description-acceptability-vs"
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-description-acceptability-vs"
         }
       }
     ]

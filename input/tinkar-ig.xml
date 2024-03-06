@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="hl7.fhir.uv.tinkar"/>
+  <id value="hl7.fhir.uv.termchangeset"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="informative"/> 
   </extension> 
@@ -11,11 +11,11 @@
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-  <url value="https://hl7.org/fhir/uv/tinkar"/>
+  <url value="https://hl7.org/fhir/uv/termchangeset"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
-  <name value="tinkar-ig"/>
-  <title value="Tinkar Terminology Exchange"/>
+  <name value="termchangeset"/>
+  <title value="Terminology Change Set Exchange"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International - Termionology Infrastructure Work Group"/>
@@ -26,9 +26,11 @@
       <value value="https://www.hl7.org/Special/committees/Vocab/index.cfm"/>
     </telecom>
   </contact>
-  <description value="A standard-based Terminology Knowledge Architecture (Tinkar) is necessary to support the operation of a variety of systems intended to deliver knowledge management for terminology to vendors, providers, and standards development organizations, like Health Level Seven International (HL7).
+  <description value="This IG provides profiles and implementation guidance for exchanging terminology change sets that include full semantic detail from the source terminology utilizing the CodeSystem resource.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include is informed by the Tinkar Standardized Terminology Knowledgebase (https://www.hl7.org/implement/standards/product_brief.cfm?product_id=573) Reference Model, and mappings from that architecture are included on CodeSystem profiles.
 
-In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1—an informative document outlining the requirements for managing terminology across diverse healthcare organizations. This document emphasized the need for a robust terminology foundation, supporting extensions for various informatics systems. It introduced a self-describing logical model for terminology knowledge bases, specifically designed to represent standard terminology modules such as SNOMED CT Releases, value sets, coding systems, local terms, and equivalence mappings. The logical model comprehensively captured internal semantics, concept details, detailed relationships between terms, and hierarchies of standard terminology modules. The foundation for a standard-based Terminology Knowledge Architecture (Tinkar) specification was articulated to facilitate knowledge management for terminology among vendors, providers, and standards development organizations, including Health Level Seven International (HL7)."/>
+It provides background and context for the Tinkar Standardized Terminology Knowledgebase Reference Model and its native representation to enable lossless knowledge assets in various formats.
+
+In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledgebase, Release 1—an informative document outlining the requirements for managing terminology across diverse healthcare organizations. This document emphasized the need for a robust terminology foundation, supporting extensions for various informatics systems. It introduced a self-describing logical model for terminology knowledge bases, specifically designed to represent standard terminology modules such as SNOMED CT Releases, value sets, coding systems, local terms, and equivalence mappings. The logical model comprehensively captured internal semantics, concept details, detailed relationships between terms, and hierarchies of standard terminology modules. The foundation for a standard-based Terminology Knowledge Architecture (Tinkar) specification was articulated to facilitate knowledge management for terminology among vendors, providers, and standards development organizations, including Health Level Seven International (HL7)."/>
   <jurisdiction>
     <!-- This first repetition will drive SNOMED release used -->
     <coding>
@@ -37,7 +39,7 @@ In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardiz
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.tinkar"/>
+  <packageId value="hl7.fhir.uv.termchangeset"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -64,7 +66,7 @@ In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardiz
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="HL7.FHIR.UV.Tinkar\Home - FHIR v4.0.1"/>
+        <title value="HL7.FHIR.UV.TERMCHANGESET\Home - FHIR v4.0.1"/>
         <generation value="html"/>
       </page>
       <page>
@@ -110,6 +112,16 @@ In 2021, a successful ballot was conducted for the HL7 Logical Model: Standardiz
       <page>
         <nameUrl value="tinkartofhir.html"/>
         <title value="Transform to FHIR"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="FhirLimitations.html"/>
+        <title value="FHIR Limitiations"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TerminologyDistribution.html"/>
+        <title value="Terminology Distribution"/>
         <generation value="html"/>
       </page>
       <page>

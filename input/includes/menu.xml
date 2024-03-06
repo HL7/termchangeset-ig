@@ -7,8 +7,19 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="background.html">Tinkar Background</a>
+        <a href="TerminologyDistribution.html">Terminology Distribution</a>
       </li>
+      <li>
+        <a href="FhirLimitations.html">FHIR Limitations</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">FHIR Artifacts</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tinkar Reference Model<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
       <li>
         <a href="TinkarBackground.html">Tinkar Background</a>
       </li>
@@ -21,16 +32,8 @@
       <li>
         <a href="TinkarBusinessRequirements.html">Tinkar Business Requirements</a>
       </li>
-    </ul>
-  </li>
-  <li><a href="artifacts.html">FHIR Artifacts</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tinkar Representation<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
-        <a href="protobufbackground.html">Protobuf Background</a>
+        <a href="protobufbackground.html">Protobuf Native Representation</a>
       </li>
       <li>
         <a href="protobufschema.html">Protobuf Schema</a>
