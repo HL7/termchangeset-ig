@@ -96,7 +96,7 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
       </page>
       <page>
         <nameUrl value="protobufbackground.html"/>
-        <title value="Protobuf Background"/>
+        <title value="Protobuf Native Representation"/>
         <generation value="html"/>
       </page>
       <page>

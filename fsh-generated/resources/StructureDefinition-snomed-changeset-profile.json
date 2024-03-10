@@ -56,79 +56,19 @@
       {
         "id": "CodeSystem.concept.designation.extension",
         "path": "CodeSystem.concept.designation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
+        "min": 2
       },
       {
         "id": "CodeSystem.concept.designation.extension:caseSensitivity",
         "path": "CodeSystem.concept.designation.extension",
         "sliceName": "caseSensitivity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "tinkar",
-            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
-          }
-        ]
+        "min": 1
       },
       {
         "id": "CodeSystem.concept.designation.extension:acceptability",
         "path": "CodeSystem.concept.designation.extension",
         "sliceName": "acceptability",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "tinkar",
-            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
-          }
-        ]
-      },
-      {
-        "id": "CodeSystem.concept.property.extension:roleGroup",
-        "path": "CodeSystem.concept.property.extension",
-        "sliceName": "roleGroup",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "tinkar",
-            "map": "ROLE_GROUP"
-          }
-        ]
+        "min": 1
       }
     ]
   }

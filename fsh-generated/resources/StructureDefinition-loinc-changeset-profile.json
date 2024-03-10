@@ -231,6 +231,11 @@
         "sliceName": "elProfileSetOperator"
       },
       {
+        "id": "CodeSystem.concept.property:loinc_component.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
         "id": "CodeSystem.concept.property:loinc_component.code",
         "path": "CodeSystem.concept.property.code",
         "short": "Identifies the property on the concepts, and when referred to in operations",
@@ -257,6 +262,11 @@
         "id": "CodeSystem.concept.property:loinc_property.extension:elProfileSetOperator",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_property.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
       },
       {
         "id": "CodeSystem.concept.property:loinc_property.code",
@@ -287,6 +297,11 @@
         "sliceName": "elProfileSetOperator"
       },
       {
+        "id": "CodeSystem.concept.property:loinc_time_aspct.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
         "id": "CodeSystem.concept.property:loinc_time_aspct.code",
         "path": "CodeSystem.concept.property.code",
         "short": "Identifies the property on the concepts, and when referred to in operations",
@@ -313,6 +328,11 @@
         "id": "CodeSystem.concept.property:loinc_system.extension:elProfileSetOperator",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_system.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
       },
       {
         "id": "CodeSystem.concept.property:loinc_system.code",
@@ -343,6 +363,11 @@
         "sliceName": "elProfileSetOperator"
       },
       {
+        "id": "CodeSystem.concept.property:loinc_scale_typ.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
         "id": "CodeSystem.concept.property:loinc_scale_typ.code",
         "path": "CodeSystem.concept.property.code",
         "short": "Identifies the property on the concepts, and when referred to in operations",
@@ -369,6 +394,11 @@
         "id": "CodeSystem.concept.property:loinc_method_typ.extension:elProfileSetOperator",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_method_typ.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
       },
       {
         "id": "CodeSystem.concept.property:loinc_method_typ.code",

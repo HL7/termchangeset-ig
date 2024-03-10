@@ -8,6 +8,7 @@
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
 <artifact id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
+<artifact id="StructureDefinition/description-dialect" key="StructureDefinition-description-dialect" name="Description Dialect"/>
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
 <artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 Change Set"/>
 <artifact id="CodeSystem/snomedct413839001ChangeSet" key="CodeSystem-snomedct413839001ChangeSet" name="SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"/>
@@ -27,8 +28,8 @@
 <page key="FhirLimitations" name="FHIR Limitiations"/>
 <page key="index" name="HL7.FHIR.UV.TERMCHANGESET\Home - FHIR v4.0.1"/>
 <page key="changes" name="IG Change History"/>
-<page key="protobufbackground" name="Protobuf Background"/>
 <page key="protobufexamples" name="Protobuf Examples"/>
+<page key="protobufbackground" name="Protobuf Native Representation"/>
 <page key="protobufschema" name="Protobuf Schema"/>
 <page key="spec2" name="Spec sub-page"/>
 <page key="toc" name="Table of Contents"/>

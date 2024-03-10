@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "description-dialect",
+  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
+  "name": "DescriptionDialect",
+  "title": "Description Dialect",
+  "status": "draft",
+  "description": "Subcategorization of language",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem.content.designation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Description Dialect",
+        "definition": "Subcategorization of language"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

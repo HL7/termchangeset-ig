@@ -70,6 +70,14 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.definition ^definition = "The formal definition of the concept. The code system resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept."
 * concept.definition ^mustSupport = false
 * concept.designation 0..*
+* concept.designation.extension contains
+	description-case-sensitivity named caseSensitivity 0..1 and
+	description-acceptability named acceptability 0..1 and
+	description-dialect named dialect 0..1
+* concept.designation.extension[caseSensitivity] ^mapping.identity = "tinkar"
+* concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
+* concept.designation.extension[acceptability] ^mapping.identity = "tinkar"
+* concept.designation.extension[acceptability] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
 * concept.designation.language 0..1
 * concept.designation.language ^short = "Human language of the designation"
 * concept.designation.language ^definition = "The language this designation is defined for."
@@ -95,7 +103,10 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.property ^definition = "A property value for this concept."
 * concept.property.extension contains
 	defining-relationship-type named DefiningRelationshipType 0..1 and
-	el-profile-set-operator named elProfileSetOperator 0..1
+	el-profile-set-operator named elProfileSetOperator 0..1 and
+	role-group named roleGroup 0..1
+* concept.property.extension[roleGroup] ^mapping.identity = "tinkar"
+* concept.property.extension[roleGroup] ^mapping.map = "ROLE_GROUP"
 * concept.property.extension[DefiningRelationshipType] ^mapping.identity = "tinkar"
 * concept.property.extension[DefiningRelationshipType] ^mapping.map = "NAVIGATION_PATTERN"
 * concept.property.extension[elProfileSetOperator] ^mapping.identity = "tinkar"
@@ -131,16 +142,9 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * concept.code ^mapping.identity = "tinkar"
 * concept.code ^mapping.map = "SNOMED CT IDENTIFER SOURCE"
 * concept.designation.extension contains
-	description-case-sensitivity named caseSensitivity 0..1 and
-	description-acceptability named acceptability 0..1
-* concept.designation.extension[caseSensitivity] ^mapping.identity = "tinkar"
-* concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
-* concept.designation.extension[acceptability] ^mapping.identity = "tinkar"
-* concept.designation.extension[acceptability] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE"
-* concept.property.extension contains
-	role-group named roleGroup 0..1
-* concept.property.extension[roleGroup] ^mapping.identity = "tinkar"
-* concept.property.extension[roleGroup] ^mapping.map = "ROLE_GROUP"
+	description-case-sensitivity named caseSensitivity 1..1 and
+	description-acceptability named acceptability 1..1
+
 
 
 Profile: LOINCChangeSet

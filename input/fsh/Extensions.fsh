@@ -45,3 +45,13 @@ Description: "EL++ profile to describe the axiom as being part of the Necessary 
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.content.property"
 * value[x] only CodeableConcept
+
+Extension: DescriptionDialect
+Id:	   description-dialect
+Title:	   "Description Dialect"
+Description: "Subcategorization of language"
+// Limit the context to CodeSystem.content.designation
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.content.designation"
+* value[x] only CodeableConcept
+
