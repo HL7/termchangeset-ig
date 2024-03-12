@@ -74,7 +74,6 @@ message TinkarMsg {
       </code>
     </pre>
   </div>
-
 <a name="Use Case 1 Message 2"> </a>
 <h5>Message 2: Assigning the new SNOMED CT Axiom Definition</h5>
 <p>
@@ -84,8 +83,8 @@ using the Axiom Definition Pattern. Axiom Definition Pattern has one FieldDefini
 string_public_id (String of Axiom Definition) 
 </p>
   <div class="box">
-      <pre>
-        <code class="language-java linenumbers">
+    <pre>
+      <code class="language-java linenumbers">
 message TinkarMsg { 
   SemanticChronology { 
     // Unique Public id of this semantic chronology. 
@@ -163,4 +162,289 @@ message TinkarMsg {
       </code>
     </pre>
   </div>
+<a name="Use Case 2"> </a>
+<h4>Use Case 2: Creating a new LOINC Concept for a newly created Test</h4>
+<p>
+In this use case a new lab company, “ABC-Labs”, created a new test that detects a certain compound “XYZ” in serum. 
+</p>
+<p>
+If you want to make an extension for LOINC it would have multiple TinkarMsg's sent through Protobuf to include all the information. 
+</p>
+<a name="Use Case 2 Message 1"> </a>
+<h5>Message 1: Creating a new Tinkar STAMP Coordinate</h5>
+<p>
+This message model create a new STAMP Coordinate and assigns the values to the Public ID's and the protobuf timestamp. 
+An issue could occur if the receiver of the message doesn't have the necessary concepts and public ID's that the message is sending. 
+For example, a recipient might not have the unique Author Public ID in certain cases. If this is the case the specific author 
+coordinate would have to be sent as a TinkarMsg with Primordial Modules + Paths first. 
+</p>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+message TinkarMsg { 
+  StampChronology { 
+    PublicId public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+
+    // The stamp version. 
+    StampVersion first_stamp_version =  StampVersion { 
+        // Status of the item this STAMP references. 
+        PublicId status_public_id = "Active Status Public ID"; 
+
+        // Author of the item this STAMP references. 
+        PublicId author_public_id = "ABC-Labs Public ID"; 
+
+        // Module of the item this STAMP references. 
+        PublicId module_public_id = "LOINC Module Public ID"; 
+
+        // Path of the item this STAMP references. 
+        PublicId path_public_id = "Development Path Public ID"; 
+
+        // Creation time of the item this STAMP references. 
+        google.protobuf.Timestamp time = "Current Date/Time"; 
+    };         
+  }
+} 
+      </code>
+    </pre>
+  </div>
+<a name="Use Case 2 Message 2"> </a>
+<h5>Message 2: Creating a new Concept</h5>
+<p>
+This message allows for the creation of a new concept by assigning a new public_id and associates it with one or more concept 
+versions which is just a reference to Stamp Chronology Public ID's or in this case the ID from Message 1. 
+</p>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+message TinkarMsg {
+  ConceptChronology {
+    PublicId public_id = "New Concept Chronology Public ID";
+
+    repeated ConceptVersion concept_versions = [
+      ConceptVersion {
+        // STAMP chronology public ID for this version. ID from Message 1
+        PublicId stamp_chronology_public_id = "NEW STAMP CHRONOLOGY Public ID";
+      }
+    ];
+  }
+}
+      </code>
+    </pre>
+  </div>
+<a name="Use Case 2 Message 3"> </a>
+<h5>Message 3: Assigning LOINC-ID Semantic to the new Concept</h5>
+<p>
+Next we need to assign values and semantics to the newly created concept. In this example protobuf message we assign a new example 
+LOINC ID using the Identifier Pattern Semantic. Identifier Pattern has two FieldDefinition's; component_field_public_id 
+(Loinc Identifier Concept), and string_public_id (String of Loinc-ID Number).
+</p>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+message TinkarMsg { 
+  SemanticChronology { 
+    // Unique Public id of this semantic chronology. 
+    PublicId public_id = "New Identifier Semantic Chronology Public ID"; 
+
+    // ID of Concept that this semantic references. (Message 2) 
+    PublicId referenced_component_public_id = "New Concept Chronology Public ID"; 
+
+    // ID of Pattern that defines the allowable fields in this semantic. 
+    PublicId pattern_for_semantic_public_id = "Identifier Pattern Public ID"; 
+
+    // List of versions of this semantic. 
+    repeated SemanticVersion semantic_versions = [ 
+      SemanticVersion { 
+        // STAMP chronology public ID for this version. (Message 1) 
+        PublicId stamp_chronology_public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+
+        // Fields for this semantic. Each field defined is defined by 
+        // a matching entry in the pattern field definition list. 
+        repeated Field fields = [
+          Field { 
+            PublicId public_id = "LOINC ID Concept Public ID"; 
+          }, 
+          Field { 
+            string string_value = "e.g. 12345-6"; 
+          } 
+        ]; 
+      } 
+    ]; 
+  } 
+} 
+      </code>
+    </pre>
+  </div>
+<a name="Use Case 2 Message 4"> </a>
+<h5>Message 4: Assigning LOINC Long Name Description Semantic to the new Concept</h5>
+<p>
+Next, if we want to add a Description Semantic giving the concept a LOINC Long name, we send another SemanticChronology message 
+for the Description Pattern the concept. A Description Pattern has four FieldDefinition's: component_field_public_id (Language for 
+Description Concept), string_public_id (String of the Long Name), component _field_public_id (Description case significance), and 
+component _field_public_id (Description Type) 
+</p>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+message TinkarMsg { 
+  SemanticChronology { 
+    // Unique Public id of this semantic chronology. 
+    PublicId public_id = "New Description Semantic Chronology Public ID"; 
+
+    // ID of Concept that this semantic references. (Message 2) 
+    PublicId referenced_component_public_id = "New Concept Chronology Public ID"; 
+
+    // ID of Pattern that defines the allowable fields in this semantic. 
+    PublicId pattern_for_semantic_public_id = "Description Pattern Public ID"; 
+
+    // List of versions of this semantic. 
+    repeated SemanticVersion semantic_versions = [ 
+      SemanticVersion { 
+        // STAMP chronology public ID for this version. (Message 1) 
+        PublicId stamp_chronology_public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+
+        // Fields for this semantic. Each field defined is defined by 
+        // a matching entry in the pattern field definition list. 
+        repeated Field fields = [ 
+          Field { 
+            PublicId public_id = "English Language Concept Public ID"; 
+          }, 
+          Field { 
+            string string_value = "XYZ [presence] in Serum"; 
+          }, 
+          Field { 
+            PublicId public_id = "Case Insensitive Concept Public ID"; 
+          }, 
+          Field { 
+            PublicId public_id = "LOINC Long Name Concept Public ID"; 
+          } 
+        ]; 
+      } 
+    ]; 
+  } 
+} 
+      </code>
+    </pre>
+  </div>
+<a name="Use Case 2 Message 5"> </a>
+<h5>Message 5: Assigning Axiom Definition Semantic to the Concept</h5>
+<p>
+Finally, if we want to assign an Axiom Definition to the newly created LOINC Concept, we create a new semantic for the concept with 
+the Axiom Definition Pattern. In this example there is the property “Component” which we've given default values of :######## |XYZ 
+(substance) when it should properly be filled out based on the actual values. 
+</p>
+  <div class="box">
+    <pre>
+      <code class="language-java linenumbers">
+message TinkarMsg { 
+  SemanticChronology { 
+    // Unique Public id of this semantic chronology. 
+    PublicId public_id = "New Axiom Definition Semantic Chronology Public ID"; 
+
+    // ID of Concept that this semantic references. (Message 2) 
+    PublicId referenced_component_public_id = "New Concept Chronology Public ID"; 
+
+    // ID of Pattern that defines the allowable fields in this semantic. 
+    PublicId pattern_for_semantic_public_id = "Axiom Definition Pattern Public ID"; 
+
+    // List of versions of this semantic. 
+    repeated SemanticVersion semantic_versions = [ 
+      // Thew New Semantic version 
+      SemanticVersion { 
+        // STAMP chronology public ID for this version. (Message 1) 
+        PublicId stamp_chronology_public_id = "NEW STAMP CHRONOLOGY Public ID"; 
+
+        // Fields for this semantic. Each field defined is defined by 
+        // a matching entry in the pattern field definition list. 
+        repeated Field fields = [ 
+          Field { 
+            string string_value = " EquivalentClasses( 
+              ObjectIntersectionOf( 
+                :363787002 |Observable entity (observable entity)| 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :246093002 |Component (attribute)| 
+                    :######## |XYZ (substance)| 
+                  ) 
+                ) 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :370130000 |Property (attribute)| 
+                    :705057003 |Presence (property) (qualifier value)|			) 
+                ) 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :370132008 |Scale type (attribute)| 
+                    :117363000 |Ordinal value (qualifier value)|			) 
+                ) 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :370134009 |Time aspect (attribute)| 
+                    :123029007 |Single point in time (qualifier value)| 
+                  ) 
+                ) 
+                ObjectSomeValuesFrom( 
+                  :609096000 |Role group (attribute)| 
+                  ObjectSomeValuesFrom( 
+                    :704327008 |Direct site (attribute)| 
+                    :119297000 |Blood specimen (specimen)| 
+                  ) 
+                ) 
+              ) 
+            )"; 
+          } 
+        ]; 
+      } 
+    ]; 
+  } 
+} 
+      </code>
+    </pre>
+  </div>
+<a name="Import"> </a>
+<h3>Import Protobuf Messages</h3>
+<p>
+When importing protobuf messages we need to go through a series of checks to validate the incoming data and ensure we aren't missing 
+data. We should import STAMPChornology messages first, ConceptChronology messages second, PatternChronology messages third, and 
+SemanticChronology messages last. We should be exporting/importing in this order to make sure we aren't missing any data.
+</p>
+<a name="Receiving STAMP"> </a>
+<h4>Receiving a STAMP Chronology Message</h4>
+<p>
+When receiving a STAMP Chronology message we can check the public_id to see if we already have that specific STAMP Coordinate. 
+If we do not have that public_id we then need to validate the 4 public_id's inside of the STAMP Version. We do this by checking for 
+the status, author, module, and path public_id's in our system. If we do not have them we need to request them from the receiving 
+system so we have full context and aren't missing any data. This includes receiving the specific Concept, and all related Semantics 
+for those concept's that we are missing. This problem could cascade to when we validate the additional Concept Chronology, and 
+SemanticChronology data for the concepts we requested. 
+</p>
+<a name="Receiving Concept"> </a>
+<h4>Receiving a Concept Chronology Message</h4>
+<p>
+When receiving a Concept Chronology Message, we only need to validate the public_id of the STAMP Coordinate inside of the Concept 
+Version. If we do not have the public_id we need to request it from the sender.
+</p>
+<a name="Receiving Pattern"> </a>
+<h4>Receiving a Pattern Chronology Message</h4>
+<p>
+In a Pattern Chronology Message we need to validate the STAMPChronology public_id, purpose concept public_id, and meaning concept 
+public_id for any Pattern_Version. In addition, for each Field Definition in a pattern version, we need to validate the purpose 
+concept public_id, meaning concept public_id, data type concept public_id. For every Field Definition, there also needs to be a 
+validation for the field orders. Each Field Definition should have a unique integer that no other Field Definition has, and they 
+should be consecutive starting from 1 where no numbers are missed. If we are missing any public_id's we can request them from the 
+sender. If there is an issue with the Field Definition Order numbers, then there is a fundamental issue with the way the pattern 
+was created, and it needs to be fixed in order to even be exported. 
+</p>
+<a name="Receiving Semantic"> </a>
+<h4>Receiving a Semantic Chronology Message</h4>
+<p>
+In a Semantic Chronology Message we need to validate the public_id for the concept and the public_id for the pattern. For each 
+Semantic Version inside the message, we need to validate the STAMPChronology public_id and all the Fields. For the pattern being 
+referenced in the Semantic, Each Semantic Version should have the same number of Fields as the Pattern does Field Definitions. 
+The Field Order value for every Field should also align with a corresponding Field Order value for the Field Definition of the Pattern.
+</p>
 </div>
