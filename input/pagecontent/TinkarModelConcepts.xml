@@ -384,6 +384,402 @@ After the STAMP Coordinates have been calculated, additional coordinates can the
 For example, applying a language and dialect coordinate will be important not only for viewing and searching, 
 but also to determine the appropriate preferred name for displaying a hierarchy.
 </p>
+<a name="Tinkar Starter Data Model Concepts"> </a>
+<h3>Tinkar Starter Data Model Concepts</h3>
+<table>
+  <tr>
+    <th>Fully Qualified Name</th>
+    <th>Definition</th>
+    <th>Origin</th>
+  </tr>
+  <tr>
+    <td>Acceptable (foundation metadata concept)</td>
+    <td>Specifies that a description is acceptable, but not preferred within a language or dialect.</td>
+    <td>DESCRIPTION_ACCEPTABILITY</td>
+  </tr>
+    <tr>
+    <td>Active status</td>
+    <td>Concept used to represent a status for components that are active.</td>
+    <td>STATUS_VALUE</td>
+  </tr>
+    <tr>
+    <td>Author</td>
+    <td></td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>Canceled status</td>
+    <td>Concept used to represent a status for components that are canceled</td>
+    <td>STATUS_VALUE</td>
+  </tr>
+    <tr>
+    <td>Component field</td>
+    <td>A display field type that references a concept ID.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Component Id list</td>
+    <td>A display field that references an ordered list of Concept IDs.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Component Id set field</td>
+    <td>A display field that references an unordered list of Concept IDs.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Decription not case sensitive </td>
+    <td>Value which designate character as not sensitive for a given description </td>
+    <td>DESCRIPTION_CASE_SIGNIFICANCE</td>
+  </tr>
+    <tr>
+    <td>Definition description type </td>
+    <td>Semantic value describing the description type for the description pattern is a definition</td>
+    <td>DESCRIPTION_TYPE</td>
+  </tr>
+    <tr>
+    <td>Description</td>
+    <td>Human readable text for a concept</td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Description acceptability</td>
+    <td> Whether a given human readable text for a concept is permissible</td>
+    <td>US_DIALECT_PATTERN; GB_DIALECT_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Description case sensitive </td>
+    <td>Assumes the description is dependent on capitalization </td>
+    <td>DESCRIPTION_CASE_SIGNIFICANCE</td>
+  </tr>
+    <tr>
+    <td>Description case significance </td>
+    <td>Specifies how to handle the description text interms of case sensitivity </td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Description pattern </td>
+    <td>Contains all metadata and human readable text that describes the concept </td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Description semantic</td>
+    <td>Purpose and meaning for the description pattern and dialect patterns </td>
+    <td>DESCRIPTION_PATTERN; US_DIALECT_PATTERN; GB_DIALECT_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Description type</td>
+    <td>Specifying what type of description it is i.e. is it fully qualified or regular and etc.</td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Descriptum</td>
+    <td>The semantic meaning for the EL++ patterns</td>
+    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN; EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Development path</td>
+    <td>A path that specifies that the components are currently under development</td>
+    <td>PATH</td>
+  </tr>
+    <tr>
+    <td>Dialect</td>
+    <td>Specifies the dialect of the language.</td>
+    <td>MODEL_CONCEPT</td>
+  </tr>
+    <tr>
+    <td>DiGraph field</td>
+    <td>A display field that references a di-graph whose edges are ordered pairs of vertices. Each edge can be followed from one vertex to another vertex.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Display Fields </td>
+    <td>Captures the human readable terms</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>DiTree field</td>
+    <td>A display field that references a graph obtained from an undirected tree by replacing each undirected edge by two directed edges with opposite directions.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>EL++ Inferred Axioms Pattern</td>
+    <td></td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>EL++ Inferred terminological axioms</td>
+    <td></td>
+    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN</td>
+  </tr>
+    <tr>
+    <td>EL++ Stated Axioms Pattern</td>
+    <td></td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>EL++ Stated terminological axioms</td>
+    <td></td>
+    <td>EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+  </tr>
+    <tr>
+    <td>English Dialect</td>
+    <td>Specifies the dialect of theEnglish language</td>
+    <td>DIALECT</td>
+  </tr>
+    <tr>
+    <td>English Language</td>
+    <td>Value for description language</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
+    <td>Existential restriction</td>
+    <td>Existential restrictions describe objects that participate in at least one relationship along a specified property to objects of a specified class.</td>
+    <td>ROLE_OPERATOR</td>
+  </tr>
+    <tr>
+    <td>Float field</td>
+    <td>Represents values as high-precision fractional values.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Fully qualified name description type</td>
+    <td>Fully qualified name is a description that uniquely identifies and differentiates it from other concepts with similar descriptions</td>
+    <td>DESCRIPTION_TYPE</td>
+  </tr>
+    <tr>
+    <td>GB Dialect Pattern</td>
+    <td>Particular form of language specific form of English language, particular to Great Britian</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Great Britian English dialect</td>
+    <td>Great Britain: English Langauge reference set</td>
+    <td>ENGLISH_DIALECT; GB_DIALECT_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Identifier Pattern</td>
+    <td>An identifier pattern is used to identity a concept which containts the identifier source and the actual value</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Identifier Source</td>
+    <td>An identifier used to label the identity of a unique component.</td>
+    <td>IDENTIFIER_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Inactive Status</td>
+    <td>Concept used to represent a status for components that are no longer active</td>
+    <td>STATUS_VALUE</td>
+  </tr>
+    <tr>
+    <td>Inferred Navigation</td>
+    <td>The origins and destinations for concepts based on the reasoner generated inferred terminological axioms</td>
+    <td>INFERRED_NAVIGATION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Inferred Navigation Pattern</td>
+    <td>A pattern specifying the origins and destinations for concepts based on the inferred terminological axioms</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Integer Field</td>
+    <td>data type that represents some range of mathematical integers</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Integrated Knowledge Management</td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Is-a</td>
+    <td>Designates the parent child relationship</td>
+    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Language</td>
+    <td>Specifies the language of the description text.</td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Language for Description</td>
+    <td>The semantic value indicating which language is used in the description text</td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Logical Definition</td>
+    <td>The semantic value describing the purpose of the stated and inferred terminological axioms.</td>
+    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN; EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Master path</td>
+    <td>A default path for components</td>
+    <td>PATH</td>
+  </tr>
+    <tr>
+    <td>Meaning</td>
+    <td>The interpretation or explanation field for a pattern/semantics</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Model concept</td>
+    <td></td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>Module</td>
+    <td></td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>Necessary set</td>
+    <td>A set of relationships that is always true of a concept. A concept that only contains necessary conditions is considered primitive</td>
+    <td>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
+  </tr>
+    <tr>
+    <td>Path</td>
+    <td>A set of assets under version control that can be managed distinctly from other assets. Paths “branch” from other paths when established, and can be “merged” with other paths as well.</td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>Pattern</td>
+    <td>A Pattern is a set of display fields and values that can be asserted about a concept</td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>Preferred</td>
+    <td>Specifies that a description is preferred within a language or dialect. There will be one preferred description for each description type.</td>
+    <td>DESCRIPTION_ACCEPTABILITY</td>
+  </tr>
+    <tr>
+    <td>Primordial module</td>
+    <td></td>
+    <td>MODULE</td>
+  </tr>
+    <tr>
+    <td>Primordial path</td>
+    <td></td>
+    <td>PATH</td>
+  </tr>
+    <tr>
+    <td>Primordial status</td>
+    <td>Concept used to represent a status for components that have not yet been released and exist in their most basic form.</td>
+    <td>STATUS_VALUE</td>
+  </tr>
+    <tr>
+    <td>Purpose</td>
+    <td>The reason for which a Tinkar value in a pattern was created or for which it exist.</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Regular name description type</td>
+    <td>There may be descriptions/synonyms marked as “regular.”</td>
+    <td>DESCRIPTION_TYPE</td>
+  </tr>
+    <tr>
+    <td>Relationship destination</td>
+    <td>Signifies path to child concepts which are more specific than the Tinkar term</td>
+    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Relationship origin</td>
+    <td>Signifies path to parent concepts which are more general than the Tinkar term</td>
+    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Role</td>
+    <td>Is an abstract representation of a high-level role for a therapeutic medicinal product; the concepts are not intended to describe a detailed indication for therapeutic use nor imply that therapeutic use is appropriate in all clinical situations.</td>
+    <td>ROLE_GROUP; EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
+  </tr>
+    <tr>
+    <td>Role group</td>
+    <td>An association between a set of attribute or axiom value pairs that causes them to be considered together within a concept definition or postcoordinated expression.</td>
+    <td>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
+  </tr>
+    <tr>
+    <td>Role operator</td>
+    <td>Concept that is used to describe universal vs existential restrictions.</td>
+    <td>ROLE</td>
+  </tr>
+    <tr>
+    <td>Role restriction</td>
+    <td></td>
+    <td>ROLE</td>
+  </tr>
+    <tr>
+    <td>Role type</td>
+    <td>Refers to a concept that represents a particular kind of realtionship that can exist between two entities. It defines the specific function or responsibility that one entity plays in relation to another.</td>
+    <td>ROLE</td>
+  </tr>
+    <tr>
+    <td>Sandbox path</td>
+    <td>A path for components under testing.</td>
+    <td>PATH</td>
+  </tr>
+    <tr>
+    <td>Spanish langauge</td>
+    <td>Value for the description language dialect</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
+    <td>Stated Navigation</td>
+    <td>The origins and destinations for concepts based on the reasoner generated stated terminological axioms</td>
+    <td>STATED_NAVIGATION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Stated Navigation Pattern</td>
+    <td>A pattern specifying the origins and destinations for concepts based on the stated terminological axioms</td>
+    <td>PATTERN</td>
+  </tr>
+    <tr>
+    <td>Status value</td>
+    <td>The status of the STAMP Coordinate(Active, Cancelled, Inactive, Primordial)</td>
+    <td>ROOT_VERTEX</td>
+  </tr>
+    <tr>
+    <td>String</td>
+    <td>a sequence of characters, either as a literal constant or as a variable. Strings could be used to represent terms from code systems or URLs, textual definitions, etc.</td>
+    <td>DISPLAY_FIELDS</td>
+  </tr>
+    <tr>
+    <td>Sufficient set</td>
+    <td> A set of relationships that differentiate a concept and its subtypes from all other concepts. A concept that contains at least one set of necessary and sufficient conditions is considered defined.</td>
+    <td>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
+  </tr>
+    <tr>
+    <td>Text for description</td>
+    <td>Captures the human readable text for a description in Komet</td>
+    <td>DESCRIPTION_PATTERN</td>
+  </tr>
+    <tr>
+    <td>United States of America English dialect</td>
+    <td>Particular form of language specific form of English language, particular to US</td>
+    <td>ENGLISH_DIALECT; US_DIALECT_PATTERN</td>
+  </tr>
+    <tr>
+    <td>Universal Restriction</td>
+    <td>Universal restrictions constrain the relationships along a given property to concepts that are members of a specific class.</td>
+    <td>ROLE_OPERATOR</td>
+  </tr>
+    <tr>
+    <td>UNIVERSALLY_UNIQUE_IDENTIFIER</td>
+    <td>A universally unique identifier that uniquely represents a concept in Tinkar</td>
+    <td>IDENTIFIER_SOURCE</td>
+  </tr>
+  <tr>
+    <td>US Dialect Pattern </td>
+    <td></td>
+    <td>PATTERN</td>
+  </tr>
+  <tr>
+    <td>Withdrawn state</td>
+    <td>Concept used to represent a status for components that are withdrawn.</td>
+    <td>STATUS_VALUE</td>
+  </tr>
+</table>
+
+
 
 <hr />
 <p id="footnote15">
