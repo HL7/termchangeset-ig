@@ -266,6 +266,124 @@ structure needed to provide meaning to a concept. For example, if a field within
 describe an SDO's website, the Meaning would be “URL,” DataType of “String,” and Purpose of “Website.” The 
 Pattern would then contain an array of these FieldDefinitions. 
 </p>
+<a name="overall architecture"> </a>
+<h3>Overall Tinkar Architecture</h3>
+<img src="TinkarArchitecture.png" alt="Tinkar Architecture"/>
+<p>
+<i>Overall Tinkar Architecture</i>
+</p>
+<p style="text-align:center;color:Gray">
+Figure 3.5. Overall Tinkar Architecture
+</p>
+<img src="ClassDefinitions.png" alt="Class Definitions"/>
+<a name="coordinate"> </a>
+<h3>Coordinate</h3>
+<p>
+The Tinkar Reference Model supports and encourages the storage of time series data that utilizes multiple 
+coordinates, for example, STAMP, Language, Dialect, clinical domains, etc. The ability to efficiently search, 
+display, and navigate concepts and semantics requires the ability to calculate combinations of content based 
+on one or more of these different coordinates.
+</p>
+<p>
+In order to facilitate the computability of various, complex coordinates, including time series data, a graph 
+structure is commonly used in software versioned control systems. A particular type of graph structure that is 
+commonly used is a “version graph,” such as a directed acyclic graph. A version graph would enable a Tinkar 
+implementation to recover the state of the graph at a particular point in time. Most graph databases do not 
+support versioning as a first-class concept. It is possible, however, to create a versioning scheme inside 
+the graph model whereby nodes and relationships are timestamped and archived whenever they are modified. The 
+downside of such versioning schemes is that they leak into any queries written against the graph, adding a layer 
+of complexity to even the simplest query.
+</p>
+<p>
+Types of Coordinates:
+</p>
+<ol>
+  <li>
+  STAMP coordinates are the most basic type of coordinate on which all content should be filtered. Examples of 
+  STAMP coordinates are: 
+  </li>
+  <ol type="a">
+    <li>
+      Most recent version
+    </li>
+    <li>
+      Set of data from several versions
+    </li>
+    <li>
+      All active components only
+    </li>
+  </ol>
+  <li>
+  STAMP coordinates are the most basic type of coordinate on which all content should be filtered. Examples of 
+  STAMP coordinates are: 
+  </li>
+  <ol type="a">
+    <li>
+      Displaying terms based on a language and/or dialect
+    </li>
+    <li>
+      Prioritized list of synonyms based on a particular clinical domain
+    </li>
+  </ol>
+  <li>
+  STAMP coordinates are the most basic type of coordinate on which all content should be filtered. Examples of 
+  STAMP coordinates are: 
+  </li>
+  <ol type="a">
+    <li>
+      Result from various Description Logic Classifiers
+    </li>
+  </ol>
+  <li>
+  STAMP coordinates are the most basic type of coordinate on which all content should be filtered. Examples of 
+  STAMP coordinates are: 
+  </li>
+  <ol type="a">
+    <li>
+      Stated vs. inferred relationships from SNOMED CT®
+    </li>
+    <li>
+      Concepts inclusion/exclusion for a particular domain
+    </li>
+  </ol>
+</ol>
+<p>
+As the Tinkar specification evolves towards a DSTU and Connectathons, 
+more coordinates and detailing will be provided.
+</p>
+<a name="calculating coordinates"> </a>
+<h3>Calculating Coordinates</h3>
+<p>
+The ComponentChronology contains all the versions of a component from the date it was instantiated until the 
+most recent version. Components only get a new version whenever something about the component changes. To 
+calculate the latest version requires the ability to find the most recent version of each component. Utilizing 
+the STAMP Coordinates supports calculating all other coordinates: 
+</p>
+<ol>
+  <li>
+  Identify the Module(s) the user would like to view/search/modify.
+  </li>
+  <li>
+  Identify the Path the user would like to view/search/modify.
+  </li>
+  <li>
+  Identify the Status or Statuses the user would like to view/search/modify.
+  </li>
+  <li>
+  If relevant, identify the Author(s) the user would like to view/search/modify.
+  </li>
+  <li>
+  The last piece of the STAMP coordinate (time) is the most difficult to calculate. In most cases the user will 
+  need to find the most recent version of the component as of the current time to calculate this point of the 
+  coordinate. However, since Tinkar supports and encourages the representation of historical, the user may need 
+  to calculate the most recent version as of a different point in time.
+  </li>
+</ol>
+<p>
+After the STAMP Coordinates have been calculated, additional coordinates can then be applied as well. 
+For example, applying a language and dialect coordinate will be important not only for viewing and searching, 
+but also to determine the appropriate preferred name for displaying a hierarchy.
+</p>
 
 <hr />
 <p id="footnote15">
