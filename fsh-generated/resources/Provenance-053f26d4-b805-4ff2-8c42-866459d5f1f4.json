@@ -1,0 +1,73 @@
+{
+  "resourceType": "Provenance",
+  "id": "053f26d4-b805-4ff2-8c42-866459d5f1f4",
+  "meta": {
+    "profile": [
+      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
+    ]
+  },
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "author"
+          }
+        ]
+      },
+      "who": {
+        "display": "Raja Cholan"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "custodian"
+          }
+        ]
+      },
+      "who": {
+        "display": "US Department of Veterans Affairs"
+      }
+    }
+  ],
+  "activity": {
+    "coding": [
+      {
+        "code": "UPDATE",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+      }
+    ]
+  },
+  "target": [
+    {
+      "reference": "CodeSystem/snomedct413839001ChangeSet"
+    }
+  ],
+  "occurredPeriod": {
+    "end": "2020-05-18"
+  },
+  "recorded": "2020-05-18T11:13:55+10:00",
+  "reason": [
+    {
+      "coding": [
+        {
+          "code": "METAMGT",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+        }
+      ]
+    }
+  ],
+  "entity": [
+    {
+      "role": "revision",
+      "what": {
+        "reference": "CodeSystem/snomedct/_history/4",
+        "display": "SNOMED CT August 2019 Edition"
+      }
+    }
+  ]
+}

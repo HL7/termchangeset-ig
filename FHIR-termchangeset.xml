@@ -5,18 +5,24 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/codesystem-concept-additional-identifier" key="StructureDefinition-codesystem-concept-additional-identifier" name="CodeSystem Concept Identifier"/>
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
 <artifact id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
 <artifact id="StructureDefinition/description-dialect" key="StructureDefinition-description-dialect" name="Description Dialect"/>
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
 <artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 Change Set"/>
+<artifact id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="Example Provenance - 053f26d4-b805-4ff2-8c42-866459d5f1f4"/>
+<artifact id="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c" key="Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c" name="Example Provenance - 7e4f317e-8c13-46ba-b79a-9913da2afa2c"/>
 <artifact id="CodeSystem/snomedct413839001ChangeSet" key="CodeSystem-snomedct413839001ChangeSet" name="SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"/>
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
+<artifact id="StructureDefinition/terminology-changeset-provenance-profile" key="StructureDefinition-terminology-changeset-provenance-profile" name="Terminology Change Set Provenance (Provenance)"/>
 <artifact id="ValueSet/tinkar-case-significance-vs" key="ValueSet-tinkar-case-significance-vs" name="Tinkar Case Significance Value Set"/>
 <artifact id="Provenance/e02b3733-cd66-4f2d-8046-108dd3afb0b0" key="Provenance-e02b3733-cd66-4f2d-8046-108dd3afb0b0" name="Tinkar Change Set Provenance"/>
 <artifact id="ValueSet/tinkar-defining-relationship-type-vs" key="ValueSet-tinkar-defining-relationship-type-vs" name="Tinkar Defining Relationship Type Value Set"/>
 <artifact id="ValueSet/tinkar-description-acceptability-vs" key="ValueSet-tinkar-description-acceptability-vs" name="Tinkar Description Acceptability Value Set"/>
+<artifact id="ValueSet/tinkar-dialect-vs" key="ValueSet-tinkar-dialect-vs" name="Tinkar Dialect Value Set"/>
+<artifact id="ValueSet/tinkar-el-profile-set-operator-vs" key="ValueSet-tinkar-el-profile-set-operator-vs" name="Tinkar EL Profile Set Operator Value Set"/>
 <artifact id="StructureDefinition/tinkar-changeset-profile" key="StructureDefinition-tinkar-changeset-profile" name="Tinkar Terminology Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="Tinkar-compliant LOINC Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/snomed-changeset-profile" key="StructureDefinition-snomed-changeset-profile" name="Tinkar-compliant SNOMED Change Set (CodeSystem)"/>

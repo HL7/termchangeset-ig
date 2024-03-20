@@ -45,6 +45,7 @@ Description: "EL++ profile to describe the axiom as being part of the Necessary 
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.content.property"
 * value[x] only CodeableConcept
+* value[x] from ELProfileSetOperatorVS (required)
 
 Extension: DescriptionDialect
 Id:	   description-dialect
@@ -54,4 +55,14 @@ Description: "Subcategorization of language"
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.content.designation"
 * value[x] only CodeableConcept
+* value[x] from DialectVS (extensible)
+
+Extension: CodeSystemConceptAdditionalIdentifier
+Id:	   codesystem-concept-additional-identifier
+Title:	   "CodeSystem Concept Identifier"
+Description: "Additional identifier for a concept within a CodeSystem beyond the primary code.  This may be a code for the same concept issued by another CodeSystem, or a unique identifier for the concept"
+// Limit the context to CodeSystem.concept
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.concept"
+* value[x] only Identifier
 

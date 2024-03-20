@@ -54,6 +54,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
+* concept.extension contains
+	codesystem-concept-additional-identifier named Identifier 0..*
 * concept.id ^short = "Tinkar unique identifier for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
@@ -124,7 +126,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.concept ^definition = "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) - see hierarchyMeaning."
 * concept.concept ^comment = "For Tinkar Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
 * concept.concept ^mustSupport = false
-* supplements 1..1 MS
+* supplements 0..1 MS
 * supplements ^short = "Canonical URL of Code System to which the change set applies"
 
 
@@ -141,9 +143,10 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * url ^definition = "& This is used in [Coding]{datatypes.html#Coding}.system."
 * concept.code ^mapping.identity = "tinkar"
 * concept.code ^mapping.map = "SNOMED CT IDENTIFER SOURCE"
-* concept.designation.extension contains
-	description-case-sensitivity named caseSensitivity 1..1 and
-	description-acceptability named acceptability 1..1
+* concept.designation.extension[caseSensitivity] 1..1
+* concept.designation.extension[acceptability] 1..1
+//	description-case-sensitivity named caseSensitivity 1..1 and
+//	description-acceptability named acceptability 1..1
 
 
 
@@ -325,3 +328,41 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * concept.property[loinc_method_typ].code = #METHOD_TYP (exactly)
 * concept.property[loinc_method_typ].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * concept.property[loinc_method_typ].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
+
+Profile: TerminologyChangeSetProvenance
+Id: terminology-changeset-provenance-profile
+Parent: Provenance
+Title: "Terminology Change Set Provenance (Provenance)"
+Description: "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements."
+* occurredPeriod 1..1
+* occurredPeriod.end 1..1
+* occurredPeriod ^short = "Authoring change sets occur over a period of time so it is most appropriate to capture as an occurredPeriod vs. occurredDateTime"
+* reason 1..1
+* reason ^short = "The reason for authoring the change set - most likely value is METAMGT, but allowing flexibility here as needed"
+* activity 1..1
+* activity.coding.code = #UPDATE (exactly)
+* activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation" (exactly)
+* activity ^short = "For a terminology change set, this should always be an update to a terminology"
+* agent ^slicing.discriminator.type = #value
+* agent ^slicing.discriminator.path = "type.coding.code"
+* agent ^slicing.rules = #openAtEnd
+* agent contains
+	author 1..* and
+	custodian 1..1
+* agent[author] ^short = "The individual(s) who contributed changes reflected in the Terminology Change Set"
+* agent[author].type 1..1
+* agent[author].type.coding 1..1
+* agent[author].type.coding.system 1..1
+* agent[author].type.coding.code = #author (exactly)
+* agent[author].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type" (exactly)
+* agent[custodian] ^short = "The entity that is accountable for maintaining a true and accurate copy of the Terminology Change Set"
+* agent[custodian].type 1..1
+* agent[custodian].type.coding 1..1
+* agent[custodian].type.coding.system 1..1
+* agent[custodian].type.coding.code = #custodian (exactly)
+* agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type" (exactly)
+
+
+
+
+

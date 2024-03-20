@@ -121,7 +121,6 @@
         "id": "CodeSystem.supplements",
         "path": "CodeSystem.supplements",
         "short": "Canonical URL of Code System to which the change set applies",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -174,6 +173,35 @@
           {
             "identity": "tinkar",
             "map": "UNIVERSALLY_UNIQUE_IDENTIFIER"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.extension",
+        "path": "CodeSystem.concept.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.extension:Identifier",
+        "path": "CodeSystem.concept.extension",
+        "sliceName": "Identifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-concept-additional-identifier"
+            ]
           }
         ]
       },

@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "codesystem-concept-additional-identifier",
+  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-concept-additional-identifier",
+  "name": "CodeSystemConceptAdditionalIdentifier",
+  "title": "CodeSystem Concept Identifier",
+  "status": "draft",
+  "description": "Additional identifier for a concept within a CodeSystem beyond the primary code.  This may be a code for the same concept issued by another CodeSystem, or a unique identifier for the concept",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem.concept"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CodeSystem Concept Identifier",
+        "definition": "Additional identifier for a concept within a CodeSystem beyond the primary code.  This may be a code for the same concept issued by another CodeSystem, or a unique identifier for the concept"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-concept-additional-identifier"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      }
+    ]
+  }
+}

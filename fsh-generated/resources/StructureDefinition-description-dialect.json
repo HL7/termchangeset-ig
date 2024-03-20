@@ -50,7 +50,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-dialect-vs"
+        }
       }
     ]
   }

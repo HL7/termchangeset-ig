@@ -42,7 +42,6 @@
   "caseSensitive": true,
   "compositional": true,
   "versionNeeded": false,
-  "supplements": "http://snomed.info/sct",
   "count": 1,
   "filter": [
     {
@@ -82,25 +81,25 @@
       "code": "definitionStatusId",
       "uri": "http://snomed.info/field/Concept.definitionStatusId",
       "description": "Either of the codes that are descendants of 900000000000444006",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "parent",
       "uri": "http://.........?",
       "description": "A SNOMED CT concept id that has the target of a direct is-a relationship from the concept",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "child",
       "uri": "http://.........?",
       "description": "A SNOMED CT concept id that has a direct is-a relationship to the concept",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "moduleId",
       "uri": "http://snomed.info/field/Concept.moduleId",
       "description": "The SNOMED CT concept id of the module that the concept belongs to.",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "normalForm",
@@ -117,387 +116,377 @@
     {
       "code": "Due to",
       "uri": "http://snomed.info/id/42752001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Associated with",
       "uri": "http://snomed.info/id/47429007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Associated morphology",
       "uri": "http://snomed.info/id/116676008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has specimen",
       "uri": "http://snomed.info/id/116686009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specimen source morphology",
       "uri": "http://snomed.info/id/118168003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specimen source topography",
       "uri": "http://snomed.info/id/118169006",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specimen source identity",
       "uri": "http://snomed.info/id/118170007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specimen procedure",
       "uri": "http://snomed.info/id/118171006",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Part of",
       "uri": "http://snomed.info/id/123005000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has active ingredient",
       "uri": "http://snomed.info/id/127489000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Subject of information",
       "uri": "http://snomed.info/id/131195008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Causative agent",
       "uri": "http://snomed.info/id/246075003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Associated finding",
       "uri": "http://snomed.info/id/246090004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Component",
       "uri": "http://snomed.info/id/246093002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Severity",
       "uri": "http://snomed.info/id/246112005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Occurrence",
       "uri": "http://snomed.info/id/246454002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Episodicity",
       "uri": "http://snomed.info/id/246456000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Technique",
       "uri": "http://snomed.info/id/246501002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Revision status",
       "uri": "http://snomed.info/id/246513007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Units",
       "uri": "http://snomed.info/id/246514001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "After",
       "uri": "http://snomed.info/id/255234002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Access",
       "uri": "http://snomed.info/id/260507000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Method",
       "uri": "http://snomed.info/id/260686004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Priority",
       "uri": "http://snomed.info/id/260870009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Clinical course",
       "uri": "http://snomed.info/id/263502005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Laterality",
       "uri": "http://snomed.info/id/272741003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Associated procedure",
       "uri": "http://snomed.info/id/363589002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Finding site",
       "uri": "http://snomed.info/id/363698007",
-      "type": "code"
-    },
-    {
-      "code": "Laterality",
-      "uri": "http://snomed.info/id/363699004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Direct morphology",
       "uri": "http://snomed.info/id/363700003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Direct substance",
       "uri": "http://snomed.info/id/363701004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has focus",
       "uri": "http://snomed.info/id/363702006",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has intent",
       "uri": "http://snomed.info/id/363703001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Procedure site",
       "uri": "http://snomed.info/id/363704007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has definitional manifestation",
       "uri": "http://snomed.info/id/363705008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Indirect morphology",
       "uri": "http://snomed.info/id/363709002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Indirect device",
       "uri": "http://snomed.info/id/363710007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has interpretation",
       "uri": "http://snomed.info/id/363713009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Interprets",
       "uri": "http://snomed.info/id/363714003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Measurement method",
       "uri": "http://snomed.info/id/370129005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Property",
       "uri": "http://snomed.info/id/370130000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Recipient category",
       "uri": "http://snomed.info/id/370131001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Scale type",
       "uri": "http://snomed.info/id/370132008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specimen substance",
       "uri": "http://snomed.info/id/370133003",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Time aspect",
       "uri": "http://snomed.info/id/370134009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Pathological process",
       "uri": "http://snomed.info/id/370135005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Procedure site - Direct",
       "uri": "http://snomed.info/id/405813007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Procedure site - Indirect",
       "uri": "http://snomed.info/id/405814001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Procedure device",
       "uri": "http://snomed.info/id/405815000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Procedure morphology",
       "uri": "http://snomed.info/id/405816004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Finding context",
       "uri": "http://snomed.info/id/408729009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Temporal context",
       "uri": "http://snomed.info/id/408731000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Subject relationship context",
       "uri": "http://snomed.info/id/408732007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Route of administration",
       "uri": "http://snomed.info/id/410675002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Has dose form",
       "uri": "http://snomed.info/id/411116001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Finding method",
       "uri": "http://snomed.info/id/418775008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Finding informer",
       "uri": "http://snomed.info/id/419066007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Using device",
       "uri": "http://snomed.info/id/424226004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Using energy",
       "uri": "http://snomed.info/id/424244007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Using substance",
       "uri": "http://snomed.info/id/424361007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Surgical approach",
       "uri": "http://snomed.info/id/424876005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Using access device",
       "uri": "http://snomed.info/id/425391005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Role group",
       "uri": "http://snomed.info/id/609096000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Property type",
       "uri": "http://snomed.info/id/704318007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Inheres in",
       "uri": "http://snomed.info/id/704319004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Towards",
       "uri": "http://snomed.info/id/704320005",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Characterizes",
       "uri": "http://snomed.info/id/704321009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Process agent",
       "uri": "http://snomed.info/id/704322002",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Process duration",
       "uri": "http://snomed.info/id/704323007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Process output",
       "uri": "http://snomed.info/id/704324001",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Relative to",
       "uri": "http://snomed.info/id/704325000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Precondition",
       "uri": "http://snomed.info/id/704326004",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Direct site",
       "uri": "http://snomed.info/id/704327008",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Specified by",
       "uri": "http://snomed.info/id/704346009",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Observes",
       "uri": "http://snomed.info/id/704347000",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Is about",
       "uri": "http://snomed.info/id/704647008",
-      "type": "code"
-    },
-    {
-      "code": "Finding site",
-      "uri": "http://snomed.info/id/363698007",
-      "type": "code"
+      "type": "Coding"
     },
     {
       "code": "Defined",

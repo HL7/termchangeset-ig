@@ -50,7 +50,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-el-profile-set-operator-vs"
+        }
       }
     ]
   }

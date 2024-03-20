@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ELProfileSetOperatorVS",
+  "id": "tinkar-el-profile-set-operator-vs",
+  "title": "Tinkar EL Profile Set Operator Value Set",
+  "description": "Codes describing the nature of an axiom in relationship to a concept, in terms of if it is part of the Necessary vs. Sufficient set for defining the concept. The value set includes all codes from the SNOMED CT descending from 900000000000444006 Definition status.",
+  "url": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-el-profile-set-operator-vs",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "900000000000444006"
+          }
+        ]
+      }
+    ]
+  }
+}

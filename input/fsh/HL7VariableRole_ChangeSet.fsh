@@ -24,7 +24,7 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * caseSensitive = true
 * valueSet = "http://terminology.hl7.org/ValueSet/variable-role"
 * content = #fragment
-* supplements = "http://terminology.hl7.org/CodeSystem/variable-role"
+//* supplements = "http://terminology.hl7.org/CodeSystem/variable-role"
 * count = 3
 * concept[+].code = #measuredVariableA
 * concept[=].display = "measured variable A"
