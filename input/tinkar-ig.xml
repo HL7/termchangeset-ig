@@ -52,13 +52,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <resource>
-      <reference>
-        <reference value="Provenance/e02b3733-cd66-4f2d-8046-108dd3afb0b0"/>
-      </reference>
-      <name value="Tinkar Change Set Provenance"/>
-      <description value="Example Provenance resource for a Tinkar Change Set"/>
-    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -123,22 +116,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
         <nameUrl value="TerminologyDistribution.html"/>
         <title value="Terminology Distribution"/>
         <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/> 
-        </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="3"/> 
-        </extension>
-        <nameUrl value="spec.html"/>
-        <title value="Detailed Specification"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="spec2.html"/>
-          <title value="Spec sub-page"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

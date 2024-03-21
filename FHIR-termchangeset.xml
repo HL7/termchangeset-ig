@@ -18,7 +18,6 @@
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
 <artifact id="StructureDefinition/terminology-changeset-provenance-profile" key="StructureDefinition-terminology-changeset-provenance-profile" name="Terminology Change Set Provenance (Provenance)"/>
 <artifact id="ValueSet/tinkar-case-significance-vs" key="ValueSet-tinkar-case-significance-vs" name="Tinkar Case Significance Value Set"/>
-<artifact id="Provenance/e02b3733-cd66-4f2d-8046-108dd3afb0b0" key="Provenance-e02b3733-cd66-4f2d-8046-108dd3afb0b0" name="Tinkar Change Set Provenance"/>
 <artifact id="ValueSet/tinkar-defining-relationship-type-vs" key="ValueSet-tinkar-defining-relationship-type-vs" name="Tinkar Defining Relationship Type Value Set"/>
 <artifact id="ValueSet/tinkar-description-acceptability-vs" key="ValueSet-tinkar-description-acceptability-vs" name="Tinkar Description Acceptability Value Set"/>
 <artifact id="ValueSet/tinkar-dialect-vs" key="ValueSet-tinkar-dialect-vs" name="Tinkar Dialect Value Set"/>
@@ -30,14 +29,12 @@
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
-<page key="spec" name="Detailed Specification"/>
 <page key="FhirLimitations" name="FHIR Limitiations"/>
 <page key="index" name="HL7.FHIR.UV.TERMCHANGESET\Home - FHIR v4.0.1"/>
 <page key="changes" name="IG Change History"/>
 <page key="protobufexamples" name="Protobuf Examples"/>
 <page key="protobufbackground" name="Protobuf Native Representation"/>
 <page key="protobufschema" name="Protobuf Schema"/>
-<page key="spec2" name="Spec sub-page"/>
 <page key="toc" name="Table of Contents"/>
 <page key="TerminologyDistribution" name="Terminology Distribution"/>
 <page key="TinkarBackground" name="Tinkar Background"/>
