@@ -136,17 +136,12 @@ Id: snomed-changeset-profile
 Parent: tinkar-changeset-profile
 Title: "Tinkar-compliant SNOMED Change Set (CodeSystem)"
 Description: "Profile of CodeSystem to enable lossless representation of SNOMED change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Tinker Terminology Change Set profile."
-* url 1..1 MS
-* url only uri
-* url = "http://snomed.info/sct" (exactly)
-* url ^short = "& (Coding.system)"
-* url ^definition = "& This is used in [Coding]{datatypes.html#Coding}.system."
 * concept.code ^mapping.identity = "tinkar"
 * concept.code ^mapping.map = "SNOMED CT IDENTIFER SOURCE"
 * concept.designation.extension[caseSensitivity] 1..1
 * concept.designation.extension[acceptability] 1..1
-//	description-case-sensitivity named caseSensitivity 1..1 and
-//	description-acceptability named acceptability 1..1
+* concept.property.extension[DefiningRelationshipType] 1..1
+* concept.property.extension[elProfileSetOperator] 1..1
 
 
 
