@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-description-acceptability-vs"
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/description-acceptability-vs"
         }
       }
     ]

@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "CaseSignificanceVS",
-  "id": "tinkar-case-significance-vs",
-  "title": "Tinkar Case Significance Value Set",
-  "description": "Codes describing case significance for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000447004 Case significance.",
-  "url": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-case-significance-vs",
+  "name": "DescriptionAcceptabilityVS",
+  "id": "description-acceptability-vs",
+  "title": "Description Acceptability Value Set",
+  "description": "Codes describing acceptability of a given description for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability.",
+  "url": "https://hl7.org/fhir/uv/termchangeset/ValueSet/description-acceptability-vs",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "experimental": false,
   "compose": {
@@ -16,7 +16,7 @@
           {
             "property": "concept",
             "op": "descendent-of",
-            "value": "900000000000447004"
+            "value": "900000000000511003"
           }
         ]
       }

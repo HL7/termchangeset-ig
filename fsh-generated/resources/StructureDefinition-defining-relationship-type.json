@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-defining-relationship-type-vs"
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/defining-relationship-type-vs"
         }
       }
     ]

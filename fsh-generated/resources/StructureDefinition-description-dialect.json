@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/tinkar-dialect-vs"
+          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/dialect-vs"
         }
       }
     ]
