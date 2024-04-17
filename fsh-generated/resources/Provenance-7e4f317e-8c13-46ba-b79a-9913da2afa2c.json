@@ -6,6 +6,15 @@
       "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
     ]
   },
+  "entity": [
+    {
+      "role": "revision",
+      "what": {
+        "reference": "http://terminology.hl7.org/CodeSystem/variable-role",
+        "display": "EvidenceVariableRole"
+      }
+    }
+  ],
   "agent": [
     {
       "type": {

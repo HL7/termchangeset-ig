@@ -15,3 +15,6 @@ Description: "Example of Provenance to support HL7 VariableRole code system Chan
 * agent[custodian].type.coding.code = #custodian
 * agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
 * agent[custodian].who.display = "Terminology Infrastructure WG"
+* entity[revision].role = #revision
+* entity[revision].what.reference = "http://terminology.hl7.org/CodeSystem/variable-role"
+* entity[revision].what.display = "EvidenceVariableRole"

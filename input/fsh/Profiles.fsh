@@ -1,7 +1,7 @@
-Profile: TinkarChangeSet
-Id: tinkar-changeset-profile
+Profile: ChangeSet
+Id: changeset-profile
 Parent: http://hl7.org/fhir/StructureDefinition/shareablecodesystem
-Title: "Tinkar Terminology Change Set (CodeSystem)"
+Title: "Terminology Change Set (CodeSystem)"
 Description: "Profile of CodeSystem to enable lossless representation of a terminology change set compliant with Tinkar information model requirements"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -29,7 +29,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * content 1..1 MS
 * content only code
 * content = #fragment (exactly)
-* content ^short = "fragment"
+* content ^short = "Change Set CodeSystem resources are most appropriately described as a FRAGMENT"
 * content ^definition = "This codes system profile contains only those concepts included in an incremental Change Set for a terminology"
 * count 1..1
 * count ^short = "Total concepts in this changeset for the code system"
@@ -37,7 +37,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * count ^comment = "The count of concepts defined in this change set should match what is defined in the CodeSystem.content tree - included to assist with reconciliation of processing."
 * count ^mustSupport = true
 * property 0..* MS
-* property ^short = "Additional information supplied about each concept"
+* property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within HL7's Terminology publication here: https://terminology.hl7.org/external_terminologies.html."
 * property ^definition = "A property defines additional semantic detail for each concept included in the change set"
 * property ^comment = "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property"
 * property.code 1..1 MS
@@ -54,8 +54,6 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
-* concept.extension contains
-	codesystem-concept-additional-identifier named Identifier 0..*
 * concept.id ^short = "Tinkar unique identifier for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
@@ -133,9 +131,10 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 
 Profile: SNOMEDChangeSet
 Id: snomed-changeset-profile
-Parent: tinkar-changeset-profile
-Title: "Tinkar-compliant SNOMED Change Set (CodeSystem)"
-Description: "Profile of CodeSystem to enable lossless representation of SNOMED change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Tinker Terminology Change Set profile."
+Parent: changeset-profile
+Title: "SNOMED Change Set (CodeSystem)"
+Description: "Profile of CodeSystem to enable lossless representation of SNOMED change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
+* property ^short = "Property values should follow the SNOMED-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
 * concept.code ^mapping.identity = "tinkar"
 * concept.code ^mapping.map = "SNOMED CT IDENTIFER SOURCE"
 * concept.designation.extension[caseSensitivity] 1..1
@@ -147,9 +146,9 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 
 Profile: LOINCChangeSet
 Id: loinc-changeset-profile
-Parent: tinkar-changeset-profile
-Title: "Tinkar-compliant LOINC Change Set (CodeSystem)"
-Description: "Profile of CodeSystem to enable lossless representation of LOINC change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Tinker Terminology Change Set profile."
+Parent: changeset-profile
+Title: "LOINC Change Set (CodeSystem)"
+Description: "Profile of CodeSystem to enable lossless representation of LOINC change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
@@ -176,7 +175,7 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[0].path = "code"
 * property ^slicing.rules = #closed
-* property ^short = "Additional information supplied about each concept"
+* property ^short = "Property values should follow the LOINC-specific guidance available here: https://terminology.hl7.org/LOINC.html#loinc-properties"
 * property ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * property ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
 * property.code 1..1 MS
@@ -356,6 +355,14 @@ Description: "Profile of Provenance to use in concert with terminology change se
 * agent[custodian].type.coding.system 1..1
 * agent[custodian].type.coding.code = #custodian (exactly)
 * agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type" (exactly)
+* entity ^slicing.discriminator.type = #value
+* entity ^slicing.discriminator.path = "role"
+* entity ^slicing.rules = #openAtEnd
+* entity contains
+	revision 1..1
+* entity[revision].role = #revision (exactly)
+* entity[revision].what 1..1
+* entity.what ^short = "The baseline version of the CodeSystem to which this Change Set is intended to apply."
 
 
 

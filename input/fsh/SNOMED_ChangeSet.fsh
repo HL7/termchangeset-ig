@@ -1,5 +1,5 @@
-Instance: ChangeSetExample
-InstanceOf: TinkarChangeSet
+Instance: SNOMEDChangeSetExample
+InstanceOf: ChangeSet
 Description: "Example of SNOMED CT Change Set"
 * id = "snomedct413839001ChangeSet"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"

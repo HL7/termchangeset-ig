@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "tinkar-changeset-profile",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/tinkar-changeset-profile",
+  "id": "changeset-profile",
+  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
   "version": "0.1.0",
-  "name": "TinkarChangeSet",
-  "title": "Tinkar Terminology Change Set (CodeSystem)",
+  "name": "ChangeSet",
+  "title": "Terminology Change Set (CodeSystem)",
   "status": "draft",
   "experimental": false,
   "date": "2018-08-14",
@@ -112,7 +112,7 @@
       {
         "id": "CodeSystem.content",
         "path": "CodeSystem.content",
-        "short": "fragment",
+        "short": "Change Set CodeSystem resources are most appropriately described as a FRAGMENT",
         "definition": "This codes system profile contains only those concepts included in an incremental Change Set for a terminology",
         "fixedCode": "fragment",
         "mustSupport": true
@@ -135,6 +135,7 @@
       {
         "id": "CodeSystem.property",
         "path": "CodeSystem.property",
+        "short": "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within HL7's Terminology publication here: https://terminology.hl7.org/external_terminologies.html.",
         "definition": "A property defines additional semantic detail for each concept included in the change set",
         "comment": "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property",
         "mustSupport": true
@@ -173,35 +174,6 @@
           {
             "identity": "tinkar",
             "map": "UNIVERSALLY_UNIQUE_IDENTIFIER"
-          }
-        ]
-      },
-      {
-        "id": "CodeSystem.concept.extension",
-        "path": "CodeSystem.concept.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "CodeSystem.concept.extension:Identifier",
-        "path": "CodeSystem.concept.extension",
-        "sliceName": "Identifier",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-concept-additional-identifier"
-            ]
           }
         ]
       },

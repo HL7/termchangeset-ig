@@ -6,6 +6,15 @@
       "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
     ]
   },
+  "entity": [
+    {
+      "role": "revision",
+      "what": {
+        "reference": "CodeSystem/snomedct/_history/4",
+        "display": "SNOMED CT August 2019 Edition"
+      }
+    }
+  ],
   "agent": [
     {
       "type": {
@@ -59,15 +68,6 @@
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
         }
       ]
-    }
-  ],
-  "entity": [
-    {
-      "role": "revision",
-      "what": {
-        "reference": "CodeSystem/snomedct/_history/4",
-        "display": "SNOMED CT August 2019 Edition"
-      }
     }
   ]
 }

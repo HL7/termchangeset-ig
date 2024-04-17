@@ -3,7 +3,7 @@
   "id": "HL7VariableRoleChangeSet",
   "meta": {
     "profile": [
-      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/tinkar-changeset-profile"
+      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile"
     ]
   },
   "content": "fragment",

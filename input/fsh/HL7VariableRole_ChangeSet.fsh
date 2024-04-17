@@ -1,5 +1,5 @@
 Instance: HL7VariableRoleChangeSetExample
-InstanceOf: TinkarChangeSet
+InstanceOf: ChangeSet
 Description: "Example of HL7 VariableRole code system Change Set based on UTG-427 https://jira.hl7.org/browse/UP-427"
 * id = "HL7VariableRoleChangeSet"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
