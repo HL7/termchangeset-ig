@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hl7.fhir.uv.termchangeset"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="informative"/> 
+    <valueCode value="draft"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/> 
@@ -63,8 +63,18 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="TerminologyDistribution.html"/>
+        <title value="Terminology Distribution"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="FhirLimitations.html"/>
+        <title value="FHIR Limitiations"/>
         <generation value="html"/>
       </page>
       <page>
@@ -108,16 +118,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="FhirLimitations.html"/>
-        <title value="FHIR Limitiations"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="TerminologyDistribution.html"/>
-        <title value="Terminology Distribution"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="html"/>
@@ -131,7 +131,7 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2019+"/>
+      <value value="2024+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>

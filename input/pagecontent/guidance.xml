@@ -1,0 +1,9 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+<a name="general"> </a>
+<h3>General Guidance</h3>
+<a name="codesystem-properties"> </a>
+<h4>CodeSystem Properties</h4>
+<p>
+TBD guidance on how to implement CodeSystem properties referencing <a href="https://terminology.hl7.org/external_terminologies.html">THO guidance</a> and sub-pages that are specific to specific terminologies
+</p>
+</div>
