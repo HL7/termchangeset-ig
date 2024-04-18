@@ -37,7 +37,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * count ^comment = "The count of concepts defined in this change set should match what is defined in the CodeSystem.content tree - included to assist with reconciliation of processing."
 * count ^mustSupport = true
 * property 0..* MS
-* property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within HL7's Terminology publication here: https://terminology.hl7.org/external_terminologies.html."
+* property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within the [HL7 Terminology External Code Systems page](https://terminology.hl7.org/external_terminologies.html)."
 * property ^definition = "A property defines additional semantic detail for each concept included in the change set"
 * property ^comment = "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property"
 * property.code 1..1 MS

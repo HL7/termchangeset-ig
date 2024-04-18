@@ -135,7 +135,7 @@
       {
         "id": "CodeSystem.property",
         "path": "CodeSystem.property",
-        "short": "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within HL7's Terminology publication here: https://terminology.hl7.org/external_terminologies.html.",
+        "short": "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within the [HL7 Terminology External Code Systems page](https://terminology.hl7.org/external_terminologies.html).",
         "definition": "A property defines additional semantic detail for each concept included in the change set",
         "comment": "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property",
         "mustSupport": true
