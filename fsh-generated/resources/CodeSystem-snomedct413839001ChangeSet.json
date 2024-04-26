@@ -3,10 +3,219 @@
   "id": "snomedct413839001ChangeSet",
   "meta": {
     "profile": [
-      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile"
+      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile"
     ]
   },
   "content": "fragment",
+  "concept": [
+    {
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Chronic lung disease"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "Finding site",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "39607008",
+            "display": "Lung Structure"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "Clinical course",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "90734009",
+            "display": "Chronic"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "parent",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "19829001",
+            "display": "Disorder of lung (disorder)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": false
+        },
+        {
+          "extension": [
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "Defined",
+          "valueBoolean": false
+        }
+      ],
+      "id": "61da7e50-f606-5ba0-a0df-83fd524951e7",
+      "code": "413839001",
+      "display": "Chronic lung disease (Disorder)",
+      "definition": "Chronic lung disease (Disorder)"
+    }
+  ],
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -492,59 +701,6 @@
       "code": "Defined",
       "uri": "http://snomed.info/id/900000000000073002",
       "type": "boolean"
-    }
-  ],
-  "concept": [
-    {
-      "id": "61da7e50-f606-5ba0-a0df-83fd524951e7",
-      "code": "413839001",
-      "display": "Chronic lung disease (Disorder)",
-      "definition": "Chronic lung disease (Disorder)",
-      "designation": [
-        {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
-          },
-          "value": "Chronic lung disease"
-        }
-      ],
-      "property": [
-        {
-          "code": "Finding site",
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "39607008",
-            "display": "Lung Structure"
-          }
-        },
-        {
-          "code": "Clinical course",
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "90734009",
-            "display": "Chronic"
-          }
-        },
-        {
-          "code": "parent",
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "19829001",
-            "display": "Disorder of lung (disorder)"
-          }
-        },
-        {
-          "code": "inactive",
-          "valueBoolean": false
-        },
-        {
-          "code": "Defined",
-          "valueBoolean": false
-        }
-      ]
     }
   ]
 }

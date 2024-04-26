@@ -1,5 +1,5 @@
 Instance: SNOMEDChangeSetExample
-InstanceOf: ChangeSet
+InstanceOf: SNOMEDChangeSet
 Description: "Example of SNOMED CT Change Set"
 * id = "snomedct413839001ChangeSet"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -298,23 +298,71 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].display = "Chronic lung disease (Disorder)"
 * concept[=].definition = "Chronic lung disease (Disorder)"
 * concept[=].designation[+].language = #en-US
+* concept[=].designation[=].extension[caseSensitivity].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
+* concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.code = #900000000000020002
+* concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.display = "Only initial character case insensitive (core metadata concept)"
+* concept[=].designation[=].extension[acceptability].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
+* concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.code = #900000000000548007
+* concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.display = "Preferred (foundation metadata concept)"
 * concept[=].designation[=].use[+].system = "http://snomed.info/sct"
 * concept[=].designation[=].use[=].code = #900000000000013009
 * concept[=].designation[=].use[=].display = "Synonym"
 * concept[=].designation[=].value = "Chronic lung disease"
 * concept[=].property[+].code = #"Finding site"
+* concept[=].property[=].extension[DefiningRelationshipType].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.code = #900000000000010007
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
+* concept[=].property[=].extension[elProfileSetOperator].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
 * concept[=].property[=].valueCoding[=].code = #39607008
 * concept[=].property[=].valueCoding[=].display = "Lung Structure"
 * concept[=].property[+].code = #"Clinical course"
+* concept[=].property[=].extension[DefiningRelationshipType].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.code = #900000000000010007
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
+* concept[=].property[=].extension[elProfileSetOperator].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
 * concept[=].property[=].valueCoding[=].code = #90734009
 * concept[=].property[=].valueCoding[=].display = "Chronic"
 * concept[=].property[+].code = #parent
+* concept[=].property[=].extension[DefiningRelationshipType].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.code = #900000000000010007
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
+* concept[=].property[=].extension[elProfileSetOperator].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
 * concept[=].property[=].valueCoding[=].code = #19829001
 * concept[=].property[=].valueCoding[=].display = "Disorder of lung (disorder)"
 * concept[=].property[+].code = #inactive
+* concept[=].property[=].extension[DefiningRelationshipType].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.code = #900000000000010007
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
+* concept[=].property[=].extension[elProfileSetOperator].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueBoolean = false
 * concept[=].property[+].code = #Defined
+* concept[=].property[=].extension[DefiningRelationshipType].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.code = #900000000000010007
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
+* concept[=].property[=].extension[elProfileSetOperator].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueBoolean = false

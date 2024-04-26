@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.content.designation"
+      "expression": "CodeSystem.concept.designation"
     }
   ],
   "type": "Extension",

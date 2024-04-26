@@ -13,7 +13,7 @@
   </extension>-->
   <url value="https://hl7.org/fhir/uv/termchangeset"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
+  <version value="1.0.0-ballot"/>
   <name value="termchangeset"/>
   <title value="Terminology Change Set Exchange"/>
   <status value="draft"/>

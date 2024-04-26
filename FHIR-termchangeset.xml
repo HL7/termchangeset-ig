@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/yyyyMmm/myig.html" ciUrl="http://hl7.org/fhir/ig/HL7/myig" defaultVersion="0.1.0" defaultWorkgroup="" url="https://hl7.org/fhir/uv/termchangeset">
-<version code="current" url="http://hl7.org/fhir/ig/HL7/myig"/>
-<version code="0.1.0" url="http://hl7.org/fhir/yyyyMmm/myig.html"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="" url="https://hl7.org/fhir/uv/termchangeset">
+<version code="current" url=""/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>

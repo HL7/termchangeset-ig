@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.content.property"
+      "expression": "CodeSystem.concept.property"
     }
   ],
   "type": "Extension",
