@@ -169,7 +169,7 @@
       {
         "id": "CodeSystem.concept.id",
         "path": "CodeSystem.concept.id",
-        "short": "Tinkar unique identifier for the concept represented by the terminology-specific concept.code",
+        "short": "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code",
         "mapping": [
           {
             "identity": "tinkar",
@@ -405,7 +405,7 @@
       {
         "id": "CodeSystem.concept.concept",
         "path": "CodeSystem.concept.concept",
-        "comment": "For Tinkar Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
+        "comment": "For Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
         "max": "0",
         "mustSupport": false
       }

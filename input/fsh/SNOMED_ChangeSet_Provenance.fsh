@@ -16,5 +16,5 @@ Description: "Example of Provenance to support a SNOMED CT Change Set"
 * agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
 * agent[custodian].who.display = "US Department of Veterans Affairs"
 * entity[revision].role = #revision
-* entity[revision].what.reference = "CodeSystem/snomedct/_history/4"
+* entity[revision].what.reference = "http://snomed.info/sct"
 * entity[revision].what.display = "SNOMED CT August 2019 Edition"

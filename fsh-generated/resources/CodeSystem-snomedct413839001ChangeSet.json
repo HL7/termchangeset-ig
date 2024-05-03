@@ -230,7 +230,7 @@
       "value": "urn:oid:2.16.840.1.113883.6.96"
     }
   ],
-  "name": "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set",
+  "name": "SNOMEDCT_413839001_ChronicLungDisease_ChangeSet",
   "title": "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set",
   "status": "active",
   "experimental": false,
@@ -299,28 +299,10 @@
       "type": "Coding"
     },
     {
-      "code": "child",
-      "uri": "http://.........?",
-      "description": "A SNOMED CT concept id that has a direct is-a relationship to the concept",
-      "type": "Coding"
-    },
-    {
       "code": "moduleId",
       "uri": "http://snomed.info/field/Concept.moduleId",
       "description": "The SNOMED CT concept id of the module that the concept belongs to.",
       "type": "Coding"
-    },
-    {
-      "code": "normalForm",
-      "uri": "http://.........?",
-      "description": "Generated Normal form expression for the provided code or expression, with terms",
-      "type": "string"
-    },
-    {
-      "code": "normalFormTerse",
-      "uri": "http://.........?",
-      "description": "Generated Normal form expression for the provided code or expression, conceptIds only",
-      "type": "string"
     },
     {
       "code": "Due to",

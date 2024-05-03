@@ -8,7 +8,7 @@ Description: "Example of SNOMED CT Change Set"
 * url = "http://snomed.info/sctVAExtension"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.6.96"
-* name = "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"
+* name = "SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
 * title = "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"
 * status = #active
 * experimental = false
@@ -49,22 +49,10 @@ Description: "Example of SNOMED CT Change Set"
 * property[=].uri = "http://.........?"
 * property[=].description = "A SNOMED CT concept id that has the target of a direct is-a relationship from the concept"
 * property[=].type = #Coding
-* property[+].code = #child
-* property[=].uri = "http://.........?"
-* property[=].description = "A SNOMED CT concept id that has a direct is-a relationship to the concept"
-* property[=].type = #Coding
 * property[+].code = #moduleId
 * property[=].uri = "http://snomed.info/field/Concept.moduleId"
 * property[=].description = "The SNOMED CT concept id of the module that the concept belongs to."
 * property[=].type = #Coding
-* property[+].code = #normalForm
-* property[=].uri = "http://.........?"
-* property[=].description = "Generated Normal form expression for the provided code or expression, with terms"
-* property[=].type = #string
-* property[+].code = #normalFormTerse
-* property[=].uri = "http://.........?"
-* property[=].description = "Generated Normal form expression for the provided code or expression, conceptIds only"
-* property[=].type = #string
 * property[+].code = #"Due to"
 * property[=].uri = "http://snomed.info/id/42752001"
 * property[=].type = #Coding

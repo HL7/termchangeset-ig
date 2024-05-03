@@ -10,7 +10,7 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * version = "1.0.1"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.4.642.1.1457"
-* name = "EvidenceVariableRole UTG-247 Change Set"
+* name = "EvidenceVariableRole_UTG247_ChangeSet"
 * title = "EvidenceVariableRole UTG-247 Change Set"
 * status = #active
 * experimental = false
@@ -22,7 +22,6 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * description = "Example of HL7 VariableRole code system Change Set based on UTG-427 https://jira.hl7.org/browse/UP-427"
 * copyright = "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"
 * caseSensitive = true
-* valueSet = "http://terminology.hl7.org/ValueSet/variable-role"
 * content = #fragment
 //* supplements = "http://terminology.hl7.org/CodeSystem/variable-role"
 * count = 3

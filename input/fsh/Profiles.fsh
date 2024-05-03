@@ -54,7 +54,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
-* concept.id ^short = "Tinkar unique identifier for the concept represented by the terminology-specific concept.code"
+* concept.id ^short = "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
 * concept.code 1..1 MS
@@ -122,7 +122,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.concept 0..0
 * concept.concept ^short = "Child Concepts (is-a/contains/categorizes)"
 * concept.concept ^definition = "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) - see hierarchyMeaning."
-* concept.concept ^comment = "For Tinkar Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
+* concept.concept ^comment = "For Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
 * concept.concept ^mustSupport = false
 * supplements 0..1 MS
 * supplements ^short = "Canonical URL of Code System to which the change set applies"

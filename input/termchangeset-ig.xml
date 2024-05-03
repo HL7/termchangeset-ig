@@ -11,10 +11,10 @@
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-  <url value="https://hl7.org/fhir/uv/termchangeset"/>
+  <url value="https://hl7.org/fhir/uv/termchangeset/ImplementationGuide/hl7.fhir.uv.termchangeset"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="1.0.0-ballot"/>
-  <name value="termchangeset"/>
+  <name value="TermChangeSet"/>
   <title value="Terminology Change Set Exchange"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -52,6 +52,20 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <resource>
+      <reference>
+        <reference value="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4"/>
+      </reference>
+      <name value="SNOMED CT Change Set Provenance Example"/>
+      <description value="An example Provenance instance referring to a Change Set derived from SNOMED CT"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c"/>
+      </reference>
+      <name value="HL7 VariableRole Change Set Provenance Example"/>
+      <description value="An example Provenance instance referring to a Change Set derived from the HL7 VariableRole CodeSystem, corresponding to UTG-427 https://jira.hl7.org/browse/UP-427"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

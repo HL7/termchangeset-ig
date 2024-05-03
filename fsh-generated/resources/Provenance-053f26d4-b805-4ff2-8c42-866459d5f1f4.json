@@ -10,7 +10,7 @@
     {
       "role": "revision",
       "what": {
-        "reference": "CodeSystem/snomedct/_history/4",
+        "reference": "http://snomed.info/sct",
         "display": "SNOMED CT August 2019 Edition"
       }
     }
