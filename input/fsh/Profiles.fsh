@@ -171,10 +171,10 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * caseSensitive ^definition = "If code comparison is case sensitive when codes within this system are compared to each other."
 * caseSensitive ^comment = "If this value is missing, then it is not specified whether a code system is case sensitive or not. When the rule is not known, Postel's law should be followed: produce codes with the correct case, and accept codes in any case. This element is primarily provided to support validation software."
 * caseSensitive ^mustSupport = false
-* property 6..6 MS
+* property 0..* MS
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[0].path = "code"
-* property ^slicing.rules = #closed
+* property ^slicing.rules = #open
 * property ^short = "Property values should follow the LOINC-specific guidance available here: https://terminology.hl7.org/LOINC.html#loinc-properties"
 * property ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * property ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -190,7 +190,6 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property.description ^definition = "A description of the property- why it is defined, and how its value might be used."
 * property.type 1..1 MS
 * property.type only code
-* property.type = #Coding (exactly)
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
 * property contains loinc_component 1..1 MS
@@ -238,7 +237,7 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property[loinc_scale_typ].code = #SCALE_TYP (exactly)
 * property[loinc_scale_typ].code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * property[loinc_scale_typ].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property contains loinc_method_typ 1..1 MS
+* property contains loinc_method_typ 0..1 MS
 * property[loinc_method_typ] ^short = "Additional information supplied about each concept"
 * property[loinc_method_typ] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
 * property[loinc_method_typ] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
@@ -255,17 +254,16 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * concept.display ^short = "Text to display to the user"
 * concept.display ^definition = "A human readable string that is the recommended default way to present this concept to a user."
 * concept.display ^comment = "This contains the LOINC Long Name."
-* concept.property 0..6 MS
+* concept.property 0..* MS
 * concept.property ^slicing.discriminator[0].type = #value
 * concept.property ^slicing.discriminator[0].path = "code"
-* concept.property ^slicing.rules = #closed
+* concept.property ^slicing.rules = #open
 * concept.property ^short = "Property value for the concept"
 * concept.property ^definition = "A property value for this concept."
 * concept.property.code 1..1 MS
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
 * concept.property.value[x] 1..1 MS
-* concept.property.value[x] only Coding
 * concept.property.value[x] ^short = "Value of the property for this concept"
 * concept.property.value[x] ^definition = "The value of this property."
 * concept.property contains loinc_component 0..1 MS

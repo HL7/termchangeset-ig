@@ -1,0 +1,223 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "loinc277attachmentsChangeSet",
+  "meta": {
+    "profile": [
+      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile"
+    ]
+  },
+  "url": "http://loinc.org",
+  "content": "fragment",
+  "property": [
+    {
+      "code": "STATUS",
+      "uri": "http://loinc.org/property/STATUS",
+      "description": "Status of the term. Within LOINC, codes with STATUS=DEPRECATED are considered inactive. Current values: ACTIVE, TRIAL, DISCOURAGED, and DEPRECATED",
+      "type": "Coding"
+    },
+    {
+      "code": "COMPONENT",
+      "uri": "http://loinc.org/property/COMPONENT",
+      "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+      "type": "Coding"
+    },
+    {
+      "code": "PROPERTY",
+      "uri": "http://loinc.org/property/PROPERTY",
+      "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+      "type": "Coding"
+    },
+    {
+      "code": "TIME_ASPCT",
+      "uri": "http://loinc.org/property/TIME_ASPCT",
+      "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+      "type": "Coding"
+    },
+    {
+      "code": "SYSTEM",
+      "uri": "http://loinc.org/property/SYSTEM",
+      "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+      "type": "Coding"
+    },
+    {
+      "code": "SCALE_TYP",
+      "uri": "http://loinc.org/property/SCALE_TYP",
+      "description": "Fifth major axis-scale of measurement: Type of Scale",
+      "type": "Coding"
+    },
+    {
+      "code": "METHOD_TYP",
+      "uri": "http://loinc.org/property/METHOD_TYP",
+      "description": "Sixth major axis-method of measurement: Type of Method",
+      "type": "Coding"
+    },
+    {
+      "code": "CLASS",
+      "uri": "http://loinc.org/property/CLASS",
+      "description": "An arbitrary classification of terms for grouping related observations together",
+      "type": "Coding"
+    },
+    {
+      "code": "VersionLastChanged",
+      "uri": "http://loinc.org/property/VersionLastChanged",
+      "description": "The LOINC version number in which the record has last changed. For new records, this field contains the same value as the VersionFirstReleased property.",
+      "type": "string"
+    },
+    {
+      "code": "CLASSTYPE",
+      "uri": "http://loinc.org/property/CLASSTYPE",
+      "description": "1=Laboratory class; 2=Clinical class; 3=Claims attachments; 4=Surveys",
+      "type": "string"
+    },
+    {
+      "code": "ORDER_OBS",
+      "uri": "http://loinc.org/property/ORDER_OBS",
+      "description": "Provides users with an idea of the intended use of the term by categorizing it as an order only, observation only, or both",
+      "type": "string"
+    },
+    {
+      "code": "HL7_ATTACHMENT_STRUCTURE",
+      "uri": "http://loinc.org/property/HL7_ATTACHMENT_STRUCTURE",
+      "description": "This property is populated in collaboration with the HL7 Payer-Provider Exchange (PIE) Work Group (previously called Attachments Work Group) as described in the HL7 Attachment Specification: Supplement to Consolidated CDA Templated Guide.",
+      "type": "string"
+    },
+    {
+      "code": "VersionFirstReleased",
+      "uri": "http://loinc.org/property/VersionFirstReleased",
+      "description": "This is the LOINC version number in which this LOINC term was first published.",
+      "type": "string"
+    },
+    {
+      "code": "ValidHL7AttachmentRequest",
+      "uri": "http://loinc.org/property/ValidHL7AttachmentRequest",
+      "description": "A value of Y in this field indicates that this LOINC code can be sent by a payer as part of an HL7 Attachment request for additional information.",
+      "type": "string"
+    }
+  ],
+  "caseSensitive": false,
+  "concept": [
+    {
+      "property": [
+        {
+          "code": "COMPONENT",
+          "valueCoding": {
+            "code": "LP437323-1",
+            "system": "http://loinc.org/",
+            "display": "Certificate of medical necessity"
+          }
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "2.77",
+          "valueCoding": {
+            "code": "LP6813-2",
+            "system": "http://loinc.org/",
+            "display": "Find"
+          }
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "ACTIVE",
+          "valueCoding": {
+            "code": "LP6960-1",
+            "system": "http://loinc.org/",
+            "display": "Pt"
+          }
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "3",
+          "valueCoding": {
+            "code": "LP310005-6",
+            "system": "http://loinc.org/",
+            "display": "^Patient"
+          }
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "Both",
+          "valueCoding": {
+            "code": "LP32888-7",
+            "system": "http://loinc.org/",
+            "display": "Doc"
+          }
+        },
+        {
+          "code": "HL7_ATTACHMENT_STRUCTURE",
+          "valueString": "No IG exists"
+        },
+        {
+          "code": "ValidHL7AttachmentRequest",
+          "valueString": "Y"
+        },
+        {
+          "code": "VersionLastChanged",
+          "valueString": "2.77"
+        }
+      ],
+      "id": "1c8f2f61-9160-46c7-9664-80ae4a5a94c3",
+      "code": "103595-5",
+      "display": "Cert Med Neces",
+      "definition": "Certificate of Medical Necessity"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "version": "2.77",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.1"
+    }
+  ],
+  "name": "LOINC_277_Attachments_ChangeSet",
+  "title": "LOINC 2.77 Attachments Change Set for targetted redistribution",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Integrated Knowledge Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ikm.dev"
+        }
+      ]
+    }
+  ],
+  "description": "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+  "compositional": false,
+  "versionNeeded": false,
+  "count": 3,
+  "filter": [
+    {
+      "code": "parent",
+      "description": "Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. Parent selects immediate parent only. For example, the code '79190-5' has the parent 'LP379670-5'",
+      "operator": [
+        "="
+      ],
+      "value": "A Part code"
+    },
+    {
+      "code": "child",
+      "description": "Allows for the selection of a set of codes based on their appearance in the LOINC Multiaxial Hierarchy. Child selects immediate children only. For example, the code 'LP379670-5' has the child '79190-5'. Only LOINC Parts have children; LOINC codes do not have any children because they are leaf nodes.",
+      "operator": [
+        "="
+      ],
+      "value": "A comma separated list of Part or LOINC codes"
+    },
+    {
+      "code": "copyright",
+      "description": "Allows for the inclusion or exclusion of LOINC codes that include 3rd party copyright notices. LOINC = only codes with a sole copyright by Regenstrief. 3rdParty = only codes with a 3rd party copyright in addition to the one from Regenstrief",
+      "operator": [
+        "="
+      ],
+      "value": "LOINC | 3rdParty"
+    }
+  ]
+}

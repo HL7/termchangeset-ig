@@ -16,6 +16,7 @@
 <artifact id="ValueSet/el-profile-set-operator-vs" key="ValueSet-el-profile-set-operator-vs" name="EL Profile Set Operator Value Set"/>
 <artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 Change Set"/>
 <artifact id="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c" key="Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c" name="HL7 VariableRole Change Set Provenance Example"/>
+<artifact id="CodeSystem/loinc277attachmentsChangeSet" key="CodeSystem-loinc277attachmentsChangeSet" name="LOINC 2.77 Attachments Change Set for targetted redistribution"/>
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="LOINC Change Set (CodeSystem)"/>
 <artifact id="CodeSystem/snomedct413839001ChangeSet" key="CodeSystem-snomedct413839001ChangeSet" name="SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"/>
 <artifact id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="SNOMED CT Change Set Provenance Example"/>
