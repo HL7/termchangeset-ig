@@ -96,7 +96,7 @@ Description: "Example of LOINC Change Set including 3 new attachment terms from 
 * concept[=].definition = "Certificate of Medical Necessity"
 * concept[=].property[+].code = #CLASS
 * concept[=].property[=].valueCoding[+].code = #LP32888-7
-* concept[=].property[=].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[=].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[=].valueCoding[=].display = "Doc"
 * concept[=].property[+].code = #VersionFirstReleased
 * concept[=].property[=].valueString = "2.77"
@@ -114,23 +114,107 @@ Description: "Example of LOINC Change Set including 3 new attachment terms from 
 * concept[=].property[=].valueString = "2.77"
 * concept[=].property[loinc_component].code = #COMPONENT
 * concept[=].property[loinc_component].valueCoding[+].code = #LP437323-1
-* concept[=].property[loinc_component].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[loinc_component].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[loinc_component].valueCoding[=].display = "Certificate of medical necessity"
 * concept[=].property[loinc_property].code = #PROPERTY
 * concept[=].property[loinc_property].valueCoding[+].code = #LP6813-2
-* concept[=].property[loinc_property].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[loinc_property].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[loinc_property].valueCoding[=].display = "Find"
 * concept[=].property[loinc_time_aspct].code = #TIME_ASPCT
 * concept[=].property[loinc_time_aspct].valueCoding[+].code = #LP6960-1
-* concept[=].property[loinc_time_aspct].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[loinc_time_aspct].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[loinc_time_aspct].valueCoding[=].display = "Pt"
 * concept[=].property[loinc_system].code = #SYSTEM
 * concept[=].property[loinc_system].valueCoding[+].code = #LP310005-6
-* concept[=].property[loinc_system].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[loinc_system].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[loinc_system].valueCoding[=].display = "^Patient"
 * concept[=].property[loinc_scale_typ].code = #SCALE_TYP
 * concept[=].property[loinc_scale_typ].valueCoding[+].code = #LP32888-7
-* concept[=].property[loinc_scale_typ].valueCoding[=].system = "http://loinc.org/"
+* concept[=].property[loinc_scale_typ].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_scale_typ].valueCoding[=].display = "Doc"
+* concept[+].id = "0ff172eb-d17d-4146-9581-ad45e4e62f0b"
+* concept[=].code = #103596-3
+* concept[=].display = "DME proof of delivery"
+* concept[=].definition = "Durable medical equipment proof of delivery receipt"
+* concept[=].property[+].code = #CLASS
+* concept[=].property[=].valueCoding[+].code = #LP32888-7
+* concept[=].property[=].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[=].valueCoding[=].display = "Doc"
+* concept[=].property[+].code = #VersionFirstReleased
+* concept[=].property[=].valueString = "2.77"
+* concept[=].property[+].code = #STATUS
+* concept[=].property[=].valueString = "ACTIVE"
+* concept[=].property[+].code = #CLASSTYPE
+* concept[=].property[=].valueString = "3"
+* concept[=].property[+].code = #ORDER_OBS
+* concept[=].property[=].valueString = "Observation"
+* concept[=].property[+].code = #HL7_ATTACHMENT_STRUCTURE
+* concept[=].property[=].valueString = "No IG exists"
+* concept[=].property[+].code = #ValidHL7AttachmentRequest
+* concept[=].property[=].valueString = "Y"
+* concept[=].property[+].code = #VersionLastChanged
+* concept[=].property[=].valueString = "2.77"
+* concept[=].property[loinc_component].code = #COMPONENT
+* concept[=].property[loinc_component].valueCoding[+].code = #LP437553-3
+* concept[=].property[loinc_component].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_component].valueCoding[=].display = "Durable medical equipment proof of delivery receipt"
+* concept[=].property[loinc_property].code = #PROPERTY
+* concept[=].property[loinc_property].valueCoding[+].code = #LP6813-2
+* concept[=].property[loinc_property].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_property].valueCoding[=].display = "Find"
+* concept[=].property[loinc_time_aspct].code = #TIME_ASPCT
+* concept[=].property[loinc_time_aspct].valueCoding[+].code = #LP6960-1
+* concept[=].property[loinc_time_aspct].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_time_aspct].valueCoding[=].display = "Pt"
+* concept[=].property[loinc_system].code = #SYSTEM
+* concept[=].property[loinc_system].valueCoding[+].code = #LP310005-6
+* concept[=].property[loinc_system].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_system].valueCoding[=].display = "^Patient"
+* concept[=].property[loinc_scale_typ].code = #SCALE_TYP
+* concept[=].property[loinc_scale_typ].valueCoding[+].code = #LP32888-7
+* concept[=].property[loinc_scale_typ].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_scale_typ].valueCoding[=].display = "Doc"
+* concept[+].id = "9ce55d17-eee1-412d-9ebd-8ef36c896f8b"
+* concept[=].code = #103597-1
+* concept[=].display = "Pain magt form/template"
+* concept[=].definition = "Pain management form or template"
+* concept[=].property[+].code = #CLASS
+* concept[=].property[=].valueCoding[+].code = #LP32888-7
+* concept[=].property[=].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[=].valueCoding[=].display = "Doc"
+* concept[=].property[+].code = #VersionFirstReleased
+* concept[=].property[=].valueString = "2.77"
+* concept[=].property[+].code = #STATUS
+* concept[=].property[=].valueString = "ACTIVE"
+* concept[=].property[+].code = #CLASSTYPE
+* concept[=].property[=].valueString = "3"
+* concept[=].property[+].code = #ORDER_OBS
+* concept[=].property[=].valueString = "Observation"
+* concept[=].property[+].code = #HL7_ATTACHMENT_STRUCTURE
+* concept[=].property[=].valueString = "No IG exists"
+* concept[=].property[+].code = #ValidHL7AttachmentRequest
+* concept[=].property[=].valueString = "Y"
+* concept[=].property[+].code = #VersionLastChanged
+* concept[=].property[=].valueString = "2.77"
+* concept[=].property[loinc_component].code = #COMPONENT
+* concept[=].property[loinc_component].valueCoding[+].code = #LP437336-3
+* concept[=].property[loinc_component].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_component].valueCoding[=].display = "Pain management form or template"
+* concept[=].property[loinc_property].code = #PROPERTY
+* concept[=].property[loinc_property].valueCoding[+].code = #LP6813-2
+* concept[=].property[loinc_property].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_property].valueCoding[=].display = "Find"
+* concept[=].property[loinc_time_aspct].code = #TIME_ASPCT
+* concept[=].property[loinc_time_aspct].valueCoding[+].code = #LP6960-1
+* concept[=].property[loinc_time_aspct].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_time_aspct].valueCoding[=].display = "Pt"
+* concept[=].property[loinc_system].code = #SYSTEM
+* concept[=].property[loinc_system].valueCoding[+].code = #LP310005-6
+* concept[=].property[loinc_system].valueCoding[=].system = "http://loinc.org"
+* concept[=].property[loinc_system].valueCoding[=].display = "^Patient"
+* concept[=].property[loinc_scale_typ].code = #SCALE_TYP
+* concept[=].property[loinc_scale_typ].valueCoding[+].code = #LP32888-7
+* concept[=].property[loinc_scale_typ].valueCoding[=].system = "http://loinc.org"
 * concept[=].property[loinc_scale_typ].valueCoding[=].display = "Doc"
 
 

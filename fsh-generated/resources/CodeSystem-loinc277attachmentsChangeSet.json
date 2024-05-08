@@ -102,7 +102,7 @@
           "code": "COMPONENT",
           "valueCoding": {
             "code": "LP437323-1",
-            "system": "http://loinc.org/",
+            "system": "http://loinc.org",
             "display": "Certificate of medical necessity"
           }
         },
@@ -111,7 +111,7 @@
           "valueString": "2.77",
           "valueCoding": {
             "code": "LP6813-2",
-            "system": "http://loinc.org/",
+            "system": "http://loinc.org",
             "display": "Find"
           }
         },
@@ -120,7 +120,7 @@
           "valueString": "ACTIVE",
           "valueCoding": {
             "code": "LP6960-1",
-            "system": "http://loinc.org/",
+            "system": "http://loinc.org",
             "display": "Pt"
           }
         },
@@ -129,7 +129,7 @@
           "valueString": "3",
           "valueCoding": {
             "code": "LP310005-6",
-            "system": "http://loinc.org/",
+            "system": "http://loinc.org",
             "display": "^Patient"
           }
         },
@@ -138,7 +138,7 @@
           "valueString": "Both",
           "valueCoding": {
             "code": "LP32888-7",
-            "system": "http://loinc.org/",
+            "system": "http://loinc.org",
             "display": "Doc"
           }
         },
@@ -159,6 +159,134 @@
       "code": "103595-5",
       "display": "Cert Med Neces",
       "definition": "Certificate of Medical Necessity"
+    },
+    {
+      "property": [
+        {
+          "code": "COMPONENT",
+          "valueCoding": {
+            "code": "LP437553-3",
+            "system": "http://loinc.org",
+            "display": "Durable medical equipment proof of delivery receipt"
+          }
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "2.77",
+          "valueCoding": {
+            "code": "LP6813-2",
+            "system": "http://loinc.org",
+            "display": "Find"
+          }
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "ACTIVE",
+          "valueCoding": {
+            "code": "LP6960-1",
+            "system": "http://loinc.org",
+            "display": "Pt"
+          }
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "3",
+          "valueCoding": {
+            "code": "LP310005-6",
+            "system": "http://loinc.org",
+            "display": "^Patient"
+          }
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "Observation",
+          "valueCoding": {
+            "code": "LP32888-7",
+            "system": "http://loinc.org",
+            "display": "Doc"
+          }
+        },
+        {
+          "code": "HL7_ATTACHMENT_STRUCTURE",
+          "valueString": "No IG exists"
+        },
+        {
+          "code": "ValidHL7AttachmentRequest",
+          "valueString": "Y"
+        },
+        {
+          "code": "VersionLastChanged",
+          "valueString": "2.77"
+        }
+      ],
+      "id": "0ff172eb-d17d-4146-9581-ad45e4e62f0b",
+      "code": "103596-3",
+      "display": "DME proof of delivery",
+      "definition": "Durable medical equipment proof of delivery receipt"
+    },
+    {
+      "property": [
+        {
+          "code": "COMPONENT",
+          "valueCoding": {
+            "code": "LP437336-3",
+            "system": "http://loinc.org",
+            "display": "Pain management form or template"
+          }
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "2.77",
+          "valueCoding": {
+            "code": "LP6813-2",
+            "system": "http://loinc.org",
+            "display": "Find"
+          }
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "ACTIVE",
+          "valueCoding": {
+            "code": "LP6960-1",
+            "system": "http://loinc.org",
+            "display": "Pt"
+          }
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "3",
+          "valueCoding": {
+            "code": "LP310005-6",
+            "system": "http://loinc.org",
+            "display": "^Patient"
+          }
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "Observation",
+          "valueCoding": {
+            "code": "LP32888-7",
+            "system": "http://loinc.org",
+            "display": "Doc"
+          }
+        },
+        {
+          "code": "HL7_ATTACHMENT_STRUCTURE",
+          "valueString": "No IG exists"
+        },
+        {
+          "code": "ValidHL7AttachmentRequest",
+          "valueString": "Y"
+        },
+        {
+          "code": "VersionLastChanged",
+          "valueString": "2.77"
+        }
+      ],
+      "id": "9ce55d17-eee1-412d-9ebd-8ef36c896f8b",
+      "code": "103597-1",
+      "display": "Pain magt form/template",
+      "definition": "Pain management form or template"
     }
   ],
   "extension": [
