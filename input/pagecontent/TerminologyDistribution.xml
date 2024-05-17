@@ -1,6 +1,195 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  <p>Placeholder for background on Terminology Distribution methods and challenges</p>
-  <a name="approaches"> </a>
-<h3>Existing Approaches to Change Sets</h3>
-<p>Placeholder for narrative discussing how different terminologies approach change set distribution.</p>
+<a name="SNOMED CT"> </a>
+<h3>SNOMED CT<a href="#footnote1">[1]</a></h3>
+<p>
+Two versions of SNOMED CT are available to end-users, the international version and the US extension 
+of SNOMED CT.  The international version is released by SNOMED International to all member countries 
+and affiliates.  Each member country is required to nominate an organization as their National Release
+ Center (NRC).  The NRC is an official point of contact within a member country or jurisdiction that 
+ has the responsibility to serve as the interface between SNOMED International, the national users and 
+ affiliates, and other members. NRC responsibilities include receiving the International Release of 
+ SNOMED CT from SNOMED International, making it available to licensees in the Member country, and 
+ promoting and supporting adoption and deployment of SNOMED CT in the Member country. Some NRCs also 
+ provide additional products, such as SNOMED CT extensions, and services to support national use of 
+ SNOMED CT.
+</p>
+<p>
+Beginning September 2023, the international edition packages are released on Member Licensing and 
+Distribution Service (MLDS) on the first day of each month. Monthly releases of SNOMED CT will 
+continue to be made available from the MLDS.  The MLDS contains SNOMED International releases, both 
+Production and Alpha (technology previews), available for Members to download. 
+</p>
+<p>
+The US Extension of SNOMED CT US Extension is maintained by the National Library of Medicine (NLM), 
+part of the National Institutes of Health, Department of Health and Human Services, as the NRC for the 
+US. The US Extension contains two different types of content, US-specific content and content of US 
+origin intended for future inclusion in the international release.  The US extension addresses a 
+number of terminology needs that cannot be directly represented by the SNOMED CT international 
+release. While the SNOMED CT international edition has moved to monthly releases, the US edition of 
+SNOMED CT remains on the current bi-annual release schedule of March and September.  The last release 
+of the SNOMED CT US edition was March 1, 2024.  Users in the US can download SNOMED CT release files 
+at https://www.nlm.nih.gov/healthit/snomedct/us_edition.html.
+</p>
+<p>
+A number of SNOMED browsers are available online to search the SNOMED CT terminology.  The SNOMED 
+International SNOMED CT Browser (https://browser.ihtsdotools.org/?) is available online to anyone for 
+reference purposes.  Users are able to search in SNOMED CT international release in English and 
+Spanish, as well as search the local extension from a number of member countries. 
+</p>
+<a name="LOINC"> </a>
+<h3>LOINC</h3>
+<p>
+The Regenstrief Institute maintains LOINC and makes it available in a number of file formats.  
+Regenstrief Institute distributes LOINC and RELMA (Regenstrief LOINC Mapping Assistant) free of 
+charge, however a LOINC username and password are required. In obtaining and using LOINC or RELMA, 
+end users agree to the terms-of-use that are outlined at https://loinc.org/license.   Users can also 
+search the LOINC terminology using an online search tool (https://loinc.org/search/), however a LOINC 
+username and password are required.
+</p>
+<p>
+Updated versions of LOINC are distributed twice per year, in February and August. Between public 
+releases, LOINC publishes a preview of new codes that were requested by users and processed for 
+development by the LOINC team. 
+</p>
+<p>
+The full LOINC database, supporting documentation and supplemental files, and the RELMA® mapping 
+program are available for download from the Regenstrief Institute on the LOINC website 
+(http://loinc.org). LOINC version 2.77, released on February 27, 2024, contains the following files:
+</p>
+<p>
+Loinc_2.77
+├── AccessoryFiles
+│   ├── AnswerFile
+│   │   ├── AnswerFileReadMe.txt
+│   │   ├── AnswerList.csv
+│   │   └── LoincAnswerListLink.csv
+│   ├── ChangeSnapshot
+│   │   ├── ChangeSnapshotReadMe.txt
+│   │   ├── LoincChangeSnapshot.csv
+│   │   └── PartChangeSnapshot.csv
+│   ├── ComponentHierarchyBySystem
+│   │   ├── ComponentHierarchyBySystem.csv
+│   │   └── ComponentHierarchyBySystemReadMe.txt
+│   ├── ConsumerName
+│   │   ├── ConsumerName.csv
+│   │   └── ConsumerNameReadMe.txt
+│   ├── DocumentOntology
+│   │   ├── DocumentOntology.csv
+│   │   └── DocumentOntologyReadMe.txt
+│   ├── DocumentOntologyOwl
+│   │   ├── DocumentOntology.owl
+│   │   └── DocumentOntologyOwlReadme.txt
+│   ├── GroupFile
+│   │   ├── Group.csv
+│   │   ├── GroupAttributes.csv
+│   │   ├── GroupFileReadMe.txt
+│   │   ├── GroupLoincTerms.csv
+│   │   ├── ParentGroup.csv
+│   │   └── ParentGroupAttributes.csv
+│   ├── ImagingDocuments
+│   │   ├── ImagingDocumentCodes.csv
+│   │   └── ImagingDocumentCodesReadMe.txt
+│   ├── LinguisticVariants
+│   │   ├── LinguisticVariants.csv
+│   │   ├── LinguisticVariantsReadMe.txt
+│   │   ├── deAT24LinguisticVariant.csv
+│   │   ├── deDE15LinguisticVariant.csv
+│   │   ├── elGR17LinguisticVariant.csv
+│   │   ├── esAR7LinguisticVariant.csv
+│   │   ├── esES12LinguisticVariant.csv
+│   │   ├── esMX28LinguisticVariant.csv
+│   │   ├── etEE10LinguisticVariant.csv
+│   │   ├── frBE23LinguisticVariant.csv
+│   │   ├── frCA8LinguisticVariant.csv
+│   │   ├── frFR18LinguisticVariant.csv
+│   │   ├── itIT16LinguisticVariant.csv
+│   │   ├── koKR13LinguisticVariant.csv
+│   │   ├── nlNL22LinguisticVariant.csv
+│   │   ├── plPL29LinguisticVariant.csv
+│   │   ├── ptBR11LinguisticVariant.csv
+│   │   ├── ruRU20LinguisticVariant.csv
+│   │   ├── trTR19LinguisticVariant.csv
+│   │   ├── ukUA30LinguisticVariant.csv
+│   │   └── zhCN5LinguisticVariant.csv
+│   ├── LoincIeeeMedicalDeviceCodeMappingTable
+│   │   ├── LoincIeeeMedicalDeviceCodeMappingTable.csv
+│   │   └── LoincIeeeMedicalDeviceCodeMappingTableReadMe.txt
+│   ├── LoincRsnaRadiologyPlaybook
+│   │   ├── LoincRsnaRadiologyPlaybook.csv
+│   │   └── LoincRsnaRadiologyPlaybookReadMe.txt
+│   ├── LoincUniversalLabOrdersValueSet
+│   │   ├── LoincUniversalLabOrdersValueSet.csv
+│   │   └── LoincUniversalLabOrdersValueSetReadMe.txt
+│   ├── Loinc_2.77_DifferenceReport.pdf
+│   ├── PanelsAndForms
+│   │   ├── AnswerList.csv
+│   │   ├── Loinc.csv
+│   │   ├── LoincAnswerListLink.csv
+│   │   ├── PanelsAndForms.csv
+│   │   └── PanelsAndFormsReadMe.txt
+│   ├── PartFile
+│   │   ├── LoincPartLink_Primary.csv
+│   │   ├── LoincPartLink_Supplementary.csv
+│   │   ├── Part.csv
+│   │   ├── PartFileReadMe.txt
+│   │   └── PartRelatedCodeMapping.csv
+│   └── Updates
+│   ├── Updates.csv
+│   ├── Updates.mdb
+│   └── UpdatesReadMe.txt
+├── LoincLicense_5.5.txt
+├── LoincReadMe.txt
+├── LoincTable
+│   ├── Loinc.csv
+│   ├── MapTo.csv
+│   └── SourceOrganization.csv
+├── LoincTableCore
+│   ├── LoincTableCore.csv
+│   ├── LoincTableCoreReadMe.txt
+│   └── MapTo.csv
+└── loinc.xml
+</p>
+<p>
+LOINC names are not case sensitive. In other words, the meaning of a LOINC term is the same 
+regardless of whether the name is represented in upper, lower, or mixed case. For the few LOINC terms 
+that represent concepts whose names are case sensitive by international convention, such as red blood 
+cell antigens, the Component Part and Fully Specified Name include the the word 'little' in front of 
+each letter that is lower case, and superscripts are indicated by the word 'super'.
+</p>
+<a name="RxNorm"> </a>
+<h3>RxNorm</h3>
+<p>
+The full RxNorm data set is released on the first Monday of each month by the US National Library of 
+Medicine (NLM). During months when the first Monday is a Federal holiday, RxNorm is released the next 
+day (i.e. Tuesday).  Weekly update files are available from the NLM website for download.  Users can 
+choose to download the full RxNorm files monthly, or download only the updates since the last monthly 
+release.  https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html 
+</p>
+<p>
+The full monthly RxNorm release includes 9 data files, which are simple text files with pipe ('|') 
+delimiters between each field value in Rich Release Format (RRF) with the extension ".RRF".  The 
+character set of RxNorm release files is Unicode UTF-8.  However, the files are not fully normalized 
+as would be the case in a formal database; there are duplications across and within files by design.
+</p>
+<p>
+NLM does not provide RxNorm files in Excel format. However, RxNorm files are text files which can be 
+imported or converted manually into a spreadsheet. For detailed instructions, see this brief video 
+titled: Opening an RxNorm File in a Spreadsheet.
+</p>
+<p>
+RxNorm files are in Rich Release Format with the extension .RRF, which are text files with values 
+separated by the pipe character (|). After unzipping the RxNorm ZIP file, a text editor, such as 
+Notepad or Notepad++ can be used to open and view the RxNorm data.
+</p>
+<p>
+RxNorm viewer https://mor.nlm.nih.gov/RxNav/search? 
+</p>
+<p>
+RxNorm shows medications for veterinary and human use. 
+</p>
+
+  <hr />
+	<p id="footnote1">
+		[1] https://confluence.ihtsdotools.org/display/DOCUSEG/SNOMED+CT+US+Extension
+  </p>
 </div>
