@@ -1,18 +1,10 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  <a name="intro"> </a>
+<a name="fhirlimitations"></a>
   <h3>FHIR Limitations and Possible Solutions</h3>
   <p> Recognizing that FHIR's Terminology resources were not designed to enable collaboration between terminology authoring entities, there are several limitations implementers should be aware of when using FHIR for Terminology Change Set Exchange. Many of these limitations can be addressed through FHIR's inherent extensibility, but others are more difficult to address.</p>
-  <a name="extensions"> </a>
+  <a name="extensions"></a>
   <h3>Limitations addressed via Extensions</h3>
-  <h4>Concept attributes</h4>
-  <p>
-  These are primary attributes directly related to concepts
-  </p>
-  <ul>
-  	<li>
-  	<b>Concept Additional Identifiers</b> - 
-  	</li>
-  </ul>
+  <a name="ConceptDescriptionAttributes"></a>
   <h4>Concept description attributes</h4>
   <p>
   These are secondary attributes adding context to concept descriptions
@@ -28,6 +20,7 @@
   	<b>Concept description acceptability</b> - 
   	</li>
   </ul>
+  <a name="ConceptPropertyAttributes"></a>
   <h4>Concept property attributes</h4>
   <p>
   These are secondary attributes adding context to properties for concepts
@@ -43,16 +36,20 @@
   	<b>Concept Description Acceptability</b> - 
   	</li>
   </ul>
+  <a name="OtherLimitations"></a>
   <h3>Other Limitations</h3>
+  <a name="PropertyCodes"></a>
   <h4>Standardization of CodeSystem.property codes</h4>
   <p>
 HL7 has published some guidance on codes to use to represent properties from several terminologies (see: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties and https://terminology.hl7.org/LOINC.html#loinc-properties), but widespread implementations appear inconsistent.  Additionally, any terminology exchange that lacks this standardization will likely struggle to convey semantic detail for concepts.
   </p>
-    <h4>Change Sets with granularity below the concept level</h4>
+  <a name="Granularity"></a>
+  <h4>Change Sets with granularity below the concept level</h4>
   <p>
 As currently modelled, the smallest change that can be represented in a CodeSystem resource is a full "snapshot" representation of a Concept from that CodeSystem. If for example, the only change made to a Concept was a change to one of it's designation values, implementations would need to include the full semantic detail for that Concept in a Change Set.  The specific change made would only be apparent via some comparison to the prior representation of the Concept"
   </p>
-      <h4>Provanance to small changes</h4>
+  <a name="SmallChanges"></a>
+  <h4>Provanance to small changes</h4>
   <p>
 In the situation where multiple small changes were authored by several individuals, there are limits to how those changes can be referenced via a Provenance resource.  Recognizing that with FHIR R5 a common extension was published allowing Provenances to reference elements within a resource (https://hl7.org/fhir/extensions/StructureDefinition-targetElement.html), even this approach is limited to those elements that have id attributes. In a CodeSystem change set instance, the most granular structure a Provenance could refer to using this approach would be an individual CodeSystem.concept, and changes specifically to sub-elements such as a Concept designation can not be indicated in this way.
   </p>

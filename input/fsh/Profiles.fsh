@@ -328,7 +328,7 @@ Title: "Terminology Change Set Provenance (Provenance)"
 Description: "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements."
 * occurredPeriod 1..1
 * occurredPeriod.end 1..1
-* occurredPeriod ^short = "Authoring change sets occur over a period of time so it is most appropriate to capture as an occurredPeriod vs. occurredDateTime"
+* occurredPeriod ^short = "Authoring change sets occur over a period of time so it is most appropriate to capture as an occurredPeriod vs. occurredDateTime.  This window may reflect the technical timeframe when changes occurred, or a broader scoping window used to gather changes to define a change set."
 * reason 1..1
 * reason ^short = "The reason for authoring the change set - most likely value is METAMGT, but allowing flexibility here as needed"
 * activity 1..1

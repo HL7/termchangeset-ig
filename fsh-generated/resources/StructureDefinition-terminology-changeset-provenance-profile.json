@@ -60,7 +60,7 @@
         "id": "Provenance.occurred[x]:occurredPeriod",
         "path": "Provenance.occurred[x]",
         "sliceName": "occurredPeriod",
-        "short": "Authoring change sets occur over a period of time so it is most appropriate to capture as an occurredPeriod vs. occurredDateTime",
+        "short": "Authoring change sets occur over a period of time so it is most appropriate to capture as an occurredPeriod vs. occurredDateTime.  This window may reflect the technical timeframe when changes occurred, or a broader scoping window used to gather changes to define a change set.",
         "min": 1,
         "max": "1",
         "type": [
