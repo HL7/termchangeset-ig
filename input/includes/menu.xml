@@ -14,6 +14,16 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ChangeSetUseCase.html">Change Set Exchange</a>
+      </li>
+    </ul>
+  </li>
   <li><a href="artifacts.html">FHIR Artifacts</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tinkar Reference Model<b class="caret">
