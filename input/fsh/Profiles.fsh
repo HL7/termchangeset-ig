@@ -192,60 +192,61 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property.type only code
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
-* property contains loinc_component 1..1 MS
-* property[loinc_component] ^short = "Additional information supplied about each concept"
-* property[loinc_component] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_component] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property contains loinc_status 0..1 MS
+* property[loinc_status] ^short = "Property slice to capture LOINC Status for a concept"
+* property[loinc_status].code 1..1 MS
+* property[loinc_status].code only code
+* property[loinc_status].code = #STATUS (exactly)
+* property contains loinc_component 0..1 MS
+* property[loinc_component] ^short = "Property slice to capture LOINC Component for a concept"
 * property[loinc_component].code 1..1 MS
 * property[loinc_component].code only code
 * property[loinc_component].code = #COMPONENT (exactly)
-* property[loinc_component].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_component].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property contains loinc_property 1..1 MS
-* property[loinc_property] ^short = "Additional information supplied about each concept"
-* property[loinc_property] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_property] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property contains loinc_property 0..1 MS
+* property[loinc_property] ^short = "Property slice to capture LOINC Property for a concept"
 * property[loinc_property].code 1..1 MS
 * property[loinc_property].code only code
 * property[loinc_property].code = #PROPERTY (exactly)
-* property[loinc_property].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_property].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property contains loinc_time_aspct 1..1 MS
-* property[loinc_time_aspct] ^short = "Additional information supplied about each concept"
-* property[loinc_time_aspct] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_time_aspct] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property contains loinc_time_aspct 0..1 MS
+* property[loinc_time_aspct] ^short = "Property slice to capture LOINC Time Aspect for a concept"
 * property[loinc_time_aspct].code 1..1 MS
 * property[loinc_time_aspct].code only code
 * property[loinc_time_aspct].code = #TIME_ASPCT (exactly)
-* property[loinc_time_aspct].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_time_aspct].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property contains loinc_system 1..1 MS
-* property[loinc_system] ^short = "Additional information supplied about each concept"
-* property[loinc_system] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_system] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property contains loinc_system 0..1 MS
+* property[loinc_system] ^short = "Property slice to capture LOINC System for a concept"
 * property[loinc_system].code 1..1 MS
 * property[loinc_system].code only code
 * property[loinc_system].code = #SYSTEM (exactly)
-* property[loinc_system].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_system].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property contains loinc_scale_typ 1..1 MS
-* property[loinc_scale_typ] ^short = "Additional information supplied about each concept"
-* property[loinc_scale_typ] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_scale_typ] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property contains loinc_scale_typ 0..1 MS
+* property[loinc_scale_typ] ^short = "Property slice to capture LOINC Scale Type for a concept"
 * property[loinc_scale_typ].code 1..1 MS
 * property[loinc_scale_typ].code only code
 * property[loinc_scale_typ].code = #SCALE_TYP (exactly)
-* property[loinc_scale_typ].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_scale_typ].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
 * property contains loinc_method_typ 0..1 MS
-* property[loinc_method_typ] ^short = "Additional information supplied about each concept"
-* property[loinc_method_typ] ^definition = "A property defines an additional slot through which additional information can be provided about a concept."
-* property[loinc_method_typ] ^comment = "To cover through slices: Component, Property, Time, System, Scale, Method."
+* property[loinc_method_typ] ^short = "Property slice to capture LOINC Method Type for a concept"
 * property[loinc_method_typ].code 1..1 MS
 * property[loinc_method_typ].code only code
 * property[loinc_method_typ].code = #METHOD_TYP (exactly)
-* property[loinc_method_typ].code ^short = "Identifies the property on the concepts, and when referred to in operations"
-* property[loinc_method_typ].code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
+* property contains loinc_class 0..1 MS
+* property[loinc_class] ^short = "Property slice to capture LOINC Class for a concept"
+* property[loinc_class].code 1..1 MS
+* property[loinc_class].code only code
+* property[loinc_class].code = #CLASS (exactly)
+* property contains loinc_version_last_changed 0..1 MS
+* property[loinc_version_last_changed] ^short = "Property slice to capture LOINC VersionLastChanged for a concept"
+* property[loinc_version_last_changed].code 1..1 MS
+* property[loinc_version_last_changed].code only code
+* property[loinc_version_last_changed].code = #VersionLastChanged (exactly)
+* property contains loinc_class_typ 0..1 MS
+* property[loinc_class_typ] ^short = "Property slice to capture LOINC Class Type for a concept"
+* property[loinc_class_typ].code 1..1 MS
+* property[loinc_class_typ].code only code
+* property[loinc_class_typ].code = #CLASSTYPE (exactly)
+* property contains loinc_order_obs 0..1 MS
+* property[loinc_order_obs] ^short = "Property slice to capture LOINC Order Observation for a concept"
+* property[loinc_order_obs].code 1..1 MS
+* property[loinc_order_obs].code only code
+* property[loinc_order_obs].code = #ORDER_OBS (exactly)
 * concept 1..* MS
 * concept ^short = "Concepts in the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."

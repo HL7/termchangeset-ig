@@ -83,8 +83,7 @@
         },
         "short": "Property values should follow the LOINC-specific guidance available here: https://terminology.hl7.org/LOINC.html#loinc-properties",
         "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
-        "min": 5
+        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method."
       },
       {
         "id": "CodeSystem.property.description",
@@ -93,11 +92,25 @@
         "mustSupport": true
       },
       {
+        "id": "CodeSystem.property:loinc_status",
+        "path": "CodeSystem.property",
+        "sliceName": "loinc_status",
+        "short": "Property slice to capture LOINC Status for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.property:loinc_status.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "STATUS"
+      },
+      {
         "id": "CodeSystem.property:loinc_component",
         "path": "CodeSystem.property",
         "sliceName": "loinc_component",
-        "short": "Additional information supplied about each concept",
-        "min": 1,
+        "short": "Property slice to capture LOINC Component for a concept",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -110,8 +123,8 @@
         "id": "CodeSystem.property:loinc_property",
         "path": "CodeSystem.property",
         "sliceName": "loinc_property",
-        "short": "Additional information supplied about each concept",
-        "min": 1,
+        "short": "Property slice to capture LOINC Property for a concept",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -124,8 +137,8 @@
         "id": "CodeSystem.property:loinc_time_aspct",
         "path": "CodeSystem.property",
         "sliceName": "loinc_time_aspct",
-        "short": "Additional information supplied about each concept",
-        "min": 1,
+        "short": "Property slice to capture LOINC Time Aspect for a concept",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -138,8 +151,8 @@
         "id": "CodeSystem.property:loinc_system",
         "path": "CodeSystem.property",
         "sliceName": "loinc_system",
-        "short": "Additional information supplied about each concept",
-        "min": 1,
+        "short": "Property slice to capture LOINC System for a concept",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -152,8 +165,8 @@
         "id": "CodeSystem.property:loinc_scale_typ",
         "path": "CodeSystem.property",
         "sliceName": "loinc_scale_typ",
-        "short": "Additional information supplied about each concept",
-        "min": 1,
+        "short": "Property slice to capture LOINC Scale Type for a concept",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -166,7 +179,7 @@
         "id": "CodeSystem.property:loinc_method_typ",
         "path": "CodeSystem.property",
         "sliceName": "loinc_method_typ",
-        "short": "Additional information supplied about each concept",
+        "short": "Property slice to capture LOINC Method Type for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -175,6 +188,62 @@
         "id": "CodeSystem.property:loinc_method_typ.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "METHOD_TYP"
+      },
+      {
+        "id": "CodeSystem.property:loinc_class",
+        "path": "CodeSystem.property",
+        "sliceName": "loinc_class",
+        "short": "Property slice to capture LOINC Class for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.property:loinc_class.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "CLASS"
+      },
+      {
+        "id": "CodeSystem.property:loinc_version_last_changed",
+        "path": "CodeSystem.property",
+        "sliceName": "loinc_version_last_changed",
+        "short": "Property slice to capture LOINC VersionLastChanged for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.property:loinc_version_last_changed.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "VersionLastChanged"
+      },
+      {
+        "id": "CodeSystem.property:loinc_class_typ",
+        "path": "CodeSystem.property",
+        "sliceName": "loinc_class_typ",
+        "short": "Property slice to capture LOINC Class Type for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.property:loinc_class_typ.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "CLASSTYPE"
+      },
+      {
+        "id": "CodeSystem.property:loinc_order_obs",
+        "path": "CodeSystem.property",
+        "sliceName": "loinc_order_obs",
+        "short": "Property slice to capture LOINC Order Observation for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.property:loinc_order_obs.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "ORDER_OBS"
       },
       {
         "id": "CodeSystem.concept",

@@ -8,92 +8,6 @@
   },
   "url": "http://loinc.org",
   "content": "fragment",
-  "property": [
-    {
-      "code": "STATUS",
-      "uri": "http://loinc.org/property/STATUS",
-      "description": "Status of the term. Within LOINC, codes with STATUS=DEPRECATED are considered inactive. Current values: ACTIVE, TRIAL, DISCOURAGED, and DEPRECATED",
-      "type": "Coding"
-    },
-    {
-      "code": "COMPONENT",
-      "uri": "http://loinc.org/property/COMPONENT",
-      "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
-      "type": "Coding"
-    },
-    {
-      "code": "PROPERTY",
-      "uri": "http://loinc.org/property/PROPERTY",
-      "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
-      "type": "Coding"
-    },
-    {
-      "code": "TIME_ASPCT",
-      "uri": "http://loinc.org/property/TIME_ASPCT",
-      "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
-      "type": "Coding"
-    },
-    {
-      "code": "SYSTEM",
-      "uri": "http://loinc.org/property/SYSTEM",
-      "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
-      "type": "Coding"
-    },
-    {
-      "code": "SCALE_TYP",
-      "uri": "http://loinc.org/property/SCALE_TYP",
-      "description": "Fifth major axis-scale of measurement: Type of Scale",
-      "type": "Coding"
-    },
-    {
-      "code": "METHOD_TYP",
-      "uri": "http://loinc.org/property/METHOD_TYP",
-      "description": "Sixth major axis-method of measurement: Type of Method",
-      "type": "Coding"
-    },
-    {
-      "code": "CLASS",
-      "uri": "http://loinc.org/property/CLASS",
-      "description": "An arbitrary classification of terms for grouping related observations together",
-      "type": "Coding"
-    },
-    {
-      "code": "VersionLastChanged",
-      "uri": "http://loinc.org/property/VersionLastChanged",
-      "description": "The LOINC version number in which the record has last changed. For new records, this field contains the same value as the VersionFirstReleased property.",
-      "type": "string"
-    },
-    {
-      "code": "CLASSTYPE",
-      "uri": "http://loinc.org/property/CLASSTYPE",
-      "description": "1=Laboratory class; 2=Clinical class; 3=Claims attachments; 4=Surveys",
-      "type": "string"
-    },
-    {
-      "code": "ORDER_OBS",
-      "uri": "http://loinc.org/property/ORDER_OBS",
-      "description": "Provides users with an idea of the intended use of the term by categorizing it as an order only, observation only, or both",
-      "type": "string"
-    },
-    {
-      "code": "HL7_ATTACHMENT_STRUCTURE",
-      "uri": "http://loinc.org/property/HL7_ATTACHMENT_STRUCTURE",
-      "description": "This property is populated in collaboration with the HL7 Payer-Provider Exchange (PIE) Work Group (previously called Attachments Work Group) as described in the HL7 Attachment Specification: Supplement to Consolidated CDA Templated Guide.",
-      "type": "string"
-    },
-    {
-      "code": "VersionFirstReleased",
-      "uri": "http://loinc.org/property/VersionFirstReleased",
-      "description": "This is the LOINC version number in which this LOINC term was first published.",
-      "type": "string"
-    },
-    {
-      "code": "ValidHL7AttachmentRequest",
-      "uri": "http://loinc.org/property/ValidHL7AttachmentRequest",
-      "description": "A value of Y in this field indicates that this LOINC code can be sent by a payer as part of an HL7 Attachment request for additional information.",
-      "type": "string"
-    }
-  ],
   "caseSensitive": false,
   "concept": [
     {
@@ -346,6 +260,92 @@
         "="
       ],
       "value": "LOINC | 3rdParty"
+    }
+  ],
+  "property": [
+    {
+      "code": "STATUS",
+      "uri": "http://loinc.org/property/STATUS",
+      "description": "Status of the term. Within LOINC, codes with STATUS=DEPRECATED are considered inactive. Current values: ACTIVE, TRIAL, DISCOURAGED, and DEPRECATED",
+      "type": "Coding"
+    },
+    {
+      "code": "COMPONENT",
+      "uri": "http://loinc.org/property/COMPONENT",
+      "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
+      "type": "Coding"
+    },
+    {
+      "code": "PROPERTY",
+      "uri": "http://loinc.org/property/PROPERTY",
+      "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
+      "type": "Coding"
+    },
+    {
+      "code": "TIME_ASPCT",
+      "uri": "http://loinc.org/property/TIME_ASPCT",
+      "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
+      "type": "Coding"
+    },
+    {
+      "code": "SYSTEM",
+      "uri": "http://loinc.org/property/SYSTEM",
+      "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
+      "type": "Coding"
+    },
+    {
+      "code": "SCALE_TYP",
+      "uri": "http://loinc.org/property/SCALE_TYP",
+      "description": "Fifth major axis-scale of measurement: Type of Scale",
+      "type": "Coding"
+    },
+    {
+      "code": "METHOD_TYP",
+      "uri": "http://loinc.org/property/METHOD_TYP",
+      "description": "Sixth major axis-method of measurement: Type of Method",
+      "type": "Coding"
+    },
+    {
+      "code": "CLASS",
+      "uri": "http://loinc.org/property/CLASS",
+      "description": "An arbitrary classification of terms for grouping related observations together",
+      "type": "Coding"
+    },
+    {
+      "code": "VersionLastChanged",
+      "uri": "http://loinc.org/property/VersionLastChanged",
+      "description": "The LOINC version number in which the record has last changed. For new records, this field contains the same value as the VersionFirstReleased property.",
+      "type": "string"
+    },
+    {
+      "code": "CLASSTYPE",
+      "uri": "http://loinc.org/property/CLASSTYPE",
+      "description": "1=Laboratory class; 2=Clinical class; 3=Claims attachments; 4=Surveys",
+      "type": "string"
+    },
+    {
+      "code": "ORDER_OBS",
+      "uri": "http://loinc.org/property/ORDER_OBS",
+      "description": "Provides users with an idea of the intended use of the term by categorizing it as an order only, observation only, or both",
+      "type": "string"
+    },
+    {
+      "code": "HL7_ATTACHMENT_STRUCTURE",
+      "uri": "http://loinc.org/property/HL7_ATTACHMENT_STRUCTURE",
+      "description": "This property is populated in collaboration with the HL7 Payer-Provider Exchange (PIE) Work Group (previously called Attachments Work Group) as described in the HL7 Attachment Specification: Supplement to Consolidated CDA Templated Guide.",
+      "type": "string"
+    },
+    {
+      "code": "VersionFirstReleased",
+      "uri": "http://loinc.org/property/VersionFirstReleased",
+      "description": "This is the LOINC version number in which this LOINC term was first published.",
+      "type": "string"
+    },
+    {
+      "code": "ValidHL7AttachmentRequest",
+      "uri": "http://loinc.org/property/ValidHL7AttachmentRequest",
+      "description": "A value of Y in this field indicates that this LOINC code can be sent by a payer as part of an HL7 Attachment request for additional information.",
+      "type": "string"
     }
   ]
 }
