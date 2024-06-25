@@ -195,58 +195,73 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property contains loinc_status 0..1 MS
 * property[loinc_status] ^short = "Property slice to capture LOINC Status for a concept"
 * property[loinc_status].code 1..1 MS
-* property[loinc_status].code only code
 * property[loinc_status].code = #STATUS (exactly)
+* property[loinc_status].type = #Coding (exactly)
 * property contains loinc_component 0..1 MS
 * property[loinc_component] ^short = "Property slice to capture LOINC Component for a concept"
 * property[loinc_component].code 1..1 MS
-* property[loinc_component].code only code
 * property[loinc_component].code = #COMPONENT (exactly)
+* property[loinc_component].type = #Coding (exactly)
 * property contains loinc_property 0..1 MS
 * property[loinc_property] ^short = "Property slice to capture LOINC Property for a concept"
 * property[loinc_property].code 1..1 MS
-* property[loinc_property].code only code
 * property[loinc_property].code = #PROPERTY (exactly)
+* property[loinc_property].type = #Coding (exactly)
 * property contains loinc_time_aspct 0..1 MS
 * property[loinc_time_aspct] ^short = "Property slice to capture LOINC Time Aspect for a concept"
 * property[loinc_time_aspct].code 1..1 MS
-* property[loinc_time_aspct].code only code
 * property[loinc_time_aspct].code = #TIME_ASPCT (exactly)
+* property[loinc_time_aspct].type = #Coding (exactly)
 * property contains loinc_system 0..1 MS
 * property[loinc_system] ^short = "Property slice to capture LOINC System for a concept"
 * property[loinc_system].code 1..1 MS
-* property[loinc_system].code only code
 * property[loinc_system].code = #SYSTEM (exactly)
+* property[loinc_system].type = #Coding (exactly)
 * property contains loinc_scale_typ 0..1 MS
 * property[loinc_scale_typ] ^short = "Property slice to capture LOINC Scale Type for a concept"
 * property[loinc_scale_typ].code 1..1 MS
-* property[loinc_scale_typ].code only code
 * property[loinc_scale_typ].code = #SCALE_TYP (exactly)
+* property[loinc_scale_typ].type = #Coding (exactly)
 * property contains loinc_method_typ 0..1 MS
 * property[loinc_method_typ] ^short = "Property slice to capture LOINC Method Type for a concept"
 * property[loinc_method_typ].code 1..1 MS
-* property[loinc_method_typ].code only code
 * property[loinc_method_typ].code = #METHOD_TYP (exactly)
+* property[loinc_method_typ].type = #Coding (exactly)
 * property contains loinc_class 0..1 MS
 * property[loinc_class] ^short = "Property slice to capture LOINC Class for a concept"
 * property[loinc_class].code 1..1 MS
-* property[loinc_class].code only code
 * property[loinc_class].code = #CLASS (exactly)
+* property[loinc_class].type = #Coding (exactly)
 * property contains loinc_version_last_changed 0..1 MS
 * property[loinc_version_last_changed] ^short = "Property slice to capture LOINC VersionLastChanged for a concept"
 * property[loinc_version_last_changed].code 1..1 MS
-* property[loinc_version_last_changed].code only code
 * property[loinc_version_last_changed].code = #VersionLastChanged (exactly)
+* property[loinc_version_last_changed].type = #string (exactly)
 * property contains loinc_class_typ 0..1 MS
 * property[loinc_class_typ] ^short = "Property slice to capture LOINC Class Type for a concept"
 * property[loinc_class_typ].code 1..1 MS
-* property[loinc_class_typ].code only code
 * property[loinc_class_typ].code = #CLASSTYPE (exactly)
+* property[loinc_class_typ].type = #string (exactly)
 * property contains loinc_order_obs 0..1 MS
 * property[loinc_order_obs] ^short = "Property slice to capture LOINC Order Observation for a concept"
 * property[loinc_order_obs].code 1..1 MS
-* property[loinc_order_obs].code only code
 * property[loinc_order_obs].code = #ORDER_OBS (exactly)
+* property[loinc_order_obs].type = #string (exactly)
+* property contains loinc_hl7_attachment_structure 0..1 MS
+* property[loinc_hl7_attachment_structure] ^short = "Property slice to capture LOINC HL7 Attachment Structure for a concept"
+* property[loinc_hl7_attachment_structure].code 1..1 MS
+* property[loinc_hl7_attachment_structure].code = #HL7_ATTACHMENT_STRUCTURE (exactly)
+* property[loinc_hl7_attachment_structure].type = #string (exactly)
+* property contains loinc_version_first_released 0..1 MS
+* property[loinc_version_first_released] ^short = "Property slice to capture LOINC Version First Released for a concept"
+* property[loinc_version_first_released].code 1..1 MS
+* property[loinc_version_first_released].code = #VersionFirstReleased (exactly)
+* property[loinc_version_first_released].type = #string (exactly)
+* property contains loinc_valid_hl7_attachment_request 0..1 MS
+* property[loinc_valid_hl7_attachment_request] ^short = "Property slice to capture LOINC Valid HL7 Attachment Request for a concept"
+* property[loinc_valid_hl7_attachment_request].code 1..1 MS
+* property[loinc_valid_hl7_attachment_request].code = #ValidHL7AttachmentRequest (exactly)
+* property[loinc_valid_hl7_attachment_request].type = #string (exactly)
 * concept 1..* MS
 * concept ^short = "Concepts in the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
