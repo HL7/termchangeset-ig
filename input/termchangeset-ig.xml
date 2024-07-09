@@ -132,11 +132,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="tinkartofhir.html"/>
-        <title value="Transform to FHIR"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="html"/>

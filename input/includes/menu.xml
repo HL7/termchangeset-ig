@@ -51,9 +51,6 @@
       <li>
         <a href="protobufexamples.html">Protobuf Examples</a>
       </li>
-      <li>
-        <a href="tinkartofhir.html">Transform to FHIR</a>
-      </li>
     </ul>
   </li>
   <li><a href="downloads.html">Downloads</a></li>

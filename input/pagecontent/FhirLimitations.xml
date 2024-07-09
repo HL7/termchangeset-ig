@@ -49,7 +49,7 @@ HL7 has published some guidance on codes to use to represent properties from sev
 As currently modelled, the smallest change that can be represented in a CodeSystem resource is a full "snapshot" representation of a Concept from that CodeSystem. If for example, the only change made to a Concept was a change to one of it's designation values, implementations would need to include the full semantic detail for that Concept in a Change Set.  The specific change made would only be apparent via some comparison to the prior representation of the Concept"
   </p>
   <a name="SmallChanges"></a>
-  <h4>Provanance to small changes</h4>
+  <h4>Provenance to small changes</h4>
   <p>
 In the situation where multiple small changes were authored by several individuals, there are limits to how those changes can be referenced via a Provenance resource.  Recognizing that with FHIR R5 a common extension was published allowing Provenances to reference elements within a resource (https://hl7.org/fhir/extensions/StructureDefinition-targetElement.html), even this approach is limited to those elements that have id attributes. In a CodeSystem change set instance, the most granular structure a Provenance could refer to using this approach would be an individual CodeSystem.concept, and changes specifically to sub-elements such as a Concept designation can not be indicated in this way.
   </p>
