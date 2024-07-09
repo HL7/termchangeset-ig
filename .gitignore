@@ -75,3 +75,7 @@ tmp*.xml
 ~*.docx
 ~*.xlsx
 ~*.pptx
+
+# Manually Added #
+##################
+/backups/

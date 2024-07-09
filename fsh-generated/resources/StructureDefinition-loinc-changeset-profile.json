@@ -108,7 +108,7 @@
       {
         "id": "CodeSystem.property:loinc_status.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_component",
@@ -127,7 +127,7 @@
       {
         "id": "CodeSystem.property:loinc_component.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_property",
@@ -146,7 +146,7 @@
       {
         "id": "CodeSystem.property:loinc_property.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_time_aspct",
@@ -165,7 +165,7 @@
       {
         "id": "CodeSystem.property:loinc_time_aspct.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_system",
@@ -184,7 +184,7 @@
       {
         "id": "CodeSystem.property:loinc_system.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_scale_typ",
@@ -203,7 +203,7 @@
       {
         "id": "CodeSystem.property:loinc_scale_typ.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_method_typ",
@@ -222,7 +222,7 @@
       {
         "id": "CodeSystem.property:loinc_method_typ.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_class",
@@ -241,7 +241,7 @@
       {
         "id": "CodeSystem.property:loinc_class.type",
         "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
+        "fixedCode": "string"
       },
       {
         "id": "CodeSystem.property:loinc_version_last_changed",
@@ -382,12 +382,39 @@
         }
       },
       {
+        "id": "CodeSystem.concept.property:loinc_status",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_status",
+        "short": "Property slice to capture LOINC Status for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_status.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_status.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_status.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_status.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "STATUS"
+      },
+      {
         "id": "CodeSystem.concept.property:loinc_component",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_component",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC Component for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -410,17 +437,13 @@
       {
         "id": "CodeSystem.concept.property:loinc_component.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "COMPONENT"
       },
       {
         "id": "CodeSystem.concept.property:loinc_property",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_property",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC Property for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -443,17 +466,13 @@
       {
         "id": "CodeSystem.concept.property:loinc_property.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "PROPERTY"
       },
       {
         "id": "CodeSystem.concept.property:loinc_time_aspct",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_time_aspct",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC Time Aspect for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -476,17 +495,13 @@
       {
         "id": "CodeSystem.concept.property:loinc_time_aspct.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "TIME_ASPCT"
       },
       {
         "id": "CodeSystem.concept.property:loinc_system",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_system",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC System for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -509,17 +524,13 @@
       {
         "id": "CodeSystem.concept.property:loinc_system.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "SYSTEM"
       },
       {
         "id": "CodeSystem.concept.property:loinc_scale_typ",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_scale_typ",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC Scale Type for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -542,17 +553,13 @@
       {
         "id": "CodeSystem.concept.property:loinc_scale_typ.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "SCALE_TYP"
       },
       {
         "id": "CodeSystem.concept.property:loinc_method_typ",
         "path": "CodeSystem.concept.property",
         "sliceName": "loinc_method_typ",
-        "short": "Additional information supplied about each concept",
-        "definition": "A property defines an additional slot through which additional information can be provided about a concept.",
-        "comment": "To cover through slices: Component, Property, Time, System, Scale, Method.",
+        "short": "Property slice to capture LOINC Method Type for a concept",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -575,9 +582,210 @@
       {
         "id": "CodeSystem.concept.property:loinc_method_typ.code",
         "path": "CodeSystem.concept.property.code",
-        "short": "Identifies the property on the concepts, and when referred to in operations",
-        "definition": "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters.",
         "fixedCode": "METHOD_TYP"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_class",
+        "short": "Property slice to capture LOINC Class for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "CLASS"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_last_changed",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_version_last_changed",
+        "short": "Property slice to capture LOINC VersionLastChanged for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_last_changed.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_last_changed.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_last_changed.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_last_changed.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "VersionLastChanged"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class_typ",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_class_typ",
+        "short": "Property slice to capture LOINC Class Type for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class_typ.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class_typ.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class_typ.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_class_typ.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "CLASSTYPE"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_order_obs",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_order_obs",
+        "short": "Property slice to capture LOINC Order Observation for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_order_obs.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_order_obs.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_order_obs.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_order_obs.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "ORDER_OBS"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_hl7_attachment_structure",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_hl7_attachment_structure",
+        "short": "Property slice to capture LOINC HL7 Attachment Structure for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_hl7_attachment_structure.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_hl7_attachment_structure.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_hl7_attachment_structure.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_hl7_attachment_structure.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "HL7_ATTACHMENT_STRUCTURE"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_first_released",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_version_first_released",
+        "short": "Property slice to capture LOINC Version First Released for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_first_released.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_first_released.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_first_released.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_version_first_released.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "VersionFirstReleased"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_valid_hl7_attachment_request",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "loinc_valid_hl7_attachment_request",
+        "short": "Property slice to capture LOINC Valid HL7 Attachment Request for a concept",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_valid_hl7_attachment_request.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_valid_hl7_attachment_request.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_valid_hl7_attachment_request.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:loinc_valid_hl7_attachment_request.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "ValidHL7AttachmentRequest"
       }
     ]
   }

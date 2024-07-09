@@ -13,48 +13,24 @@
     {
       "property": [
         {
-          "code": "COMPONENT",
-          "valueCoding": {
-            "code": "LP437323-1",
-            "system": "http://loinc.org",
-            "display": "Certificate of medical necessity"
-          }
+          "code": "CLASS",
+          "valueString": "LP32888-7"
         },
         {
-          "code": "PROPERTY",
-          "valueString": "2.77",
-          "valueCoding": {
-            "code": "LP6813-2",
-            "system": "http://loinc.org",
-            "display": "Find"
-          }
+          "code": "VersionFirstReleased",
+          "valueString": "2.77"
         },
         {
-          "code": "TIME_ASPCT",
-          "valueString": "ACTIVE",
-          "valueCoding": {
-            "code": "LP6960-1",
-            "system": "http://loinc.org",
-            "display": "Pt"
-          }
+          "code": "STATUS",
+          "valueString": "ACTIVE"
         },
         {
-          "code": "SYSTEM",
-          "valueString": "3",
-          "valueCoding": {
-            "code": "LP310005-6",
-            "system": "http://loinc.org",
-            "display": "^Patient"
-          }
+          "code": "CLASSTYPE",
+          "valueString": "3"
         },
         {
-          "code": "SCALE_TYP",
-          "valueString": "Both",
-          "valueCoding": {
-            "code": "LP32888-7",
-            "system": "http://loinc.org",
-            "display": "Doc"
-          }
+          "code": "ORDER_OBS",
+          "valueString": "Both"
         },
         {
           "code": "HL7_ATTACHMENT_STRUCTURE",
@@ -67,6 +43,26 @@
         {
           "code": "VersionLastChanged",
           "valueString": "2.77"
+        },
+        {
+          "code": "COMPONENT",
+          "valueString": "LP437323-1"
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "LP6813-2"
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "LP6960-1"
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "LP310005-6"
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "LP32888-7"
         }
       ],
       "id": "1c8f2f61-9160-46c7-9664-80ae4a5a94c3",
@@ -77,48 +73,24 @@
     {
       "property": [
         {
-          "code": "COMPONENT",
-          "valueCoding": {
-            "code": "LP437553-3",
-            "system": "http://loinc.org",
-            "display": "Durable medical equipment proof of delivery receipt"
-          }
+          "code": "CLASS",
+          "valueString": "LP32888-7"
         },
         {
-          "code": "PROPERTY",
-          "valueString": "2.77",
-          "valueCoding": {
-            "code": "LP6813-2",
-            "system": "http://loinc.org",
-            "display": "Find"
-          }
+          "code": "VersionFirstReleased",
+          "valueString": "2.77"
         },
         {
-          "code": "TIME_ASPCT",
-          "valueString": "ACTIVE",
-          "valueCoding": {
-            "code": "LP6960-1",
-            "system": "http://loinc.org",
-            "display": "Pt"
-          }
+          "code": "STATUS",
+          "valueString": "ACTIVE"
         },
         {
-          "code": "SYSTEM",
-          "valueString": "3",
-          "valueCoding": {
-            "code": "LP310005-6",
-            "system": "http://loinc.org",
-            "display": "^Patient"
-          }
+          "code": "CLASSTYPE",
+          "valueString": "3"
         },
         {
-          "code": "SCALE_TYP",
-          "valueString": "Observation",
-          "valueCoding": {
-            "code": "LP32888-7",
-            "system": "http://loinc.org",
-            "display": "Doc"
-          }
+          "code": "ORDER_OBS",
+          "valueString": "Observation"
         },
         {
           "code": "HL7_ATTACHMENT_STRUCTURE",
@@ -131,6 +103,26 @@
         {
           "code": "VersionLastChanged",
           "valueString": "2.77"
+        },
+        {
+          "code": "COMPONENT",
+          "valueString": "LP437553-3"
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "LP6813-2"
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "LP6960-1"
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "LP310005-6"
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "LP32888-7"
         }
       ],
       "id": "0ff172eb-d17d-4146-9581-ad45e4e62f0b",
@@ -141,48 +133,24 @@
     {
       "property": [
         {
-          "code": "COMPONENT",
-          "valueCoding": {
-            "code": "LP437336-3",
-            "system": "http://loinc.org",
-            "display": "Pain management form or template"
-          }
+          "code": "CLASS",
+          "valueString": "LP32888-7"
         },
         {
-          "code": "PROPERTY",
-          "valueString": "2.77",
-          "valueCoding": {
-            "code": "LP6813-2",
-            "system": "http://loinc.org",
-            "display": "Find"
-          }
+          "code": "VersionFirstReleased",
+          "valueString": "2.77"
         },
         {
-          "code": "TIME_ASPCT",
-          "valueString": "ACTIVE",
-          "valueCoding": {
-            "code": "LP6960-1",
-            "system": "http://loinc.org",
-            "display": "Pt"
-          }
+          "code": "STATUS",
+          "valueString": "ACTIVE"
         },
         {
-          "code": "SYSTEM",
-          "valueString": "3",
-          "valueCoding": {
-            "code": "LP310005-6",
-            "system": "http://loinc.org",
-            "display": "^Patient"
-          }
+          "code": "CLASSTYPE",
+          "valueString": "3"
         },
         {
-          "code": "SCALE_TYP",
-          "valueString": "Observation",
-          "valueCoding": {
-            "code": "LP32888-7",
-            "system": "http://loinc.org",
-            "display": "Doc"
-          }
+          "code": "ORDER_OBS",
+          "valueString": "Observation"
         },
         {
           "code": "HL7_ATTACHMENT_STRUCTURE",
@@ -195,6 +163,26 @@
         {
           "code": "VersionLastChanged",
           "valueString": "2.77"
+        },
+        {
+          "code": "COMPONENT",
+          "valueString": "LP437336-3"
+        },
+        {
+          "code": "PROPERTY",
+          "valueString": "LP6813-2"
+        },
+        {
+          "code": "TIME_ASPCT",
+          "valueString": "LP6960-1"
+        },
+        {
+          "code": "SYSTEM",
+          "valueString": "LP310005-6"
+        },
+        {
+          "code": "SCALE_TYP",
+          "valueString": "LP32888-7"
         }
       ],
       "id": "9ce55d17-eee1-412d-9ebd-8ef36c896f8b",
@@ -267,49 +255,49 @@
       "code": "STATUS",
       "uri": "http://loinc.org/property/STATUS",
       "description": "Status of the term. Within LOINC, codes with STATUS=DEPRECATED are considered inactive. Current values: ACTIVE, TRIAL, DISCOURAGED, and DEPRECATED",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "COMPONENT",
       "uri": "http://loinc.org/property/COMPONENT",
       "description": "First major axis-component or analyte: Analyte Name, Analyte sub-class, Challenge",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "PROPERTY",
       "uri": "http://loinc.org/property/PROPERTY",
       "description": "Second major axis-property observed: Kind of Property (also called kind of quantity)",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "TIME_ASPCT",
       "uri": "http://loinc.org/property/TIME_ASPCT",
       "description": "Third major axis-timing of the measurement: Time Aspect (Point or moment in time vs. time interval)",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "SYSTEM",
       "uri": "http://loinc.org/property/SYSTEM",
       "description": "Fourth major axis-type of specimen or system: System (Sample) Type",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "SCALE_TYP",
       "uri": "http://loinc.org/property/SCALE_TYP",
       "description": "Fifth major axis-scale of measurement: Type of Scale",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "METHOD_TYP",
       "uri": "http://loinc.org/property/METHOD_TYP",
       "description": "Sixth major axis-method of measurement: Type of Method",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "CLASS",
       "uri": "http://loinc.org/property/CLASS",
       "description": "An arbitrary classification of terms for grouping related observations together",
-      "type": "Coding"
+      "type": "string"
     },
     {
       "code": "VersionLastChanged",
