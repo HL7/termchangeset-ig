@@ -24,7 +24,6 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * caseSensitive = true
 * content = #fragment
 //* supplements = "http://terminology.hl7.org/CodeSystem/variable-role"
-* count = 3
 * concept[+].code = #measuredVariableA
 * concept[=].display = "measured variable A"
 * concept[=].definition = "variable represents a first of two measured variables to be used in a measured variable that is a mathematical operation of two measured variables."

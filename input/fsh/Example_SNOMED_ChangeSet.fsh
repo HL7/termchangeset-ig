@@ -5,7 +5,7 @@ Description: "Example of SNOMED CT Change Set"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension[=].valueCode = #fhir
 * version = "20230901.1"
-* url = "http://snomed.info/sctVAExtension"
+* url = "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.6.96"
 * name = "SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
@@ -23,7 +23,6 @@ Description: "Example of SNOMED CT Change Set"
 * versionNeeded = false
 * content = #fragment
 //* supplements = "http://snomed.info/sct"
-* count = 1
 * filter[+].code = #concept
 * filter[=].description = "Filter that includes concepts based on their logical definition. e.g. [concept] [is-a] [x] - include all concepts with an is-a relationship to concept x, or [concept] [in] [x]- include all concepts in the reference set identified by concept x"
 * filter[=].operator[+] = #is-a

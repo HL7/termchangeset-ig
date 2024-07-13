@@ -39,7 +39,1456 @@
       {
         "id": "CodeSystem.property",
         "path": "CodeSystem.property",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Property values should follow the SNOMED-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
+      },
+      {
+        "id": "CodeSystem.property:inactive",
+        "path": "CodeSystem.property",
+        "sliceName": "inactive",
+        "short": "Property slice to capture SNOMED inactive for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:inactive.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "inactive"
+      },
+      {
+        "id": "CodeSystem.property:inactive.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "boolean"
+      },
+      {
+        "id": "CodeSystem.property:definitionStatusId",
+        "path": "CodeSystem.property",
+        "sliceName": "definitionStatusId",
+        "short": "Property slice to capture SNOMED definitionStatusId for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:definitionStatusId.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "definitionStatusId"
+      },
+      {
+        "id": "CodeSystem.property:definitionStatusId.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:parent",
+        "path": "CodeSystem.property",
+        "sliceName": "parent",
+        "short": "Property slice to capture SNOMED parent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:parent.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "parent"
+      },
+      {
+        "id": "CodeSystem.property:parent.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:moduleId",
+        "path": "CodeSystem.property",
+        "sliceName": "moduleId",
+        "short": "Property slice to capture SNOMED moduleId for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:moduleId.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "moduleId"
+      },
+      {
+        "id": "CodeSystem.property:moduleId.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Due_to",
+        "path": "CodeSystem.property",
+        "sliceName": "Due_to",
+        "short": "Property slice to capture SNOMED Due to for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Due_to.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Due to"
+      },
+      {
+        "id": "CodeSystem.property:Due_to.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Associated_with",
+        "path": "CodeSystem.property",
+        "sliceName": "Associated_with",
+        "short": "Property slice to capture SNOMED Associated with for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Associated_with.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Associated with"
+      },
+      {
+        "id": "CodeSystem.property:Associated_with.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Associated_morphology",
+        "path": "CodeSystem.property",
+        "sliceName": "Associated_morphology",
+        "short": "Property slice to capture SNOMED Associated morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Associated_morphology.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Associated morphology"
+      },
+      {
+        "id": "CodeSystem.property:Associated_morphology.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_specimen",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_specimen",
+        "short": "Property slice to capture SNOMED Has specimen for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_specimen.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has specimen"
+      },
+      {
+        "id": "CodeSystem.property:Has_specimen.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_morphology",
+        "path": "CodeSystem.property",
+        "sliceName": "Specimen_source_morphology",
+        "short": "Property slice to capture SNOMED Specimen source morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_morphology.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specimen source morphology"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_morphology.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_topography",
+        "path": "CodeSystem.property",
+        "sliceName": "Specimen_source_topography",
+        "short": "Property slice to capture SNOMED Specimen source topography for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_topography.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specimen source topography"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_topography.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_identity",
+        "path": "CodeSystem.property",
+        "sliceName": "Specimen_source_identity",
+        "short": "Property slice to capture SNOMED Specimen source identity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_identity.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specimen source identity"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_identity.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_procedure",
+        "path": "CodeSystem.property",
+        "sliceName": "Specimen_procedure",
+        "short": "Property slice to capture SNOMED Specimen procedure for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_procedure.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specimen procedure"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_procedure.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Part_of",
+        "path": "CodeSystem.property",
+        "sliceName": "Part_of",
+        "short": "Property slice to capture SNOMED Part of for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Part_of.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Part of"
+      },
+      {
+        "id": "CodeSystem.property:Part_of.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_active_ingredient",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_active_ingredient",
+        "short": "Property slice to capture SNOMED Has active ingredient for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_active_ingredient.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has active ingredient"
+      },
+      {
+        "id": "CodeSystem.property:Has_active_ingredient.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Subject_of_information",
+        "path": "CodeSystem.property",
+        "sliceName": "Subject_of_information",
+        "short": "Property slice to capture SNOMED Subject of information for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Subject_of_information.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Subject of information"
+      },
+      {
+        "id": "CodeSystem.property:Subject_of_information.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Causative_agent",
+        "path": "CodeSystem.property",
+        "sliceName": "Causative_agent",
+        "short": "Property slice to capture SNOMED Causative agent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Causative_agent.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Causative agent"
+      },
+      {
+        "id": "CodeSystem.property:Causative_agent.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Associated_finding",
+        "path": "CodeSystem.property",
+        "sliceName": "Associated_finding",
+        "short": "Property slice to capture SNOMED Associated finding for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Associated_finding.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Associated finding"
+      },
+      {
+        "id": "CodeSystem.property:Associated_finding.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Component",
+        "path": "CodeSystem.property",
+        "sliceName": "Component",
+        "short": "Property slice to capture SNOMED Component for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Component.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Component"
+      },
+      {
+        "id": "CodeSystem.property:Component.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Severity",
+        "path": "CodeSystem.property",
+        "sliceName": "Severity",
+        "short": "Property slice to capture SNOMED Severity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Severity.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Severity"
+      },
+      {
+        "id": "CodeSystem.property:Severity.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Occurrence",
+        "path": "CodeSystem.property",
+        "sliceName": "Occurrence",
+        "short": "Property slice to capture SNOMED Occurrence for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Occurrence.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Occurrence"
+      },
+      {
+        "id": "CodeSystem.property:Occurrence.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Episodicity",
+        "path": "CodeSystem.property",
+        "sliceName": "Episodicity",
+        "short": "Property slice to capture SNOMED Episodicity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Episodicity.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Episodicity"
+      },
+      {
+        "id": "CodeSystem.property:Episodicity.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Technique",
+        "path": "CodeSystem.property",
+        "sliceName": "Technique",
+        "short": "Property slice to capture SNOMED Technique for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Technique.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Technique"
+      },
+      {
+        "id": "CodeSystem.property:Technique.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Revision_status",
+        "path": "CodeSystem.property",
+        "sliceName": "Revision_status",
+        "short": "Property slice to capture SNOMED Revision status for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Revision_status.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Revision status"
+      },
+      {
+        "id": "CodeSystem.property:Revision_status.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Units",
+        "path": "CodeSystem.property",
+        "sliceName": "Units",
+        "short": "Property slice to capture SNOMED Units for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Units.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Units"
+      },
+      {
+        "id": "CodeSystem.property:Units.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:After",
+        "path": "CodeSystem.property",
+        "sliceName": "After",
+        "short": "Property slice to capture SNOMED After for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:After.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "After"
+      },
+      {
+        "id": "CodeSystem.property:After.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Access",
+        "path": "CodeSystem.property",
+        "sliceName": "Access",
+        "short": "Property slice to capture SNOMED Access for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Access.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Access"
+      },
+      {
+        "id": "CodeSystem.property:Access.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Method",
+        "path": "CodeSystem.property",
+        "sliceName": "Method",
+        "short": "Property slice to capture SNOMED Method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Method.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Method"
+      },
+      {
+        "id": "CodeSystem.property:Method.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Priority",
+        "path": "CodeSystem.property",
+        "sliceName": "Priority",
+        "short": "Property slice to capture SNOMED Priority for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Priority.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Priority"
+      },
+      {
+        "id": "CodeSystem.property:Priority.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Clinical_course",
+        "path": "CodeSystem.property",
+        "sliceName": "Clinical_course",
+        "short": "Property slice to capture SNOMED Clinical course for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Clinical_course.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Clinical course"
+      },
+      {
+        "id": "CodeSystem.property:Clinical_course.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Laterality",
+        "path": "CodeSystem.property",
+        "sliceName": "Laterality",
+        "short": "Property slice to capture SNOMED Laterality for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Laterality.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Laterality"
+      },
+      {
+        "id": "CodeSystem.property:Laterality.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Associated_procedure",
+        "path": "CodeSystem.property",
+        "sliceName": "Associated_procedure",
+        "short": "Property slice to capture SNOMED Associated procedure for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Associated_procedure.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Associated procedure"
+      },
+      {
+        "id": "CodeSystem.property:Associated_procedure.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Finding_site",
+        "path": "CodeSystem.property",
+        "sliceName": "Finding_site",
+        "short": "Property slice to capture SNOMED Finding site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_site.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Finding site"
+      },
+      {
+        "id": "CodeSystem.property:Finding_site.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Direct_morphology",
+        "path": "CodeSystem.property",
+        "sliceName": "Direct_morphology",
+        "short": "Property slice to capture SNOMED Direct morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Direct_morphology.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Direct morphology"
+      },
+      {
+        "id": "CodeSystem.property:Direct_morphology.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Direct_substance",
+        "path": "CodeSystem.property",
+        "sliceName": "Direct_substance",
+        "short": "Property slice to capture SNOMED Direct substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Direct_substance.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Direct substance"
+      },
+      {
+        "id": "CodeSystem.property:Direct_substance.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_focus",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_focus",
+        "short": "Property slice to capture SNOMED Has focus for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_focus.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has focus"
+      },
+      {
+        "id": "CodeSystem.property:Has_focus.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_intent",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_intent",
+        "short": "Property slice to capture SNOMED Has intent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_intent.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has intent"
+      },
+      {
+        "id": "CodeSystem.property:Has_intent.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site",
+        "path": "CodeSystem.property",
+        "sliceName": "Procedure_site",
+        "short": "Property slice to capture SNOMED Procedure site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Procedure site"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_definitional_manifestation",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_definitional_manifestation",
+        "short": "Property slice to capture SNOMED Has definitional manifestation for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_definitional_manifestation.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has definitional manifestation"
+      },
+      {
+        "id": "CodeSystem.property:Has_definitional_manifestation.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_morphology",
+        "path": "CodeSystem.property",
+        "sliceName": "Indirect_morphology",
+        "short": "Property slice to capture SNOMED Indirect morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_morphology.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Indirect morphology"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_morphology.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_device",
+        "path": "CodeSystem.property",
+        "sliceName": "Indirect_device",
+        "short": "Property slice to capture SNOMED Indirect device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_device.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Indirect device"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_device.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_interpretation",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_interpretation",
+        "short": "Property slice to capture SNOMED Has interpretation for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_interpretation.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has interpretation"
+      },
+      {
+        "id": "CodeSystem.property:Has_interpretation.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Interprets",
+        "path": "CodeSystem.property",
+        "sliceName": "Interprets",
+        "short": "Property slice to capture SNOMED Interprets for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Interprets.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Interprets"
+      },
+      {
+        "id": "CodeSystem.property:Interprets.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Measurement_method",
+        "path": "CodeSystem.property",
+        "sliceName": "Measurement_method",
+        "short": "Property slice to capture SNOMED Measurement method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Measurement_method.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Measurement method"
+      },
+      {
+        "id": "CodeSystem.property:Measurement_method.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Property",
+        "path": "CodeSystem.property",
+        "sliceName": "Property",
+        "short": "Property slice to capture SNOMED Property for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Property.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Property"
+      },
+      {
+        "id": "CodeSystem.property:Property.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Recipient_category",
+        "path": "CodeSystem.property",
+        "sliceName": "Recipient_category",
+        "short": "Property slice to capture SNOMED Recipient category for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Recipient_category.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Recipient category"
+      },
+      {
+        "id": "CodeSystem.property:Recipient_category.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Scale_type",
+        "path": "CodeSystem.property",
+        "sliceName": "Scale_type",
+        "short": "Property slice to capture SNOMED Scale type for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Scale_type.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Scale type"
+      },
+      {
+        "id": "CodeSystem.property:Scale_type.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_substance",
+        "path": "CodeSystem.property",
+        "sliceName": "Specimen_substance",
+        "short": "Property slice to capture SNOMED Specimen substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_substance.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specimen substance"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_substance.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Time_aspect",
+        "path": "CodeSystem.property",
+        "sliceName": "Time_aspect",
+        "short": "Property slice to capture SNOMED Time aspect for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Time_aspect.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Time aspect"
+      },
+      {
+        "id": "CodeSystem.property:Time_aspect.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Pathological_process",
+        "path": "CodeSystem.property",
+        "sliceName": "Pathological_process",
+        "short": "Property slice to capture SNOMED Pathological process for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Pathological_process.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Pathological process"
+      },
+      {
+        "id": "CodeSystem.property:Pathological_process.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Direct",
+        "path": "CodeSystem.property",
+        "sliceName": "Procedure_site_-_Direct",
+        "short": "Property slice to capture SNOMED Procedure site - Direct for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Direct.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Procedure site - Direct"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Direct.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Indirect",
+        "path": "CodeSystem.property",
+        "sliceName": "Procedure_site_-_Indirect",
+        "short": "Property slice to capture SNOMED Procedure site - Indirect for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Indirect.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Procedure site - Indirect"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Indirect.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_device",
+        "path": "CodeSystem.property",
+        "sliceName": "Procedure_device",
+        "short": "Property slice to capture SNOMED Procedure device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_device.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Procedure device"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_device.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_morphology",
+        "path": "CodeSystem.property",
+        "sliceName": "Procedure_morphology",
+        "short": "Property slice to capture SNOMED Procedure morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_morphology.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Procedure morphology"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_morphology.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Finding_context",
+        "path": "CodeSystem.property",
+        "sliceName": "Finding_context",
+        "short": "Property slice to capture SNOMED Finding context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_context.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Finding context"
+      },
+      {
+        "id": "CodeSystem.property:Finding_context.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Temporal_context",
+        "path": "CodeSystem.property",
+        "sliceName": "Temporal_context",
+        "short": "Property slice to capture SNOMED Temporal context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Temporal_context.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Temporal context"
+      },
+      {
+        "id": "CodeSystem.property:Temporal_context.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Subject_relationship_context",
+        "path": "CodeSystem.property",
+        "sliceName": "Subject_relationship_context",
+        "short": "Property slice to capture SNOMED Subject relationship context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Subject_relationship_context.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Subject relationship context"
+      },
+      {
+        "id": "CodeSystem.property:Subject_relationship_context.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Route_of_administration",
+        "path": "CodeSystem.property",
+        "sliceName": "Route_of_administration",
+        "short": "Property slice to capture SNOMED Route of administration for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Route_of_administration.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Route of administration"
+      },
+      {
+        "id": "CodeSystem.property:Route_of_administration.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Has_dose_form",
+        "path": "CodeSystem.property",
+        "sliceName": "Has_dose_form",
+        "short": "Property slice to capture SNOMED Has dose form for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_dose_form.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Has dose form"
+      },
+      {
+        "id": "CodeSystem.property:Has_dose_form.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Finding_method",
+        "path": "CodeSystem.property",
+        "sliceName": "Finding_method",
+        "short": "Property slice to capture SNOMED Finding method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_method.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Finding method"
+      },
+      {
+        "id": "CodeSystem.property:Finding_method.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Finding_informer",
+        "path": "CodeSystem.property",
+        "sliceName": "Finding_informer",
+        "short": "Property slice to capture SNOMED Finding informer for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_informer.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Finding informer"
+      },
+      {
+        "id": "CodeSystem.property:Finding_informer.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Using_device",
+        "path": "CodeSystem.property",
+        "sliceName": "Using_device",
+        "short": "Property slice to capture SNOMED Using device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Using_device.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Using device"
+      },
+      {
+        "id": "CodeSystem.property:Using_device.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Using_energy",
+        "path": "CodeSystem.property",
+        "sliceName": "Using_energy",
+        "short": "Property slice to capture SNOMED Using energy for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Using_energy.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Using energy"
+      },
+      {
+        "id": "CodeSystem.property:Using_energy.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Using_substance",
+        "path": "CodeSystem.property",
+        "sliceName": "Using_substance",
+        "short": "Property slice to capture SNOMED Using substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Using_substance.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Using substance"
+      },
+      {
+        "id": "CodeSystem.property:Using_substance.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Surgical_approach",
+        "path": "CodeSystem.property",
+        "sliceName": "Surgical_approach",
+        "short": "Property slice to capture SNOMED Surgical approach for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Surgical_approach.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Surgical approach"
+      },
+      {
+        "id": "CodeSystem.property:Surgical_approach.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Using_access_device",
+        "path": "CodeSystem.property",
+        "sliceName": "Using_access_device",
+        "short": "Property slice to capture SNOMED Using access device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Using_access_device.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Using access device"
+      },
+      {
+        "id": "CodeSystem.property:Using_access_device.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Role_group",
+        "path": "CodeSystem.property",
+        "sliceName": "Role_group",
+        "short": "Property slice to capture SNOMED Role group for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Role_group.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Role group"
+      },
+      {
+        "id": "CodeSystem.property:Role_group.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Property_type",
+        "path": "CodeSystem.property",
+        "sliceName": "Property_type",
+        "short": "Property slice to capture SNOMED Property type for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Property_type.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Property type"
+      },
+      {
+        "id": "CodeSystem.property:Property_type.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Inheres_in",
+        "path": "CodeSystem.property",
+        "sliceName": "Inheres_in",
+        "short": "Property slice to capture SNOMED Inheres in for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Inheres_in.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Inheres in"
+      },
+      {
+        "id": "CodeSystem.property:Inheres_in.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Towards",
+        "path": "CodeSystem.property",
+        "sliceName": "Towards",
+        "short": "Property slice to capture SNOMED Towards for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Towards.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Towards"
+      },
+      {
+        "id": "CodeSystem.property:Towards.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Characterizes",
+        "path": "CodeSystem.property",
+        "sliceName": "Characterizes",
+        "short": "Property slice to capture SNOMED Characterizes for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Characterizes.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Characterizes"
+      },
+      {
+        "id": "CodeSystem.property:Characterizes.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Process_agent",
+        "path": "CodeSystem.property",
+        "sliceName": "Process_agent",
+        "short": "Property slice to capture SNOMED Process agent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Process_agent.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Process agent"
+      },
+      {
+        "id": "CodeSystem.property:Process_agent.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Process_duration",
+        "path": "CodeSystem.property",
+        "sliceName": "Process_duration",
+        "short": "Property slice to capture SNOMED Process duration for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Process_duration.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Process duration"
+      },
+      {
+        "id": "CodeSystem.property:Process_duration.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Process_output",
+        "path": "CodeSystem.property",
+        "sliceName": "Process_output",
+        "short": "Property slice to capture SNOMED Process output for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Process_output.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Process output"
+      },
+      {
+        "id": "CodeSystem.property:Process_output.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Relative_to",
+        "path": "CodeSystem.property",
+        "sliceName": "Relative_to",
+        "short": "Property slice to capture SNOMED Relative to for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Relative_to.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Relative to"
+      },
+      {
+        "id": "CodeSystem.property:Relative_to.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Precondition",
+        "path": "CodeSystem.property",
+        "sliceName": "Precondition",
+        "short": "Property slice to capture SNOMED Precondition for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Precondition.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Precondition"
+      },
+      {
+        "id": "CodeSystem.property:Precondition.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Direct_site",
+        "path": "CodeSystem.property",
+        "sliceName": "Direct_site",
+        "short": "Property slice to capture SNOMED Direct site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Direct_site.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Direct site"
+      },
+      {
+        "id": "CodeSystem.property:Direct_site.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Specified_by",
+        "path": "CodeSystem.property",
+        "sliceName": "Specified_by",
+        "short": "Property slice to capture SNOMED Specified by for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specified_by.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Specified by"
+      },
+      {
+        "id": "CodeSystem.property:Specified_by.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Observes",
+        "path": "CodeSystem.property",
+        "sliceName": "Observes",
+        "short": "Property slice to capture SNOMED Observes for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Observes.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Observes"
+      },
+      {
+        "id": "CodeSystem.property:Observes.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Is_about",
+        "path": "CodeSystem.property",
+        "sliceName": "Is_about",
+        "short": "Property slice to capture SNOMED Is about for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Is_about.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Is about"
+      },
+      {
+        "id": "CodeSystem.property:Is_about.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.property:Defined",
+        "path": "CodeSystem.property",
+        "sliceName": "Defined",
+        "short": "Property slice to capture SNOMED Defined for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Defined.code",
+        "path": "CodeSystem.property.code",
+        "fixedCode": "Defined"
+      },
+      {
+        "id": "CodeSystem.property:Defined.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "boolean"
       },
       {
         "id": "CodeSystem.concept.code",
@@ -69,6 +1518,19 @@
         "min": 1
       },
       {
+        "id": "CodeSystem.concept.property",
+        "path": "CodeSystem.concept.property",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "CodeSystem.concept.property.extension",
         "path": "CodeSystem.concept.property.extension",
         "min": 2
@@ -84,6 +1546,2406 @@
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "elProfileSetOperator",
         "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:inactive",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "inactive",
+        "short": "Property slice to capture SNOMED inactive for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:inactive.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:inactive.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:inactive.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:inactive.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "inactive"
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "definitionStatusId",
+        "short": "Property slice to capture SNOMED definitionStatusId for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "definitionStatusId"
+      },
+      {
+        "id": "CodeSystem.concept.property:parent",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "parent",
+        "short": "Property slice to capture SNOMED parent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:parent.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:parent.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:parent.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:parent.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "parent"
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "moduleId",
+        "short": "Property slice to capture SNOMED moduleId for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "moduleId"
+      },
+      {
+        "id": "CodeSystem.concept.property:Due_to",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Due_to",
+        "short": "Property slice to capture SNOMED Due to for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Due_to.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Due_to.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Due_to.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Due_to.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Due to"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Associated_with",
+        "short": "Property slice to capture SNOMED Associated with for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Associated with"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_morphology",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Associated_morphology",
+        "short": "Property slice to capture SNOMED Associated morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_morphology.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_morphology.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_morphology.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_morphology.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Associated morphology"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_specimen",
+        "short": "Property slice to capture SNOMED Has specimen for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has specimen"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specimen_source_morphology",
+        "short": "Property slice to capture SNOMED Specimen source morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specimen source morphology"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specimen_source_topography",
+        "short": "Property slice to capture SNOMED Specimen source topography for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specimen source topography"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_identity",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specimen_source_identity",
+        "short": "Property slice to capture SNOMED Specimen source identity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_identity.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_identity.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_identity.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_identity.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specimen source identity"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specimen_procedure",
+        "short": "Property slice to capture SNOMED Specimen procedure for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specimen procedure"
+      },
+      {
+        "id": "CodeSystem.concept.property:Part_of",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Part_of",
+        "short": "Property slice to capture SNOMED Part of for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Part_of.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Part_of.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Part_of.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Part_of.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Part of"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_active_ingredient",
+        "short": "Property slice to capture SNOMED Has active ingredient for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has active ingredient"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_of_information",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Subject_of_information",
+        "short": "Property slice to capture SNOMED Subject of information for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_of_information.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_of_information.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_of_information.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_of_information.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Subject of information"
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Causative_agent",
+        "short": "Property slice to capture SNOMED Causative agent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Causative agent"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_finding",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Associated_finding",
+        "short": "Property slice to capture SNOMED Associated finding for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_finding.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_finding.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_finding.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_finding.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Associated finding"
+      },
+      {
+        "id": "CodeSystem.concept.property:Component",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Component",
+        "short": "Property slice to capture SNOMED Component for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Component.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Component.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Component.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Component.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Component"
+      },
+      {
+        "id": "CodeSystem.concept.property:Severity",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Severity",
+        "short": "Property slice to capture SNOMED Severity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Severity.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Severity.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Severity.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Severity.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Severity"
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Occurrence",
+        "short": "Property slice to capture SNOMED Occurrence for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Occurrence"
+      },
+      {
+        "id": "CodeSystem.concept.property:Episodicity",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Episodicity",
+        "short": "Property slice to capture SNOMED Episodicity for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Episodicity.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Episodicity.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Episodicity.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Episodicity.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Episodicity"
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Technique",
+        "short": "Property slice to capture SNOMED Technique for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Technique"
+      },
+      {
+        "id": "CodeSystem.concept.property:Revision_status",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Revision_status",
+        "short": "Property slice to capture SNOMED Revision status for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Revision_status.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Revision_status.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Revision_status.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Revision_status.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Revision status"
+      },
+      {
+        "id": "CodeSystem.concept.property:Units",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Units",
+        "short": "Property slice to capture SNOMED Units for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Units.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Units.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Units.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Units.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Units"
+      },
+      {
+        "id": "CodeSystem.concept.property:After",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "After",
+        "short": "Property slice to capture SNOMED After for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:After.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:After.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:After.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:After.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "After"
+      },
+      {
+        "id": "CodeSystem.concept.property:Access",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Access",
+        "short": "Property slice to capture SNOMED Access for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Access.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Access.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Access.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Access.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Access"
+      },
+      {
+        "id": "CodeSystem.concept.property:Method",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Method",
+        "short": "Property slice to capture SNOMED Method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Method.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Method.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Method.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Method.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Method"
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Priority",
+        "short": "Property slice to capture SNOMED Priority for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Priority"
+      },
+      {
+        "id": "CodeSystem.concept.property:Clinical_course",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Clinical_course",
+        "short": "Property slice to capture SNOMED Clinical course for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Clinical_course.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Clinical_course.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Clinical_course.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Clinical_course.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Clinical course"
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Laterality",
+        "short": "Property slice to capture SNOMED Laterality for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Laterality"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_procedure",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Associated_procedure",
+        "short": "Property slice to capture SNOMED Associated procedure for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_procedure.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_procedure.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_procedure.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_procedure.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Associated procedure"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Finding_site",
+        "short": "Property slice to capture SNOMED Finding site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Finding site"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_morphology",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Direct_morphology",
+        "short": "Property slice to capture SNOMED Direct morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_morphology.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_morphology.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_morphology.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_morphology.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Direct morphology"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Direct_substance",
+        "short": "Property slice to capture SNOMED Direct substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Direct substance"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_focus",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_focus",
+        "short": "Property slice to capture SNOMED Has focus for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_focus.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_focus.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_focus.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_focus.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has focus"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_intent",
+        "short": "Property slice to capture SNOMED Has intent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has intent"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Procedure_site",
+        "short": "Property slice to capture SNOMED Procedure site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Procedure site"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_definitional_manifestation",
+        "short": "Property slice to capture SNOMED Has definitional manifestation for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has definitional manifestation"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_morphology",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Indirect_morphology",
+        "short": "Property slice to capture SNOMED Indirect morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_morphology.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_morphology.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_morphology.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_morphology.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Indirect morphology"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Indirect_device",
+        "short": "Property slice to capture SNOMED Indirect device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Indirect device"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_interpretation",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_interpretation",
+        "short": "Property slice to capture SNOMED Has interpretation for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_interpretation.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_interpretation.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_interpretation.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_interpretation.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has interpretation"
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Interprets",
+        "short": "Property slice to capture SNOMED Interprets for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Interprets"
+      },
+      {
+        "id": "CodeSystem.concept.property:Measurement_method",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Measurement_method",
+        "short": "Property slice to capture SNOMED Measurement method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Measurement_method.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Measurement_method.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Measurement_method.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Measurement_method.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Measurement method"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Property",
+        "short": "Property slice to capture SNOMED Property for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Property.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Property.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Property"
+      },
+      {
+        "id": "CodeSystem.concept.property:Recipient_category",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Recipient_category",
+        "short": "Property slice to capture SNOMED Recipient category for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Recipient_category.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Recipient_category.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Recipient_category.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Recipient_category.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Recipient category"
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Scale_type",
+        "short": "Property slice to capture SNOMED Scale type for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Scale type"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_substance",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specimen_substance",
+        "short": "Property slice to capture SNOMED Specimen substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_substance.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_substance.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_substance.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_substance.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specimen substance"
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Time_aspect",
+        "short": "Property slice to capture SNOMED Time aspect for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Time aspect"
+      },
+      {
+        "id": "CodeSystem.concept.property:Pathological_process",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Pathological_process",
+        "short": "Property slice to capture SNOMED Pathological process for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Pathological_process.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Pathological_process.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Pathological_process.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Pathological_process.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Pathological process"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Procedure_site_-_Direct",
+        "short": "Property slice to capture SNOMED Procedure site - Direct for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Procedure site - Direct"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Procedure_site_-_Indirect",
+        "short": "Property slice to capture SNOMED Procedure site - Indirect for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Procedure site - Indirect"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Procedure_device",
+        "short": "Property slice to capture SNOMED Procedure device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Procedure device"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_morphology",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Procedure_morphology",
+        "short": "Property slice to capture SNOMED Procedure morphology for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_morphology.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_morphology.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_morphology.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_morphology.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Procedure morphology"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Finding_context",
+        "short": "Property slice to capture SNOMED Finding context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Finding context"
+      },
+      {
+        "id": "CodeSystem.concept.property:Temporal_context",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Temporal_context",
+        "short": "Property slice to capture SNOMED Temporal context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Temporal_context.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Temporal_context.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Temporal_context.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Temporal_context.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Temporal context"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Subject_relationship_context",
+        "short": "Property slice to capture SNOMED Subject relationship context for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Subject relationship context"
+      },
+      {
+        "id": "CodeSystem.concept.property:Route_of_administration",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Route_of_administration",
+        "short": "Property slice to capture SNOMED Route of administration for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Route_of_administration.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Route_of_administration.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Route_of_administration.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Route_of_administration.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Route of administration"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Has_dose_form",
+        "short": "Property slice to capture SNOMED Has dose form for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Has dose form"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_method",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Finding_method",
+        "short": "Property slice to capture SNOMED Finding method for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_method.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_method.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_method.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_method.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Finding method"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Finding_informer",
+        "short": "Property slice to capture SNOMED Finding informer for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Finding informer"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_device",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Using_device",
+        "short": "Property slice to capture SNOMED Using device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_device.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_device.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_device.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_device.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Using device"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Using_energy",
+        "short": "Property slice to capture SNOMED Using energy for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Using energy"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_substance",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Using_substance",
+        "short": "Property slice to capture SNOMED Using substance for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_substance.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_substance.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_substance.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_substance.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Using substance"
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Surgical_approach",
+        "short": "Property slice to capture SNOMED Surgical approach for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Surgical approach"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_access_device",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Using_access_device",
+        "short": "Property slice to capture SNOMED Using access device for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_access_device.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_access_device.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_access_device.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_access_device.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Using access device"
+      },
+      {
+        "id": "CodeSystem.concept.property:Role_group",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Role_group",
+        "short": "Property slice to capture SNOMED Role group for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Role_group.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Role_group.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Role_group.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Role_group.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Role group"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Property_type",
+        "short": "Property slice to capture SNOMED Property type for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Property type"
+      },
+      {
+        "id": "CodeSystem.concept.property:Inheres_in",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Inheres_in",
+        "short": "Property slice to capture SNOMED Inheres in for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Inheres_in.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Inheres_in.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Inheres_in.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Inheres_in.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Inheres in"
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Towards",
+        "short": "Property slice to capture SNOMED Towards for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Towards"
+      },
+      {
+        "id": "CodeSystem.concept.property:Characterizes",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Characterizes",
+        "short": "Property slice to capture SNOMED Characterizes for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Characterizes.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Characterizes.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Characterizes.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Characterizes.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Characterizes"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Process_agent",
+        "short": "Property slice to capture SNOMED Process agent for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Process agent"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_duration",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Process_duration",
+        "short": "Property slice to capture SNOMED Process duration for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_duration.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_duration.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_duration.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_duration.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Process duration"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Process_output",
+        "short": "Property slice to capture SNOMED Process output for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Process output"
+      },
+      {
+        "id": "CodeSystem.concept.property:Relative_to",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Relative_to",
+        "short": "Property slice to capture SNOMED Relative to for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Relative_to.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Relative_to.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Relative_to.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Relative_to.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Relative to"
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Precondition",
+        "short": "Property slice to capture SNOMED Precondition for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Precondition"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_site",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Direct_site",
+        "short": "Property slice to capture SNOMED Direct site for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_site.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_site.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_site.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_site.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Direct site"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Specified_by",
+        "short": "Property slice to capture SNOMED Specified by for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Specified by"
+      },
+      {
+        "id": "CodeSystem.concept.property:Observes",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Observes",
+        "short": "Property slice to capture SNOMED Observes for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Observes.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Observes.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Observes.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Observes.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Observes"
+      },
+      {
+        "id": "CodeSystem.concept.property:Is_about",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Is_about",
+        "short": "Property slice to capture SNOMED Is about for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Is_about.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Is_about.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Is_about.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Is_about.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Is about"
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined",
+        "path": "CodeSystem.concept.property",
+        "sliceName": "Defined",
+        "short": "Property slice to capture SNOMED Defined for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined.extension:roleGroup",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined.code",
+        "path": "CodeSystem.concept.property.code",
+        "fixedCode": "Defined"
       }
     ]
   }

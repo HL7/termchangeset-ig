@@ -31,11 +31,6 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * content = #fragment (exactly)
 * content ^short = "Change Set CodeSystem resources are most appropriately described as a FRAGMENT"
 * content ^definition = "This codes system profile contains only those concepts included in an incremental Change Set for a terminology"
-* count 1..1
-* count ^short = "Total concepts in this changeset for the code system"
-* count ^definition = "The total number of concepts defined in this change set for the code system."
-* count ^comment = "The count of concepts defined in this change set should match what is defined in the CodeSystem.content tree - included to assist with reconciliation of processing."
-* count ^mustSupport = true
 * property 0..* MS
 * property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within the [HL7 Terminology External Code Systems page](https://terminology.hl7.org/external_terminologies.html)."
 * property ^definition = "A property defines additional semantic detail for each concept included in the change set"
@@ -43,11 +38,15 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * property.code 1..1 MS
 * property.code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * property.code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
-* property.uri 0..1
+* property.uri 0..1 MS
 * property.uri ^short = "Formal identifier for the property"
 * property.uri ^definition = "Reference to the formal meaning of the property. One possible source of meaning is the [Concept Properties](codesystem-concept-properties.html) code system."
 * property.uri ^mustSupport = false
+* property.description 0..1 MS
+* property.description ^short = "Why the property is defined, and/or what it conveys"
+* property.description ^definition = "A description of the property- why it is defined, and how its value might be used."
 * property.type 1..1 MS
+* property.type only code
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
 * concept 1..* MS
