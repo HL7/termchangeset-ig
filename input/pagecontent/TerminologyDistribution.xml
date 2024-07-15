@@ -1,4 +1,11 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
+<p>
+Clinical terminologies are currently distributed with a wide range of formats and schedules. A summary of distribution patterns for several significant terminologies is listed below.
+</p>
+<p>
+NOTE: There is content in this document that is directly quoted from existing published literature and websites. Notably, some language has been incorporated verbatim from LOINC, RxNorm, and SNOMED CT websites, which contain overviews about the distribution of each terminology.
+</p>
 <a name="SNOMED CT"> </a>
 <h3>SNOMED CT<a href="#footnote1">[1]</a></h3>
 <p>
@@ -37,7 +44,7 @@ reference purposes.  Users are able to search in SNOMED CT international release
 Spanish, as well as search the local extension from a number of member countries. 
 </p>
 <a name="LOINC"> </a>
-<h3>LOINC</h3>
+<h3>LOINC<a href="#footnote2">[2]</a></h3>
 <p>
 The Regenstrief Institute maintains LOINC and makes it available in a number of file formats.  
 Regenstrief Institute distributes LOINC and RELMA (Regenstrief LOINC Mapping Assistant) free of 
@@ -157,7 +164,7 @@ cell antigens, the Component Part and Fully Specified Name include the the word 
 each letter that is lower case, and superscripts are indicated by the word 'super'.
 </p>
 <a name="RxNorm"> </a>
-<h3>RxNorm</h3>
+<h3>RxNorm<a href="#footnote3">[3]</a></h3>
 <p>
 The full RxNorm data set is released on the first Monday of each month by the US National Library of 
 Medicine (NLM). During months when the first Monday is a Federal holiday, RxNorm is released the next 
@@ -191,5 +198,11 @@ RxNorm shows medications for veterinary and human use.
   <hr />
 	<p id="footnote1">
 		[1] https://confluence.ihtsdotools.org/display/DOCUSEG/SNOMED+CT+US+Extension
+  </p>
+  <p id="footnote2">
+		[2] https://loinc.org/kb/users-guide/introduction/
+  </p>
+  <p id="footnote3">
+		[3] https://www.nlm.nih.gov/research/umls/rxnorm/overview.html
   </p>
 </div>

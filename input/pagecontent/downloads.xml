@@ -45,4 +45,16 @@
 			</tr>
 		</tbody>
 	</table>
+	<a name="crossversion"></a>
+	<h3>Cross Version Analysis</h3>
+{% include cross-version-analysis.xhtml %}
+	<a name="dependency"></a>
+	<h3>Dependency Table</h3>
+{% include dependency-table.xhtml %}
+	<a name="globals"></a>
+	<h3>Globals Statements</h3>
+{% include globals-table.xhtml %}
+	<a name="ip"></a>
+	<h3>IP Statements</h3>
+{% include ip-statements.xhtml %}
 </div>

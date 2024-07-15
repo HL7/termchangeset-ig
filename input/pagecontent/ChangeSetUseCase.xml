@@ -1,0 +1,5 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+<a name="changesetusecase"></a>
+  <h3>Terminology Change Set Exchange Use Case</h3>
+  <p> Placeholder for a Use Case describing functional conditions necessitating the creation and distribution of a Terminology Change Set.</p>
+</div>

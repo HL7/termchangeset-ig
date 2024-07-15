@@ -92,6 +92,11 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="ChangeSetUseCase.html"/>
+        <title value="Change Set Exchange"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="TinkarBackground.html"/>
         <title value="Tinkar Background"/>
         <generation value="html"/>
@@ -124,11 +129,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
       <page>
         <nameUrl value="protobufexamples.html"/>
         <title value="Protobuf Examples"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="tinkartofhir.html"/>
-        <title value="Transform to FHIR"/>
         <generation value="html"/>
       </page>
       <page>

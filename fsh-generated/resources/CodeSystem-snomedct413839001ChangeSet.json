@@ -223,7 +223,7 @@
     }
   ],
   "version": "20230901.1",
-  "url": "http://snomed.info/sctVAExtension",
+  "url": "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_413839001_ChronicLungDisease_ChangeSet",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
@@ -251,7 +251,6 @@
   "caseSensitive": true,
   "compositional": true,
   "versionNeeded": false,
-  "count": 1,
   "filter": [
     {
       "code": "concept",

@@ -4,6 +4,23 @@
 <a name="codesystem-properties"> </a>
 <h4>CodeSystem Properties</h4>
 <p>
-TBD guidance on how to implement CodeSystem properties referencing <a href="https://terminology.hl7.org/external_terminologies.html">THO guidance</a> and sub-pages that are specific to specific terminologies
+Within a FHIR representation, a CodeSystem's properties are perhaps the most important structure for defining the terminology-specific semantics for the concepts in that CodeSystem. Given the broad variation of semantics adopted across terminologies, FHIR has a flexible design for representing properties (see: <a href="https://hl7.org/fhir/R4/codesystem.html#properties">https://hl7.org/fhir/R4/codesystem.html#properties</a>), but that flexibility can lead to inconsistency of implementation without clear guidance for representation of terminology-specific properties.
+</p>
+<p>
+To address this issue, HL7 has developed guidance for properties on its terminology-specific sub pages under the <a href="https://terminology.hl7.org/external_terminologies.html">External Code Systems page</a> within HL7's Terminology publication. On the "Use with HL7 Standards" tab, the far right column of the displayed table ("Use with HL7 Standards") contains links to terminology specific pages where guidance on properties is present. Below are direct links to several commonly used terminologies in the US:
+</p>
+<ul>
+	<li>
+		<a href="https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties">SNOMED CT Properties</a>
+	</li>
+	<li>
+		<a href="https://terminology.hl7.org/RxNorm.html#rxnorm-properties">RxNorm Properties</a>
+	</li>
+	<li>
+		<a href="https://terminology.hl7.org/LOINC.html#loinc-properties">LOINC Properties</a>
+	</li>
+</ul>
+<p>
+These pages are works in progress, and have varying levels of completeness, but should be referenced as the most robust source for guidance on terminology-specific properties, until such time as similar guidance is available directly from the maintainers of these external code systems.
 </p>
 </div>
