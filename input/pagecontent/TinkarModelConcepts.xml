@@ -426,6 +426,11 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>STATUS_VALUE</td>
   </tr>
     <tr>
+    <td>Chinese Language</td>
+    <td>A concept representing the Chinese Language</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
     <td>Component field</td>
     <td>A display field type that references a concept ID.</td>
     <td>DISPLAY_FIELDS</td>
@@ -441,9 +446,19 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>DISPLAY_FIELDS</td>
   </tr>
     <tr>
-    <td>Decription not case sensitive </td>
-    <td>Value which designate character as not sensitive for a given description </td>
-    <td>DESCRIPTION_CASE_SIGNIFICANCE</td>
+    <td>Concept Reference</td>
+    <td>The concept referred to by the is_a axiom relationship or the axiom role relationship.</td>
+    <td>IS_A; ROLE</td>
+  </tr>
+    <tr>
+    <td>Czech Language</td>
+    <td>A concept representing the Czech Language.</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
+    <td>Danish Language</td>
+    <td>A concept representing the Danish Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Definition description type </td>
@@ -453,12 +468,12 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Description</td>
     <td>Human readable text for a concept</td>
-    <td>DESCRIPTION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Description acceptability</td>
     <td> Whether a given human readable text for a concept is permissible</td>
-    <td>US_DIALECT_PATTERN; GB_DIALECT_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Description case sensitive </td>
@@ -468,27 +483,22 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Description case significance </td>
     <td>Specifies how to handle the description text interms of case sensitivity </td>
-    <td>DESCRIPTION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
-    <td>Description pattern </td>
-    <td>Contains all metadata and human readable text that describes the concept </td>
-    <td>PATTERN</td>
+    <td>Description not case sensitive </td>
+    <td>Value which designate character as not sensitive for a given description </td>
+    <td>DESCRIPTION_CASE_SIGNIFICANCE</td>
   </tr>
     <tr>
     <td>Description semantic</td>
     <td>Purpose and meaning for the description pattern and dialect patterns </td>
-    <td>DESCRIPTION_PATTERN; US_DIALECT_PATTERN; GB_DIALECT_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Description type</td>
     <td>Specifying what type of description it is i.e. is it fully qualified or regular and etc.</td>
-    <td>DESCRIPTION_PATTERN</td>
-  </tr>
-    <tr>
-    <td>Descriptum</td>
-    <td>The semantic meaning for the EL++ patterns</td>
-    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN; EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Development path</td>
@@ -508,7 +518,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Display Fields </td>
     <td>Captures the human readable terms</td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>DiTree field</td>
@@ -516,24 +526,19 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>DISPLAY_FIELDS</td>
   </tr>
     <tr>
-    <td>EL++ Inferred Axioms Pattern</td>
-    <td></td>
-    <td>PATTERN</td>
+    <td>Dutch Language</td>
+    <td>A concept representing the Dutch Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>EL++ Inferred terminological axioms</td>
     <td></td>
-    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN</td>
-  </tr>
-    <tr>
-    <td>EL++ Stated Axioms Pattern</td>
-    <td></td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>EL++ Stated terminological axioms</td>
     <td></td>
-    <td>EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>English Dialect</td>
@@ -542,7 +547,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
   </tr>
     <tr>
     <td>English Language</td>
-    <td>Value for description language</td>
+    <td>A concept representing the English Language.</td>
     <td>LANGUAGE</td>
   </tr>
     <tr>
@@ -556,29 +561,39 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>DISPLAY_FIELDS</td>
   </tr>
     <tr>
+    <td>French Language</td>
+    <td>A concept representing the French Language.</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
     <td>Fully qualified name description type</td>
     <td>Fully qualified name is a description that uniquely identifies and differentiates it from other concepts with similar descriptions</td>
     <td>DESCRIPTION_TYPE</td>
   </tr>
     <tr>
-    <td>GB Dialect Pattern</td>
-    <td>Particular form of language specific form of English language, particular to Great Britian</td>
-    <td>PATTERN</td>
+    <td>German Language</td>
+    <td>A concept representing the German Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Great Britian English dialect</td>
     <td>Great Britain: English Langauge reference set</td>
-    <td>ENGLISH_DIALECT; GB_DIALECT_PATTERN</td>
-  </tr>
-    <tr>
-    <td>Identifier Pattern</td>
-    <td>An identifier pattern is used to identity a concept which containts the identifier source and the actual value</td>
-    <td>PATTERN</td>
+    <td>ENGLISH_DIALECT</td>
   </tr>
     <tr>
     <td>Identifier Source</td>
-    <td>An identifier used to label the identity of a unique component.</td>
-    <td>IDENTIFIER_PATTERN</td>
+    <td>An identifier used to label the source of the identity of a unique component.</td>
+    <td>MODEL_CONCEPT</td>
+  </tr>
+    <tr>
+    <td>Identifier Value</td>
+    <td>The literal string value identifier</td>
+    <td>MODEL_CONCEPT</td>
+  </tr>
+    <tr>
+    <td>Implication Set</td>
+    <td>A set of relationships that indicate something has an implication. Not necessarily or sufficient but implicated.</td>
+    <td>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
   </tr>
     <tr>
     <td>Inactive Status</td>
@@ -588,12 +603,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Inferred Navigation</td>
     <td>The origins and destinations for concepts based on the reasoner generated inferred terminological axioms</td>
-    <td>INFERRED_NAVIGATION_PATTERN</td>
-  </tr>
-    <tr>
-    <td>Inferred Navigation Pattern</td>
-    <td>A pattern specifying the origins and destinations for concepts based on the inferred terminological axioms</td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Integer Field</td>
@@ -602,38 +612,58 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
   </tr>
     <tr>
     <td>Integrated Knowledge Management</td>
+    <td>The Root Vertex</td>
     <td></td>
-    <td></td>
+  </tr>
+    <tr>
+    <td>Irish Language</td>
+    <td>A concept representing the Irish Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Is-a</td>
     <td>Designates the parent child relationship</td>
-    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
+  </tr>
+    <tr>
+    <td>Italian Language</td>
+    <td>A concept representing the Italian Language.</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
+    <td>Korean Language</td>
+    <td>A concept representing the Korean Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Language</td>
     <td>Specifies the language of the description text.</td>
-    <td>DESCRIPTION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Language for Description</td>
     <td>The semantic value indicating which language is used in the description text</td>
-    <td>DESCRIPTION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
+  </tr>
+    <tr>
+    <td>Lithuanian Language</td>
+    <td>A concept representing the Korean Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Logical Definition</td>
     <td>The semantic value describing the purpose of the stated and inferred terminological axioms.</td>
-    <td>EL_PLUS_PLUS_INFERRED_AXIOMS_PATTERN; EL_PLUS_PLUS_STATED_AXIOMS_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Master path</td>
-    <td>A default path for components</td>
+    <td>A default path “branch” for components. This path represents those finalized or published components in production</td>
     <td>PATH</td>
   </tr>
     <tr>
     <td>Meaning</td>
     <td>The interpretation or explanation field for a pattern/semantics</td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Model concept</td>
@@ -642,7 +672,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
   </tr>
     <tr>
     <td>Module</td>
-    <td></td>
+    <td>A module is identified by a concept and may be annotated with additional information such as organizing content for maintenance and publication purposes.</td>
     <td>ROOT_VERTEX</td>
   </tr>
     <tr>
@@ -655,10 +685,10 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>A set of assets under version control that can be managed distinctly from other assets. Paths “branch” from other paths when established, and can be “merged” with other paths as well.</td>
     <td>ROOT_VERTEX</td>
   </tr>
-    <tr>
-    <td>Pattern</td>
-    <td>A Pattern is a set of display fields and values that can be asserted about a concept</td>
-    <td>ROOT_VERTEX</td>
+  <tr>
+    <td>Polish Language</td>
+    <td>A concept representing the Polish Language.</td>
+    <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Preferred</td>
@@ -671,19 +701,19 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>MODULE</td>
   </tr>
     <tr>
-    <td>Primordial path</td>
-    <td></td>
+    <td>Prerequisite path</td>
+    <td>A path that contains components that are shared across all paths and contain infrastructure components.</td>
     <td>PATH</td>
   </tr>
     <tr>
-    <td>Primordial status</td>
+    <td>Premundane status</td>
     <td>Concept used to represent a status for components that have not yet been released and exist in their most basic form.</td>
     <td>STATUS_VALUE</td>
   </tr>
     <tr>
     <td>Purpose</td>
     <td>The reason for which a Tinkar value in a pattern was created or for which it exist.</td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Regular name description type</td>
@@ -693,12 +723,12 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Relationship destination</td>
     <td>Signifies path to child concepts which are more specific than the Tinkar term</td>
-    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Relationship origin</td>
     <td>Signifies path to parent concepts which are more general than the Tinkar term</td>
-    <td>INFERRED_NAVIGATION_PATTERN; STATED_NAVIGATION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Role</td>
@@ -713,12 +743,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <tr>
     <td>Role operator</td>
     <td>Concept that is used to describe universal vs existential restrictions.</td>
-    <td>ROLE</td>
-  </tr>
-    <tr>
-    <td>Role restriction</td>
-    <td></td>
-    <td>ROLE</td>
+    <td>ROLE_GROUP</td>
   </tr>
     <tr>
     <td>Role type</td>
@@ -726,24 +751,24 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>ROLE</td>
   </tr>
     <tr>
+    <td>Russian Language</td>
+    <td>A concept representing the Russian Language.</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
     <td>Sandbox path</td>
     <td>A path for components under testing.</td>
     <td>PATH</td>
   </tr>
     <tr>
-    <td>Spanish langauge</td>
-    <td>Value for the description language dialect</td>
+    <td>Spanish Language</td>
+    <td>A concept representing the Spanish Language.</td>
     <td>LANGUAGE</td>
   </tr>
     <tr>
     <td>Stated Navigation</td>
     <td>The origins and destinations for concepts based on the reasoner generated stated terminological axioms</td>
-    <td>STATED_NAVIGATION_PATTERN</td>
-  </tr>
-    <tr>
-    <td>Stated Navigation Pattern</td>
-    <td>A pattern specifying the origins and destinations for concepts based on the stated terminological axioms</td>
-    <td>PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>Status value</td>
@@ -751,7 +776,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>ROOT_VERTEX</td>
   </tr>
     <tr>
-    <td>String</td>
+    <td>String Field</td>
     <td>a sequence of characters, either as a literal constant or as a variable. Strings could be used to represent terms from code systems or URLs, textual definitions, etc.</td>
     <td>DISPLAY_FIELDS</td>
   </tr>
@@ -761,9 +786,14 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>EL_PLUS_PLUS_STATED_TERMINOLOGICAL_AXIOMS; EL_PLUS_PLUS_INFERRED_TERMINOLOGICAL_AXIOMS</td>
   </tr>
     <tr>
+    <td>Swedish Language</td>
+    <td>A concept representing the Swedish Language.</td>
+    <td>LANGUAGE</td>
+  </tr>
+    <tr>
     <td>Text for description</td>
     <td>Captures the human readable text for a description in Komet</td>
-    <td>DESCRIPTION_PATTERN</td>
+    <td>MODEL_CONCEPT</td>
   </tr>
     <tr>
     <td>United States of America English dialect</td>
@@ -781,9 +811,9 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>IDENTIFIER_SOURCE</td>
   </tr>
   <tr>
-    <td>US Dialect Pattern </td>
+    <td>User</td>
     <td></td>
-    <td>PATTERN</td>
+    <td>AUTHOR</td>
   </tr>
   <tr>
     <td>Withdrawn state</td>
