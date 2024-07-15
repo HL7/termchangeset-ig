@@ -1,6 +1,39 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 <a name="general"> </a>
 <h3>General Guidance</h3>
+<a name="content"> </a>
+<h4>Change Set Contents</h4>
+<p>
+Change Sets are intended to be a 
+</p>
+<a name="extending"> </a>
+<h4>Extending Terminologies</h4>
+<p>
+One potential use case for Terminology Change Sets is for sharing locally extended versions of Terminologies. Some examples of such extensions include the US Department of Veterans Affairs extending SNOMED to include findings and procedures unique to war veteran treatment, and the US Association of Public Health Laboratories extending LOINC to support COVID test data quality initiatives.
+</p>
+<p>
+While use cases do exist to justify such extensions, implementers are strongly cautioned not to author and distribute such extensions without first exhausting pathways for updates to the source terminology through the SDO that maintains it. Most SDOs maintain new term submission pathways that are well maintained and promptly serviced (see: <a href="https://www.snomed.org/change-or-add">SNOMED process</a>, <a href="https://loinc.org/submissions/">LOINC process</a>, <a href="https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7">HL7 process</a>), and such pathways should be the preferred process for implementers when new concepts are needed from a terminology.
+</p>
+<p>
+When implementers determine that they are interested in extending a terminology, wherever possible, they should do so in alignment with the authoring guidelines and terms of use for the terminology they are extending. While SNOMED has a robust methodology allowing for the authoring, distribution, and maintenance of extensions, most other terminologies do not. Implementers developing and maintaining extensions should ensure they have a strategy for clearly identifying extended CodeSystem resources utilizing the following elements:
+<ul>
+	<li>
+	<code>CodeSystem.url</code> – where not specified by an SDO-specific policy (such as SNOMED’s extension process) locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO.
+	</li>
+	<li>
+	<code>CodeSystem.version</code> – where not specified by an SDO-specific policy, it is recommended that implementers consider aligning to <a href="https://terminology.hl7.org/index.html#identificaton-of-versions">HL7 terminology versioning approach</a>
+	</li>
+	<li>
+	<code>CodeSystem.name</code> – locally-maintained extensions should contain a computer-friendly name (consist with <a href="https://hl7.org/fhir/R4/codesystem.html#invs">cnl-0</a>) clearly identifying the CodeSystem resource as a Change Set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
+	</li>
+	<li>
+	<code>CodeSystem.title</code> – locally-maintained extensions should contain a human-friendly name clearly identifying the CodeSystem resource as a Change Set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
+	</li>
+	<li>
+	<code>CodeSystem.description</code> – locally-maintained extensions should utilize the description element to provide a more robust inventory of the contents of the Change Set.
+	</li>
+</ul>
+</p>
 <a name="codesystem-properties"> </a>
 <h4>CodeSystem Properties</h4>
 <p>

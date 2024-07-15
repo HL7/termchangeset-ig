@@ -13,20 +13,15 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
-* url 1..1 MS
-* url only uri
 * identifier 1..1 MS
 * identifier.value ^mapping.identity = "tinkar"
 * identifier.value ^mapping.map = "IDENTIFIER_SOURCE"
-* version 1..1 MS
-* name 1..1 MS
-* title 1..1 MS
-* status 1..1 MS
-* publisher 1..1 MS
-* copyright 1..1 MS
+* title 1..1
+* publisher 1..1
+* copyright 1..1
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
-* hierarchyMeaning 0..1 MS
-* content 1..1 MS
+* hierarchyMeaning ^short = "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
+* content 1..1
 * content only code
 * content = #fragment (exactly)
 * content ^short = "Change Set CodeSystem resources are most appropriately described as a FRAGMENT"
