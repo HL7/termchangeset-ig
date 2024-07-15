@@ -816,7 +816,7 @@ but also to determine the appropriate preferred name for displaying a hierarchy.
     <td>AUTHOR</td>
   </tr>
   <tr>
-    <td>Withdrawn state</td>
+    <td>Withdrawn status</td>
     <td>Concept used to represent a status for components that are withdrawn.</td>
     <td>STATUS_VALUE</td>
   </tr>
