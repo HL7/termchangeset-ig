@@ -38,4 +38,23 @@ The design for Terminology Change Sets is primarily robust utilization of the Co
       <a href="changes.html">Change Log</a> - this page documents the changes across the versions of the Terminology Change Set IG
     </li>
   </ul>
+  	<a name="credits"> </a>
+	<h3>Credits</h3>
+<p>
+This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
+<ul>
+	<li>
+	Keith Campbell, US Food and Drug Administration (FDA)
+	Marti Velezis, Sonrisa Consulting
+	Russell Ott, Deloitte Consulting LLP
+	Raja Cholan, Deloitte Consulting LLP
+	Matthew Deitz, Deloitte Consulting LLP
+	Bimla Siwakoti, Deloitte Consulting LLP
+	Jess Bota, Apelon
+	John Snyder, US National Library of Medicine (NLM)
+	Andrea Pitkus
+	Carol Macumber, Clinical Architecture
+	</li>
+</ul>
+</p>
 </div>

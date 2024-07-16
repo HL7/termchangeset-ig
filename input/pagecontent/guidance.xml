@@ -1,13 +1,25 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-<a name="general"> </a>
-<h3>General Guidance</h3>
 <a name="content"> </a>
-<h4>Change Set Contents</h4>
+<h3>Change Set Contents</h3>
 <p>
-Change Sets are intended to be a 
+Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
+<ul>
+	<li>
+	<code>CodeSystem.caseSensitive</code>
+	</li>
+	<li>
+	<code>CodeSystem.hierarchyMeaning</code>
+	</li>
+	<li>
+	<code>CodeSystem.compositional</code>
+	</li>
+	<li>
+	<code>CodeSystem.property</code> - note that only properties relevant to content within the Change Set may be included, but those properties should be a subset of properties defined in the corresponding baseline of the Terminology from which the Change Set was derived (i.e., no net-new properties should be defined via a Change Set).
+	</li>
+</ul>
 </p>
 <a name="extending"> </a>
-<h4>Extending Terminologies</h4>
+<h3>Extending Terminologies</h3>
 <p>
 One potential use case for Terminology Change Sets is for sharing locally extended versions of Terminologies. Some examples of such extensions include the US Department of Veterans Affairs extending SNOMED to include findings and procedures unique to war veteran treatment, and the US Association of Public Health Laboratories extending LOINC to support COVID test data quality initiatives.
 </p>
@@ -35,7 +47,7 @@ When implementers determine that they are interested in extending a terminology,
 </ul>
 </p>
 <a name="codesystem-properties"> </a>
-<h4>CodeSystem Properties</h4>
+<h3>CodeSystem Properties</h3>
 <p>
 Within a FHIR representation, a CodeSystem's properties are perhaps the most important structure for defining the terminology-specific semantics for the concepts in that CodeSystem. Given the broad variation of semantics adopted across terminologies, FHIR has a flexible design for representing properties (see: <a href="https://hl7.org/fhir/R4/codesystem.html#properties">https://hl7.org/fhir/R4/codesystem.html#properties</a>), but that flexibility can lead to inconsistency of implementation without clear guidance for representation of terminology-specific properties.
 </p>
