@@ -13,11 +13,16 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
+* url ^short = "Canonical identifier for this code system, represented as a URI (globally unique) (Coding.system).  NOTE: Where not specified by an SDO-specific policy (such as SNOMED’s extension process), change sets associated with locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO."
 * identifier 1..1 MS
 * identifier.value ^mapping.identity = "tinkar"
 * identifier.value ^mapping.map = "IDENTIFIER_SOURCE"
+* version ^short = "Business version of the code system (Coding.version).  NOTE: where not specified by an SDO-specific policy, it is recommended that implementers consider aligning to HL7 terminology versioning approach."
+* name ^short = "Name for this code system (computer friendly). Should clearly identify the CodeSystem as a Change Set and ideally convey both the source terminology from which it was derived and a notion of its contents."
 * title 1..1
+* title ^short = "Name for this code system (human friendly). Should clearly identify the CodeSystem as a Change Set and ideally convey both the source terminology from which it was derived and a notion of its contents."
 * publisher 1..1
+* description ^short = "Natural language description of the code system. Should provide a robust inventory of the contents of the Change Set"
 * copyright 1..1
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
 * hierarchyMeaning ^short = "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."

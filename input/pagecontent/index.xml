@@ -44,15 +44,33 @@ The design for Terminology Change Sets is primarily robust utilization of the Co
 This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
 <ul>
 	<li>
-	Keith Campbell, US Food and Drug Administration (FDA)
+	Keith Campbell MD PhD, US Food and Drug Administration (FDA)
+	</li>
+	<li>
 	Marti Velezis, Sonrisa Consulting
+	</li>
+	<li>
 	Russell Ott, Deloitte Consulting LLP
+	</li>
+	<li>
 	Raja Cholan, Deloitte Consulting LLP
+	</li>
+	<li>
 	Matthew Deitz, Deloitte Consulting LLP
+	</li>
+	<li>
 	Bimla Siwakoti, Deloitte Consulting LLP
+	</li>
+	<li>
 	Jess Bota, Apelon
+	</li>
+	<li>
 	John Snyder, US National Library of Medicine (NLM)
-	Andrea Pitkus
+	</li>
+	<li>
+	Andrea Pitkus PhD MLS(ASCP)<sup>CM</sup> FAMIA, University of Wisconsin School of Medicine and Public Health
+	</li>
+	<li>
 	Carol Macumber, Clinical Architecture
 	</li>
 </ul>

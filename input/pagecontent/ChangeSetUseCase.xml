@@ -1,5 +1,26 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
+  <p> A use case scenarios for FHIR-based Terminology Change Set Exchange is described below and illustrated in a sequence diagram. 
+
+</p>
 <a name="changesetusecase"></a>
   <h3>Terminology Change Set Exchange Use Case</h3>
-  <p> Placeholder for a Use Case describing functional conditions necessitating the creation and distribution of a Terminology Change Set.</p>
+<p>
+In this example, a terminology publishing organization is making an incremental change to its extension of SNOMED CT by adding a new extended concept. To enable data exchange with a close trading partner that makes use of this extended concept, this publishing organization shares a Terminology Change Set with a the trading partner (the Terminology Consumer identified in the steps below).
+</p>
+<ol>
+	<li>
+	<b>Authoring Environment:</b> Terminologist creates a new concept to extend SNOMED CT, exports it as a Terminology Change Set, and posts it to the FHIR server
+	</li>
+	<li>
+	<b>Terminology Consumer:</b> Requests the Terminology Change Set from the FHIR server
+	</li>
+	<li>
+	<b>FHIR Server:</b> Delivers the FHIR Resource Bundle requested
+	</li>
+	<li>
+	<b>Terminology Consumer:</b> Updates the Local Terminology Database with the contents of the Terminology Change Set retrieved
+	</li>
+</ol>
+<img src="ChangeSetInteractionDiagram.png" width="80%" alt="Change Set Interaction Diagram"/>
 </div>
