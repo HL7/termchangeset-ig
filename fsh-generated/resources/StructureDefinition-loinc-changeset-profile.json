@@ -1569,12 +1569,14 @@
         "id": "CodeSystem.concept",
         "path": "CodeSystem.concept",
         "short": "Concepts in the code system",
-        "comment": "If this is empty, it means that the code system resource does not represent the content of the code system."
+        "comment": "If this is empty, it means that the code system resource does not represent the content of the code system.",
+        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.display",
         "path": "CodeSystem.concept.display",
-        "comment": "This contains the LOINC Long Name."
+        "comment": "This contains the LOINC Long Name.",
+        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.property",
@@ -1588,6 +1590,16 @@
           ],
           "rules": "open"
         }
+      },
+      {
+        "id": "CodeSystem.concept.property.code",
+        "path": "CodeSystem.concept.property.code",
+        "mustSupport": true
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x]",
+        "path": "CodeSystem.concept.property.value[x]",
+        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.property:parent",

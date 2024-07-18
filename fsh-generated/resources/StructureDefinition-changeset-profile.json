@@ -125,11 +125,6 @@
         "mustSupport": true
       },
       {
-        "id": "CodeSystem.property.code",
-        "path": "CodeSystem.property.code",
-        "mustSupport": true
-      },
-      {
         "id": "CodeSystem.property.uri",
         "path": "CodeSystem.property.uri",
         "definition": "Reference to the formal meaning of the property. One possible source of meaning is the [Concept Properties](codesystem-concept-properties.html) code system.",
@@ -144,16 +139,14 @@
         "id": "CodeSystem.property.type",
         "path": "CodeSystem.property.type",
         "short": "code | Coding | string | integer | boolean | dateTime",
-        "definition": "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept).",
-        "mustSupport": true
+        "definition": "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
       },
       {
         "id": "CodeSystem.concept",
         "path": "CodeSystem.concept",
         "short": "Concepts in the change set for the code system",
         "definition": "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are.",
-        "comment": "For a change set, concepts must be defined and included in the CodeSystem instance",
-        "mustSupport": true
+        "comment": "For a change set, concepts must be defined and included in the CodeSystem instance"
       },
       {
         "id": "CodeSystem.concept.id",
@@ -167,15 +160,9 @@
         ]
       },
       {
-        "id": "CodeSystem.concept.code",
-        "path": "CodeSystem.concept.code",
-        "mustSupport": true
-      },
-      {
         "id": "CodeSystem.concept.display",
         "path": "CodeSystem.concept.display",
         "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "tinkar",
@@ -378,18 +365,12 @@
       {
         "id": "CodeSystem.concept.property.code",
         "path": "CodeSystem.concept.property.code",
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "tinkar",
             "map": "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
           }
         ]
-      },
-      {
-        "id": "CodeSystem.concept.property.value[x]",
-        "path": "CodeSystem.concept.property.value[x]",
-        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.concept",

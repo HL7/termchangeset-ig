@@ -35,7 +35,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within the [HL7 Terminology External Code Systems page](https://terminology.hl7.org/external_terminologies.html)."
 * property ^definition = "A property defines additional semantic detail for each concept included in the change set"
 * property ^comment = "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property"
-* property.code 1..1 MS
+* property.code 1..1
 * property.code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * property.code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."
 * property.uri 0..1 MS
@@ -45,21 +45,21 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * property.description 0..1 MS
 * property.description ^short = "Why the property is defined, and/or what it conveys"
 * property.description ^definition = "A description of the property- why it is defined, and how its value might be used."
-* property.type 1..1 MS
+* property.type 1..1
 * property.type only code
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
 * property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
-* concept 1..* MS
+* concept 1..*
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
 * concept.id ^short = "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "UNIVERSALLY_UNIQUE_IDENTIFIER"
-* concept.code 1..1 MS
+* concept.code 1..1
 * concept.code ^short = "Code that identifies concept"
 * concept.code ^definition = "A code - a text symbol - that uniquely identifies the concept within the code system."
-* concept.display 1..1 MS
+* concept.display 1..1
 * concept.display ^short = "Text to display to the user"
 * concept.display ^definition = "A human readable string that is the recommended default way to present this concept to a user."
 * concept.display ^mapping.identity = "tinkar"
@@ -110,12 +110,12 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.property.extension[DefiningRelationshipType] ^mapping.map = "NAVIGATION_PATTERN"
 * concept.property.extension[elProfileSetOperator] ^mapping.identity = "tinkar"
 * concept.property.extension[elProfileSetOperator] ^mapping.map = "EL_PROFILE_SET_OPERATOR"
-* concept.property.code 1..1 MS
+* concept.property.code 1..1
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
 * concept.property.code ^mapping.identity = "tinkar"
 * concept.property.code ^mapping.map = "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
-* concept.property.value[x] 1..1 MS
+* concept.property.value[x] 1..1
 * concept.property.value[x] ^short = "Value of the property for this concept"
 * concept.property.value[x] ^definition = "The value of this property."
 * concept.concept 0..0
