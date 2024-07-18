@@ -68,4 +68,9 @@ To address this issue, HL7 has developed guidance for properties on its terminol
 <p>
 These pages are works in progress, and have varying levels of completeness, but should be referenced as the most robust source for guidance on terminology-specific properties, until such time as similar guidance is available directly from the maintainers of these external code systems.
 </p>
+<a name="patch"> </a>
+<h3>Use of PATCH with Change Sets</h3>
+<p>
+In addition to distribution of incremental terminology updates utilizing a terminology Change Set, implementers of FHIR Terminology Servers could repackage the changes from the change set as a patch document and perform a <a href="https://hl7.org/fhir/R4/http.html#patch">PATCH operation</a> to update an entire CodeSystem resource. This can be useful when a server is seeking to minimize its bandwidth utilization, or in scenarios where a client has only partial access or support for a resource. The server shall process its own copy of the resource in the format indicated, applying the operations specified in the document, following the relevant PATCH specification. While this use case is not a focus of this FHIR IG, we acknowledge that a PATCH transaction could be used to update a FHIR Terminology Server’s representation of a given Terminology.
+</p>
 </div>
