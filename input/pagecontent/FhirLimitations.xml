@@ -7,33 +7,33 @@
   <a name="ConceptDescriptionAttributes"></a>
   <h4>Concept description attributes</h4>
   <p>
-  These are secondary attributes adding context to concept descriptions
+  These are secondary attributes adding context to concept descriptions, utilized at the <code>CodeSystem.concept.description</code> element level.
   </p>
   <ul>
   	<li>
-  	<b>Concept description dialect</b> - 
+  	<a href="StructureDefinition-description-dialect.html">Concept description dialect</a>
   	</li>
   	<li>
-  	<b>Concept description case sensitivity</b> - 
+  	<a href="StructureDefinition-description-case-sensitivity.html">Concept description case sensitivity</a>
   	</li>
   	<li>
-  	<b>Concept description acceptability</b> - 
+  	<a href="StructureDefinition-description-acceptability.html">Concept description acceptability</a>
   	</li>
   </ul>
   <a name="ConceptPropertyAttributes"></a>
   <h4>Concept property attributes</h4>
   <p>
-  These are secondary attributes adding context to properties for concepts
+  These are secondary attributes adding context to properties for concepts, utilized at the <code>CodeSystem.concept.property</code> element level.
   </p>
   <ul>
   	<li>
-  	<b>Concept property defining relationship type</b> - 
+  	<a href="StructureDefinition-defining-relationship-type.html">Concept property defining relationship type</a> 
   	</li>
   	<li>
-  	<b>Concept property EL++ profile set (Necessary vs. Sufficient)</b> - 
+  	<a href="StructureDefinition-el-profile-set-operator.html">Concept property EL++ profile set (Necessary vs. Sufficient)</a>
   	</li>
   	<li>
-  	<b>Concept Description Acceptability</b> - 
+  	<a href="StructureDefinition-description-acceptability.html">Concept Description Acceptability</a>
   	</li>
   </ul>
   <a name="OtherLimitations"></a>
@@ -41,7 +41,7 @@
   <a name="PropertyCodes"></a>
   <h4>Standardization of CodeSystem.property codes</h4>
   <p>
-HL7 has published some guidance on codes to use to represent properties from several terminologies (see: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties and https://terminology.hl7.org/LOINC.html#loinc-properties), but widespread implementations appear inconsistent.  Additionally, any terminology exchange that lacks this standardization will likely struggle to convey semantic detail for concepts.
+HL7 has published some guidance on codes to use to represent properties from several terminologies (see: <a href="https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties">SNOMED CT Properties</a> and <a href="https://terminology.hl7.org/LOINC.html#loinc-properties">LOINC Properties</a>), but widespread implementations appear inconsistent.  Additionally, any terminology exchange that lacks this standardization will likely struggle to convey semantic detail for concepts.
   </p>
   <a name="Granularity"></a>
   <h4>Change Sets with granularity below the concept level</h4>

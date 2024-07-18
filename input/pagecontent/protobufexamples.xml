@@ -24,8 +24,8 @@ from the 2020-09-01 version to the 2021-03-01 version.
 Figure 1: The 2020-09-01 Version of Chronic Lung Disease 
 </p>
 <p>
-<div>
-  <img src="20200901chroniclungdisease.png" alt="2020 Chronic Lung Disease"/>
+<div display="block" margin="auto" >
+  <img src="20200901chroniclungdisease.png" width="80%" alt="2020 Chronic Lung Disease"/>
 </div>
 </p>
 <p>
@@ -33,7 +33,7 @@ Figure 2: The 2021-03-01 Version of Chronic Lung Disease
 </p>
 <p>
 <div>
-<img src="20210301chroniclungdisease.png" alt="2021 Chronic Lung Disease"/>
+<img src="20210301chroniclungdisease.png" width="80%" alt="2021 Chronic Lung Disease"/>
 </div>
 </p>
 <a name="Use Case 1 Message 1"> </a>

@@ -1,5 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-<a name="content"> </a>
+<a name="contents"> </a>
 <h3>Change Set Contents</h3>
 <p>
 Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
@@ -17,6 +17,41 @@ Change Sets are intended to be a lightweight, incremental distribution that is a
 	<code>CodeSystem.property</code> - note that only properties relevant to content within the Change Set may be included, but those properties should be a subset of properties defined in the corresponding baseline of the Terminology from which the Change Set was derived (i.e., no net-new properties should be defined via a Change Set).
 	</li>
 </ul>
+</p>
+<a name="receivingsystems"> </a>
+<h3>How receiving systems should operate in the presence of a Change Set</h3>
+<p>
+The intent of Terminology Change Sets is that they are used as a communication pathway between systems, utilizing the CodeSystem resource. Systems involved in this exchange will intake a Change Set and receive it and process it, and should have a process to store and maintain the contents of the Change Set. Our expectation is that a Terminology Change Set is a transmission format, much like downloads of content available from RxNorm and SNOMED International. It is not necessarily expected that systems involved in Change Set exchange will re-publish the Change Set content in their own FHIR API, but it is rather an ingestion pathway for a system’s terminology server. If a system decides that it would be valuable to re-publish the contents of the Change Set, then they could do that and would need to maintain a process for reconciling Change Sets received from multiple sources.
+</p>
+<p>
+Additional considerations for receiving systems operating in the presence of a Change Set include the following subsections
+</p>
+<a name="persistence"> </a>
+<h4>Persistence of Change Set as a Separate Object vs. Integration</h4>
+<ul>
+	<li>
+	<b>Separate Object:</b> If the Change Set is persisted as a separate object, it allows for easier tracking and management of changes over time without altering the original CodeSystem. This approach can be useful for maintaining historical data for audit purposes or for scenarios where changes need to be reviewed or approved before being applied.
+	</li>
+	<li>
+	<b>Integration into CodeSystem:</b> Integrating the Change Set directly into the CodeSystem simplifies the management by ensuring that there is only one up-to-date version of each CodeSystem. However, this can complicate rollback and audit processes since the original state is overwritten.
+	</li>
+</ul>
+<a name="operations"> </a>
+<h4>Operational Changes with persisted Change Sets</h4>
+<ul>
+	<li>
+	When a client application performs a lookup operation (e.g., $lookup), it should ideally check the Change Set first to see if there has been a recent update relevant to the query. If no relevant change is found in the Change Set, then the lookup should proceed to check the main CodeSystem. This ensures that the most current data is used.
+	</li>
+</ul>
+<a name="managingrevisions"> </a>
+<h4>Managing Terminology Revisisions via Change Sets</h4>
+<p>
+It could be possible to manage the evolution of Terminology as a series of persisted Change Sets, but that use case for Change Sets was not considered as part of development of this guide.
+</p>
+<a name="persistenceapproach"> </a>
+<h4>Recommended approach when persisting Change Sets</h4>
+<p>
+Maintaining Change Sets separately while developing robust mechanisms to integrate these changes into the Source CodeSystem as needed is advisable. This approach offers flexibility in managing changes and ensures data integrity while simplifying rollback and version control processes.
 </p>
 <a name="extending"> </a>
 <h3>Extending Terminologies</h3>
