@@ -30,14 +30,8 @@ organizations like HL7.
 <h3>Standard Class Model </h3>
 <img src="ClassVersionComponent.png" alt="Class Version"/>
 <p>
-<i>Versioned Component</i>
-</p>
-<p style="text-align:center;color:Gray">
-Figure 3.1. Versioned Component 
-</p>
-<p>
 The Tinkar Reference Model fulfills the requirement of capturing a complete record of all changes, including 
-relevant context information. This is captured via the STAMP class using the following fields: 
+relevant context information using versioned components as shown in the figure above. This is captured via the STAMP class using the following fields: 
 </p>
 <ol>
   <li>
@@ -105,15 +99,9 @@ modules, historical timestamp) may reveal substantially different IdentifedCompo
 <h3>Component Types</h3>
 <img src="ComponentTypes.png" alt="Component Types"/>
 <p>
-<i>Component Types</i>
-</p>
-<p style="text-align:center;color:Gray">
-Figure 3.2. Component Types
-</p>
-<p>
 All Components in Tinkar are uniquely identified using UUIDs. A Component will be represented by an array of 
 UUIDs with at least one UUID, but can be represented by more than one UUID in the case of a concept being 
-derived from multiple sources. For example, the concept Acetaminophen (which exists in SNOMED CT®, LOINC, 
+derived from multiple sources as shown in the figure above. For example, the concept Acetaminophen (which exists in SNOMED CT®, LOINC, 
 and RxNorm) could have a UUID from each terminology and be represented as an array of UUIDs for this single 
 concept within a Tinkar implementation. 
 </p>
@@ -121,7 +109,11 @@ concept within a Tinkar implementation.
 A Concept is identified using UUIDs and contains no information. To assemble groups of assertions and to 
 provide information about Concepts, Tinkar uses a construct called a <b>Semantic</b>. A Semantic is a class 
 containing a set of predicates and objects about a subject. A semantic adds meaning to the components it 
-references, through the fields it contains. A Semantic supports the specification of value sets, 
+references, through the fields it contains as shown in the diagram below. 
+</p>
+<img src="CompositionalSemantics.png" alt="Compositional Semantics"/>
+<p>
+A Semantic supports the specification of value sets, 
 compositional definitions, and other components requiring internal structure, and it specifies the nature 
 of the compositional relationship explicitly. 
 </p>
@@ -129,13 +121,6 @@ of the compositional relationship explicitly.
 The Semantic class uses a Concept to define the relationship between the value(s) and the Concept; the 
 value itself may be either a concept or some other kind of data type, such as a string. This creates the 
 ability to assemble assertions into more complex structures. 
-</p>
-<img src="CompositionalSemantics.png" alt="Compositional Semantics"/>
-<p>
-<i>Compositional Semantics</i>
-</p>
-<p style="text-align:center;color:Gray">
-Figure 3.3. Compositional Semantics
 </p>
 <p>
 As discussed earlier, if an author makes a change to an IdentifiedComponent, the prior Version is unchanged, 
@@ -236,8 +221,8 @@ Tinkar supports the following field data types for use with Semantics.
     </ol>
     </li>
     <li>
-    Here is an example of Tinkar output of semantics that reference multiple concepts.
-    <img src="VertexExample.png" alt="Vertex Example"/>
+    Shown below is an example of Tinkar output of semantics that reference multiple concepts.
+    <img src="VertexExample.png" width="100%" alt="Vertex Example"/>
     In this output, one can see a sufficient set and necessary set. Bulleted items are properties in the 
     node. The output is printed as a “depth first search.” Each depth adds 3 characters of padding and 
     shows how OWL EL++ definitions, using only terminology and a standard property graph data structure, 
@@ -261,17 +246,14 @@ Tinkar supports the following field data types for use with Semantics.
 <h3>Pattern (For Semantics)</h3>
 <p>
 The Tinkar Reference Model defines a first-class feature of the model, the <b>Pattern</b> (<b>PatternVersion</b> and 
-<b>PatternChronology</b>). A Pattern is a class defining a set of predicates and object types that can be asserted 
-about a class of subjects. All Semantics follow Patterns. A PatternVersion is a single instance of a 
-pattern with a STAMP and a PatternChronology is the set of versions having a STAMP for a pattern. This 
-feature asserts patterns that Semantic components can follow, like an XML or RDF Schema. 
+<b>PatternChronology</b>) as shown in the figure below.
 </p>
 <img src="SemanticDefinition.png" alt="Semantic Definition"/>
 <p>
-<i>Pattern</i>
-</p>
-<p style="text-align:center;color:Gray">
-Figure 3.4. Pattern
+A Pattern is a class defining a set of predicates and object types that can be asserted 
+about a class of subjects. All Semantics follow Patterns. A PatternVersion is a single instance of a 
+pattern with a STAMP and a PatternChronology is the set of versions having a STAMP for a pattern. This 
+feature asserts patterns that Semantic components can follow, like an XML or RDF Schema. 
 </p>
 <p>
 Using the Pattern, Semantics with varying fields and data types can be specified to represent any 
@@ -281,13 +263,10 @@ Pattern would then contain an array of these FieldDefinitions.
 </p>
 <a name="overall architecture"> </a>
 <h3>Overall Tinkar Architecture</h3>
-<img src="TinkarArchitecture.png" alt="Tinkar Architecture"/>
 <p>
-<i>Overall Tinkar Architecture</i>
+The full Tinkar Architecture is shown below, followed by a description of each of the classes referenced in that architecture.
 </p>
-<p style="text-align:center;color:Gray">
-Figure 3.5. Overall Tinkar Architecture
-</p>
+<img src="TinkarArchitecture.png" alt="Tinkar Architecture"/>
 <img src="ClassDefinitions.png" alt="Class Definitions"/>
 <a name="coordinate"> </a>
 <h3>Coordinate</h3>

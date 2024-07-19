@@ -293,6 +293,10 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.code = #900000000000548007
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.display = "Preferred (foundation metadata concept)"
+* concept[=].designation[=].extension[dialect].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
+* concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.code = #900000000000509007
+* concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.display = "United States of America English language reference set"
 * concept[=].designation[=].use[+].system = "http://snomed.info/sct"
 * concept[=].designation[=].use[=].code = #900000000000013009
 * concept[=].designation[=].use[=].display = "Synonym"

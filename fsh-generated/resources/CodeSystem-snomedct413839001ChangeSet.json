@@ -35,6 +35,18 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
             }
           ],
           "language": "en-US",

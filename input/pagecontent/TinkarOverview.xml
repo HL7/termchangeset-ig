@@ -124,10 +124,6 @@ disparate and unrelated standards development organizations. In these cases, SoC
 <i>Separation of Concerns is an architectural design principle, whereby a system is divided into distinct sections, such that each section can address separate concerns. 
 In this case, each architectural layer may build upon artifacts from lower layers.</i>
 </p>
-<p style="text-align:center;color:Gray">
-Figure 1.1. Separation of Concerns: Knowledge Architecture
-</p>
-
 <p>
 <b>Foundational Architecture</b> - The Foundational layer of the Knowledge Architecture provides the common elements of interoperability, such as: object identity, versioning, modularity, 
 and knowledge representation. It includes (a) the foundation and building blocks of the common model; (b) how the repeatable transformation process of disparate standards into the common 
