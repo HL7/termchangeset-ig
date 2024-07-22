@@ -332,11 +332,6 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * property[Using_access_device].code 1..1
 * property[Using_access_device].code = #"Using access device" (exactly)
 * property[Using_access_device].type = #Coding (exactly)
-* property contains Role_group 0..1
-* property[Role_group] ^short = "Property slice to capture SNOMED Role group for a concept"
-* property[Role_group].code 1..1
-* property[Role_group].code = #"Role group" (exactly)
-* property[Role_group].type = #Coding (exactly)
 * property contains Property_type 0..1
 * property[Property_type] ^short = "Property slice to capture SNOMED Property type for a concept"
 * property[Property_type].code 1..1
@@ -680,10 +675,6 @@ Description: "Profile of CodeSystem to enable lossless representation of SNOMED 
 * concept.property[Using_access_device] ^short = "Property slice to capture SNOMED Using access device for a concept"
 * concept.property[Using_access_device].code 1..1
 * concept.property[Using_access_device].code = #"Using access device" (exactly)
-* concept.property contains Role_group 0..1
-* concept.property[Role_group] ^short = "Property slice to capture SNOMED Role group for a concept"
-* concept.property[Role_group].code 1..1
-* concept.property[Role_group].code = #"Role group" (exactly)
 * concept.property contains Property_type 0..1
 * concept.property[Property_type] ^short = "Property slice to capture SNOMED Property type for a concept"
 * concept.property[Property_type].code 1..1

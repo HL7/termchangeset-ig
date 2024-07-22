@@ -1221,24 +1221,6 @@
         "fixedCode": "Coding"
       },
       {
-        "id": "CodeSystem.property:Role_group",
-        "path": "CodeSystem.property",
-        "sliceName": "Role_group",
-        "short": "Property slice to capture SNOMED Role group for a concept",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "CodeSystem.property:Role_group.code",
-        "path": "CodeSystem.property.code",
-        "fixedCode": "Role group"
-      },
-      {
-        "id": "CodeSystem.property:Role_group.type",
-        "path": "CodeSystem.property.type",
-        "fixedCode": "Coding"
-      },
-      {
         "id": "CodeSystem.property:Property_type",
         "path": "CodeSystem.property",
         "sliceName": "Property_type",
@@ -3496,36 +3478,6 @@
         "id": "CodeSystem.concept.property:Using_access_device.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Using access device"
-      },
-      {
-        "id": "CodeSystem.concept.property:Role_group",
-        "path": "CodeSystem.concept.property",
-        "sliceName": "Role_group",
-        "short": "Property slice to capture SNOMED Role group for a concept",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "CodeSystem.concept.property:Role_group.extension:DefiningRelationshipType",
-        "path": "CodeSystem.concept.property.extension",
-        "sliceName": "DefiningRelationshipType",
-        "min": 1
-      },
-      {
-        "id": "CodeSystem.concept.property:Role_group.extension:elProfileSetOperator",
-        "path": "CodeSystem.concept.property.extension",
-        "sliceName": "elProfileSetOperator",
-        "min": 1
-      },
-      {
-        "id": "CodeSystem.concept.property:Role_group.extension:roleGroup",
-        "path": "CodeSystem.concept.property.extension",
-        "sliceName": "roleGroup"
-      },
-      {
-        "id": "CodeSystem.concept.property:Role_group.code",
-        "path": "CodeSystem.concept.property.code",
-        "fixedCode": "Role group"
       },
       {
         "id": "CodeSystem.concept.property:Property_type",
