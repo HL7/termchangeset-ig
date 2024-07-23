@@ -84,6 +84,10 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+              "valueInteger": 1
             }
           ],
           "code": "Finding site",
@@ -118,6 +122,10 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+              "valueInteger": 2
             }
           ],
           "code": "Clinical course",
@@ -618,11 +626,6 @@
     {
       "code": "Using access device",
       "uri": "http://snomed.info/id/425391005",
-      "type": "Coding"
-    },
-    {
-      "code": "Role group",
-      "uri": "http://snomed.info/id/609096000",
       "type": "Coding"
     },
     {

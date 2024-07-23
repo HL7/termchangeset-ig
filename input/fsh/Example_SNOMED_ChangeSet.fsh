@@ -235,9 +235,6 @@ Description: "Example of SNOMED CT Change Set"
 * property[+].code = #"Using access device"
 * property[=].uri = "http://snomed.info/id/425391005"
 * property[=].type = #Coding
-* property[+].code = #"Role group"
-* property[=].uri = "http://snomed.info/id/609096000"
-* property[=].type = #Coding
 * property[+].code = #"Property type"
 * property[=].uri = "http://snomed.info/id/704318007"
 * property[=].type = #Coding
@@ -310,6 +307,8 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+* concept[=].property[=].extension[roleGroup].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
+* concept[=].property[=].extension[roleGroup].valueInteger = 1
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
 * concept[=].property[=].valueCoding[=].code = #39607008
 * concept[=].property[=].valueCoding[=].display = "Lung Structure"
@@ -322,6 +321,8 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+* concept[=].property[=].extension[roleGroup].url = "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
+* concept[=].property[=].extension[roleGroup].valueInteger = 2
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
 * concept[=].property[=].valueCoding[=].code = #90734009
 * concept[=].property[=].valueCoding[=].display = "Chronic"
