@@ -8,8 +8,8 @@ Description: "Example of SNOMED CT Change Set"
 * url = "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.6.96"
-* name = "SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
-* title = "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set"
+* name = "SNOMEDCT_413839001_ChronicLungDisease_ChangeSet_46dc8ea230544ceba51145f774fe9fdd"
+* title = "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set 46dc8ea230544ceba51145f774fe9fdd"
 * status = #active
 * experimental = false
 * publisher = "IHTSDO"

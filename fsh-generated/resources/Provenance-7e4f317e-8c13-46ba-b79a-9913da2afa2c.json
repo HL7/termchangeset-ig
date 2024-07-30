@@ -10,7 +10,9 @@
     {
       "role": "revision",
       "what": {
-        "reference": "http://terminology.hl7.org/CodeSystem/variable-role",
+        "identifier": {
+          "value": "http://terminology.hl7.org/CodeSystem/variable-role"
+        },
         "display": "EvidenceVariableRole"
       }
     }

@@ -59,8 +59,7 @@
         "id": "CodeSystem.identifier",
         "path": "CodeSystem.identifier",
         "min": 1,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "CodeSystem.identifier.value",
@@ -113,8 +112,8 @@
       {
         "id": "CodeSystem.supplements",
         "path": "CodeSystem.supplements",
-        "short": "Canonical URL of Code System to which the change set applies",
-        "mustSupport": true
+        "short": "The source terminology from which the Change Set was derived should be conveyed via a Provenance resource, not CodeSystem.supplements",
+        "max": "0"
       },
       {
         "id": "CodeSystem.property",
@@ -160,13 +159,24 @@
         ]
       },
       {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Identifier Value of Identifier Semantic where Identifier Source = [Source CodeSystem]"
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.concept.display",
         "path": "CodeSystem.concept.display",
+        "short": "Text to display to the user representing the concept",
         "min": 1,
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION"
+            "map": "First TEXT_FOR_DESCRIPTION of Description Semantic where DESCRIPTION_TYPE = FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE"
           }
         ]
       },
@@ -175,6 +185,16 @@
         "path": "CodeSystem.concept.definition",
         "min": 1,
         "mustSupport": false
+      },
+      {
+        "id": "CodeSystem.concept.designation",
+        "path": "CodeSystem.concept.designation",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "(Description Semantics + US Dialect Semantics/GB Dialect Semantics)"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.designation.extension",
@@ -207,7 +227,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
+            "map": "DESCRIPTION_CASE_SIGNIFICANCE of Description Semantic"
           }
         ]
       },
@@ -228,7 +248,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION_CASE_SIGNIFICANCE"
+            "map": "DESCRIPTION_ACCEPTABILITY of US Dialect Semantic/GB Dialect Semantic referencing the Descrption Semantic"
           }
         ]
       },
@@ -254,7 +274,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "LANGUAGE, DESCRIPTION_FOR_DIALECT_AND_OR_DESCRIPTION_PAIR"
+            "map": "LANGUAGE of Description Semantic"
           }
         ]
       },
@@ -265,7 +285,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION_TYPE, FULLY_QUALIFIED_NAME_DESCRIPTION_TYPE"
+            "map": "DESCRIPTION_TYPE of Description Semantic"
           }
         ]
       },
@@ -276,14 +296,20 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "TEXT_FOR_DESCRIPTION"
+            "map": "TEXT_FOR_DESCRIPTION of Description Semantic"
           }
         ]
       },
       {
         "id": "CodeSystem.concept.property",
         "path": "CodeSystem.concept.property",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "(Stated Definition Semantics + Inferred Definition Semantics) EL++ (Stated/Inferred) Terminological Axioms inside the DiTree"
+          }
+        ]
       },
       {
         "id": "CodeSystem.concept.property.extension",
@@ -316,7 +342,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "NAVIGATION_PATTERN"
+            "map": "Is a Stated Definition Semantic or Inferred Definition Semantic"
           }
         ]
       },
@@ -337,7 +363,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "EL_PROFILE_SET_OPERATOR"
+            "map": "Corresponding Set (Sufficient/Necessary/Implication) Value of the Axiom going up the DiTree"
           }
         ]
       },
@@ -358,7 +384,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "ROLE_GROUP"
+            "map": "Integer representation of the ROLE_GROUP as a number in the DiTree"
           }
         ]
       },
@@ -368,7 +394,17 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "RELATIONSHIP_DESTINATION, RELATIONSHIP_ORIGIN, STATUS_FOR_VERSION"
+            "map": "[ROLE_TYPE of ROLE] or [IS_A] of the Axiom"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x]",
+        "path": "CodeSystem.concept.property.value[x]",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Concept Reference of the [Role] or [Is_A] of the Axiom"
           }
         ]
       },

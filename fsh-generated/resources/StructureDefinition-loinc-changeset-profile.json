@@ -1575,6 +1575,7 @@
       {
         "id": "CodeSystem.concept.display",
         "path": "CodeSystem.concept.display",
+        "short": "Text to display to the user",
         "comment": "This contains the LOINC Long Name.",
         "mustSupport": true
       },

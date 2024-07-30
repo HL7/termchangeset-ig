@@ -10,8 +10,10 @@
     {
       "role": "revision",
       "what": {
-        "reference": "http://snomed.info/sct",
-        "display": "SNOMED CT August 2019 Edition"
+        "identifier": {
+          "value": "http://snomed.info/sct/900000000000207008/version/20190901"
+        },
+        "display": "SNOMED CT International Edition, September 2019 Edition"
       }
     }
   ],

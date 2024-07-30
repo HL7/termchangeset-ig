@@ -9,9 +9,9 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
+      "identity": "tinkar",
+      "uri": "https://hl7.org/fhir/uv/tinkar",
+      "name": "Tinkar Reference Model"
     },
     {
       "identity": "rim",
@@ -143,6 +143,16 @@
         "fixedCode": "author"
       },
       {
+        "id": "Provenance.agent:author.who.display",
+        "path": "Provenance.agent.who.display",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Author"
+          }
+        ]
+      },
+      {
         "id": "Provenance.agent:custodian",
         "path": "Provenance.agent",
         "sliceName": "custodian",
@@ -174,6 +184,16 @@
         "fixedCode": "custodian"
       },
       {
+        "id": "Provenance.agent:custodian.who.display",
+        "path": "Provenance.agent.who.display",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Known limitation of current Tinkar model, will update in future version"
+          }
+        ]
+      },
+      {
         "id": "Provenance.entity",
         "path": "Provenance.entity",
         "slicing": {
@@ -191,6 +211,26 @@
         "id": "Provenance.entity.what",
         "path": "Provenance.entity.what",
         "short": "The baseline version of the CodeSystem to which this Change Set is intended to apply."
+      },
+      {
+        "id": "Provenance.entity.what.identifier.value",
+        "path": "Provenance.entity.what.identifier.value",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Known limitation of current Tinkar model, will update in future version"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.entity.what.display",
+        "path": "Provenance.entity.what.display",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "Module"
+          }
+        ]
       },
       {
         "id": "Provenance.entity:revision",
