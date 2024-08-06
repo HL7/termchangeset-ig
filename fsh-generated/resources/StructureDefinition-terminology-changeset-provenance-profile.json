@@ -5,7 +5,7 @@
   "name": "TerminologyChangeSetProvenance",
   "title": "Terminology Change Set Provenance (Provenance)",
   "status": "draft",
-  "description": "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements.",
+  "description": "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -210,11 +210,13 @@
       {
         "id": "Provenance.entity.what",
         "path": "Provenance.entity.what",
-        "short": "The baseline version of the CodeSystem to which this Change Set is intended to apply."
+        "short": "The baseline version of the CodeSystem to which this Change Set is intended to be applied."
       },
       {
         "id": "Provenance.entity.what.identifier.value",
         "path": "Provenance.entity.what.identifier.value",
+        "short": "Unique identifier for the baseline version of the CodeSystem to which this Change Set is intended to be applied.",
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "tinkar",
@@ -225,6 +227,7 @@
       {
         "id": "Provenance.entity.what.display",
         "path": "Provenance.entity.what.display",
+        "short": "Text alternative representation of the baseline version of the CodeSystem to which this Change Set is intended to be applied.",
         "mapping": [
           {
             "identity": "tinkar",

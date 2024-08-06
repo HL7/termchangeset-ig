@@ -65,6 +65,13 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
       <name value="HL7 VariableRole Change Set Provenance Example"/>
       <description value="An example Provenance instance referring to a Change Set derived from the HL7 VariableRole CodeSystem, corresponding to UTG-427 https://jira.hl7.org/browse/UP-427"/>
     </resource>
+        <resource>
+      <reference>
+        <reference value="Provenance/52b1a1d2-80ab-460b-b5fc-341edd35b032"/>
+      </reference>
+      <name value="LOINC Change Set Provenance Example"/>
+      <description value="An example Provenance instance referring to a Change Set derived from LOINC"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -118,16 +125,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
       <page>
         <nameUrl value="protobufbackground.html"/>
         <title value="Protobuf Native Representation"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="protobufschema.html"/>
-        <title value="Protobuf Schema"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="protobufexamples.html"/>
-        <title value="Protobuf Examples"/>
         <generation value="html"/>
       </page>
       <page>

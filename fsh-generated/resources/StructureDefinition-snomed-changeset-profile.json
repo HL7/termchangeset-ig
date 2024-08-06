@@ -5,7 +5,7 @@
   "name": "SNOMEDChangeSet",
   "title": "SNOMED Change Set (CodeSystem)",
   "status": "draft",
-  "description": "Profile of CodeSystem to enable lossless representation of SNOMED change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "description": "Profile of CodeSystem to enable lossless representation of a SNOMED change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

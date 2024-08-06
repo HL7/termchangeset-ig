@@ -2,8 +2,6 @@ Instance: SNOMEDChangeSetExample
 InstanceOf: SNOMEDChangeSet
 Description: "Example of SNOMED CT Change Set"
 * id = "snomedct413839001ChangeSet"
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* extension[=].valueCode = #fhir
 * version = "20230901.1"
 * url = "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_413839001_ChronicLungDisease_ChangeSet"
 * identifier.system = "urn:ietf:rfc:3986"
@@ -12,17 +10,16 @@ Description: "Example of SNOMED CT Change Set"
 * title = "SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set 46dc8ea230544ceba51145f774fe9fdd"
 * status = #active
 * experimental = false
-* publisher = "IHTSDO"
+* publisher = "Integrated Knowledge Management"
 * hierarchyMeaning = #is-a
 * contact.telecom[+].system = #url
-* contact.telecom[=].value = "http://ihtsdo.org"
+* contact.telecom[=].value = "http://ikm.dev"
 * description = "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept"
-* copyright = "© 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct"
+* copyright = "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct"
 * caseSensitive = true
 * compositional = true
 * versionNeeded = false
 * content = #fragment
-//* supplements = "http://snomed.info/sct"
 * filter[+].code = #concept
 * filter[=].description = "Filter that includes concepts based on their logical definition. e.g. [concept] [is-a] [x] - include all concepts with an is-a relationship to concept x, or [concept] [in] [x]- include all concepts in the reference set identified by concept x"
 * filter[=].operator[+] = #is-a

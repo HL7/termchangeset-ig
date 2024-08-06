@@ -1,6 +1,6 @@
 {
   "resourceType": "Provenance",
-  "id": "053f26d4-b805-4ff2-8c42-866459d5f1f4",
+  "id": "52b1a1d2-80ab-460b-b5fc-341edd35b032",
   "meta": {
     "profile": [
       "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
@@ -11,9 +11,9 @@
       "role": "revision",
       "what": {
         "identifier": {
-          "value": "http://snomed.info/sct/900000000000207008/version/20190901"
+          "value": "http://loinc.org"
         },
-        "display": "SNOMED CT International Edition, September 2019 Edition"
+        "display": "LOINC version 2.76"
       }
     }
   ],
@@ -55,13 +55,13 @@
   },
   "target": [
     {
-      "reference": "CodeSystem/snomedct413839001ChangeSet"
+      "reference": "CodeSystem/loinc277attachmentsChangeSet"
     }
   ],
   "occurredPeriod": {
-    "end": "2020-05-18"
+    "end": "2024-07-18"
   },
-  "recorded": "2020-05-18T11:13:55+10:00",
+  "recorded": "2024-07-18T11:13:55+10:00",
   "reason": [
     {
       "coding": [

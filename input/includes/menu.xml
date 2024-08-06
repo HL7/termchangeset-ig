@@ -45,12 +45,6 @@
       <li>
         <a href="protobufbackground.html">Protobuf Native Representation</a>
       </li>
-      <li>
-        <a href="protobufschema.html">Protobuf Schema</a>
-      </li>
-      <li>
-        <a href="protobufexamples.html">Protobuf Examples</a>
-      </li>
     </ul>
   </li>
   <li><a href="downloads.html">Downloads</a></li>

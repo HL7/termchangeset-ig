@@ -7,16 +7,6 @@
     ]
   },
   "content": "fragment",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "cds"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 0
-    }
-  ],
   "url": "http://terminology.hl7.org/CodeSystem/variable-role_ChangeSetUTG427",
   "version": "1.0.1",
   "identifier": [

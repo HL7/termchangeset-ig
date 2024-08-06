@@ -2,7 +2,7 @@ Profile: LOINCChangeSet
 Id: loinc-changeset-profile
 Parent: changeset-profile
 Title: "LOINC Change Set (CodeSystem)"
-Description: "Profile of CodeSystem to enable lossless representation of LOINC change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
+Description: "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
@@ -441,12 +441,7 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * property[answers-for].code 1..1
 * property[answers-for].code = #answers-for (exactly)
 * property[answers-for].type = #Coding (exactly)
-
-* concept 1..* MS
-* concept ^short = "Concepts in the code system"
-* concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
-* concept ^comment = "If this is empty, it means that the code system resource does not represent the content of the code system."
-* concept.display 1..1 MS
+* concept.display 1..1
 * concept.display ^short = "Text to display to the user"
 * concept.display ^definition = "A human readable string that is the recommended default way to present this concept to a user."
 * concept.display ^comment = "This contains the LOINC Long Name."
@@ -456,10 +451,10 @@ Description: "Profile of CodeSystem to enable lossless representation of LOINC c
 * concept.property ^slicing.rules = #open
 * concept.property ^short = "Property value for the concept"
 * concept.property ^definition = "A property value for this concept."
-* concept.property.code 1..1 MS
+* concept.property.code 1..1
 * concept.property.code ^short = "Reference to CodeSystem.property.code"
 * concept.property.code ^definition = "A code that is a reference to CodeSystem.property.code."
-* concept.property.value[x] 1..1 MS
+* concept.property.value[x] 1..1
 * concept.property.value[x] ^short = "Value of the property for this concept"
 * concept.property.value[x] ^definition = "The value of this property."
 * concept.property contains parent 0..1

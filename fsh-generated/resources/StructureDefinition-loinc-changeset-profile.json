@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of LOINC change set compliant with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "description": "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -1566,18 +1566,10 @@
         "fixedCode": "Coding"
       },
       {
-        "id": "CodeSystem.concept",
-        "path": "CodeSystem.concept",
-        "short": "Concepts in the code system",
-        "comment": "If this is empty, it means that the code system resource does not represent the content of the code system.",
-        "mustSupport": true
-      },
-      {
         "id": "CodeSystem.concept.display",
         "path": "CodeSystem.concept.display",
         "short": "Text to display to the user",
-        "comment": "This contains the LOINC Long Name.",
-        "mustSupport": true
+        "comment": "This contains the LOINC Long Name."
       },
       {
         "id": "CodeSystem.concept.property",
@@ -1591,16 +1583,6 @@
           ],
           "rules": "open"
         }
-      },
-      {
-        "id": "CodeSystem.concept.property.code",
-        "path": "CodeSystem.concept.property.code",
-        "mustSupport": true
-      },
-      {
-        "id": "CodeSystem.concept.property.value[x]",
-        "path": "CodeSystem.concept.property.value[x]",
-        "mustSupport": true
       },
       {
         "id": "CodeSystem.concept.property:parent",

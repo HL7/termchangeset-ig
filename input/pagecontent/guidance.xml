@@ -24,7 +24,7 @@ Change Sets are intended to be a lightweight, incremental distribution that is a
 The intent of Terminology Change Sets is that they are used as a communication pathway between systems, utilizing the CodeSystem resource. Systems involved in this exchange will intake a Change Set and receive it and process it, and should have a process to store and maintain the contents of the Change Set. Our expectation is that a Terminology Change Set is a transmission format, much like downloads of content available from RxNorm and SNOMED International. It is not necessarily expected that systems involved in Change Set exchange will re-publish the Change Set content in their own FHIR API, but it is rather an ingestion pathway for a system’s terminology server. If a system decides that it would be valuable to re-publish the contents of the Change Set, then they could do that and would need to maintain a process for reconciling Change Sets received from multiple sources.
 </p>
 <p>
-Additional considerations for receiving systems operating in the presence of a Change Set include the following subsections
+Additional considerations for receiving systems operating in the presence of a Change Set include the following subsections.
 </p>
 <a name="persistence"> </a>
 <h4>Persistence of Change Set as a Separate Object vs. Integration</h4>

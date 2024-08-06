@@ -3,8 +3,6 @@ InstanceOf: LOINCChangeSet
 Description: "Example of LOINC Change Set including 3 new attachment terms from 2.77 release (103595-5, 103596-3, 103597-1)"
 * id = "loinc277attachmentsChangeSet"
 * url = "http://ikm.dev/changesets/CodeSystem/loinc277attachmentsChangeSet"
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* extension[=].valueCode = #fhir
 * version = "2.77"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.6.1"
@@ -15,7 +13,7 @@ Description: "Example of LOINC Change Set including 3 new attachment terms from 
 * publisher = "Integrated Knowledge Management"
 * contact.telecom[+].system = #url
 * contact.telecom[=].value = "http://ikm.dev"
-* description = "Example of LOINC Change Set including all new Document Attachments defined in LOINC 2.77"
+* description = "Example of LOINC Change Set including all new Document Attachments defined in LOINC 2.77 for pre-adoption on 2.76 implementations"
 * copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * caseSensitive = false
 * compositional = false

@@ -46,7 +46,7 @@ HL7 has published some guidance on codes to use to represent properties from sev
   <a name="Granularity"></a>
   <h4>Change Sets with granularity below the concept level</h4>
   <p>
-As currently modelled, the smallest change that can be represented in a CodeSystem resource is a full "snapshot" representation of a Concept from that CodeSystem. If for example, the only change made to a Concept was a change to one of it's designation values, implementations would need to include the full semantic detail for that Concept in a Change Set.  The specific change made would only be apparent via some comparison to the prior representation of the Concept"
+As currently modelled, the smallest change that can be represented in a CodeSystem resource is a full "snapshot" representation of a Concept from that CodeSystem. If for example, the only change made to a Concept was a change to one of it's designation values, implementations would need to include the full semantic detail for that Concept in a Change Set.  The specific change made would only be apparent via a comparison to the prior representation of the Concept.
   </p>
   <a name="SmallChanges"></a>
   <h4>Provenance to small changes</h4>

@@ -2,7 +2,7 @@ Profile: TerminologyChangeSetProvenance
 Id: terminology-changeset-provenance-profile
 Parent: Provenance
 Title: "Terminology Change Set Provenance (Provenance)"
-Description: "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements."
+Description: "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements"
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
@@ -44,9 +44,12 @@ Description: "Profile of Provenance to use in concert with terminology change se
 	revision 1..1
 * entity[revision].role = #revision (exactly)
 * entity[revision].what 1..1
-* entity.what ^short = "The baseline version of the CodeSystem to which this Change Set is intended to apply."
+* entity.what ^short = "The baseline version of the CodeSystem to which this Change Set is intended to be applied."
+* entity.what.identifier.value 0..1 MS
+* entity.what.identifier.value ^short = "Unique identifier for the baseline version of the CodeSystem to which this Change Set is intended to be applied."
 * entity.what.identifier.value ^mapping.identity = "tinkar"
 * entity.what.identifier.value ^mapping.map = "Known limitation of current Tinkar model, will update in future version"
+* entity.what.display ^short = "Text alternative representation of the baseline version of the CodeSystem to which this Change Set is intended to be applied."
 * entity.what.display ^mapping.identity = "tinkar"
 * entity.what.display ^mapping.map = "Module"
 
