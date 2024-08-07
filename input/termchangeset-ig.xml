@@ -23,7 +23,7 @@
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/Vocab/index.cfm"/>
+      <value value="https://www.hl7.org/Special/committees/vocab"/>
     </telecom>
   </contact>
   <description value="This IG provides profiles and implementation guidance for exchanging terminology change sets that include full semantic detail from the source terminology utilizing the CodeSystem resource.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include is informed by the Tinkar Standardized Terminology Knowledgebase (https://www.hl7.org/implement/standards/product_brief.cfm?product_id=573) Reference Model, and mappings from that architecture are included on CodeSystem profiles.
