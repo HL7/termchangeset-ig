@@ -3,15 +3,15 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-Custodians of standardized terminologies have developed rich semantic frameworks that can be used to interact with individual concepts in an elegant fashion, utilizing the relationships between terms to dynamically adjust user interfaces or derive clinical patterns. Today, these frameworks are distributed via proprietary formats, tailored to the specific source terminology, and any system looking to utilize the full semantic power of the terminology must build customized data pipelines to process those formats.
+Custodians of standardized terminologies have developed rich semantic frameworks that can be used to interact with individual concepts in an elegant fashion, utilizing the relationships between terms to dynamically adjust user interfaces or derive clinical patterns. Today, these frameworks are distributed via proprietary formats and are tailored to the specific source terminology. As a result, any system looking to utilize the full semantic power of the terminology must build customized data pipelines to process those formats.
 </p>
 <p>
-This IG provides profiles and implementation guidance for exchanging terminology change sets that include full semantic detail from the source terminology utilizing the CodeSystem resource.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include  in a change set is informed by the <a href="TinkarOverview.html">Tinkar Standardized Terminology Knowledgebase Reference Model</a>, and mappings from that architecture are included on CodeSystem profiles.
+This Implementation Guide (IG) provides profiles and implementation guidance on utilizing the CodeSystem resource for exchanging terminology change sets that include full semantic detail from the source terminology.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include  in a change set is informed by the <a href="TinkarOverview.html">Tinkar Standardized Terminology Knowledgebase Reference Model</a>, and mappings from that architecture are included on CodeSystem profiles.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>
 	<p>
-The design for Terminology Change Sets is primarily robust utilization of the CodeSystem resource's modelling for <code>CodeSystem.concept</code> and <code>CodeSystem.property</code> to convey not just the concept identifiers and descriptions, but the full semantic design for each concept.  Additionally, a Provenance instance is used to provide insight into the creation of the Terminology Change Set, in particular the use of <code>Provenance.what</code> to reference the baseline Terminology from which the Change Set was derived.
+The design for Terminology Change Sets is primarily a robust utilization of the CodeSystem resource's modelling for <code>CodeSystem.concept</code> and <code>CodeSystem.property</code> to convey not just the concept identifiers and descriptions, but the full semantic design for each concept.  Additionally, a Provenance instance is used to provide insight into the creation of the Terminology Change Set, particularly using <code>Provenance.what</code> to reference the baseline Terminology from which the Change Set was derived.
   </p>
   <img src="TermChangeSetDesign.png" alt="Terminology Change Set Design"/>
   <a name="walkthrough"> </a>
@@ -23,19 +23,19 @@ The design for Terminology Change Sets is primarily robust utilization of the Co
       <a href="guidance.html">Guidance</a> - this page provides best practices and considerations for implementation of Terminology Change Sets.
     </li>
     <li>
-      <a href="TerminologyDistribution.html">Background</a> - these pages provide background on how incremental releases of Terminologies are currently handled and the need for a standardized Terminology Change Set format in FHIR, as well as an inventory of known FHIR limitations related to the inclusion of full semantic detail for terminology concepts.
+      <a href="TerminologyDistribution.html">Background</a> - these pages provide background on how incremental releases of Terminologies are currently handled, the need for a standardized Terminology Change Set format in FHIR, and an inventory of known FHIR limitations related to the inclusion of full semantic detail for terminology concepts.
     </li>
     <li>
-      <a href="artifacts.html">FHIR Artifacts</a> - this page provides the central source for all Profiles, Extensions, ValueSets, and Examples used in this IG
+      <a href="artifacts.html">FHIR Artifacts</a> - this page provides the central source for all Profiles, Extensions, ValueSets, and Examples used in this IG.
     </li>
     <li>
-      <a href="TinkarBackground.html">Tinkar Reference Model</a> - these pages provide context and background for the Tinkar Reference Model, which informed the analysis and design for Terminology Change Set profiles
+      <a href="TinkarBackground.html">Tinkar Reference Model</a> - these pages provide context and background for the Tinkar Reference Model, which informed the analysis and design for Terminology Change Set profiles.
     </li>
     <li>
-      <a href="downloads.html">Downloads</a> - This page provides links to downloadable artifacts
+      <a href="downloads.html">Downloads</a> - this page provides links to downloadable artifacts.
     </li>
     <li>
-      <a href="changes.html">Change Log</a> - this page documents the changes across the versions of the Terminology Change Set IG
+      <a href="changes.html">Change Log</a> - this page documents the changes across the versions of the Terminology Change Set IG.
     </li>
   </ul>
   	<a name="credits"> </a>
