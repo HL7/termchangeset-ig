@@ -3,7 +3,7 @@
   "id": "loinc277attachmentsChangeSet",
   "meta": {
     "profile": [
-      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile"
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile"
     ]
   },
   "content": "fragment",

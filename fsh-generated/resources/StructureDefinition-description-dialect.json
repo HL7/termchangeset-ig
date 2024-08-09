@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "description-dialect",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
   "name": "DescriptionDialect",
   "title": "Description Dialect",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/dialect-vs"
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/dialect-vs"
         }
       }
     ]

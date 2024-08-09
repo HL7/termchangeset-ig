@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "snomed-changeset-profile",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile",
   "name": "SNOMEDChangeSet",
   "title": "SNOMED Change Set (CodeSystem)",
   "status": "draft",
@@ -32,7 +32,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "CodeSystem",
-  "baseDefinition": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
+  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
   "derivation": "constraint",
   "differential": {
     "element": [

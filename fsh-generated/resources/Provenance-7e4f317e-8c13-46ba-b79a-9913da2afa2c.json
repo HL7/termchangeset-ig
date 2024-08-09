@@ -3,7 +3,7 @@
   "id": "7e4f317e-8c13-46ba-b79a-9913da2afa2c",
   "meta": {
     "profile": [
-      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile"
     ]
   },
   "entity": [

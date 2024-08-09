@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "loinc-changeset-profile",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile",
   "version": "0.1.0",
   "name": "LOINCChangeSet",
   "title": "LOINC Change Set (CodeSystem)",
@@ -46,7 +46,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "CodeSystem",
-  "baseDefinition": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
+  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
   "derivation": "constraint",
   "differential": {
     "element": [

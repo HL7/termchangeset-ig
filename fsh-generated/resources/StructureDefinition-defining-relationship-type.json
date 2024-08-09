@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "defining-relationship-type",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
   "name": "DefiningRelationshipType",
   "title": "Defining Relationship Type",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://hl7.org/fhir/uv/termchangeset/ValueSet/defining-relationship-type-vs"
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/defining-relationship-type-vs"
         }
       }
     ]

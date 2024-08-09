@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "terminology-changeset-provenance-profile",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/terminology-changeset-provenance-profile",
   "name": "TerminologyChangeSetProvenance",
   "title": "Terminology Change Set Provenance (Provenance)",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "role-group",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
   "name": "SNOMEDRoleGroup",
   "title": "SNOMED Role Group",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
       },
       {
         "id": "Extension.value[x]",

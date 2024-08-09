@@ -3,7 +3,7 @@
   "id": "snomedct413839001ChangeSet",
   "meta": {
     "profile": [
-      "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile"
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile"
     ]
   },
   "content": "fragment",
@@ -13,7 +13,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -25,7 +25,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -37,7 +37,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -62,7 +62,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -74,7 +74,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -86,7 +86,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
               "valueInteger": 1
             }
           ],
@@ -100,7 +100,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -112,7 +112,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -124,7 +124,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
               "valueInteger": 2
             }
           ],
@@ -138,7 +138,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -150,7 +150,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -172,7 +172,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -184,7 +184,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -202,7 +202,7 @@
         {
           "extension": [
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -214,7 +214,7 @@
               }
             },
             {
-              "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
               "valueCodeableConcept": {
                 "coding": [
                   {

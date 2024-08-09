@@ -2,6 +2,9 @@
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hl7.fhir.uv.termchangeset"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="vocab"/> 
+  </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/> 
   </extension> 
@@ -11,19 +14,19 @@
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-  <url value="https://hl7.org/fhir/uv/termchangeset/ImplementationGuide/hl7.fhir.uv.termchangeset"/>
+  <url value="http://hl7.org/fhir/uv/termchangeset/ImplementationGuide/hl7.fhir.uv.termchangeset"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="1.0.0-ballot"/>
   <name value="TermChangeSet"/>
   <title value="Terminology Change Set Exchange"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 International - Termionology Infrastructure Work Group"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/vocab"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
   <description value="This IG provides profiles and implementation guidance for exchanging terminology change sets that include full semantic detail from the source terminology utilizing the CodeSystem resource.  It also addresses exchanging terminology change sets containing provisional concepts not yet incorporated in source terminologies, such as those requiring rapid distribution during a pandemic-response context. Analysis of semantic detail to include is informed by the Tinkar Standardized Terminology Knowledgebase (https://www.hl7.org/implement/standards/product_brief.cfm?product_id=573) Reference Model, and mappings from that architecture are included on CodeSystem profiles.

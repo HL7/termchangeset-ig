@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "changeset-profile",
-  "url": "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
   "version": "0.1.0",
   "name": "ChangeSet",
   "title": "Terminology Change Set (CodeSystem)",
@@ -220,7 +220,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
             ]
           }
         ],
@@ -241,7 +241,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
             ]
           }
         ],
@@ -262,7 +262,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
             ]
           }
         ]
@@ -335,7 +335,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type"
             ]
           }
         ],
@@ -356,7 +356,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
             ]
           }
         ],
@@ -377,7 +377,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
             ]
           }
         ],
