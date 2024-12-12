@@ -6,7 +6,7 @@ Description: "Coded value to identify what case sensitivity is reflected in desc
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
 * value[x] only CodeableConcept
-* value[x] from CaseSignificanceVS (required)
+* value[x] from CaseSignificanceVS (extensible)
 
 Extension: SNOMEDDescriptionAcceptability
 Id:        description-acceptability
@@ -16,7 +16,7 @@ Description: "Boolean value to convey if a designation is case sensitive or not"
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
 * value[x] only CodeableConcept
-* value[x] from DescriptionAcceptabilityVS (required)
+* value[x] from DescriptionAcceptabilityVS (extensible)
 
 Extension: SNOMEDRoleGroup
 Id:        role-group
@@ -35,7 +35,7 @@ Description: "Indicator to distinguish between axioms explicitly stated vs. infe
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.property"
 * value[x] only CodeableConcept
-* value[x] from DefiningRelationshipTypeVS (required)
+* value[x] from DefiningRelationshipTypeVS (extensible)
 
 Extension: ElProfileSetOperator
 Id:	   el-profile-set-operator
@@ -45,7 +45,7 @@ Description: "EL++ profile to describe the axiom as being part of the Necessary 
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.property"
 * value[x] only CodeableConcept
-* value[x] from ELProfileSetOperatorVS (required)
+* value[x] from ELProfileSetOperatorVS (extensible)
 
 Extension: DescriptionDialect
 Id:	   description-dialect
