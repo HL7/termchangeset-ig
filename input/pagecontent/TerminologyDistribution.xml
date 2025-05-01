@@ -182,7 +182,6 @@ as would be the case in a formal database; there are duplications across and wit
 NLM does not provide RxNorm files in Excel format. However, RxNorm files are text files which can be 
 imported or converted manually into a spreadsheet. For detailed instructions, see this brief video 
 titled: <a href="https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/rxnorm_spreadsheet.html" target="_blank" title="Visit https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/rxnorm_spreadsheet.html in a new tab"><strong>Opening an RxNorm File in a Spreadsheet</strong></a>
-
 </p>
 <p>
 RxNorm files are in Rich Release Format with the extension .RRF, which are text files with values 
