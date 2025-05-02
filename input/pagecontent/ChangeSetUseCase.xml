@@ -6,7 +6,7 @@
 <a name="changesetusecase"></a>
   <h3>Terminology Change Set Exchange Use Case</h3>
 <p>
-In this example, a terminology publishing organization is making an incremental change to its extension of SNOMED CT by adding a new extended concept. To enable data exchange with a close trading partner that makes use of this extended concept, this publishing organization shares a Terminology Change Set with a the trading partner (the Terminology Consumer identified in the steps below).
+In this example, a terminology publishing organization is making an incremental change to its extension of SNOMED CT by adding a new concept. To enable data exchange with a close trading partner that makes use of this extended concept, this publishing organization shares a Terminology Change Set with a the trading partner (the Terminology Consumer identified in the steps below).
 </p>
 <ol>
 	<li>
