@@ -25,7 +25,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * description ^short = "Natural language description of the code system. Should provide a robust inventory of the contents of the Change Set"
 * copyright 1..1
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
-* hierarchyMeaning ^short = "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
+* hierarchyMeaning 0..0
+* hierarchyMeaning ^short = "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included."
 * content 1..1
 * content only code
 * content = #fragment (exactly)
