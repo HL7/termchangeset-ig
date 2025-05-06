@@ -3,7 +3,7 @@ Alias:   SCT = http://snomed.info/sct
 ValueSet: CaseSignificanceVS
 Id: case-significance-vs
 Title: "Case Significance Value Set"
-Description:  "Codes describing case significance for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000447004 Case significance."
+Description:  "Codes describing case significance for a terminology concept designation. The value set includes all codes from the SNOMED CT descending from 900000000000447004 Case significance."
 * insert SNOMEDCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000447004 "Case significance"
@@ -21,7 +21,7 @@ Description:  "Codes describing acceptability of a given description for a termi
 ValueSet: DefiningRelationshipTypeVS
 Id: defining-relationship-type-vs
 Title: "Defining Relationship Type Value Set"
-Description:  "Codes describing the nature of a relationship used to define a terminology concept designation. The value set includes all codes from the SNOMED CT descending from 900000000000006009 Defining relationship."
+Description:  "Codes describing the nature of a relationship used to define a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000006009 Defining relationship."
 * insert SNOMEDCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000006009 "Defining relationship"
