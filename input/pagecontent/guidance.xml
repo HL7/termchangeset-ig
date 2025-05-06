@@ -48,11 +48,6 @@ Additional considerations for receiving systems operating in the presence of a C
 <p>
 It could be possible to manage the evolution of Terminology as a series of persisted Change Sets, but that use case for Change Sets was not considered as part of development of this guide.
 </p>
-<a name="persistenceapproach"> </a>
-<h4>Recommended approach when persisting Change Sets</h4>
-<p>
-Maintaining Change Sets separately while developing robust mechanisms to integrate these changes into the Source CodeSystem as needed is advisable. This approach offers flexibility in managing changes and ensures data integrity while simplifying rollback and version control processes.
-</p>
 <a name="extending"> </a>
 <h3>Extending Terminologies</h3>
 <p>
