@@ -2,7 +2,7 @@
 <a name="contents"> </a>
 <h3>Change Set Contents</h3>
 <p>
-Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
+Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to consist of new concepts to be added, or modified versions of existing concepts (including deprecation/inactivation) within a specific Terminology version, and not updates to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
 <ul>
 	<li>
 	<code>CodeSystem.caseSensitive</code>
