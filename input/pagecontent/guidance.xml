@@ -44,7 +44,7 @@ Additional considerations for receiving systems operating in the presence of a C
 	</li>
 </ul>
 <a name="managingrevisions"> </a>
-<h4>Managing Terminology Revisisions via Change Sets</h4>
+<h4>Managing Terminology Revisions via Change Sets</h4>
 <p>
 It could be possible to manage the evolution of Terminology as a series of persisted Change Sets, but that use case for Change Sets was not considered as part of development of this guide.
 </p>
