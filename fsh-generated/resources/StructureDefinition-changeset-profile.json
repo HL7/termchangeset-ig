@@ -159,6 +159,35 @@
         ]
       },
       {
+        "id": "CodeSystem.concept.extension",
+        "path": "CodeSystem.concept.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.extension:OWLExpression",
+        "path": "CodeSystem.concept.extension",
+        "sliceName": "OWLExpression",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.concept.code",
         "path": "CodeSystem.concept.code",
         "mapping": [

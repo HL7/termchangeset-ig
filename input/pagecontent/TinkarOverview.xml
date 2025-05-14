@@ -1,6 +1,14 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-	<a name="about"> </a>
-	<h3>About Tinkar</h3>
+	<a name="tinkar relationship"> </a>
+<h3>Tinkar's relationship to Terminology Change Sets</h3>
+<p>
+The Terminology Change Set Implementation Guide was created as part of an HL7 project aimed at developing <a href="https://jira.hl7.org/browse/PSS-2312">uidelines for a standardized terminology knowledgebase</a>. This project led to the creation of the Tinkar standard for representing knowledge architectures. As such knowledge architectures are updated, the guide provides a framework for implementers to distribute updates using an HL7 FHIR representation.
+</p>
+<p>
+Implementers of Terminology Change Sets do not need to implement or fully understand the Tinkar standard to effectively use Change Sets. However, understanding the underlying principles can be beneficial for broader knowledge integration and management. Where relevant, mappings to the Tinkar logical model are included with Profiles in this implementation guide.
+</p>
+<a name="about"> </a>
+<h3>About Tinkar</h3>
 <p>
 Tinkar provides the foundation of a knowledge architecture that is intended to integrate reference terminology from distributors (e.g., SNOMED CT®, LOINC®, RxNorm) 
 with local concepts to support interoperable information semantics across the enterprise. 
