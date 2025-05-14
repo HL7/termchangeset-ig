@@ -2,10 +2,10 @@
 	<a name="tinkar relationship"> </a>
 <h3>Tinkar's relationship to Terminology Change Sets</h3>
 <p>
-The Terminology Change Set Implementation Guide originated in an HL7 project to develop <a href="https://jira.hl7.org/browse/PSS-2312">Guidelines for a Standardized Terminology Knowledgebase</a> which developed the Tinkar standard to represent knowledge architectures. As updates are made to these knowledge architectures, the Terminology Change Set Implementation Guide was needed to define how implementers could distribute those updates using an HL7 FHIR representation.
+The Terminology Change Set Implementation Guide was created as part of an HL7 project aimed at developing <a href="https://jira.hl7.org/browse/PSS-2312">uidelines for a standardized terminology knowledgebase</a>. This project led to the creation of the Tinkar standard for representing knowledge architectures. As such knowledge architectures are updated, the guide provides a framework for implementers to distribute updates using an HL7 FHIR representation.
 </p>
 <p>
-Implementers of Terminology Change Sets do not need to implement or even understand the Tinkar standard to successfully use Change Sets, but understanding of the underlying principles may be useful in informing knowledge integration and management more broadly. Where applicable, mappings to the Tinkar logical model have been included with Profiles in this implementation guide.
+Implementers of Terminology Change Sets do not need to implement or fully understand the Tinkar standard to effectively use Change Sets. However, understanding the underlying principles can be beneficial for broader knowledge integration and management. Where relevant, mappings to the Tinkar logical model are included with Profiles in this implementation guide.
 </p>
 <a name="about"> </a>
 <h3>About Tinkar</h3>
