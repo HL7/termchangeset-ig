@@ -53,7 +53,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 135
+    "endLine": 137
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -102,6 +102,14 @@
     "fshFile": "Profile_CodeSystem_LOINCChangeSet.fsh",
     "startLine": 1,
     "endLine": 791
+  },
+  {
+    "outputFile": "StructureDefinition-owl-expression.json",
+    "fshName": "OWLExpression",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 60,
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-role-group.json",

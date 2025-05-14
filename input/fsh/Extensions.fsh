@@ -57,3 +57,12 @@ Description: "Subcategorization of language"
 * value[x] only CodeableConcept
 * value[x] from DialectVS (extensible)
 
+Extension: OWLExpression
+Id:	   owl-expression
+Title:	   "OWL Expression"
+Description: "OWL Expression representing the logical definition of a concept"
+// Limit the context to CodeSystem.concept
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.concept"
+* value[x] only string
+
