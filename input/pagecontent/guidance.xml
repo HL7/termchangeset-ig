@@ -60,7 +60,7 @@ While use cases do exist to justify such extensions, implementers are strongly c
 When implementers determine that they are interested in extending a terminology, wherever possible, they should do so in alignment with the authoring guidelines and terms of use for the terminology they are extending. While SNOMED has a robust methodology allowing for the authoring, distribution, and maintenance of extensions, most other terminologies do not. Implementers developing and maintaining extensions should ensure they have a strategy for clearly identifying extended CodeSystem resources utilizing the following elements:
 <ul>
 	<li>
-	<code>CodeSystem.url</code> – where not specified by an SDO-specific policy (such as SNOMED’s extension process) locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO.
+	<code>CodeSystem.url</code> – where not specified by an SDO-specific policy (such as <a href="https://confluence.ihtsdotools.org/display/DOCURI/2.1+URIs+for+Editions+and+Versions"> SNOMED’s extension process</a>) locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO.
 	</li>
 	<li>
 	<code>CodeSystem.version</code> – where not specified by an SDO-specific policy, it is recommended that implementers consider aligning to <a href="https://terminology.hl7.org/index.html#identificaton-of-versions">HL7 terminology versioning approach</a>
