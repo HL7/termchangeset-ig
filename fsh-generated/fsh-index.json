@@ -53,7 +53,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 137
+    "endLine": 139
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -94,6 +94,14 @@
     "fshFile": "Extensions.fsh",
     "startLine": 40,
     "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-extends-codesystem.json",
+    "fshName": "ExtendsCodeSystem",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 69,
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-loinc-changeset-profile.json",

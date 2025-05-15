@@ -13,6 +13,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
+* extension contains
+	extends-codesystem named ExtendsCodeSystem 0..1
 * url ^short = "Canonical identifier for this code system, represented as a URI (globally unique) (Coding.system).  NOTE: Where not specified by an SDO-specific policy (such as SNOMED’s extension process), change sets associated with locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO."
 * identifier 1..1
 * identifier.value ^mapping.identity = "tinkar"

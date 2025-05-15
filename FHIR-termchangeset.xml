@@ -16,6 +16,7 @@
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
 <artifact id="ValueSet/el-profile-set-operator-vs" key="ValueSet-el-profile-set-operator-vs" name="EL Profile Set Operator Value Set"/>
 <artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 Change Set"/>
+<artifact id="StructureDefinition/extends-codesystem" key="StructureDefinition-extends-codesystem" name="Extends CodeSystem"/>
 <artifact id="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c" key="Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c" name="HL7 VariableRole Change Set Provenance Example"/>
 <artifact id="CodeSystem/loinc277attachmentsChangeSet" key="CodeSystem-loinc277attachmentsChangeSet" name="LOINC 2.77 Attachments Change Set for targetted redistribution"/>
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="LOINC Change Set (CodeSystem)"/>

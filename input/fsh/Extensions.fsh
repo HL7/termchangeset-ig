@@ -66,3 +66,13 @@ Description: "OWL Expression representing the logical definition of a concept"
 * ^context[=].expression = "CodeSystem.concept"
 * value[x] only string
 
+Extension: ExtendsCodeSystem
+Id:	   extends-codesystem
+Title:	   "Extends CodeSystem"
+Description: "Extends CodeSystem contains a reference to a source terminology, for which a CodeSystem resource is intended to contain additional Concepts"
+// Limit the context to CodeSystem.concept
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem"
+* value[x] only Reference(CodeSystem)
+* value[x] ^short = "The source terminology for which the Change Set is intended to contain additional Concepts"
+
