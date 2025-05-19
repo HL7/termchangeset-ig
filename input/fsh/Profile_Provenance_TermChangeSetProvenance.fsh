@@ -2,7 +2,7 @@ Profile: TerminologyChangeSetProvenance
 Id: terminology-changeset-provenance-profile
 Parent: Provenance
 Title: "Terminology Change Set Provenance (Provenance)"
-Description: "Profile of Provenance to use in concert with terminology change sets compliant with Tinkar information model requirements"
+Description: "Profile of Provenance to use in concert with Terminology Change Sets compliant with Tinkar information model requirements"
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
@@ -14,7 +14,7 @@ Description: "Profile of Provenance to use in concert with terminology change se
 * activity 1..1
 * activity.coding.code = #UPDATE (exactly)
 * activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation" (exactly)
-* activity ^short = "For a terminology change set, this should always be an update to a terminology"
+* activity ^short = "For a Terminology Change Set, this should always be an update to a terminology"
 * agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "type.coding.code"
 * agent ^slicing.rules = #openAtEnd

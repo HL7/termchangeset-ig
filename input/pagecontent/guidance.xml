@@ -2,7 +2,7 @@
 <a name="contents"> </a>
 <h3>Change Set Contents</h3>
 <p>
-Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
+Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a change set is expected to be contained within the <code>CodeSystem.concept</code> structure of of change set CodeSystem resource. Additionally, while the following elements may be included in a change set, they should match the values present in the corresponding baseline of the Terminology from which the change set was derived:
 <ul>
 	<li>
 	<code>CodeSystem.caseSensitive</code>
@@ -14,44 +14,44 @@ Change Sets are intended to be a lightweight, incremental distribution that is a
 	<code>CodeSystem.compositional</code>
 	</li>
 	<li>
-	<code>CodeSystem.property</code> - note that only properties relevant to content within the Change Set may be included, but those properties should be a subset of properties defined in the corresponding baseline of the Terminology from which the Change Set was derived (i.e., no net-new properties should be defined via a Change Set).
+	<code>CodeSystem.property</code> - note that only properties relevant to content within the change set may be included, but those properties should be a subset of properties defined in the corresponding baseline of the Terminology from which the change set was derived (i.e., no net-new properties should be defined via a change set).
 	</li>
 </ul>
 </p>
 <a name="receivingsystems"> </a>
-<h3>How receiving systems should operate in the presence of a Change Set</h3>
+<h3>How receiving systems should operate in the presence of a change set</h3>
 <p>
-The intent of Terminology Change Sets is that they are used as a communication pathway between systems, utilizing the CodeSystem resource. Systems involved in this exchange will intake a Change Set and receive it and process it, and should have a process to store and maintain the contents of the Change Set. Our expectation is that a Terminology Change Set is a transmission format, much like downloads of content available from RxNorm and SNOMED International. It is not necessarily expected that systems involved in Change Set exchange will re-publish the Change Set content in their own FHIR API, but it is rather an ingestion pathway for a system’s terminology server. If a system decides that it would be valuable to re-publish the contents of the Change Set, then they could do that and would need to maintain a process for reconciling Change Sets received from multiple sources.
+The intent of Terminology Change Sets is that they are used as a communication pathway between systems, utilizing the CodeSystem resource. Systems involved in this exchange will intake a change set and receive it and process it, and should have a process to store and maintain the contents of the Change Set. Our expectation is that a Terminology Change Set is a transmission format, much like downloads of content available from RxNorm and SNOMED International. It is not necessarily expected that systems involved in change set exchange will re-publish the change set content in their own FHIR API, but it is rather an ingestion pathway for a system’s terminology server. If a system decides that it would be valuable to re-publish the contents of the change set, then they could do that and would need to maintain a process for reconciling change sets received from multiple sources.
 </p>
 <p>
-Additional considerations for receiving systems operating in the presence of a Change Set include the following subsections.
+Additional considerations for receiving systems operating in the presence of a change set include the following subsections.
 </p>
 <a name="persistence"> </a>
-<h4>Persistence of Change Set as a Separate Object vs. Integration</h4>
+<h4>Persistence of change set as a Separate Object vs. Integration</h4>
 <ul>
 	<li>
-	<b>Separate Object:</b> If the Change Set is persisted as a separate object, it allows for easier tracking and management of changes over time without altering the original CodeSystem. This approach can be useful for maintaining historical data for audit purposes or for scenarios where changes need to be reviewed or approved before being applied.
+	<b>Separate Object:</b> If the change set is persisted as a separate object, it allows for easier tracking and management of changes over time without altering the original CodeSystem. This approach can be useful for maintaining historical data for audit purposes or for scenarios where changes need to be reviewed or approved before being applied.
 	</li>
 	<li>
-	<b>Integration into CodeSystem:</b> Integrating the Change Set directly into the CodeSystem simplifies the management by ensuring that there is only one up-to-date version of each CodeSystem. However, this can complicate rollback and audit processes since the original state is overwritten.
+	<b>Integration into CodeSystem:</b> Integrating the change set directly into the CodeSystem simplifies the management by ensuring that there is only one up-to-date version of each CodeSystem. However, this can complicate rollback and audit processes since the original state is overwritten.
 	</li>
 </ul>
 <a name="operations"> </a>
-<h4>Operational Changes with persisted Change Sets</h4>
+<h4>Operational Changes with persisted change sets</h4>
 <ul>
 	<li>
-	When a client application performs a lookup operation (e.g., $lookup), it should ideally check the Change Set first to see if there has been a recent update relevant to the query. If no relevant change is found in the Change Set, then the lookup should proceed to check the main CodeSystem. This ensures that the most current data is used.
+	When a client application performs a lookup operation (e.g., $lookup), it should ideally check the change set first to see if there has been a recent update relevant to the query. If no relevant change is found in the change set, then the lookup should proceed to check the main CodeSystem. This ensures that the most current data is used.
 	</li>
 </ul>
 <a name="managingrevisions"> </a>
-<h4>Managing Terminology Revisions via Change Sets</h4>
+<h4>Managing Terminology Revisions via change sets</h4>
 <p>
-It could be possible to manage the evolution of Terminology as a series of persisted Change Sets, but that use case for Change Sets was not considered as part of development of this guide.
+It could be possible to manage the evolution of Terminology as a series of persisted change sets, but that use case for change sets was not considered as part of development of this guide.
 </p>
 <a name="persistenceapproach"> </a>
-<h4>Recommended approach when persisting Change Sets</h4>
+<h4>Recommended approach when persisting change sets</h4>
 <p>
-Maintaining Change Sets separately while developing robust mechanisms to integrate these changes into the Source CodeSystem as needed is advisable. This approach offers flexibility in managing changes and ensures data integrity while simplifying rollback and version control processes.
+Maintaining change sets separately while developing robust mechanisms to integrate these changes into the Source CodeSystem as needed is advisable. This approach offers flexibility in managing changes and ensures data integrity while simplifying rollback and version control processes.
 </p>
 <a name="extending"> </a>
 <h3>Extending Terminologies</h3>
@@ -71,13 +71,13 @@ When implementers determine that they are interested in extending a terminology,
 	<code>CodeSystem.version</code> – where not specified by an SDO-specific policy, it is recommended that implementers consider aligning to <a href="https://terminology.hl7.org/index.html#identificaton-of-versions">HL7 terminology versioning approach</a>
 	</li>
 	<li>
-	<code>CodeSystem.name</code> – locally-maintained extensions should contain a computer-friendly name (consist with <a href="https://hl7.org/fhir/R4/codesystem.html#invs">cnl-0</a>) clearly identifying the CodeSystem resource as a Change Set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
+	<code>CodeSystem.name</code> – locally-maintained extensions should contain a computer-friendly name (consist with <a href="https://hl7.org/fhir/R4/codesystem.html#invs">cnl-0</a>) clearly identifying the CodeSystem resource as a change set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
 	</li>
 	<li>
-	<code>CodeSystem.title</code> – locally-maintained extensions should contain a human-friendly name clearly identifying the CodeSystem resource as a Change Set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
+	<code>CodeSystem.title</code> – locally-maintained extensions should contain a human-friendly name clearly identifying the CodeSystem resource as a change set and ideally conveying both the source terminology from which it was derived and a notion of its contents.
 	</li>
 	<li>
-	<code>CodeSystem.description</code> – locally-maintained extensions should utilize the description element to provide a more robust inventory of the contents of the Change Set.
+	<code>CodeSystem.description</code> – locally-maintained extensions should utilize the description element to provide a more robust inventory of the contents of the change set.
 	</li>
 </ul>
 </p>
@@ -104,8 +104,8 @@ To address this issue, HL7 has developed guidance for properties on its terminol
 These pages are works in progress, and have varying levels of completeness, but should be referenced as the most robust source for guidance on terminology-specific properties, until such time as similar guidance is available directly from the maintainers of these external code systems.
 </p>
 <a name="patch"> </a>
-<h3>Use of PATCH with Change Sets</h3>
+<h3>Use of PATCH with change sets</h3>
 <p>
-In addition to distribution of incremental terminology updates utilizing a terminology Change Set, implementers of FHIR Terminology Servers could repackage the changes from the change set as a patch document and perform a <a href="https://hl7.org/fhir/R4/http.html#patch">PATCH operation</a> to update an entire CodeSystem resource. This can be useful when a server is seeking to minimize its bandwidth utilization, or in scenarios where a client has only partial access or support for a resource. The server shall process its own copy of the resource in the format indicated, applying the operations specified in the document, following the relevant PATCH specification. While this use case is not a focus of this FHIR IG, we acknowledge that a PATCH transaction could be used to update a FHIR Terminology Server’s representation of a given Terminology.
+In addition to distribution of incremental terminology updates utilizing a Terminology Change Set, implementers of FHIR Terminology Servers could repackage the changes from the change set as a patch document and perform a <a href="https://hl7.org/fhir/R4/http.html#patch">PATCH operation</a> to update an entire CodeSystem resource. This can be useful when a server is seeking to minimize its bandwidth utilization, or in scenarios where a client has only partial access or support for a resource. The server shall process its own copy of the resource in the format indicated, applying the operations specified in the document, following the relevant PATCH specification. While this use case is not a focus of this FHIR IG, we acknowledge that a PATCH transaction could be used to update a FHIR Terminology Server’s representation of a given Terminology.
 </p>
 </div>
