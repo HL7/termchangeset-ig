@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of a terminology change set aligned with Tinkar information model requirements",
+  "description": "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -100,7 +100,7 @@
       {
         "id": "CodeSystem.hierarchyMeaning",
         "path": "CodeSystem.hierarchyMeaning",
-        "short": "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
+        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
       },
       {
         "id": "CodeSystem.content",
@@ -411,7 +411,7 @@
       {
         "id": "CodeSystem.concept.concept",
         "path": "CodeSystem.concept.concept",
-        "comment": "For Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
+        "comment": "For Terminology Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
         "max": "0",
         "mustSupport": false
       }
