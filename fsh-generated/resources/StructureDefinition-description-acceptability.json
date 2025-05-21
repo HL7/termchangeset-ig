@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Description Acceptability",
-        "definition": "Coded value to identify the acceptability of the description",
+        "definition": "Coded value to identify the acceptability of the description"
       },
       {
         "id": "Extension.extension",
