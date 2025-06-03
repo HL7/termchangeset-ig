@@ -1,0 +1,186 @@
+[
+  {
+    "outputFile": "CodeSystem-HL7VariableRoleChangeSet.json",
+    "fshName": "HL7VariableRoleChangeSetExample",
+    "fshType": "Instance",
+    "fshFile": "Example_HL7VariableRole_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
+    "fshName": "LOINCChangeSetExample",
+    "fshType": "Instance",
+    "fshFile": "Example_LOINC_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 215
+  },
+  {
+    "outputFile": "CodeSystem-snomedct413839001ChangeSet.json",
+    "fshName": "SNOMEDChangeSetExample",
+    "fshType": "Instance",
+    "fshFile": "Example_SNOMED_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 357
+  },
+  {
+    "outputFile": "Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.json",
+    "fshName": "SNOMEDChangeSetProvenanceExample",
+    "fshType": "Instance",
+    "fshFile": "Example_SNOMED_ChangeSet_Provenance.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032.json",
+    "fshName": "LOINCChangeSetProvenanceExample",
+    "fshType": "Instance",
+    "fshFile": "Example_LOINC_ChangeSet_Provenance.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c.json",
+    "fshName": "HL7VariableRoleChangeSetProvenanceExample",
+    "fshType": "Instance",
+    "fshFile": "Example_HL7VariableRole_ChangeSet_Provenance.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-changeset-profile.json",
+    "fshName": "ChangeSet",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 139
+  },
+  {
+    "outputFile": "StructureDefinition-defining-relationship-type.json",
+    "fshName": "DefiningRelationshipType",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 30,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-description-acceptability.json",
+    "fshName": "SNOMEDDescriptionAcceptability",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-description-case-sensitivity.json",
+    "fshName": "SNOMEDDescriptionsCaseSensitivity",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-description-dialect.json",
+    "fshName": "DescriptionDialect",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 50,
+    "endLine": 58
+  },
+  {
+    "outputFile": "StructureDefinition-el-profile-set-operator.json",
+    "fshName": "ElProfileSetOperator",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 40,
+    "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-extends-codesystem.json",
+    "fshName": "ExtendsCodeSystem",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 69,
+    "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-loinc-changeset-profile.json",
+    "fshName": "LOINCChangeSet",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_LOINCChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 791
+  },
+  {
+    "outputFile": "StructureDefinition-owl-expression.json",
+    "fshName": "OWLExpression",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 60,
+    "endLine": 67
+  },
+  {
+    "outputFile": "StructureDefinition-role-group.json",
+    "fshName": "SNOMEDRoleGroup",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 21,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-snomed-changeset-profile.json",
+    "fshName": "SNOMEDChangeSet",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_SNOMEDChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 733
+  },
+  {
+    "outputFile": "StructureDefinition-terminology-changeset-provenance-profile.json",
+    "fshName": "TerminologyChangeSetProvenance",
+    "fshType": "Profile",
+    "fshFile": "Profile_Provenance_TermChangeSetProvenance.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "ValueSet-case-significance-vs.json",
+    "fshName": "CaseSignificanceVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 3,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-defining-relationship-type-vs.json",
+    "fshName": "DefiningRelationshipTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 21,
+    "endLine": 27
+  },
+  {
+    "outputFile": "ValueSet-description-acceptability-vs.json",
+    "fshName": "DescriptionAcceptabilityVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 12,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-dialect-vs.json",
+    "fshName": "DialectVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 39,
+    "endLine": 45
+  },
+  {
+    "outputFile": "ValueSet-el-profile-set-operator-vs.json",
+    "fshName": "ELProfileSetOperatorVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 30,
+    "endLine": 36
+  }
+]

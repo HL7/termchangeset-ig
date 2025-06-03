@@ -149,7 +149,7 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU1 Ballot"/>
+      <value value="STU1"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

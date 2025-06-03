@@ -13,6 +13,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
+* extension contains
+	extends-codesystem named ExtendsCodeSystem 0..1
 * url ^short = "Canonical identifier for this code system, represented as a URI (globally unique) (Coding.system).  NOTE: Where not specified by an SDO-specific policy (such as SNOMED’s extension process), change sets associated with locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO."
 * identifier 1..1
 * identifier.value ^mapping.identity = "tinkar"
@@ -54,6 +56,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
+* concept.extension contains
+	owl-expression named OWLExpression 0..*
 * concept.id ^short = "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "Identifier Value of Identifier Semantic where Identifier Source = UNIVERSALLY_UNIQUE_IDENTIFIER"

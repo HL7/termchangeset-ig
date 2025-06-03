@@ -2,7 +2,7 @@
 <a name="contents"> </a>
 <h3>Change Set Contents</h3>
 <p>
-Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to be revisions to the concepts within a Terminology, and not a substantial update to the structure or operation of a Terminology. The primary substance of a change set is expected to be contained within the <code>CodeSystem.concept</code> structure of of change set CodeSystem resource. Additionally, while the following elements may be included in a change set, they should match the values present in the corresponding baseline of the Terminology from which the change set was derived:
+Change Sets are intended to be a lightweight, incremental distribution that is a more agile alternative to a full distribution for a given terminology. As such, their contents are expected to consist of new concepts to be added, or modified versions of existing concepts (including deprecation/inactivation) within a specific Terminology version, and not updates to the structure or operation of a Terminology. The primary substance of a Change Set is expected to be contained within the <code>CodeSystem.concept</code> structure of of Change Set CodeSystem resource. Additionally, while the following elements may be included in a Change Set, they should match the values present in the corresponding baseline of the Terminology from which the Change Set was derived:
 <ul>
 	<li>
 	<code>CodeSystem.caseSensitive</code>
@@ -21,7 +21,7 @@ Change Sets are intended to be a lightweight, incremental distribution that is a
 <a name="receivingsystems"> </a>
 <h3>How receiving systems should operate in the presence of a change set</h3>
 <p>
-The intent of Terminology Change Sets is that they are used as a communication pathway between systems, utilizing the CodeSystem resource. Systems involved in this exchange will intake a change set and receive it and process it, and should have a process to store and maintain the contents of the Change Set. Our expectation is that a Terminology Change Set is a transmission format, much like downloads of content available from RxNorm and SNOMED International. It is not necessarily expected that systems involved in change set exchange will re-publish the change set content in their own FHIR API, but it is rather an ingestion pathway for a system’s terminology server. If a system decides that it would be valuable to re-publish the contents of the change set, then they could do that and would need to maintain a process for reconciling change sets received from multiple sources.
+Change sets are designed to be processed to make updates to the authoritative CodeSystems made available by a Terminology Server. They are designed to be used by content authors as a distribution format for terminology, and are not intended to be persisted or retrievable from a Terminology Server supporting operational transactions. Specifically, they are not intended to function like supplements, which are intended to be persisted side-by-side with a full representation of a CodeSystem and effect the outcome of Terminology Service Operations on that CodeSystem.
 </p>
 <p>
 Additional considerations for receiving systems operating in the presence of a change set include the following subsections.
@@ -48,11 +48,6 @@ Additional considerations for receiving systems operating in the presence of a c
 <p>
 It could be possible to manage the evolution of Terminology as a series of persisted change sets, but that use case for change sets was not considered as part of development of this guide.
 </p>
-<a name="persistenceapproach"> </a>
-<h4>Recommended approach when persisting change sets</h4>
-<p>
-Maintaining change sets separately while developing robust mechanisms to integrate these changes into the Source CodeSystem as needed is advisable. This approach offers flexibility in managing changes and ensures data integrity while simplifying rollback and version control processes.
-</p>
 <a name="extending"> </a>
 <h3>Extending Terminologies</h3>
 <p>
@@ -65,7 +60,7 @@ While use cases do exist to justify such extensions, implementers are strongly c
 When implementers determine that they are interested in extending a terminology, wherever possible, they should do so in alignment with the authoring guidelines and terms of use for the terminology they are extending. While SNOMED has a robust methodology allowing for the authoring, distribution, and maintenance of extensions, most other terminologies do not. Implementers developing and maintaining extensions should ensure they have a strategy for clearly identifying extended CodeSystem resources utilizing the following elements:
 <ul>
 	<li>
-	<code>CodeSystem.url</code> – where not specified by an SDO-specific policy (such as SNOMED’s extension process) locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO.
+	<code>CodeSystem.url</code> – where not specified by an SDO-specific policy (such as <a href="https://confluence.ihtsdotools.org/display/DOCURI/2.1+URIs+for+Editions+and+Versions"> SNOMED’s extension process</a>) locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO.
 	</li>
 	<li>
 	<code>CodeSystem.version</code> – where not specified by an SDO-specific policy, it is recommended that implementers consider aligning to <a href="https://terminology.hl7.org/index.html#identificaton-of-versions">HL7 terminology versioning approach</a>

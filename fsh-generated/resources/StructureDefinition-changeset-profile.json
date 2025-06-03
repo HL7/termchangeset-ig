@@ -51,6 +51,35 @@
   "differential": {
     "element": [
       {
+        "id": "CodeSystem.extension",
+        "path": "CodeSystem.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.extension:ExtendsCodeSystem",
+        "path": "CodeSystem.extension",
+        "sliceName": "ExtendsCodeSystem",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/extends-codesystem"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.url",
         "path": "CodeSystem.url",
         "short": "Canonical identifier for this code system, represented as a URI (globally unique) (Coding.system).  NOTE: Where not specified by an SDO-specific policy (such as SNOMED’s extension process), change sets associated with locally-maintained extensions should include a url clearly identifying the extension as published under the implementer’s authority, and not the SDO."
@@ -155,6 +184,35 @@
           {
             "identity": "tinkar",
             "map": "Identifier Value of Identifier Semantic where Identifier Source = UNIVERSALLY_UNIQUE_IDENTIFIER"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.extension",
+        "path": "CodeSystem.concept.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.extension:OWLExpression",
+        "path": "CodeSystem.concept.extension",
+        "sliceName": "OWLExpression",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression"
+            ]
           }
         ]
       },

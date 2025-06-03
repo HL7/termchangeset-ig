@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "el-profile-set-operator",
-  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
-  "name": "ElProfileSetOperator",
-  "title": "EL Profile Set Operator",
+  "id": "owl-expression",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+  "name": "OWLExpression",
+  "title": "OWL Expression",
   "status": "draft",
-  "description": "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept",
+  "description": "OWL Expression representing the logical definition of a concept",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.concept.property"
+      "expression": "CodeSystem.concept"
     }
   ],
   "type": "Extension",
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "EL Profile Set Operator",
-        "definition": "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept"
+        "short": "OWL Expression",
+        "definition": "OWL Expression representing the logical definition of a concept"
       },
       {
         "id": "Extension.extension",
@@ -41,20 +41,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/el-profile-set-operator-vs"
-        }
+        ]
       }
     ]
   }

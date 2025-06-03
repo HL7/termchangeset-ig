@@ -27,16 +27,6 @@ continue to be made available from the MLDS.  The MLDS contains SNOMED Internati
 Production and Alpha (technology previews), available for Members to download. 
 </p>
 <p>
-The US Extension of SNOMED CT US Extension is maintained by the National Library of Medicine (NLM), 
-part of the National Institutes of Health, Department of Health and Human Services, as the NRC for the 
-US. The US Extension contains two different types of content, US-specific content and content of US 
-origin intended for future inclusion in the international release.  The US extension addresses a 
-number of terminology needs that cannot be directly represented by the SNOMED CT international 
-release. While the SNOMED CT international edition has moved to monthly releases, the US edition of 
-SNOMED CT remains on the current bi-annual release schedule of March and September. Users in the US can download SNOMED CT release files 
-at https://www.nlm.nih.gov/healthit/snomedct/us_edition.html.
-</p>
-<p>
 A number of SNOMED browsers are available online to search the SNOMED CT terminology.  The SNOMED 
 International SNOMED CT Browser (https://browser.ihtsdotools.org/?) is available online to anyone for 
 reference purposes.  Users are able to search in SNOMED CT international release in English and 
@@ -180,7 +170,7 @@ as would be the case in a formal database; there are duplications across and wit
 <p>
 NLM does not provide RxNorm files in Excel format. However, RxNorm files are text files which can be 
 imported or converted manually into a spreadsheet. For detailed instructions, see this brief video 
-titled: Opening an RxNorm File in a Spreadsheet.
+titled: <a href="https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/rxnorm_spreadsheet.html" target="_blank" title="Visit https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/rxnorm_spreadsheet.html in a new tab"><strong>Opening an RxNorm File in a Spreadsheet</strong></a>
 </p>
 <p>
 RxNorm files are in Rich Release Format with the extension .RRF, which are text files with values 
