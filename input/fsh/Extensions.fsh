@@ -47,9 +47,9 @@ Description: "EL++ profile to describe the axiom as being part of the Necessary 
 * value[x] only CodeableConcept
 * value[x] from ELProfileSetOperatorVS (extensible)
 
-Extension: DescriptionDialect
-Id:	   description-dialect
-Title:	   "Description Dialect"
+Extension: DesignationDialect
+Id:	   designation-dialect
+Title:	   "Designation Dialect"
 Description: "Subcategorization of language"
 // Limit the context to CodeSystem.concept.designation
 * ^context[+].type = #element
