@@ -5,7 +5,7 @@
   "name": "SNOMEDDescriptionAcceptability",
   "title": "Description Acceptability",
   "status": "draft",
-  "description": "Boolean value to convey if a designation is case sensitive or not",
+  "description": "Coded value to identify the acceptability of the description",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Description Acceptability",
-        "definition": "Boolean value to convey if a designation is case sensitive or not"
+        "definition": "Coded value to identify the acceptability of the description"
       },
       {
         "id": "Extension.extension",

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of a terminology change set aligned with Tinkar information model requirements",
+  "description": "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -108,18 +108,18 @@
       {
         "id": "CodeSystem.name",
         "path": "CodeSystem.name",
-        "short": "Name for this code system (computer friendly). Should clearly identify the CodeSystem as a Change Set and ideally convey both the source terminology from which it was derived and a notion of its contents."
+        "short": "Name for this code system (computer friendly). Should clearly identify the CodeSystem as a change set and ideally convey both the source terminology from which it was derived and a notion of its contents."
       },
       {
         "id": "CodeSystem.title",
         "path": "CodeSystem.title",
-        "short": "Name for this code system (human friendly). Should clearly identify the CodeSystem as a Change Set and ideally convey both the source terminology from which it was derived and a notion of its contents.",
+        "short": "Name for this code system (human friendly). Should clearly identify the CodeSystem as a change set and ideally convey both the source terminology from which it was derived and a notion of its contents.",
         "min": 1
       },
       {
         "id": "CodeSystem.description",
         "path": "CodeSystem.description",
-        "short": "Natural language description of the code system. Should provide a robust inventory of the contents of the Change Set"
+        "short": "Natural language description of the code system. Should provide a robust inventory of the contents of the change set"
       },
       {
         "id": "CodeSystem.copyright",
@@ -129,19 +129,19 @@
       {
         "id": "CodeSystem.hierarchyMeaning",
         "path": "CodeSystem.hierarchyMeaning",
-        "short": "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
+        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
       },
       {
         "id": "CodeSystem.content",
         "path": "CodeSystem.content",
         "short": "Change Set CodeSystem resources are most appropriately described as a FRAGMENT",
-        "definition": "This codes system profile contains only those concepts included in an incremental Change Set for a terminology",
+        "definition": "This codes system profile contains only those concepts included in an incremental change set for a terminology",
         "fixedCode": "fragment"
       },
       {
         "id": "CodeSystem.supplements",
         "path": "CodeSystem.supplements",
-        "short": "The source terminology from which the Change Set was derived should be conveyed via a Provenance resource, not CodeSystem.supplements",
+        "short": "The source terminology from which the change set was derived should be conveyed via a Provenance resource, not CodeSystem.supplements",
         "max": "0"
       },
       {
@@ -469,7 +469,7 @@
       {
         "id": "CodeSystem.concept.concept",
         "path": "CodeSystem.concept.concept",
-        "comment": "For Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
+        "comment": "For Terminology Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
         "max": "0",
         "mustSupport": false
       }

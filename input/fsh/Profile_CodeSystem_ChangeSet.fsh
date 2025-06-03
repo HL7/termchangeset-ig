@@ -2,7 +2,7 @@ Profile: ChangeSet
 Id: changeset-profile
 Parent: http://hl7.org/fhir/StructureDefinition/shareablecodesystem
 Title: "Terminology Change Set (CodeSystem)"
-Description: "Profile of CodeSystem to enable lossless representation of a terminology change set aligned with Tinkar information model requirements"
+Description: "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
@@ -27,7 +27,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * description ^short = "Natural language description of the code system. Should provide a robust inventory of the contents of the Change Set"
 * copyright 1..1
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
-* hierarchyMeaning ^short = "NOTE: As a terminology change set should not be fundamentally altering the design and operation of the terminology as a whole, the hierarchyMeaning, if included, should be consistent with the value provided for a CodeSystem representing the entire terminology."
+* hierarchyMeaning 0..0
+* hierarchyMeaning ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included."
 * content 1..1
 * content only code
 * content = #fragment (exactly)
@@ -133,7 +134,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a termi
 * concept.concept 0..0
 * concept.concept ^short = "Child Concepts (is-a/contains/categorizes)"
 * concept.concept ^definition = "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) - see hierarchyMeaning."
-* concept.concept ^comment = "For Terminology change sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
+* concept.concept ^comment = "For Terminology Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
 * concept.concept ^mustSupport = false
 * supplements 0..0
 * supplements ^short = "The source terminology from which the Change Set was derived should be conveyed via a Provenance resource, not CodeSystem.supplements"
