@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "DescriptionAcceptabilityVS",
-  "id": "description-acceptability-vs",
-  "title": "Description Acceptability Value Set",
-  "description": "Codes describing acceptability of a given description for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability.",
-  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/description-acceptability-vs",
+  "name": "DesignationAcceptabilityVS",
+  "id": "designation-acceptability-vs",
+  "title": "Designation Acceptability Value Set",
+  "description": "Codes describing acceptability of a given designation for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability.",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/designation-acceptability-vs",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "experimental": false,
   "compose": {

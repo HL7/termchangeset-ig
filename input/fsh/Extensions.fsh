@@ -1,22 +1,22 @@
-Extension: SNOMEDDescriptionsCaseSensitivity
-Id:        description-case-sensitivity
-Title:     "Description Case Sensitivity"
-Description: "Coded value to identify what case sensitivity is reflected in description"
+Extension: DesignationCaseSensitivity
+Id:        designation-case-sensitivity
+Title:     "Designation Case Sensitivity"
+Description: "Coded value to identify what case sensitivity is reflected in the designation"
 // Limit the context to CodeSystem.concept.designation
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
 * value[x] only CodeableConcept
 * value[x] from CaseSignificanceVS (extensible)
 
-Extension: SNOMEDDescriptionAcceptability
-Id:        description-acceptability
-Title:     "Description Acceptability"
+Extension: DesignationAcceptability
+Id:        designation-acceptability
+Title:     "Designation Acceptability"
 Description: "Boolean value to convey if a designation is case sensitive or not"
 // Limit the context to CodeSystem.concept.designation
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
 * value[x] only CodeableConcept
-* value[x] from DescriptionAcceptabilityVS (extensible)
+* value[x] from DesignationAcceptabilityVS (extensible)
 
 Extension: SNOMEDRoleGroup
 Id:        role-group

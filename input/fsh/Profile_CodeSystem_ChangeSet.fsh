@@ -79,9 +79,9 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept.designation ^mapping.identity = "tinkar"
 * concept.designation ^mapping.map = "(Description Semantics + US Dialect Semantics/GB Dialect Semantics)"
 * concept.designation.extension contains
-	description-case-sensitivity named caseSensitivity 0..1 and
-	description-acceptability named acceptability 0..1 and
-	description-dialect named dialect 0..1
+	designation-case-sensitivity named caseSensitivity 0..1 and
+	designation-acceptability named acceptability 0..1 and
+	designation-dialect named dialect 0..1
 * concept.designation.extension[caseSensitivity] ^mapping.identity = "tinkar"
 * concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE of Description Semantic"
 * concept.designation.extension[acceptability] ^mapping.identity = "tinkar"

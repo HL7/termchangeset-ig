@@ -13,7 +13,7 @@
         {
           "extension": [
             {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -25,7 +25,7 @@
               }
             },
             {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -37,7 +37,7 @@
               }
             },
             {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect",
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -249,7 +249,6 @@
   "status": "active",
   "experimental": false,
   "publisher": "Integrated Knowledge Management",
-  "hierarchyMeaning": "is-a",
   "contact": [
     {
       "telecom": [
