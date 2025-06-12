@@ -76,8 +76,6 @@ When implementers determine that they are interested in extending a terminology,
 	</li>
 </ul>
 </p>
-In the absence of a editorial policy from the source terminology, implementers should strive to follow the best practices described in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3415631/">Desiderata for Controlled Medical Vocabularies in the Twenty-First Century</a>
-</p>
 <a name="codesystem-properties"> </a>
 <h3>CodeSystem Properties</h3>
 <p>
