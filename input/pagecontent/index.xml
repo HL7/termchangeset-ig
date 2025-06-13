@@ -11,16 +11,11 @@
   <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
 <h4 id="about-this-guide">About this Guide<a class="anchorjs-link " href="#about-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
 
-<p>hThe HL7 Terminology Change Set Implementation Guide defines FHIR R4 profiles, extensions, and value sets to allow medical terminology authoring organizations to distribute incremental content releases to healthcare organizations in a native FHIR format. It includes background information, guidance, use cases, and examples to help implementers consistently represent…(Continue) </p>
-<p><strong>A care plan</strong> is a tool that helps ensure that you get the right care at the right time to stay as healthy as possible.</p>
+<p>The HL7 Terminology Change Set Implementation Guide offers a <strong> standardized </strong>, FHIR-based method for distributing medical terminology content, ensuring that all properties associated with each concept in the original terminology are included. This guide is primarily designed for healthcare IT professionals, developers, and organizations involved in creating or maintaining medical terminologies within their systems.</p>
 
-<p><strong>A healthcare technology expert</strong> is someone who helps healthcare teams use new technology. They make sure the technology is set up correctly, train the staff to use it, and provide ongoing support. Their goal is to improve healthcare using technology.</p>
+<p>By adopting this guide, organizations can <strong> streamline their data ingestion processes </strong> for medical terminology content, leveraging a common FHIR representation. The guide provides detailed, step-by-step instructions and illustrative examples to assist users in effectively implementing terminology changes using HL7 standards.</p>
 
-<p>Long-term health issues like asthma, diabetes, or depression are called chronic conditions. Sometimes people have more than one chronic condition, which we call multiple chronic conditions. Care plans help make sure that nothing important is missed, which is especially important for people with many healthcare needs. Care plans also help prevent conflicts in treatments by improving communication among healthcare teams, people needing healthcare, and their caregivers.This helps create stronger partnerships in managing chronic conditions to help people build plans of care that help them be as healthy and functional as possible.</p>
-
-<p>The step-by-step instructions in this guide are for building electronic care plan systems. These systems help healthcare providers give dependable, steady, and safe care for people with <strong>multiple chronic conditions</strong> across different healthcare places. The guide contains specific rules that are needed in United States healthcare.</p>
-
-<p>Healthcare technology experts worked with patients, caregivers, and clinicians to create this guide. This guide contains important information and guidelines for healthcare technology professionals to use when building care plan tools.</p>
+<p> Maintaining current medical terminology is essential for accurate data exchange, ensuring patient safety, and facilitating effective healthcare delivery. This guide supports these critical goals by providing a clear and consistent approach to managing and distributing terminology updates.</p>
 
   </div>
 </div>
