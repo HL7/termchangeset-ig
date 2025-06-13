@@ -11,7 +11,7 @@ Description: "Coded value to identify what case sensitivity is reflected in the 
 Extension: DesignationAcceptability
 Id:        designation-acceptability
 Title:     "Designation Acceptability"
-Description: "Boolean value to convey if a designation is case sensitive or not"
+Description: "Coded value to convey the acceptability of a designation in the language or dialect specified by that Reference Set . Values include 'preferred' and 'acceptable'."
 // Limit the context to CodeSystem.concept.designation
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
