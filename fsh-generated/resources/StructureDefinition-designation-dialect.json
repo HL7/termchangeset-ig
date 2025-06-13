@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "description-acceptability",
-  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability",
-  "name": "SNOMEDDescriptionAcceptability",
-  "title": "Description Acceptability",
+  "id": "designation-dialect",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+  "name": "DesignationDialect",
+  "title": "Designation Dialect",
   "status": "draft",
-  "description": "Coded value to identify the acceptability of the description",
+  "description": "Subcategorization of language",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Description Acceptability",
-        "definition": "Coded value to identify the acceptability of the description"
+        "short": "Designation Dialect",
+        "definition": "Subcategorization of language"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/description-acceptability-vs"
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/dialect-vs"
         }
       }
     ]

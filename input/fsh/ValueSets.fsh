@@ -9,10 +9,10 @@ Description:  "Codes describing case significance for a terminology concept desi
 * include codes from system SCT where concept descendant-of #900000000000447004 "Case significance"
 //* exclude SCT#900000000000447004 "Case significance"
 
-ValueSet: DescriptionAcceptabilityVS
-Id: description-acceptability-vs
-Title: "Description Acceptability Value Set"
-Description:  "Codes describing acceptability of a given description for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability."
+ValueSet: DesignationAcceptabilityVS
+Id: designation-acceptability-vs
+Title: "Designation Acceptability Value Set"
+Description:  "Codes describing acceptability of a given designation for a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000511003 Acceptability."
 * insert SNOMEDCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000511003 "Acceptablity"
@@ -39,7 +39,7 @@ Description:  "Codes describing the nature of an axiom in relationship to a conc
 ValueSet: DialectVS
 Id: dialect-vs
 Title: "Dialect Value Set"
-Description:  "Codes representing the specific dialect used in a description for a concept. The value set includes all codes from the SNOMED CT descending from 900000000000506000 Language type reference set."
+Description:  "Codes representing the specific dialect used in a designation for a concept. The value set includes all codes from the SNOMED CT descending from 900000000000506000 Language type reference set."
 * insert SNOMEDCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000506000 "Language type reference set"

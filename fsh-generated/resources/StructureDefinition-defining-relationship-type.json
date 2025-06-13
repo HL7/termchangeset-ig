@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "defining-relationship-type",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
-  "name": "definingRelationshipType",
+  "name": "DefiningRelationshipType",
   "title": "Defining Relationship Type",
   "status": "draft",
   "description": "Indicator to distinguish between axioms explicitly stated vs. inferred by a reasoner or other logical processes",

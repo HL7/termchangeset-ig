@@ -7,17 +7,17 @@
   <a name="ConceptDescriptionAttributes"></a>
   <h4>Concept description attributes</h4>
   <p>
-  These are secondary attributes adding context to concept descriptions, utilized at the <code>CodeSystem.concept.description</code> element level.
+  These are secondary attributes adding context to concept designations, utilized at the <code>CodeSystem.concept.designation</code> element level.
   </p>
   <ul>
   	<li>
-  	<a href="StructureDefinition-description-dialect.html">Concept description dialect</a>
+  	<a href="StructureDefinition-designation-dialect.html">Concept designation dialect</a>
   	</li>
   	<li>
-  	<a href="StructureDefinition-description-case-sensitivity.html">Concept description case sensitivity</a>
+  	<a href="StructureDefinition-designation-case-sensitivity.html">Concept designation case sensitivity</a>
   	</li>
   	<li>
-  	<a href="StructureDefinition-description-acceptability.html">Concept description acceptability</a>
+  	<a href="StructureDefinition-designation-acceptability.html">Concept designation acceptability</a>
   	</li>
   </ul>
   <a name="ConceptPropertyAttributes"></a>
@@ -33,7 +33,7 @@
   	<a href="StructureDefinition-el-profile-set-operator.html">Concept property EL++ profile set (Necessary vs. Sufficient)</a>
   	</li>
   	<li>
-  	<a href="StructureDefinition-description-acceptability.html">Concept Description Acceptability</a>
+  	<a href="StructureDefinition-role-group.html">Concept SNOMED Role Group</a>
   	</li>
   </ul>
   <a name="OtherLimitations"></a>

@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "Example_SNOMED_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 357
+    "endLine": 356
   },
   {
     "outputFile": "Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.json",
@@ -53,7 +53,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 139
+    "endLine": 140
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -64,24 +64,24 @@
     "endLine": 38
   },
   {
-    "outputFile": "StructureDefinition-description-acceptability.json",
-    "fshName": "SNOMEDDescriptionAcceptability",
+    "outputFile": "StructureDefinition-designation-acceptability.json",
+    "fshName": "DesignationAcceptability",
     "fshType": "Extension",
     "fshFile": "Extensions.fsh",
     "startLine": 11,
     "endLine": 19
   },
   {
-    "outputFile": "StructureDefinition-description-case-sensitivity.json",
-    "fshName": "SNOMEDDescriptionsCaseSensitivity",
+    "outputFile": "StructureDefinition-designation-case-sensitivity.json",
+    "fshName": "DesignationCaseSensitivity",
     "fshType": "Extension",
     "fshFile": "Extensions.fsh",
     "startLine": 1,
     "endLine": 9
   },
   {
-    "outputFile": "StructureDefinition-description-dialect.json",
-    "fshName": "DescriptionDialect",
+    "outputFile": "StructureDefinition-designation-dialect.json",
+    "fshName": "DesignationDialect",
     "fshType": "Extension",
     "fshFile": "Extensions.fsh",
     "startLine": 50,
@@ -160,8 +160,8 @@
     "endLine": 27
   },
   {
-    "outputFile": "ValueSet-description-acceptability-vs.json",
-    "fshName": "DescriptionAcceptabilityVS",
+    "outputFile": "ValueSet-designation-acceptability-vs.json",
+    "fshName": "DesignationAcceptabilityVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
     "startLine": 12,

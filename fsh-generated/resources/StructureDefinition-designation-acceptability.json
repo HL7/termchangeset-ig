@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "description-case-sensitivity",
-  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity",
-  "name": "SNOMEDDescriptionsCaseSensitivity",
-  "title": "Description Case Sensitivity",
+  "id": "designation-acceptability",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+  "name": "DesignationAcceptability",
+  "title": "Designation Acceptability",
   "status": "draft",
-  "description": "Coded value to identify what case sensitivity is reflected in description",
+  "description": "Boolean value to convey if a designation is case sensitive or not",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Description Case Sensitivity",
-        "definition": "Coded value to identify what case sensitivity is reflected in description"
+        "short": "Designation Acceptability",
+        "definition": "Boolean value to convey if a designation is case sensitive or not"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability"
       },
       {
         "id": "Extension.value[x]",
@@ -53,7 +53,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/case-significance-vs"
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/designation-acceptability-vs"
         }
       }
     ]

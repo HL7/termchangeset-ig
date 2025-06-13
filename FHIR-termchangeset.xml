@@ -8,10 +8,14 @@
 <artifact id="ValueSet/case-significance-vs" key="ValueSet-case-significance-vs" name="Case Significance Value Set"/>
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="ValueSet/defining-relationship-type-vs" key="ValueSet-defining-relationship-type-vs" name="Defining Relationship Type Value Set"/>
-<artifact id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
-<artifact id="ValueSet/description-acceptability-vs" key="ValueSet-description-acceptability-vs" name="Description Acceptability Value Set"/>
-<artifact id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
-<artifact id="StructureDefinition/description-dialect" key="StructureDefinition-description-dialect" name="Description Dialect"/>
+<artifact deprecated="true" id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
+<artifact deprecated="true" id="ValueSet/description-acceptability-vs" key="ValueSet-description-acceptability-vs" name="Description Acceptability Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/description-case-sensitivity" key="StructureDefinition-description-case-sensitivity" name="Description Case Sensitivity"/>
+<artifact deprecated="true" id="StructureDefinition/description-dialect" key="StructureDefinition-description-dialect" name="Description Dialect"/>
+<artifact id="StructureDefinition/designation-acceptability" key="StructureDefinition-designation-acceptability" name="Designation Acceptability"/>
+<artifact id="ValueSet/designation-acceptability-vs" key="ValueSet-designation-acceptability-vs" name="Designation Acceptability Value Set"/>
+<artifact id="StructureDefinition/designation-case-sensitivity" key="StructureDefinition-designation-case-sensitivity" name="Designation Case Sensitivity"/>
+<artifact id="StructureDefinition/designation-dialect" key="StructureDefinition-designation-dialect" name="Designation Dialect"/>
 <artifact id="ValueSet/dialect-vs" key="ValueSet-dialect-vs" name="Dialect Value Set"/>
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
 <artifact id="ValueSet/el-profile-set-operator-vs" key="ValueSet-el-profile-set-operator-vs" name="EL Profile Set Operator Value Set"/>

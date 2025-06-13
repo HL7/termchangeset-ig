@@ -11,7 +11,6 @@ Description: "Example of SNOMED CT Change Set"
 * status = #active
 * experimental = false
 * publisher = "Integrated Knowledge Management"
-* hierarchyMeaning = #is-a
 * contact.telecom[+].system = #url
 * contact.telecom[=].value = "http://ikm.dev"
 * description = "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept"
@@ -279,15 +278,15 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].display = "Chronic lung disease (Disorder)"
 * concept[=].definition = "Chronic lung disease (Disorder)"
 * concept[=].designation[+].language = #en-US
-* concept[=].designation[=].extension[caseSensitivity].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-case-sensitivity"
+* concept[=].designation[=].extension[caseSensitivity].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity"
 * concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.code = #900000000000020002
 * concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].designation[=].extension[caseSensitivity].valueCodeableConcept.coding.display = "Only initial character case insensitive (core metadata concept)"
-* concept[=].designation[=].extension[acceptability].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-acceptability"
+* concept[=].designation[=].extension[acceptability].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability"
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.code = #900000000000548007
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].designation[=].extension[acceptability].valueCodeableConcept.coding.display = "Preferred (foundation metadata concept)"
-* concept[=].designation[=].extension[dialect].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/description-dialect"
+* concept[=].designation[=].extension[dialect].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect"
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.code = #900000000000509007
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.display = "United States of America English language reference set"
