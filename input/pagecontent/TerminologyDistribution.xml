@@ -48,10 +48,6 @@ releases, LOINC publishes a preview of new codes that were requested by users an
 development by the LOINC team. 
 </p>
 <p>
-The full LOINC database, supporting documentation and supplemental files, and the RELMA® mapping 
-program are available for download from the Regenstrief Institute on the <a href="https://loinc.org/" target="_blank" rel="noopener noreferrer">LOINC website</a>. 
-</p>
-<p>
 LOINC names are not case sensitive. In other words, the meaning of a LOINC term is the same 
 regardless of whether the name is represented in upper, lower, or mixed case. For the few LOINC terms 
 that represent concepts whose names are case sensitive by international convention, such as red blood 
