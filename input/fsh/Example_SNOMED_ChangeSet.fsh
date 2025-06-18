@@ -1,5 +1,5 @@
-Instance: SNOMEDChangeSetExample
-InstanceOf: SNOMEDChangeSet
+Instance: SNOMEDCTChangeSetExample
+InstanceOf: SNOMEDCTChangeSet
 Description: "Example of SNOMED CT Change Set"
 * id = "snomedct413839001ChangeSet"
 * version = "20230901.1"
