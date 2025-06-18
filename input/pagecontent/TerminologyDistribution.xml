@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
 <p>
-Clinical terminologies are currently distributed with a wide range of formats and schedules. A summary of distribution patterns for several significant terminologies is listed below.
+Clinical terminologies are currently distributed with a wide range of formats and schedules. A summary of distribution patterns for several significant terminologies is listed below. While various distribution methods exist, it's important to consider FHIR-based mechanisms for representing and distributing changes, especially given this Implementation Guide's focus on FHIR-based solutions for terminology management. FHIR Patch operations offer a mechanism for distributing terminology updates, particularly for CodeSystems already represented in FHIR. For terminology servers with native FHIR representation, FHIR Patch operations can be an efficient method for applying incremental changes. However, for servers that do not use FHIR as their native storage format, processing FHIR Patch operations can introduce significant complexity due to the need to parse the FHIR Patch structure, map the operations to their internal data model, and execute the changes within their native system.
 </p>
 <p>
 NOTE: There is content in this document that is directly quoted from existing published literature and websites. Notably, some language has been incorporated verbatim from LOINC, RxNorm, and SNOMED CT websites, which contain overviews about the distribution of each terminology.
