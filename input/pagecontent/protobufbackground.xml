@@ -500,10 +500,10 @@ messages third, and SemanticChronology messages last. We should be exporting/imp
 to make sure we are not missing any data. 
 </p>
 <a name="Use Case 1"> </a>
-<h4>Use Case 1: Changing a SNOMED Concept's Semantic Value </h4>
+<h4>Use Case 1: Changing a SNOMED CT Concept's Semantic Value </h4>
 <p>
-In this case we want to simulate a change for a SNOMED Concept's value. 
-As SNOMED is updated with new versions, new rules and Axiom Definitions are assigned to concepts. 
+In this case we want to simulate a change for a SNOMED CT Concept's value. 
+As SNOMED CT is updated with new versions, new rules and Axiom Definitions are assigned to concepts. 
 In this use case we will simulate an update to Chronic Lung Disease on the United Stated Edition 
 from the 2020-09-01 version to the 2021-03-01 version. 
 </p>
