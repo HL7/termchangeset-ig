@@ -4,7 +4,7 @@ ValueSet: CaseSignificanceVS
 Id: case-significance-vs
 Title: "Case Significance Value Set"
 Description:  "Codes describing case significance for a terminology concept designation. The value set includes all codes from the SNOMED CT descending from 900000000000447004 Case significance."
-* insert SNOMEDCtCopyrightForVS
+* insert SNOMEDCTCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000447004 "Case significance"
 //* exclude SCT#900000000000447004 "Case significance"
