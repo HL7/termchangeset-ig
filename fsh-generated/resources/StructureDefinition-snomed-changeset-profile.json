@@ -1555,6 +1555,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:inactive.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:inactive.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "inactive"
@@ -1583,6 +1588,11 @@
         "id": "CodeSystem.concept.property:definitionStatusId.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:definitionStatusId.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:definitionStatusId.code",
@@ -1615,6 +1625,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:parent.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:parent.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "parent"
@@ -1643,6 +1658,11 @@
         "id": "CodeSystem.concept.property:moduleId.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:moduleId.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:moduleId.code",
@@ -1675,6 +1695,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Due_to.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Due_to.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Due to"
@@ -1703,6 +1728,11 @@
         "id": "CodeSystem.concept.property:Associated_with.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Associated_with.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Associated_with.code",
@@ -1735,6 +1765,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Associated_morphology.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Associated_morphology.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Associated morphology"
@@ -1763,6 +1798,11 @@
         "id": "CodeSystem.concept.property:Has_specimen.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_specimen.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Has_specimen.code",
@@ -1795,6 +1835,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Specimen_source_morphology.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Specimen_source_morphology.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Specimen source morphology"
@@ -1823,6 +1868,11 @@
         "id": "CodeSystem.concept.property:Specimen_source_topography.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_source_topography.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Specimen_source_topography.code",
@@ -1855,6 +1905,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Specimen_source_identity.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Specimen_source_identity.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Specimen source identity"
@@ -1883,6 +1938,11 @@
         "id": "CodeSystem.concept.property:Specimen_procedure.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specimen_procedure.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Specimen_procedure.code",
@@ -1915,6 +1975,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Part_of.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Part_of.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Part of"
@@ -1943,6 +2008,11 @@
         "id": "CodeSystem.concept.property:Has_active_ingredient.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_active_ingredient.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Has_active_ingredient.code",
@@ -1975,6 +2045,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Subject_of_information.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Subject_of_information.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Subject of information"
@@ -2003,6 +2078,11 @@
         "id": "CodeSystem.concept.property:Causative_agent.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Causative_agent.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Causative_agent.code",
@@ -2035,6 +2115,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Associated_finding.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Associated_finding.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Associated finding"
@@ -2063,6 +2148,11 @@
         "id": "CodeSystem.concept.property:Component.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Component.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Component.code",
@@ -2095,6 +2185,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Severity.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Severity.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Severity"
@@ -2123,6 +2218,11 @@
         "id": "CodeSystem.concept.property:Occurrence.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Occurrence.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Occurrence.code",
@@ -2155,6 +2255,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Episodicity.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Episodicity.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Episodicity"
@@ -2183,6 +2288,11 @@
         "id": "CodeSystem.concept.property:Technique.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Technique.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Technique.code",
@@ -2215,6 +2325,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Revision_status.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Revision_status.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Revision status"
@@ -2243,6 +2358,11 @@
         "id": "CodeSystem.concept.property:Units.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Units.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Units.code",
@@ -2275,6 +2395,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:After.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:After.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "After"
@@ -2303,6 +2428,11 @@
         "id": "CodeSystem.concept.property:Access.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Access.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Access.code",
@@ -2335,6 +2465,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Method.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Method.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Method"
@@ -2363,6 +2498,11 @@
         "id": "CodeSystem.concept.property:Priority.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Priority.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Priority.code",
@@ -2395,6 +2535,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Clinical_course.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Clinical_course.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Clinical course"
@@ -2423,6 +2568,11 @@
         "id": "CodeSystem.concept.property:Laterality.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Laterality.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Laterality.code",
@@ -2455,6 +2605,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Associated_procedure.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Associated_procedure.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Associated procedure"
@@ -2483,6 +2638,11 @@
         "id": "CodeSystem.concept.property:Finding_site.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_site.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Finding_site.code",
@@ -2515,6 +2675,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Direct_morphology.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Direct_morphology.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Direct morphology"
@@ -2543,6 +2708,11 @@
         "id": "CodeSystem.concept.property:Direct_substance.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Direct_substance.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Direct_substance.code",
@@ -2575,6 +2745,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Has_focus.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Has_focus.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Has focus"
@@ -2603,6 +2778,11 @@
         "id": "CodeSystem.concept.property:Has_intent.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_intent.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Has_intent.code",
@@ -2635,6 +2815,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Procedure_site.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Procedure_site.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Procedure site"
@@ -2663,6 +2848,11 @@
         "id": "CodeSystem.concept.property:Has_definitional_manifestation.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_definitional_manifestation.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Has_definitional_manifestation.code",
@@ -2695,6 +2885,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Indirect_morphology.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Indirect_morphology.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Indirect morphology"
@@ -2723,6 +2918,11 @@
         "id": "CodeSystem.concept.property:Indirect_device.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Indirect_device.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Indirect_device.code",
@@ -2755,6 +2955,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Has_interpretation.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Has_interpretation.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Has interpretation"
@@ -2783,6 +2988,11 @@
         "id": "CodeSystem.concept.property:Interprets.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Interprets.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Interprets.code",
@@ -2815,6 +3025,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Measurement_method.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Measurement_method.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Measurement method"
@@ -2843,6 +3058,11 @@
         "id": "CodeSystem.concept.property:Property.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Property.code",
@@ -2875,6 +3095,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Recipient_category.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Recipient_category.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Recipient category"
@@ -2903,6 +3128,11 @@
         "id": "CodeSystem.concept.property:Scale_type.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Scale_type.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Scale_type.code",
@@ -2935,6 +3165,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Specimen_substance.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Specimen_substance.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Specimen substance"
@@ -2963,6 +3198,11 @@
         "id": "CodeSystem.concept.property:Time_aspect.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Time_aspect.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Time_aspect.code",
@@ -2995,6 +3235,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Pathological_process.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Pathological_process.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Pathological process"
@@ -3023,6 +3268,11 @@
         "id": "CodeSystem.concept.property:Procedure_site_-_Direct.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Direct.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Procedure_site_-_Direct.code",
@@ -3055,6 +3305,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Procedure_site_-_Indirect.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Procedure site - Indirect"
@@ -3083,6 +3338,11 @@
         "id": "CodeSystem.concept.property:Procedure_device.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Procedure_device.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Procedure_device.code",
@@ -3115,6 +3375,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Procedure_morphology.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Procedure_morphology.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Procedure morphology"
@@ -3143,6 +3408,11 @@
         "id": "CodeSystem.concept.property:Finding_context.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_context.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Finding_context.code",
@@ -3175,6 +3445,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Temporal_context.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Temporal_context.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Temporal context"
@@ -3203,6 +3478,11 @@
         "id": "CodeSystem.concept.property:Subject_relationship_context.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Subject_relationship_context.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Subject_relationship_context.code",
@@ -3235,6 +3515,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Route_of_administration.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Route_of_administration.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Route of administration"
@@ -3263,6 +3548,11 @@
         "id": "CodeSystem.concept.property:Has_dose_form.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Has_dose_form.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Has_dose_form.code",
@@ -3295,6 +3585,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Finding_method.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Finding_method.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Finding method"
@@ -3323,6 +3618,11 @@
         "id": "CodeSystem.concept.property:Finding_informer.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Finding_informer.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Finding_informer.code",
@@ -3355,6 +3655,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Using_device.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Using_device.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Using device"
@@ -3383,6 +3688,11 @@
         "id": "CodeSystem.concept.property:Using_energy.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Using_energy.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Using_energy.code",
@@ -3415,6 +3725,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Using_substance.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Using_substance.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Using substance"
@@ -3443,6 +3758,11 @@
         "id": "CodeSystem.concept.property:Surgical_approach.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Surgical_approach.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Surgical_approach.code",
@@ -3475,6 +3795,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Using_access_device.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Using_access_device.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Using access device"
@@ -3503,6 +3828,11 @@
         "id": "CodeSystem.concept.property:Property_type.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Property_type.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Property_type.code",
@@ -3535,6 +3865,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Inheres_in.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Inheres_in.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Inheres in"
@@ -3563,6 +3898,11 @@
         "id": "CodeSystem.concept.property:Towards.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Towards.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Towards.code",
@@ -3595,6 +3935,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Characterizes.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Characterizes.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Characterizes"
@@ -3623,6 +3968,11 @@
         "id": "CodeSystem.concept.property:Process_agent.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_agent.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Process_agent.code",
@@ -3655,6 +4005,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Process_duration.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Process_duration.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Process duration"
@@ -3683,6 +4038,11 @@
         "id": "CodeSystem.concept.property:Process_output.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Process_output.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Process_output.code",
@@ -3715,6 +4075,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Relative_to.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Relative_to.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Relative to"
@@ -3743,6 +4108,11 @@
         "id": "CodeSystem.concept.property:Precondition.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Precondition.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Precondition.code",
@@ -3775,6 +4145,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Direct_site.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Direct_site.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Direct site"
@@ -3803,6 +4178,11 @@
         "id": "CodeSystem.concept.property:Specified_by.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Specified_by.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Specified_by.code",
@@ -3835,6 +4215,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Observes.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Observes.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Observes"
@@ -3865,6 +4250,11 @@
         "sliceName": "roleGroup"
       },
       {
+        "id": "CodeSystem.concept.property:Is_about.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
+      },
+      {
         "id": "CodeSystem.concept.property:Is_about.code",
         "path": "CodeSystem.concept.property.code",
         "fixedCode": "Is about"
@@ -3893,6 +4283,11 @@
         "id": "CodeSystem.concept.property:Defined.extension:roleGroup",
         "path": "CodeSystem.concept.property.extension",
         "sliceName": "roleGroup"
+      },
+      {
+        "id": "CodeSystem.concept.property:Defined.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType"
       },
       {
         "id": "CodeSystem.concept.property:Defined.code",

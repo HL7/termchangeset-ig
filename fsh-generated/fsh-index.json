@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "Example_HL7VariableRole_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 39
   },
   {
     "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
@@ -48,12 +48,20 @@
     "endLine": 20
   },
   {
+    "outputFile": "StructureDefinition-change-type.json",
+    "fshName": "ChangeType",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 79,
+    "endLine": 87
+  },
+  {
     "outputFile": "StructureDefinition-changeset-profile.json",
     "fshName": "ChangeSet",
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 140
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",

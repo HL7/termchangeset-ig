@@ -218,6 +218,21 @@
         ]
       },
       {
+        "id": "CodeSystem.concept.extension:changeType",
+        "path": "CodeSystem.concept.extension",
+        "sliceName": "changeType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.concept.code",
         "path": "CodeSystem.concept.code",
         "mapping": [
@@ -322,6 +337,21 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension:changeType",
+        "path": "CodeSystem.concept.designation.extension",
+        "sliceName": "changeType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type"
             ]
           }
         ]
@@ -444,6 +474,21 @@
           {
             "identity": "tinkar",
             "map": "Integer representation of the ROLE_GROUP as a number in the DiTree"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:changeType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "changeType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type"
+            ]
           }
         ]
       },
