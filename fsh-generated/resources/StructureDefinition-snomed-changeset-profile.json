@@ -2,10 +2,10 @@
   "resourceType": "StructureDefinition",
   "id": "snomed-changeset-profile",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile",
-  "name": "SNOMEDChangeSet",
-  "title": "SNOMED Change Set (CodeSystem)",
+  "name": "SNOMEDCTChangeSet",
+  "title": "SNOMED CT Change Set (CodeSystem)",
   "status": "draft",
-  "description": "Profile of CodeSystem to enable lossless representation of a SNOMED change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "description": "Profile of CodeSystem to enable lossless representation of a SNOMED CT change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,13 +48,13 @@
           ],
           "rules": "open"
         },
-        "short": "Property values should follow the SNOMED-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
+        "short": "Property values should follow the SNOMED CT-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
       },
       {
         "id": "CodeSystem.property:inactive",
         "path": "CodeSystem.property",
         "sliceName": "inactive",
-        "short": "Property slice to capture SNOMED inactive for a concept",
+        "short": "Property slice to capture SNOMED CT inactive for a concept",
         "min": 0,
         "max": "1"
       },
@@ -72,7 +72,7 @@
         "id": "CodeSystem.property:definitionStatusId",
         "path": "CodeSystem.property",
         "sliceName": "definitionStatusId",
-        "short": "Property slice to capture SNOMED definitionStatusId for a concept",
+        "short": "Property slice to capture SNOMED CT definitionStatusId for a concept",
         "min": 0,
         "max": "1"
       },
@@ -90,7 +90,7 @@
         "id": "CodeSystem.property:parent",
         "path": "CodeSystem.property",
         "sliceName": "parent",
-        "short": "Property slice to capture SNOMED parent for a concept",
+        "short": "Property slice to capture SNOMED CT parent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -108,7 +108,7 @@
         "id": "CodeSystem.property:moduleId",
         "path": "CodeSystem.property",
         "sliceName": "moduleId",
-        "short": "Property slice to capture SNOMED moduleId for a concept",
+        "short": "Property slice to capture SNOMED CT moduleId for a concept",
         "min": 0,
         "max": "1"
       },
@@ -126,7 +126,7 @@
         "id": "CodeSystem.property:Due_to",
         "path": "CodeSystem.property",
         "sliceName": "Due_to",
-        "short": "Property slice to capture SNOMED Due to for a concept",
+        "short": "Property slice to capture SNOMED CT Due to for a concept",
         "min": 0,
         "max": "1"
       },
@@ -144,7 +144,7 @@
         "id": "CodeSystem.property:Associated_with",
         "path": "CodeSystem.property",
         "sliceName": "Associated_with",
-        "short": "Property slice to capture SNOMED Associated with for a concept",
+        "short": "Property slice to capture SNOMED CT Associated with for a concept",
         "min": 0,
         "max": "1"
       },
@@ -162,7 +162,7 @@
         "id": "CodeSystem.property:Associated_morphology",
         "path": "CodeSystem.property",
         "sliceName": "Associated_morphology",
-        "short": "Property slice to capture SNOMED Associated morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Associated morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -180,7 +180,7 @@
         "id": "CodeSystem.property:Has_specimen",
         "path": "CodeSystem.property",
         "sliceName": "Has_specimen",
-        "short": "Property slice to capture SNOMED Has specimen for a concept",
+        "short": "Property slice to capture SNOMED CT Has specimen for a concept",
         "min": 0,
         "max": "1"
       },
@@ -198,7 +198,7 @@
         "id": "CodeSystem.property:Specimen_source_morphology",
         "path": "CodeSystem.property",
         "sliceName": "Specimen_source_morphology",
-        "short": "Property slice to capture SNOMED Specimen source morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen source morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -216,7 +216,7 @@
         "id": "CodeSystem.property:Specimen_source_topography",
         "path": "CodeSystem.property",
         "sliceName": "Specimen_source_topography",
-        "short": "Property slice to capture SNOMED Specimen source topography for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen source topography for a concept",
         "min": 0,
         "max": "1"
       },
@@ -234,7 +234,7 @@
         "id": "CodeSystem.property:Specimen_source_identity",
         "path": "CodeSystem.property",
         "sliceName": "Specimen_source_identity",
-        "short": "Property slice to capture SNOMED Specimen source identity for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen source identity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -252,7 +252,7 @@
         "id": "CodeSystem.property:Specimen_procedure",
         "path": "CodeSystem.property",
         "sliceName": "Specimen_procedure",
-        "short": "Property slice to capture SNOMED Specimen procedure for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen procedure for a concept",
         "min": 0,
         "max": "1"
       },
@@ -270,7 +270,7 @@
         "id": "CodeSystem.property:Part_of",
         "path": "CodeSystem.property",
         "sliceName": "Part_of",
-        "short": "Property slice to capture SNOMED Part of for a concept",
+        "short": "Property slice to capture SNOMED CT Part of for a concept",
         "min": 0,
         "max": "1"
       },
@@ -288,7 +288,7 @@
         "id": "CodeSystem.property:Has_active_ingredient",
         "path": "CodeSystem.property",
         "sliceName": "Has_active_ingredient",
-        "short": "Property slice to capture SNOMED Has active ingredient for a concept",
+        "short": "Property slice to capture SNOMED CT Has active ingredient for a concept",
         "min": 0,
         "max": "1"
       },
@@ -306,7 +306,7 @@
         "id": "CodeSystem.property:Subject_of_information",
         "path": "CodeSystem.property",
         "sliceName": "Subject_of_information",
-        "short": "Property slice to capture SNOMED Subject of information for a concept",
+        "short": "Property slice to capture SNOMED CT Subject of information for a concept",
         "min": 0,
         "max": "1"
       },
@@ -324,7 +324,7 @@
         "id": "CodeSystem.property:Causative_agent",
         "path": "CodeSystem.property",
         "sliceName": "Causative_agent",
-        "short": "Property slice to capture SNOMED Causative agent for a concept",
+        "short": "Property slice to capture SNOMED CT Causative agent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -342,7 +342,7 @@
         "id": "CodeSystem.property:Associated_finding",
         "path": "CodeSystem.property",
         "sliceName": "Associated_finding",
-        "short": "Property slice to capture SNOMED Associated finding for a concept",
+        "short": "Property slice to capture SNOMED CT Associated finding for a concept",
         "min": 0,
         "max": "1"
       },
@@ -360,7 +360,7 @@
         "id": "CodeSystem.property:Component",
         "path": "CodeSystem.property",
         "sliceName": "Component",
-        "short": "Property slice to capture SNOMED Component for a concept",
+        "short": "Property slice to capture SNOMED CT Component for a concept",
         "min": 0,
         "max": "1"
       },
@@ -378,7 +378,7 @@
         "id": "CodeSystem.property:Severity",
         "path": "CodeSystem.property",
         "sliceName": "Severity",
-        "short": "Property slice to capture SNOMED Severity for a concept",
+        "short": "Property slice to capture SNOMED CT Severity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -396,7 +396,7 @@
         "id": "CodeSystem.property:Occurrence",
         "path": "CodeSystem.property",
         "sliceName": "Occurrence",
-        "short": "Property slice to capture SNOMED Occurrence for a concept",
+        "short": "Property slice to capture SNOMED CT Occurrence for a concept",
         "min": 0,
         "max": "1"
       },
@@ -414,7 +414,7 @@
         "id": "CodeSystem.property:Episodicity",
         "path": "CodeSystem.property",
         "sliceName": "Episodicity",
-        "short": "Property slice to capture SNOMED Episodicity for a concept",
+        "short": "Property slice to capture SNOMED CT Episodicity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -432,7 +432,7 @@
         "id": "CodeSystem.property:Technique",
         "path": "CodeSystem.property",
         "sliceName": "Technique",
-        "short": "Property slice to capture SNOMED Technique for a concept",
+        "short": "Property slice to capture SNOMED CT  Technique for a concept",
         "min": 0,
         "max": "1"
       },
@@ -450,7 +450,7 @@
         "id": "CodeSystem.property:Revision_status",
         "path": "CodeSystem.property",
         "sliceName": "Revision_status",
-        "short": "Property slice to capture SNOMED Revision status for a concept",
+        "short": "Property slice to capture SNOMED CT Revision status for a concept",
         "min": 0,
         "max": "1"
       },
@@ -468,7 +468,7 @@
         "id": "CodeSystem.property:Units",
         "path": "CodeSystem.property",
         "sliceName": "Units",
-        "short": "Property slice to capture SNOMED Units for a concept",
+        "short": "Property slice to capture SNOMED CT Units for a concept",
         "min": 0,
         "max": "1"
       },
@@ -486,7 +486,7 @@
         "id": "CodeSystem.property:After",
         "path": "CodeSystem.property",
         "sliceName": "After",
-        "short": "Property slice to capture SNOMED After for a concept",
+        "short": "Property slice to capture SNOMED CT After for a concept",
         "min": 0,
         "max": "1"
       },
@@ -504,7 +504,7 @@
         "id": "CodeSystem.property:Access",
         "path": "CodeSystem.property",
         "sliceName": "Access",
-        "short": "Property slice to capture SNOMED Access for a concept",
+        "short": "Property slice to capture SNOMED CT Access for a concept",
         "min": 0,
         "max": "1"
       },
@@ -522,7 +522,7 @@
         "id": "CodeSystem.property:Method",
         "path": "CodeSystem.property",
         "sliceName": "Method",
-        "short": "Property slice to capture SNOMED Method for a concept",
+        "short": "Property slice to capture SNOMED CT Method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -540,7 +540,7 @@
         "id": "CodeSystem.property:Priority",
         "path": "CodeSystem.property",
         "sliceName": "Priority",
-        "short": "Property slice to capture SNOMED Priority for a concept",
+        "short": "Property slice to capture SNOMED CT Priority for a concept",
         "min": 0,
         "max": "1"
       },
@@ -558,7 +558,7 @@
         "id": "CodeSystem.property:Clinical_course",
         "path": "CodeSystem.property",
         "sliceName": "Clinical_course",
-        "short": "Property slice to capture SNOMED Clinical course for a concept",
+        "short": "Property slice to capture SNOMED CT Clinical course for a concept",
         "min": 0,
         "max": "1"
       },
@@ -576,7 +576,7 @@
         "id": "CodeSystem.property:Laterality",
         "path": "CodeSystem.property",
         "sliceName": "Laterality",
-        "short": "Property slice to capture SNOMED Laterality for a concept",
+        "short": "Property slice to capture SNOMED CT Laterality for a concept",
         "min": 0,
         "max": "1"
       },
@@ -594,7 +594,7 @@
         "id": "CodeSystem.property:Associated_procedure",
         "path": "CodeSystem.property",
         "sliceName": "Associated_procedure",
-        "short": "Property slice to capture SNOMED Associated procedure for a concept",
+        "short": "Property slice to capture SNOMED CT Associated procedure for a concept",
         "min": 0,
         "max": "1"
       },
@@ -612,7 +612,7 @@
         "id": "CodeSystem.property:Finding_site",
         "path": "CodeSystem.property",
         "sliceName": "Finding_site",
-        "short": "Property slice to capture SNOMED Finding site for a concept",
+        "short": "Property slice to capture SNOMED CT Finding site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -630,7 +630,7 @@
         "id": "CodeSystem.property:Direct_morphology",
         "path": "CodeSystem.property",
         "sliceName": "Direct_morphology",
-        "short": "Property slice to capture SNOMED Direct morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Direct morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -648,7 +648,7 @@
         "id": "CodeSystem.property:Direct_substance",
         "path": "CodeSystem.property",
         "sliceName": "Direct_substance",
-        "short": "Property slice to capture SNOMED Direct substance for a concept",
+        "short": "Property slice to capture SNOMED CT Direct substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -666,7 +666,7 @@
         "id": "CodeSystem.property:Has_focus",
         "path": "CodeSystem.property",
         "sliceName": "Has_focus",
-        "short": "Property slice to capture SNOMED Has focus for a concept",
+        "short": "Property slice to capture SNOMED CT Has focus for a concept",
         "min": 0,
         "max": "1"
       },
@@ -684,7 +684,7 @@
         "id": "CodeSystem.property:Has_intent",
         "path": "CodeSystem.property",
         "sliceName": "Has_intent",
-        "short": "Property slice to capture SNOMED Has intent for a concept",
+        "short": "Property slice to capture SNOMED CT Has intent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -702,7 +702,7 @@
         "id": "CodeSystem.property:Procedure_site",
         "path": "CodeSystem.property",
         "sliceName": "Procedure_site",
-        "short": "Property slice to capture SNOMED Procedure site for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -720,7 +720,7 @@
         "id": "CodeSystem.property:Has_definitional_manifestation",
         "path": "CodeSystem.property",
         "sliceName": "Has_definitional_manifestation",
-        "short": "Property slice to capture SNOMED Has definitional manifestation for a concept",
+        "short": "Property slice to capture SNOMED CT Has definitional manifestation for a concept",
         "min": 0,
         "max": "1"
       },
@@ -738,7 +738,7 @@
         "id": "CodeSystem.property:Indirect_morphology",
         "path": "CodeSystem.property",
         "sliceName": "Indirect_morphology",
-        "short": "Property slice to capture SNOMED Indirect morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Indirect morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -756,7 +756,7 @@
         "id": "CodeSystem.property:Indirect_device",
         "path": "CodeSystem.property",
         "sliceName": "Indirect_device",
-        "short": "Property slice to capture SNOMED Indirect device for a concept",
+        "short": "Property slice to capture SNOMED CT Indirect device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -774,7 +774,7 @@
         "id": "CodeSystem.property:Has_interpretation",
         "path": "CodeSystem.property",
         "sliceName": "Has_interpretation",
-        "short": "Property slice to capture SNOMED Has interpretation for a concept",
+        "short": "Property slice to capture SNOMED CT Has interpretation for a concept",
         "min": 0,
         "max": "1"
       },
@@ -792,7 +792,7 @@
         "id": "CodeSystem.property:Interprets",
         "path": "CodeSystem.property",
         "sliceName": "Interprets",
-        "short": "Property slice to capture SNOMED Interprets for a concept",
+        "short": "Property slice to capture SNOMED CT Interprets for a concept",
         "min": 0,
         "max": "1"
       },
@@ -810,7 +810,7 @@
         "id": "CodeSystem.property:Measurement_method",
         "path": "CodeSystem.property",
         "sliceName": "Measurement_method",
-        "short": "Property slice to capture SNOMED Measurement method for a concept",
+        "short": "Property slice to capture SNOMED CT Measurement method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -828,7 +828,7 @@
         "id": "CodeSystem.property:Property",
         "path": "CodeSystem.property",
         "sliceName": "Property",
-        "short": "Property slice to capture SNOMED Property for a concept",
+        "short": "Property slice to capture SNOMED CT Property for a concept",
         "min": 0,
         "max": "1"
       },
@@ -846,7 +846,7 @@
         "id": "CodeSystem.property:Recipient_category",
         "path": "CodeSystem.property",
         "sliceName": "Recipient_category",
-        "short": "Property slice to capture SNOMED Recipient category for a concept",
+        "short": "Property slice to capture SNOMED CT Recipient category for a concept",
         "min": 0,
         "max": "1"
       },
@@ -864,7 +864,7 @@
         "id": "CodeSystem.property:Scale_type",
         "path": "CodeSystem.property",
         "sliceName": "Scale_type",
-        "short": "Property slice to capture SNOMED Scale type for a concept",
+        "short": "Property slice to capture SNOMED CT Scale type for a concept",
         "min": 0,
         "max": "1"
       },
@@ -882,7 +882,7 @@
         "id": "CodeSystem.property:Specimen_substance",
         "path": "CodeSystem.property",
         "sliceName": "Specimen_substance",
-        "short": "Property slice to capture SNOMED Specimen substance for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -900,7 +900,7 @@
         "id": "CodeSystem.property:Time_aspect",
         "path": "CodeSystem.property",
         "sliceName": "Time_aspect",
-        "short": "Property slice to capture SNOMED Time aspect for a concept",
+        "short": "Property slice to capture SNOMED CT Time aspect for a concept",
         "min": 0,
         "max": "1"
       },
@@ -918,7 +918,7 @@
         "id": "CodeSystem.property:Pathological_process",
         "path": "CodeSystem.property",
         "sliceName": "Pathological_process",
-        "short": "Property slice to capture SNOMED Pathological process for a concept",
+        "short": "Property slice to capture SNOMED CT Pathological process for a concept",
         "min": 0,
         "max": "1"
       },
@@ -936,7 +936,7 @@
         "id": "CodeSystem.property:Procedure_site_-_Direct",
         "path": "CodeSystem.property",
         "sliceName": "Procedure_site_-_Direct",
-        "short": "Property slice to capture SNOMED Procedure site - Direct for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site - Direct for a concept",
         "min": 0,
         "max": "1"
       },
@@ -954,7 +954,7 @@
         "id": "CodeSystem.property:Procedure_site_-_Indirect",
         "path": "CodeSystem.property",
         "sliceName": "Procedure_site_-_Indirect",
-        "short": "Property slice to capture SNOMED Procedure site - Indirect for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site - Indirect for a concept",
         "min": 0,
         "max": "1"
       },
@@ -972,7 +972,7 @@
         "id": "CodeSystem.property:Procedure_device",
         "path": "CodeSystem.property",
         "sliceName": "Procedure_device",
-        "short": "Property slice to capture SNOMED Procedure device for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -990,7 +990,7 @@
         "id": "CodeSystem.property:Procedure_morphology",
         "path": "CodeSystem.property",
         "sliceName": "Procedure_morphology",
-        "short": "Property slice to capture SNOMED Procedure morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1008,7 +1008,7 @@
         "id": "CodeSystem.property:Finding_context",
         "path": "CodeSystem.property",
         "sliceName": "Finding_context",
-        "short": "Property slice to capture SNOMED Finding context for a concept",
+        "short": "Property slice to capture SNOMED CT Finding context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1026,7 +1026,7 @@
         "id": "CodeSystem.property:Temporal_context",
         "path": "CodeSystem.property",
         "sliceName": "Temporal_context",
-        "short": "Property slice to capture SNOMED Temporal context for a concept",
+        "short": "Property slice to capture SNOMED CT Temporal context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1044,7 +1044,7 @@
         "id": "CodeSystem.property:Subject_relationship_context",
         "path": "CodeSystem.property",
         "sliceName": "Subject_relationship_context",
-        "short": "Property slice to capture SNOMED Subject relationship context for a concept",
+        "short": "Property slice to capture SNOMED CT Subject relationship context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1062,7 +1062,7 @@
         "id": "CodeSystem.property:Route_of_administration",
         "path": "CodeSystem.property",
         "sliceName": "Route_of_administration",
-        "short": "Property slice to capture SNOMED Route of administration for a concept",
+        "short": "Property slice to capture SNOMED CT Route of administration for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1080,7 +1080,7 @@
         "id": "CodeSystem.property:Has_dose_form",
         "path": "CodeSystem.property",
         "sliceName": "Has_dose_form",
-        "short": "Property slice to capture SNOMED Has dose form for a concept",
+        "short": "Property slice to capture SNOMED CT Has dose form for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1098,7 +1098,7 @@
         "id": "CodeSystem.property:Finding_method",
         "path": "CodeSystem.property",
         "sliceName": "Finding_method",
-        "short": "Property slice to capture SNOMED Finding method for a concept",
+        "short": "Property slice to capture SNOMED CT Finding method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1116,7 +1116,7 @@
         "id": "CodeSystem.property:Finding_informer",
         "path": "CodeSystem.property",
         "sliceName": "Finding_informer",
-        "short": "Property slice to capture SNOMED Finding informer for a concept",
+        "short": "Property slice to capture SNOMED CT Finding informer for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1134,7 +1134,7 @@
         "id": "CodeSystem.property:Using_device",
         "path": "CodeSystem.property",
         "sliceName": "Using_device",
-        "short": "Property slice to capture SNOMED Using device for a concept",
+        "short": "Property slice to capture SNOMED CT Using device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1152,7 +1152,7 @@
         "id": "CodeSystem.property:Using_energy",
         "path": "CodeSystem.property",
         "sliceName": "Using_energy",
-        "short": "Property slice to capture SNOMED Using energy for a concept",
+        "short": "Property slice to capture SNOMED CT Using energy for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1170,7 +1170,7 @@
         "id": "CodeSystem.property:Using_substance",
         "path": "CodeSystem.property",
         "sliceName": "Using_substance",
-        "short": "Property slice to capture SNOMED Using substance for a concept",
+        "short": "Property slice to capture SNOMED CT Using substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1188,7 +1188,7 @@
         "id": "CodeSystem.property:Surgical_approach",
         "path": "CodeSystem.property",
         "sliceName": "Surgical_approach",
-        "short": "Property slice to capture SNOMED Surgical approach for a concept",
+        "short": "Property slice to capture SNOMED CT Surgical approach for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1206,7 +1206,7 @@
         "id": "CodeSystem.property:Using_access_device",
         "path": "CodeSystem.property",
         "sliceName": "Using_access_device",
-        "short": "Property slice to capture SNOMED Using access device for a concept",
+        "short": "Property slice to capture SNOMED CT Using access device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1224,7 +1224,7 @@
         "id": "CodeSystem.property:Property_type",
         "path": "CodeSystem.property",
         "sliceName": "Property_type",
-        "short": "Property slice to capture SNOMED Property type for a concept",
+        "short": "Property slice to capture SNOMED CT Property type for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1242,7 +1242,7 @@
         "id": "CodeSystem.property:Inheres_in",
         "path": "CodeSystem.property",
         "sliceName": "Inheres_in",
-        "short": "Property slice to capture SNOMED Inheres in for a concept",
+        "short": "Property slice to capture SNOMED CT Inheres in for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1260,7 +1260,7 @@
         "id": "CodeSystem.property:Towards",
         "path": "CodeSystem.property",
         "sliceName": "Towards",
-        "short": "Property slice to capture SNOMED Towards for a concept",
+        "short": "Property slice to capture SNOMED CT Towards for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1278,7 +1278,7 @@
         "id": "CodeSystem.property:Characterizes",
         "path": "CodeSystem.property",
         "sliceName": "Characterizes",
-        "short": "Property slice to capture SNOMED Characterizes for a concept",
+        "short": "Property slice to capture SNOMED CT Characterizes for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1296,7 +1296,7 @@
         "id": "CodeSystem.property:Process_agent",
         "path": "CodeSystem.property",
         "sliceName": "Process_agent",
-        "short": "Property slice to capture SNOMED Process agent for a concept",
+        "short": "Property slice to capture SNOMED CT Process agent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1314,7 +1314,7 @@
         "id": "CodeSystem.property:Process_duration",
         "path": "CodeSystem.property",
         "sliceName": "Process_duration",
-        "short": "Property slice to capture SNOMED Process duration for a concept",
+        "short": "Property slice to capture SNOMED CT Process duration for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1332,7 +1332,7 @@
         "id": "CodeSystem.property:Process_output",
         "path": "CodeSystem.property",
         "sliceName": "Process_output",
-        "short": "Property slice to capture SNOMED Process output for a concept",
+        "short": "Property slice to capture SNOMED CT Process output for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1350,7 +1350,7 @@
         "id": "CodeSystem.property:Relative_to",
         "path": "CodeSystem.property",
         "sliceName": "Relative_to",
-        "short": "Property slice to capture SNOMED Relative to for a concept",
+        "short": "Property slice to capture SNOMED CT Relative to for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1386,7 +1386,7 @@
         "id": "CodeSystem.property:Direct_site",
         "path": "CodeSystem.property",
         "sliceName": "Direct_site",
-        "short": "Property slice to capture SNOMED Direct site for a concept",
+        "short": "Property slice to capture SNOMED CT Direct site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1404,7 +1404,7 @@
         "id": "CodeSystem.property:Specified_by",
         "path": "CodeSystem.property",
         "sliceName": "Specified_by",
-        "short": "Property slice to capture SNOMED Specified by for a concept",
+        "short": "Property slice to capture SNOMED CT Specified by for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1422,7 +1422,7 @@
         "id": "CodeSystem.property:Observes",
         "path": "CodeSystem.property",
         "sliceName": "Observes",
-        "short": "Property slice to capture SNOMED Observes for a concept",
+        "short": "Property slice to capture SNOMED CT Observes for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1440,7 +1440,7 @@
         "id": "CodeSystem.property:Is_about",
         "path": "CodeSystem.property",
         "sliceName": "Is_about",
-        "short": "Property slice to capture SNOMED Is about for a concept",
+        "short": "Property slice to capture SNOMED CT Is about for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1458,7 +1458,7 @@
         "id": "CodeSystem.property:Defined",
         "path": "CodeSystem.property",
         "sliceName": "Defined",
-        "short": "Property slice to capture SNOMED Defined for a concept",
+        "short": "Property slice to capture SNOMED CT Defined for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1533,7 +1533,7 @@
         "id": "CodeSystem.concept.property:inactive",
         "path": "CodeSystem.concept.property",
         "sliceName": "inactive",
-        "short": "Property slice to capture SNOMED inactive for a concept",
+        "short": "Property slice to capture SNOMED CT inactive for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1563,7 +1563,7 @@
         "id": "CodeSystem.concept.property:definitionStatusId",
         "path": "CodeSystem.concept.property",
         "sliceName": "definitionStatusId",
-        "short": "Property slice to capture SNOMED definitionStatusId for a concept",
+        "short": "Property slice to capture SNOMED CT definitionStatusId for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1593,7 +1593,7 @@
         "id": "CodeSystem.concept.property:parent",
         "path": "CodeSystem.concept.property",
         "sliceName": "parent",
-        "short": "Property slice to capture SNOMED parent for a concept",
+        "short": "Property slice to capture SNOMED CT parent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1623,7 +1623,7 @@
         "id": "CodeSystem.concept.property:moduleId",
         "path": "CodeSystem.concept.property",
         "sliceName": "moduleId",
-        "short": "Property slice to capture SNOMED moduleId for a concept",
+        "short": "Property slice to capture SNOMED CT moduleId for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1653,7 +1653,7 @@
         "id": "CodeSystem.concept.property:Due_to",
         "path": "CodeSystem.concept.property",
         "sliceName": "Due_to",
-        "short": "Property slice to capture SNOMED Due to for a concept",
+        "short": "Property slice to capture SNOMED CT Due to for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1683,7 +1683,7 @@
         "id": "CodeSystem.concept.property:Associated_with",
         "path": "CodeSystem.concept.property",
         "sliceName": "Associated_with",
-        "short": "Property slice to capture SNOMED Associated with for a concept",
+        "short": "Property slice to capture SNOMED CT Associated with for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1713,7 +1713,7 @@
         "id": "CodeSystem.concept.property:Associated_morphology",
         "path": "CodeSystem.concept.property",
         "sliceName": "Associated_morphology",
-        "short": "Property slice to capture SNOMED Associated morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Associated morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1743,7 +1743,7 @@
         "id": "CodeSystem.concept.property:Has_specimen",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_specimen",
-        "short": "Property slice to capture SNOMED Has specimen for a concept",
+        "short": "Property slice to capture SNOMED CT Has specimen for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1773,7 +1773,7 @@
         "id": "CodeSystem.concept.property:Specimen_source_morphology",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specimen_source_morphology",
-        "short": "Property slice to capture SNOMED Specimen source morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen source morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1803,7 +1803,7 @@
         "id": "CodeSystem.concept.property:Specimen_source_topography",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specimen_source_topography",
-        "short": "Property slice to capture SNOMED Specimen source topography for a concept",
+        "short": "Property slice to capture SNOMEDCT Specimen source topography for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1833,7 +1833,7 @@
         "id": "CodeSystem.concept.property:Specimen_source_identity",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specimen_source_identity",
-        "short": "Property slice to capture SNOMED Specimen source identity for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen source identity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1863,7 +1863,7 @@
         "id": "CodeSystem.concept.property:Specimen_procedure",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specimen_procedure",
-        "short": "Property slice to capture SNOMED Specimen procedure for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen procedure for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1893,7 +1893,7 @@
         "id": "CodeSystem.concept.property:Part_of",
         "path": "CodeSystem.concept.property",
         "sliceName": "Part_of",
-        "short": "Property slice to capture SNOMED Part of for a concept",
+        "short": "Property slice to capture SNOMED CT Part of for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1923,7 +1923,7 @@
         "id": "CodeSystem.concept.property:Has_active_ingredient",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_active_ingredient",
-        "short": "Property slice to capture SNOMED Has active ingredient for a concept",
+        "short": "Property slice to capture SNOMED CT Has active ingredient for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1953,7 +1953,7 @@
         "id": "CodeSystem.concept.property:Subject_of_information",
         "path": "CodeSystem.concept.property",
         "sliceName": "Subject_of_information",
-        "short": "Property slice to capture SNOMED Subject of information for a concept",
+        "short": "Property slice to capture SNOMED CT Subject of information for a concept",
         "min": 0,
         "max": "1"
       },
@@ -1983,7 +1983,7 @@
         "id": "CodeSystem.concept.property:Causative_agent",
         "path": "CodeSystem.concept.property",
         "sliceName": "Causative_agent",
-        "short": "Property slice to capture SNOMED Causative agent for a concept",
+        "short": "Property slice to capture SNOMED CT Causative agent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2013,7 +2013,7 @@
         "id": "CodeSystem.concept.property:Associated_finding",
         "path": "CodeSystem.concept.property",
         "sliceName": "Associated_finding",
-        "short": "Property slice to capture SNOMED Associated finding for a concept",
+        "short": "Property slice to capture SNOMED CT Associated finding for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2043,7 +2043,7 @@
         "id": "CodeSystem.concept.property:Component",
         "path": "CodeSystem.concept.property",
         "sliceName": "Component",
-        "short": "Property slice to capture SNOMED Component for a concept",
+        "short": "Property slice to capture SNOMED CT Component for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2073,7 +2073,7 @@
         "id": "CodeSystem.concept.property:Severity",
         "path": "CodeSystem.concept.property",
         "sliceName": "Severity",
-        "short": "Property slice to capture SNOMED Severity for a concept",
+        "short": "Property slice to capture SNOMED CT Severity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2103,7 +2103,7 @@
         "id": "CodeSystem.concept.property:Occurrence",
         "path": "CodeSystem.concept.property",
         "sliceName": "Occurrence",
-        "short": "Property slice to capture SNOMED Occurrence for a concept",
+        "short": "Property slice to capture SNOMED CT Occurrence for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2133,7 +2133,7 @@
         "id": "CodeSystem.concept.property:Episodicity",
         "path": "CodeSystem.concept.property",
         "sliceName": "Episodicity",
-        "short": "Property slice to capture SNOMED Episodicity for a concept",
+        "short": "Property slice to capture SNOMED CT Episodicity for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2163,7 +2163,7 @@
         "id": "CodeSystem.concept.property:Technique",
         "path": "CodeSystem.concept.property",
         "sliceName": "Technique",
-        "short": "Property slice to capture SNOMED Technique for a concept",
+        "short": "Property slice to capture SNOMED CT Technique for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2193,7 +2193,7 @@
         "id": "CodeSystem.concept.property:Revision_status",
         "path": "CodeSystem.concept.property",
         "sliceName": "Revision_status",
-        "short": "Property slice to capture SNOMED Revision status for a concept",
+        "short": "Property slice to capture SNOMED CT Revision status for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2223,7 +2223,7 @@
         "id": "CodeSystem.concept.property:Units",
         "path": "CodeSystem.concept.property",
         "sliceName": "Units",
-        "short": "Property slice to capture SNOMED Units for a concept",
+        "short": "Property slice to capture SNOMED CT Units for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2253,7 +2253,7 @@
         "id": "CodeSystem.concept.property:After",
         "path": "CodeSystem.concept.property",
         "sliceName": "After",
-        "short": "Property slice to capture SNOMED After for a concept",
+        "short": "Property slice to capture SNOMED CT After for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2283,7 +2283,7 @@
         "id": "CodeSystem.concept.property:Access",
         "path": "CodeSystem.concept.property",
         "sliceName": "Access",
-        "short": "Property slice to capture SNOMED Access for a concept",
+        "short": "Property slice to capture SNOMED CT Access for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2313,7 +2313,7 @@
         "id": "CodeSystem.concept.property:Method",
         "path": "CodeSystem.concept.property",
         "sliceName": "Method",
-        "short": "Property slice to capture SNOMED Method for a concept",
+        "short": "Property slice to capture SNOMED Causative Method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2343,7 +2343,7 @@
         "id": "CodeSystem.concept.property:Priority",
         "path": "CodeSystem.concept.property",
         "sliceName": "Priority",
-        "short": "Property slice to capture SNOMED Priority for a concept",
+        "short": "Property slice to capture SNOMED CT Priority for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2373,7 +2373,7 @@
         "id": "CodeSystem.concept.property:Clinical_course",
         "path": "CodeSystem.concept.property",
         "sliceName": "Clinical_course",
-        "short": "Property slice to capture SNOMED Clinical course for a concept",
+        "short": "Property slice to capture SNOMED CT Clinical course for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2403,7 +2403,7 @@
         "id": "CodeSystem.concept.property:Laterality",
         "path": "CodeSystem.concept.property",
         "sliceName": "Laterality",
-        "short": "Property slice to capture SNOMED Laterality for a concept",
+        "short": "Property slice to capture SNOMED CT Laterality for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2433,7 +2433,7 @@
         "id": "CodeSystem.concept.property:Associated_procedure",
         "path": "CodeSystem.concept.property",
         "sliceName": "Associated_procedure",
-        "short": "Property slice to capture SNOMED Associated procedure for a concept",
+        "short": "Property slice to capture SNOMED CT Associated procedure for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2463,7 +2463,7 @@
         "id": "CodeSystem.concept.property:Finding_site",
         "path": "CodeSystem.concept.property",
         "sliceName": "Finding_site",
-        "short": "Property slice to capture SNOMED Finding site for a concept",
+        "short": "Property slice to capture SNOMED CT Finding site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2493,7 +2493,7 @@
         "id": "CodeSystem.concept.property:Direct_morphology",
         "path": "CodeSystem.concept.property",
         "sliceName": "Direct_morphology",
-        "short": "Property slice to capture SNOMED Direct morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Direct morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2523,7 +2523,7 @@
         "id": "CodeSystem.concept.property:Direct_substance",
         "path": "CodeSystem.concept.property",
         "sliceName": "Direct_substance",
-        "short": "Property slice to capture SNOMED Direct substance for a concept",
+        "short": "Property slice to capture SNOMED CT Direct substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2553,7 +2553,7 @@
         "id": "CodeSystem.concept.property:Has_focus",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_focus",
-        "short": "Property slice to capture SNOMED Has focus for a concept",
+        "short": "Property slice to capture SNOMED CT Has focus for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2583,7 +2583,7 @@
         "id": "CodeSystem.concept.property:Has_intent",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_intent",
-        "short": "Property slice to capture SNOMED Has intent for a concept",
+        "short": "Property slice to capture SNOMED CT Has intent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2613,7 +2613,7 @@
         "id": "CodeSystem.concept.property:Procedure_site",
         "path": "CodeSystem.concept.property",
         "sliceName": "Procedure_site",
-        "short": "Property slice to capture SNOMED Procedure site for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2643,7 +2643,7 @@
         "id": "CodeSystem.concept.property:Has_definitional_manifestation",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_definitional_manifestation",
-        "short": "Property slice to capture SNOMED Has definitional manifestation for a concept",
+        "short": "Property slice to capture SNOMED CT Has definitional manifestation for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2673,7 +2673,7 @@
         "id": "CodeSystem.concept.property:Indirect_morphology",
         "path": "CodeSystem.concept.property",
         "sliceName": "Indirect_morphology",
-        "short": "Property slice to capture SNOMED Indirect morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Indirect morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2703,7 +2703,7 @@
         "id": "CodeSystem.concept.property:Indirect_device",
         "path": "CodeSystem.concept.property",
         "sliceName": "Indirect_device",
-        "short": "Property slice to capture SNOMED Indirect device for a concept",
+        "short": "Property slice to capture SNOMED CT Indirect device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2733,7 +2733,7 @@
         "id": "CodeSystem.concept.property:Has_interpretation",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_interpretation",
-        "short": "Property slice to capture SNOMED Has interpretation for a concept",
+        "short": "Property slice to capture SNOMED CT Has interpretation for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2763,7 +2763,7 @@
         "id": "CodeSystem.concept.property:Interprets",
         "path": "CodeSystem.concept.property",
         "sliceName": "Interprets",
-        "short": "Property slice to capture SNOMED Interprets for a concept",
+        "short": "Property slice to capture SNOMED CT Interprets for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2793,7 +2793,7 @@
         "id": "CodeSystem.concept.property:Measurement_method",
         "path": "CodeSystem.concept.property",
         "sliceName": "Measurement_method",
-        "short": "Property slice to capture SNOMED Measurement method for a concept",
+        "short": "Property slice to capture SNOMED CT Measurement method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2823,7 +2823,7 @@
         "id": "CodeSystem.concept.property:Property",
         "path": "CodeSystem.concept.property",
         "sliceName": "Property",
-        "short": "Property slice to capture SNOMED Property for a concept",
+        "short": "Property slice to capture SNOMED CT Property for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2853,7 +2853,7 @@
         "id": "CodeSystem.concept.property:Recipient_category",
         "path": "CodeSystem.concept.property",
         "sliceName": "Recipient_category",
-        "short": "Property slice to capture SNOMED Recipient category for a concept",
+        "short": "Property slice to capture SNOMED CT Recipient category for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2883,7 +2883,7 @@
         "id": "CodeSystem.concept.property:Scale_type",
         "path": "CodeSystem.concept.property",
         "sliceName": "Scale_type",
-        "short": "Property slice to capture SNOMED Scale type for a concept",
+        "short": "Property slice to capture SNOMED CT Scale type for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2913,7 +2913,7 @@
         "id": "CodeSystem.concept.property:Specimen_substance",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specimen_substance",
-        "short": "Property slice to capture SNOMED Specimen substance for a concept",
+        "short": "Property slice to capture SNOMED CT Specimen substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2943,7 +2943,7 @@
         "id": "CodeSystem.concept.property:Time_aspect",
         "path": "CodeSystem.concept.property",
         "sliceName": "Time_aspect",
-        "short": "Property slice to capture SNOMED Time aspect for a concept",
+        "short": "Property slice to capture SNOMED CT Time aspect for a concept",
         "min": 0,
         "max": "1"
       },
@@ -2973,7 +2973,7 @@
         "id": "CodeSystem.concept.property:Pathological_process",
         "path": "CodeSystem.concept.property",
         "sliceName": "Pathological_process",
-        "short": "Property slice to capture SNOMED Pathological process for a concept",
+        "short": "Property slice to capture SNOMED CT Pathological process for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3003,7 +3003,7 @@
         "id": "CodeSystem.concept.property:Procedure_site_-_Direct",
         "path": "CodeSystem.concept.property",
         "sliceName": "Procedure_site_-_Direct",
-        "short": "Property slice to capture SNOMED Procedure site - Direct for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site - Direct for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3033,7 +3033,7 @@
         "id": "CodeSystem.concept.property:Procedure_site_-_Indirect",
         "path": "CodeSystem.concept.property",
         "sliceName": "Procedure_site_-_Indirect",
-        "short": "Property slice to capture SNOMED Procedure site - Indirect for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure site - Indirect for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3063,7 +3063,7 @@
         "id": "CodeSystem.concept.property:Procedure_device",
         "path": "CodeSystem.concept.property",
         "sliceName": "Procedure_device",
-        "short": "Property slice to capture SNOMED Procedure device for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3093,7 +3093,7 @@
         "id": "CodeSystem.concept.property:Procedure_morphology",
         "path": "CodeSystem.concept.property",
         "sliceName": "Procedure_morphology",
-        "short": "Property slice to capture SNOMED Procedure morphology for a concept",
+        "short": "Property slice to capture SNOMED CT Procedure morphology for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3123,7 +3123,7 @@
         "id": "CodeSystem.concept.property:Finding_context",
         "path": "CodeSystem.concept.property",
         "sliceName": "Finding_context",
-        "short": "Property slice to capture SNOMED Finding context for a concept",
+        "short": "Property slice to capture SNOMED CT Finding context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3153,7 +3153,7 @@
         "id": "CodeSystem.concept.property:Temporal_context",
         "path": "CodeSystem.concept.property",
         "sliceName": "Temporal_context",
-        "short": "Property slice to capture SNOMED Temporal context for a concept",
+        "short": "Property slice to capture SNOMED CT Temporal context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3183,7 +3183,7 @@
         "id": "CodeSystem.concept.property:Subject_relationship_context",
         "path": "CodeSystem.concept.property",
         "sliceName": "Subject_relationship_context",
-        "short": "Property slice to capture SNOMED Subject relationship context for a concept",
+        "short": "Property slice to capture SNOMED CT Subject relationship context for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3213,7 +3213,7 @@
         "id": "CodeSystem.concept.property:Route_of_administration",
         "path": "CodeSystem.concept.property",
         "sliceName": "Route_of_administration",
-        "short": "Property slice to capture SNOMED Route of administration for a concept",
+        "short": "Property slice to capture SNOMED CT Route of administration for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3243,7 +3243,7 @@
         "id": "CodeSystem.concept.property:Has_dose_form",
         "path": "CodeSystem.concept.property",
         "sliceName": "Has_dose_form",
-        "short": "Property slice to capture SNOMED Has dose form for a concept",
+        "short": "Property slice to capture SNOMED CT Has dose form for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3273,7 +3273,7 @@
         "id": "CodeSystem.concept.property:Finding_method",
         "path": "CodeSystem.concept.property",
         "sliceName": "Finding_method",
-        "short": "Property slice to capture SNOMED Finding method for a concept",
+        "short": "Property slice to capture SNOMED CT Finding method for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3303,7 +3303,7 @@
         "id": "CodeSystem.concept.property:Finding_informer",
         "path": "CodeSystem.concept.property",
         "sliceName": "Finding_informer",
-        "short": "Property slice to capture SNOMED Finding informer for a concept",
+        "short": "Property slice to capture SNOMED CT Finding informer for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3333,7 +3333,7 @@
         "id": "CodeSystem.concept.property:Using_device",
         "path": "CodeSystem.concept.property",
         "sliceName": "Using_device",
-        "short": "Property slice to capture SNOMED Using device for a concept",
+        "short": "Property slice to capture SNOMED CT Using device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3363,7 +3363,7 @@
         "id": "CodeSystem.concept.property:Using_energy",
         "path": "CodeSystem.concept.property",
         "sliceName": "Using_energy",
-        "short": "Property slice to capture SNOMED Using energy for a concept",
+        "short": "Property slice to capture SNOMED CT Using energy for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3393,7 +3393,7 @@
         "id": "CodeSystem.concept.property:Using_substance",
         "path": "CodeSystem.concept.property",
         "sliceName": "Using_substance",
-        "short": "Property slice to capture SNOMED Using substance for a concept",
+        "short": "Property slice to capture SNOMED CT Using substance for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3423,7 +3423,7 @@
         "id": "CodeSystem.concept.property:Surgical_approach",
         "path": "CodeSystem.concept.property",
         "sliceName": "Surgical_approach",
-        "short": "Property slice to capture SNOMED Surgical approach for a concept",
+        "short": "Property slice to capture SNOMED CT Surgical approach for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3453,7 +3453,7 @@
         "id": "CodeSystem.concept.property:Using_access_device",
         "path": "CodeSystem.concept.property",
         "sliceName": "Using_access_device",
-        "short": "Property slice to capture SNOMED Using access device for a concept",
+        "short": "Property slice to capture SNOMED CT Using access device for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3483,7 +3483,7 @@
         "id": "CodeSystem.concept.property:Property_type",
         "path": "CodeSystem.concept.property",
         "sliceName": "Property_type",
-        "short": "Property slice to capture SNOMED Property type for a concept",
+        "short": "Property slice to capture SNOMED CT Property type for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3513,7 +3513,7 @@
         "id": "CodeSystem.concept.property:Inheres_in",
         "path": "CodeSystem.concept.property",
         "sliceName": "Inheres_in",
-        "short": "Property slice to capture SNOMED Inheres in for a concept",
+        "short": "Property slice to capture SNOMED CT Inheres in for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3543,7 +3543,7 @@
         "id": "CodeSystem.concept.property:Towards",
         "path": "CodeSystem.concept.property",
         "sliceName": "Towards",
-        "short": "Property slice to capture SNOMED Towards for a concept",
+        "short": "Property slice to capture SNOMED CT Towards for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3573,7 +3573,7 @@
         "id": "CodeSystem.concept.property:Characterizes",
         "path": "CodeSystem.concept.property",
         "sliceName": "Characterizes",
-        "short": "Property slice to capture SNOMED Characterizes for a concept",
+        "short": "Property slice to capture SNOMED CT Characterizes for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3603,7 +3603,7 @@
         "id": "CodeSystem.concept.property:Process_agent",
         "path": "CodeSystem.concept.property",
         "sliceName": "Process_agent",
-        "short": "Property slice to capture SNOMED Process agent for a concept",
+        "short": "Property slice to capture SNOMED CT Process agent for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3633,7 +3633,7 @@
         "id": "CodeSystem.concept.property:Process_duration",
         "path": "CodeSystem.concept.property",
         "sliceName": "Process_duration",
-        "short": "Property slice to capture SNOMED Process duration for a concept",
+        "short": "Property slice to capture SNOMED CT Process duration for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3663,7 +3663,7 @@
         "id": "CodeSystem.concept.property:Process_output",
         "path": "CodeSystem.concept.property",
         "sliceName": "Process_output",
-        "short": "Property slice to capture SNOMED Process output for a concept",
+        "short": "Property slice to capture SNOMED CT Process output for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3693,7 +3693,7 @@
         "id": "CodeSystem.concept.property:Relative_to",
         "path": "CodeSystem.concept.property",
         "sliceName": "Relative_to",
-        "short": "Property slice to capture SNOMED Relative to for a concept",
+        "short": "Property slice to capture SNOMED CT Relative to for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3723,7 +3723,7 @@
         "id": "CodeSystem.concept.property:Precondition",
         "path": "CodeSystem.concept.property",
         "sliceName": "Precondition",
-        "short": "Property slice to capture SNOMED Precondition for a concept",
+        "short": "Property slice to capture SNOMED CT Precondition for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3753,7 +3753,7 @@
         "id": "CodeSystem.concept.property:Direct_site",
         "path": "CodeSystem.concept.property",
         "sliceName": "Direct_site",
-        "short": "Property slice to capture SNOMED Direct site for a concept",
+        "short": "Property slice to capture SNOMED CT Direct site for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3783,7 +3783,7 @@
         "id": "CodeSystem.concept.property:Specified_by",
         "path": "CodeSystem.concept.property",
         "sliceName": "Specified_by",
-        "short": "Property slice to capture SNOMED Specified by for a concept",
+        "short": "Property slice to capture SNOMED CT Specified by for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3813,7 +3813,7 @@
         "id": "CodeSystem.concept.property:Observes",
         "path": "CodeSystem.concept.property",
         "sliceName": "Observes",
-        "short": "Property slice to capture SNOMED Observes for a concept",
+        "short": "Property slice to capture SNOMED CT Observes for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3843,7 +3843,7 @@
         "id": "CodeSystem.concept.property:Is_about",
         "path": "CodeSystem.concept.property",
         "sliceName": "Is_about",
-        "short": "Property slice to capture SNOMED Is about for a concept",
+        "short": "Property slice to capture SNOMED CT Is about for a concept",
         "min": 0,
         "max": "1"
       },
@@ -3873,7 +3873,7 @@
         "id": "CodeSystem.concept.property:Defined",
         "path": "CodeSystem.concept.property",
         "sliceName": "Defined",
-        "short": "Property slice to capture SNOMED Defined for a concept",
+        "short": "Property slice to capture SNOMED CT Defined for a concept",
         "min": 0,
         "max": "1"
       },

@@ -44,3 +44,13 @@ Description:  "Codes representing the specific dialect used in a designation for
 * ^experimental = false
 * include codes from system SCT where concept descendant-of #900000000000506000 "Language type reference set"
 //* exclude SCT#900000000000506000 "Language type reference set"
+
+ValueSet: ChangeTypeVS
+Id: changetype-vs
+Title: "Change Type Value Set"
+Description:  "Codes representing the type of change to an element for a concept. The value set includes the terms CREATE, DELETE, UPDATE, and DEPRECATE from the following CodeSystem: https://terminology.hl7.org/CodeSystem-v3-DataOperation.html."
+* ^experimental = false
+* include http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE
+* include http://terminology.hl7.org/CodeSystem/v3-DataOperation#DELETE
+* include http://terminology.hl7.org/CodeSystem/v3-DataOperation#UPDATE
+* include http://terminology.hl7.org/CodeSystem/v3-DataOperation#DEPRECATE

@@ -17,7 +17,7 @@
   },
   {
     "outputFile": "CodeSystem-snomedct413839001ChangeSet.json",
-    "fshName": "SNOMEDChangeSetExample",
+    "fshName": "SNOMEDCTChangeSetExample",
     "fshType": "Instance",
     "fshFile": "Example_SNOMED_ChangeSet.fsh",
     "startLine": 1,
@@ -129,7 +129,7 @@
   },
   {
     "outputFile": "StructureDefinition-snomed-changeset-profile.json",
-    "fshName": "SNOMEDChangeSet",
+    "fshName": "SNOMEDCTChangeSet",
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_SNOMEDChangeSet.fsh",
     "startLine": 1,
@@ -150,6 +150,14 @@
     "fshFile": "ValueSets.fsh",
     "startLine": 3,
     "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-changetype-vs.json",
+    "fshName": "ChangeTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 48,
+    "endLine": 56
   },
   {
     "outputFile": "ValueSet-defining-relationship-type-vs.json",
