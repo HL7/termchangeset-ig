@@ -22,9 +22,18 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * concept[+].code = #measuredVariableA
 * concept[=].display = "measured variable A"
 * concept[=].definition = "variable represents a first of two measured variables to be used in a measured variable that is a mathematical operation of two measured variables."
+* concept[=].extension[changeType].valueCodeableConcept.coding.code = #CREATE
+* concept[=].extension[changeType].valueCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+* concept[=].extension[changeType].valueCodeableConcept.coding.display = "create"
 * concept[+].code = #measuredVariableB
 * concept[=].display = "measured variable B"
 * concept[=].definition = "variable represents a second of two measured variables to be used in a measured variable that is a mathematical operation of two measured variables."
+* concept[=].extension[changeType].valueCodeableConcept.coding.code = #CREATE
+* concept[=].extension[changeType].valueCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+* concept[=].extension[changeType].valueCodeableConcept.coding.display = "create"
 * concept[+].code = #measuredVariableAB
 * concept[=].display = "measured variable A to B"
 * concept[=].definition = "variable represents a result of a mathematical operation of two measured variables."
+* concept[=].extension[changeType].valueCodeableConcept.coding.code = #CREATE
+* concept[=].extension[changeType].valueCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+* concept[=].extension[changeType].valueCodeableConcept.coding.display = "create"

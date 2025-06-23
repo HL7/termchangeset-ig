@@ -1,24 +1,30 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
-  <div style="width: 100%;" >
-<h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+<div style="width: 100%;" >
+<h3 id="plain-language-summary-about-this-guide">Plain Language Summary about this Guide
+  </h3>
   <button class="btn btn-info btn-lg collapsed" type="button" title="Click to Open or Close the Plain Language Summary" data-toggle="collapse" data-target="#plain-lang-summary" aria-expanded="false" aria-controls="collapseExample">
-    Welcome! Thank-you for wanting to learn about this guide.  Click Here to see the Plain Language Summary
+    Welcome! Thank you for wanting to learn about this guide.  Click Here to see the Plain Language Summary
   </button>
-</h3>
 </div>
 <div class="collapse" id="plain-lang-summary" aria-expanded="false" style="height: 0px;">
   <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
-<h4 id="about-this-guide">About this Guide<a class="anchorjs-link " href="#about-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
 
-<p>The HL7 Terminology Change Set Implementation Guide offers a <strong> standardized </strong>, FHIR-based method for distributing medical terminology content, ensuring that all properties associated with each concept in the original terminology are included. This guide is primarily designed for healthcare IT professionals, developers, and organizations involved in creating or maintaining medical terminologies within their systems.</p>
-
-<p>By adopting this guide, organizations can <strong> streamline their data ingestion processes </strong> for medical terminology content, leveraging a common FHIR representation. The guide provides detailed, step-by-step instructions and illustrative examples to assist users in effectively implementing terminology changes using HL7 standards.</p>
-
-<p> Maintaining current medical terminology is essential for accurate data exchange, ensuring patient safety, and facilitating effective healthcare delivery. This guide supports these critical goals by providing a clear and consistent approach to managing and distributing terminology updates.</p>
+<a name="about-this-guide"> </a>
+  <h3>About this Guide</h3>
+<p>
+The HL7 Terminology Change Set Implementation Guide offers a <strong>standardized</strong>, FHIR-based method for distributing medical terminology content, ensuring that all properties associated with each concept in the original terminology are included. This guide is primarily designed for healthcare IT professionals, developers, and organizations involved in creating or maintaining medical terminologies within their systems.
+</p>
+<p>
+By adopting this guide, organizations can <strong>streamline their data ingestion processes</strong> for medical terminology content, leveraging a common FHIR representation. The guide provides detailed, step-by-step instructions and illustrative examples to assist users in effectively implementing terminology changes using HL7 standards.
+</p>
+<p>
+Maintaining current medical terminology is essential for <strong>accurate data exchange, ensuring patient safety, and facilitating effective healthcare delivery</strong>. This guide supports these critical goals by providing a clear and consistent approach to managing and distributing terminology updates.
+</p>
 
   </div>
 </div>
+
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "designation-acceptability",
-  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
-  "name": "DesignationAcceptability",
-  "title": "Designation Acceptability",
+  "id": "change-type",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type",
+  "name": "ChangeType",
+  "title": "Change Type",
   "status": "draft",
-  "description": "Coded value to convey the acceptability of a designation in the language or dialect specified by that Reference Set . Values include 'preferred' and 'acceptable'.",
+  "description": "Coded value indicating the nature of a change made to the parent element",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "CodeSystem.concept.designation"
+      "expression": "Element"
     }
   ],
   "type": "Extension",
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Designation Acceptability",
-        "definition": "Coded value to convey the acceptability of a designation in the language or dialect specified by that Reference Set . Values include 'preferred' and 'acceptable'."
+        "short": "Change Type",
+        "definition": "Coded value indicating the nature of a change made to the parent element"
       },
       {
         "id": "Extension.extension",
@@ -41,11 +41,12 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability"
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "short": "The type of change made to the parent element",
         "type": [
           {
             "code": "CodeableConcept"
@@ -53,7 +54,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/designation-acceptability-vs"
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/changetype-vs"
         }
       }
     ]

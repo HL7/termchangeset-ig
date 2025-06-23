@@ -76,3 +76,12 @@ Description: "Extends CodeSystem contains a reference to a source terminology, f
 * value[x] only Reference(CodeSystem)
 * value[x] ^short = "The source terminology for which the Change Set is intended to contain additional Concepts"
 
+Extension: ChangeType
+Id:	   change-type
+Title:	   "Change Type"
+Description: "Coded value indicating the nature of a change made to the parent element"
+* ^context[+].type = #element
+* ^context[=].expression = "Element"
+* value[x] only CodeableConcept
+* value[x] from ChangeTypeVS (extensible)
+* value[x] ^short = "The type of change made to the parent element"

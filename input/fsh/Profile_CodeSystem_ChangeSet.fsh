@@ -57,7 +57,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
 * concept.extension contains
-	owl-expression named OWLExpression 0..*
+	owl-expression named OWLExpression 0..* and
+	change-type named changeType 0..1
 * concept.id ^short = "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "Identifier Value of Identifier Semantic where Identifier Source = UNIVERSALLY_UNIQUE_IDENTIFIER"
@@ -81,7 +82,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept.designation.extension contains
 	designation-case-sensitivity named caseSensitivity 0..1 and
 	designation-acceptability named acceptability 0..1 and
-	designation-dialect named dialect 0..1
+	designation-dialect named dialect 0..1 and
+	change-type named changeType 0..1
 * concept.designation.extension[caseSensitivity] ^mapping.identity = "tinkar"
 * concept.designation.extension[caseSensitivity] ^mapping.map = "DESCRIPTION_CASE_SIGNIFICANCE of Description Semantic"
 * concept.designation.extension[acceptability] ^mapping.identity = "tinkar"
@@ -114,7 +116,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept.property.extension contains
 	defining-relationship-type named DefiningRelationshipType 0..1 and
 	el-profile-set-operator named elProfileSetOperator 0..1 and
-	role-group named roleGroup 0..1
+	role-group named roleGroup 0..1 and
+	change-type named changeType 0..1
 * concept.property.extension[roleGroup] ^mapping.identity = "tinkar"
 * concept.property.extension[roleGroup] ^mapping.map = "Integer representation of the ROLE_GROUP as a number in the DiTree"
 * concept.property.extension[DefiningRelationshipType] ^mapping.identity = "tinkar"
