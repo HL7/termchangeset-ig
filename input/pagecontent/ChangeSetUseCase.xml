@@ -23,13 +23,11 @@ In this example, a terminology publishing organization is making an incremental 
 	</li>
 </ol>
 <img src="ChangeSetInteractionDiagram.png" width="80%" alt="Change Set Interaction Diagram"/>
-</div>
-<p>
 <a name="changesetusecase1"></a>
 <h3> Scenario 1: Change Set of SNOMED CT Data</h3>
-</p> 
+<p> 
 <b>Key Objective </b>: Modifying existing SNOMED CT concepts, including changes to their defining semantics, can be exported from one source and imported to another system.
-<p>
+</p>
 <ol> 
 	<li> 
 	<b>Precondition:</b>
@@ -82,4 +80,5 @@ In this example, a terminology publishing organization is making an incremental 
 	</li>
 	<li>
 	Post-ingestion, changes included in change set are visible within the consuming system
-	<.li>
+	</li>
+	</div>
