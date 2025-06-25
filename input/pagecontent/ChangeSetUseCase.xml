@@ -24,3 +24,62 @@ In this example, a terminology publishing organization is making an incremental 
 </ol>
 <img src="ChangeSetInteractionDiagram.png" width="80%" alt="Change Set Interaction Diagram"/>
 </div>
+</p>
+<a name="changesetusecase1"></a>
+<h3> Scenario 1: Change Set of SNOMED CT Data</h3>
+<p> 
+<b>Key Objective </b>: Modifying existing SNOMED CT concepts, including changes to their defining semantics, can be exported from one source and imported to another system.
+<p>
+<ol> 
+	<li> 
+	<b>Precondition:</b>
+	</li>
+	<li>
+	Users have access to an integrated knowledge representation (IKM) platform to view and edit SNOMED CT data
+	</li>
+	<li>
+	SNOMED CT release files have been installed.
+	</li>
+	<li>
+	The system supports FHIR generation and/or ingest capability based on the SNOMED Change Set CodeSystem profile.
+	</li>
+	<li>
+	<b>Step 1 - Modify the semantics for existing SNOMED CT concepts.</b>
+	</li>
+	<li>
+	<b> Actions:</b>
+	</li>
+	<li>	
+	1. Search/navigate for SNOMED CT Concepts. 
+	</li>
+	2. Edit SNOMED CT concepts
+	</li>
+	<li>
+	<b>Step 2 - Post change set to FHIR server</b>
+	</li>
+	<li>
+	<b> Actions:</b>
+	</li>
+	<li>	
+	1. Export and post the change set including underlying smenaitcs as CodeSystem and Provenance resources on a FHIR server
+	</li>
+	<li>
+	<b>Step 3 - Consuming system retrieves and ingests change set from FHIR server</b>
+	</li>
+	<li>
+	<b> Actions:</b>
+	</li>
+	<li>	
+	1. Retrieve CodeSystem and Provenance resources from FHIR server
+	</li>
+	2. Ingest to local terminology representation complete change set inclding underlying
+	</li>
+	<li>
+	<b>Scenario Success Criteria:</b>
+	</li>
+	<li>	
+	Consuming system can ingest change set without error
+	</li>
+	<li>
+	Post-ingestion, changes included in change set are visible within the consuming system
+	<.li>
