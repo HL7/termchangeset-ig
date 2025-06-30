@@ -40,6 +40,7 @@ In this example, a terminology publishing organization is making an incremental 
 	</li>
 	<li>
 	The system supports FHIR generation and/or ingest capability based on the SNOMED Change Set CodeSystem profile.
+	</ol>
 	</li>
 	<li>
 	<b>Step 1 - Modify the semantics for existing SNOMED CT concepts.</b>
