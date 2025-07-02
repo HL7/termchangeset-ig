@@ -26,21 +26,6 @@
       "identity": "tinkar",
       "uri": "https://hl7.org/fhir/uv/tinkar",
       "name": "Tinkar Reference Model"
-    },
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "objimpl",
-      "uri": "http://hl7.org/fhir/object-implementation",
-      "name": "Object Implementation Information"
     }
   ],
   "kind": "resource",

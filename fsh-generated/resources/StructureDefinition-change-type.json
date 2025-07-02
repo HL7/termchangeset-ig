@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "change-type",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type",
+  "version": "1.0.0",
   "name": "ChangeType",
   "title": "Change Type",
   "status": "draft",
   "description": "Coded value indicating the nature of a change made to the parent element",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

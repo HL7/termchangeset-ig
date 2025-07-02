@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "el-profile-set-operator",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+  "version": "1.0.0",
   "name": "ElProfileSetOperator",
   "title": "EL Profile Set Operator",
   "status": "draft",
   "description": "EL++ profile to describe the axiom as being part of the Necessary vs. Sufficient set for defining the concept",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

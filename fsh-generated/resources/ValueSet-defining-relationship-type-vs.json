@@ -5,6 +5,7 @@
   "id": "defining-relationship-type-vs",
   "title": "Defining Relationship Type Value Set",
   "description": "Codes describing the nature of a relationship used to define a terminology concept. The value set includes all codes from the SNOMED CT descending from 900000000000006009 Defining relationship.",
+  "version": "1.0.0",
   "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/defining-relationship-type-vs",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "experimental": false,

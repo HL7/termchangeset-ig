@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "extends-codesystem",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/extends-codesystem",
+  "version": "1.0.0",
   "name": "ExtendsCodeSystem",
   "title": "Extends CodeSystem",
   "status": "draft",
   "description": "Extends CodeSystem contains a reference to a source terminology, for which a CodeSystem resource is intended to contain additional Concepts",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

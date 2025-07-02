@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "role-group",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+  "version": "1.0.0",
   "name": "SNOMEDRoleGroup",
   "title": "SNOMED Role Group",
   "status": "draft",
   "description": "Where multiple property groupings are assigned for a particular concept, this identifies the group to which this property belongs.  See also SNOMED concept 609096000 Role group (attribute)",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

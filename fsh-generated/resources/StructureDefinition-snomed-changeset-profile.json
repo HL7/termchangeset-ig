@@ -2,33 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "snomed-changeset-profile",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile",
+  "version": "1.0.0",
   "name": "SNOMEDCTChangeSet",
   "title": "SNOMED CT Change Set (CodeSystem)",
   "status": "draft",
   "description": "Profile of CodeSystem to enable lossless representation of a SNOMED CT change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "tinkar",
-      "uri": "https://hl7.org/fhir/uv/tinkar",
-      "name": "Tinkar Reference Model"
-    },
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "objimpl",
-      "uri": "http://hl7.org/fhir/object-implementation",
-      "name": "Object Implementation Information"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "CodeSystem",

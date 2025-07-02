@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "owl-expression",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+  "version": "1.0.0",
   "name": "OWLExpression",
   "title": "OWL Expression",
   "status": "draft",
   "description": "OWL Expression representing the logical definition of a concept",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

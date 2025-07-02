@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "defining-relationship-type",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+  "version": "1.0.0",
   "name": "DefiningRelationshipType",
   "title": "Defining Relationship Type",
   "status": "draft",
   "description": "Indicator to distinguish between axioms explicitly stated vs. inferred by a reasoner or other logical processes",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

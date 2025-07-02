@@ -11,13 +11,13 @@
   </p>
   <ul>
   	<li>
-  	<a href="StructureDefinition-designation-dialect.html">Concept designation dialect</a>
+  	<a href="StructureDefinition-designation-dialect.html">Concept designation dialect</a> - to distinguish between multiple designations used in different langauges or dialects.  For example, the SNOMED CT term <b>271737000 | Anemia (disorder)</b> has a designation "Anemia" in the United States English dialect, but "Anaemia" in the Great Britain English dialect.
   	</li>
   	<li>
-  	<a href="StructureDefinition-designation-case-sensitivity.html">Concept designation case sensitivity</a>
+  	<a href="StructureDefinition-designation-case-sensitivity.html">Concept designation case sensitivity</a> - to identify the case sensitivity applicable to the designation to retain its meaning.  For example, "HIV" (for Human Immunodeficiency Virus) must remain uppercase and therefore is "Case Sensitive", whereas "diabetes mellitus" can be shown as "Diabetes Mellitus," "DIABETES MELLITUS," etc. and therefore is "Case Insensitive".
   	</li>
   	<li>
-  	<a href="StructureDefinition-designation-acceptability.html">Concept designation acceptability</a>
+  	<a href="StructureDefinition-designation-acceptability.html">Concept designation acceptability</a> - to identify the relative suitability across several designations for a given concept.  For example, for the SNOMED CT concept <b> 22298006 |Myocardial infarction (disorder)</b>, a "Preferred" designation for use is "Myocardial infarction", but "Heart attack" is an "Acceptable" designation.
   	</li>
   </ul>
   <a name="ConceptPropertyAttributes"></a>
@@ -27,13 +27,13 @@
   </p>
   <ul>
   	<li>
-  	<a href="StructureDefinition-defining-relationship-type.html">Concept property defining relationship type</a> 
+  	<a href="StructureDefinition-defining-relationship-type.html">Concept property defining relationship type</a> - to clarify if the property was explicitly "stated" by a terminologist, or "inferred" through some deductive process, such as a description logic classifier. For example in SNOMED CT, <b>205237003 |Pneumonitis (disorder)</b> is Stated to be a <b>64572001 |Disease (disorder)</b>, but can be inferred to be a <b>19829001 |Disorder of lung (disorder)</b>.
   	</li>
   	<li>
-  	<a href="StructureDefinition-el-profile-set-operator.html">Concept property EL++ profile set (Necessary vs. Sufficient)</a>
+  	<a href="StructureDefinition-el-profile-set-operator.html">Concept property EL++ profile set (Necessary vs. Sufficient)</a> - to clarify if the property is "necessary" or "sufficient" in defining the concept. For an example of how SNOMED CT applies these concepts, see here: <a href="https://confluence.ihtsdotools.org/display/DOCRELFMT/D.2+Necessary+and+Sufficient+-+Examples">https://confluence.ihtsdotools.org/display/DOCRELFMT/D.2+Necessary+and+Sufficient+-+Examples</a>
   	</li>
   	<li>
-  	<a href="StructureDefinition-role-group.html">Concept SNOMED CT Role Group</a>
+  	<a href="StructureDefinition-role-group.html">Concept SNOMED CT Role Group</a> - to identify which role group to which a given property belongs in defining the concept. Role groups are constructs used to group related attributes together within a clinical concept, ensuring that the relationships between those attributes are accurately represented and unambiguously interpreted.
   	</li>
   </ul>
   <a name="OtherLimitations"></a>

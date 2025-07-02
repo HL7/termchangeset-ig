@@ -28,10 +28,9 @@ In this example, a terminology publishing organization is making an incremental 
 <p> 
 <b>Key Objective </b>: Modifying existing SNOMED CT concepts, including changes to their defining semantics, can be exported from one source and imported to another system.
 </p>
-<ol> 
-	<li> 
+
 	<b>Precondition:</b>
-	</li>
+	<ol>
 	<li>
 	Users have access to an integrated knowledge representation (IKM) platform to view and edit SNOMED CT data
 	</li>
@@ -40,46 +39,51 @@ In this example, a terminology publishing organization is making an incremental 
 	</li>
 	<li>
 	The system supports FHIR generation and/or ingest capability based on the SNOMED Change Set CodeSystem profile.
+	</li>
 	</ol>
-	</li>
-	<li>
+
 	<b>Step 1 - Modify the semantics for existing SNOMED CT concepts.</b>
-	</li>
-	<li>
+	<br/>
 	<b> Actions:</b>
-	</li>
+	<ol>
 	<li>	
-	1. Search/navigate for SNOMED CT Concepts. 
-	</li>
-	2. Edit SNOMED CT concepts
+	Search/navigate for SNOMED CT Concepts. 
 	</li>
 	<li>
+	Edit SNOMED CT concepts
+	</li>
+	</ol>
+	
 	<b>Step 2 - Post change set to FHIR server</b>
-	</li>
-	<li>
+	<br/>
 	<b> Actions:</b>
-	</li>
+	
+	<ol>
 	<li>	
-	1. Export and post the change set including underlying smenaitcs as CodeSystem and Provenance resources on a FHIR server
+	Export and post the change set including underlying smenaitcs as CodeSystem and Provenance resources on a FHIR server
 	</li>
-	<li>
+	</ol>
+	
 	<b>Step 3 - Consuming system retrieves and ingests change set from FHIR server</b>
-	</li>
-	<li>
+	<br/>
 	<b> Actions:</b>
-	</li>
+	
+	<ol>
 	<li>	
-	1. Retrieve CodeSystem and Provenance resources from FHIR server
-	</li>
-	2. Ingest to local terminology representation complete change set inclding underlying
+	Retrieve CodeSystem and Provenance resources from FHIR server
 	</li>
 	<li>
-	<b>Scenario Success Criteria:</b>
+	Ingest to local terminology representation complete change set inclding underlying
 	</li>
+	</ol>
+	
+	<b>Scenario Success Criteria:</b>
+	<ul>
 	<li>	
 	Consuming system can ingest change set without error
 	</li>
 	<li>
 	Post-ingestion, changes included in change set are visible within the consuming system
 	</li>
-	</div>
+	</ul>
+</div>
