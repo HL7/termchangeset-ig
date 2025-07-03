@@ -18,6 +18,7 @@
 <artifact id="ValueSet/designation-acceptability-vs" key="ValueSet-designation-acceptability-vs" name="Designation Acceptability Value Set"/>
 <artifact id="StructureDefinition/designation-case-sensitivity" key="StructureDefinition-designation-case-sensitivity" name="Designation Case Sensitivity"/>
 <artifact id="StructureDefinition/designation-dialect" key="StructureDefinition-designation-dialect" name="Designation Dialect"/>
+<artifact id="StructureDefinition/designation-status" key="StructureDefinition-designation-status" name="Designation Status"/>
 <artifact id="ValueSet/dialect-vs" key="ValueSet-dialect-vs" name="Dialect Value Set"/>
 <artifact id="StructureDefinition/el-profile-set-operator" key="StructureDefinition-el-profile-set-operator" name="EL Profile Set Operator"/>
 <artifact id="ValueSet/el-profile-set-operator-vs" key="ValueSet-el-profile-set-operator-vs" name="EL Profile Set Operator Value Set"/>

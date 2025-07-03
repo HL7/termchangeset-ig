@@ -85,3 +85,23 @@ Description: "Coded value indicating the nature of a change made to the parent e
 * value[x] only CodeableConcept
 * value[x] from ChangeTypeVS (extensible)
 * value[x] ^short = "The type of change made to the parent element"
+
+Extension: DesignationStatus
+Id:        designation-status
+Title:     "Designation Status"
+Description: "Complex extension to convey the status of a designation (active vs. inactive) and a timestamp for that status."
+// Limit the context to CodeSystem.concept.designation
+* . ^isModifier = true
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.concept.designation"
+* extension contains
+    active 1..1 and
+    effectiveTime 0..1
+* extension[active].value[x] only boolean
+* extension[active] ^isModifier = true
+* extension[active] ^short = "Boolean value indicating that the designation is active (true) or inactive (false)"
+* extension[active] ^definition = "Boolean value indicating that the designation is active (true) or inactive (false)"
+* extension[effectiveTime].value[x] only dateTime
+* extension[effectiveTime] ^short = "dateTime value indicating when the status of the designation was set to its current value"
+* extension[effectiveTime] ^definition = "dateTime value indicating when the status of the designation was set to its current value"
+

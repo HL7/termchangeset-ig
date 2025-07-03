@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 143
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -94,6 +94,14 @@
     "fshFile": "Extensions.fsh",
     "startLine": 50,
     "endLine": 58
+  },
+  {
+    "outputFile": "StructureDefinition-designation-status.json",
+    "fshName": "DesignationStatus",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 89,
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-el-profile-set-operator.json",
