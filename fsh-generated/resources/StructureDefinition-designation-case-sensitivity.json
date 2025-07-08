@@ -2,18 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "designation-case-sensitivity",
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+  "version": "1.0.0",
   "name": "DesignationCaseSensitivity",
   "title": "Designation Case Sensitivity",
   "status": "draft",
   "description": "Coded value to identify what case sensitivity is reflected in the designation",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

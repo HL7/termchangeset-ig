@@ -26,21 +26,6 @@
       "identity": "tinkar",
       "uri": "https://hl7.org/fhir/uv/tinkar",
       "name": "Tinkar Reference Model"
-    },
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "objimpl",
-      "uri": "http://hl7.org/fhir/object-implementation",
-      "name": "Object Implementation Information"
     }
   ],
   "kind": "resource",
@@ -322,7 +307,7 @@
         "mapping": [
           {
             "identity": "tinkar",
-            "map": "DESCRIPTION_ACCEPTABILITY of US Dialect Semantic/GB Dialect Semantic referencing the Descrption Semantic"
+            "map": "DESCRIPTION_ACCEPTABILITY of US Dialect Semantic/GB Dialect Semantic referencing the Description Semantic"
           }
         ]
       },
@@ -352,6 +337,35 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/change-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.designation.modifierExtension",
+        "path": "CodeSystem.concept.designation.modifierExtension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.designation.modifierExtension:designationStatus",
+        "path": "CodeSystem.concept.designation.modifierExtension",
+        "sliceName": "designationStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
             ]
           }
         ]

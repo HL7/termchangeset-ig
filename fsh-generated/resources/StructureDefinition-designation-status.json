@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "designation-status",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status",
+  "version": "1.0.0",
+  "name": "DesignationStatus",
+  "title": "Designation Status",
+  "status": "draft",
+  "description": "Complex extension to convey the status of a designation (active vs. inactive) and a timestamp for that status.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem.concept.designation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Designation Status",
+        "definition": "Complex extension to convey the status of a designation (active vs. inactive) and a timestamp for that status.",
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:active",
+        "path": "Extension.extension",
+        "sliceName": "active",
+        "short": "Boolean value indicating that the designation is active (true) or inactive (false)",
+        "definition": "Boolean value indicating that the designation is active (true) or inactive (false)",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:active.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:active.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "active"
+      },
+      {
+        "id": "Extension.extension:active.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:effectiveTime",
+        "path": "Extension.extension",
+        "sliceName": "effectiveTime",
+        "short": "dateTime value indicating when the status of the designation was set to its current value",
+        "definition": "dateTime value indicating when the status of the designation was set to its current value",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "effectiveTime"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
