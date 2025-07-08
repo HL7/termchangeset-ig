@@ -86,4 +86,64 @@ In this example, a terminology publishing organization is making an incremental 
 	Post-ingestion, changes included in change set are visible within the consuming system
 	</li>
 	</ul>
+<a name="changesetusecase2"></a>
+<h3> Scenario 2: Change Set of new terminology concepts</h3>
+<p> 
+<b>Key Objective </b>: Authoring net new concepts, including changes to their defining semantics, can be exported from one source and imported to another system.
+</p>
+
+	<b>Precondition:</b>
+	<ol>
+	<li>
+	Users have access to an integrated knowledge representation (IKM) platform to view and edit SNOMED CT data
+	</li>
+	<li>
+	SNOMED CT release files have been installed.
+	</li>
+	<li>
+	The system supports FHIR generation and/or ingest capability based on the SNOMED Change Set CodeSystem profile.
+	</li>
+	</ol>
+
+	<b>Step 1 - Author net new concept</b>
+	<br/>
+	<b> Actions:</b>
+	<ol>
+	<li>
+	Author new concept with appropriate defining semantics
+	</li>
+	</ol>
+	
+	<b>Step 2 - Post change set to FHIR server</b>
+	<br/>
+	<b> Actions:</b>
+	
+	<ol>
+	<li>	
+	Export and post the change set including underlying smenaitcs as CodeSystem and Provenance resources on a FHIR server
+	</li>
+	</ol>
+	
+	<b>Step 3 - Consuming system retrieves and ingests change set from FHIR server</b>
+	<br/>
+	<b> Actions:</b>
+	
+	<ol>
+	<li>	
+	Retrieve CodeSystem and Provenance resources from FHIR server
+	</li>
+	<li>
+	Ingest to local terminology representation complete change set inclding underlying
+	</li>
+	</ol>
+	
+	<b>Scenario Success Criteria:</b>
+	<ul>
+	<li>	
+	Consuming system can ingest change set without error
+	</li>
+	<li>
+	Post-ingestion, changes included in change set are visible within the consuming system
+	</li>
+	</ul>
 </div>
