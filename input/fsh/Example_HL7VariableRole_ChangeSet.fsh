@@ -17,7 +17,6 @@ Description: "Example of HL7 VariableRole code system Change Set based on UTG-42
 * contact.telecom[=].value = "hq@HL7.org"
 * description = "Example of HL7 VariableRole code system Change Set based on UTG-427 https://jira.hl7.org/browse/UP-427"
 * copyright = "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"
-* caseSensitive = true
 * content = #fragment
 * concept[+].code = #measuredVariableA
 * concept[=].display = "measured variable A"

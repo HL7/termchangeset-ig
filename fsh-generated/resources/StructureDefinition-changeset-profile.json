@@ -112,9 +112,21 @@
         "min": 1
       },
       {
+        "id": "CodeSystem.caseSensitive",
+        "path": "CodeSystem.caseSensitive",
+        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included.",
+        "max": "0"
+      },
+      {
         "id": "CodeSystem.hierarchyMeaning",
         "path": "CodeSystem.hierarchyMeaning",
         "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included.",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.compositional",
+        "path": "CodeSystem.compositional",
+        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included.",
         "max": "0"
       },
       {

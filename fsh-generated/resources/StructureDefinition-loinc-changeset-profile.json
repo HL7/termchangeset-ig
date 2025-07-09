@@ -29,12 +29,6 @@
   "differential": {
     "element": [
       {
-        "id": "CodeSystem.caseSensitive",
-        "path": "CodeSystem.caseSensitive",
-        "fixedBoolean": false,
-        "mustSupport": false
-      },
-      {
         "id": "CodeSystem.property",
         "path": "CodeSystem.property",
         "slicing": {
