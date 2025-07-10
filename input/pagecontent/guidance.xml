@@ -57,6 +57,9 @@ One potential use case for Terminology Change Sets is for sharing locally extend
 While use cases do exist to justify such extensions, implementers are strongly cautioned not to author and distribute such extensions without first exhausting pathways for updates to the source terminology through the SDO that maintains it. Most SDOs maintain new term submission pathways that are well maintained and promptly serviced (see: <a href="https://www.snomed.org/change-or-add">SNOMED CT process</a>, <a href="https://loinc.org/submissions/">LOINC process</a>, <a href="https://confluence.hl7.org/display/VMAH/Vocabulary+Maintenance+at+HL7">HL7 process</a>), and such pathways should be the preferred process for implementers when new concepts are needed from a terminology.
 </p>
 <p>
+Implementers may want to extend CodeSystems whenever a concept their organization needs is not present in the source CodeSystem, BUT, when they do, they should in parallel request an equivalent term from the source CodeSystem. When change set concepts become included in the base CodeSystem, implementers should deprecate the local code and map it to the newly provided concept, when concepts are included in the base CodeSystem. Extended concepts included in Change Sets will have a CodeSystem.url clearly identifying it as an Extended CodeSystem, and not the source CodeSystem it was designed to extend, and as such may be validated as any other code/system pair is validated.
+</p>
+<p>
 When code system stewards/publishers decide to extend a terminology version, they are expected to maintain alignment with the authoring guidelines and terms of use for the terminology they are extending. Implementers developing and maintaining extensions should ensure they have a strategy for clearly identifying extended CodeSystem resources utilizing the following elements:
 <ul>
 	<li>
