@@ -15,8 +15,6 @@ Description: "Example of SNOMED CT Change Set"
 * contact.telecom[=].value = "http://ikm.dev"
 * description = "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept"
 * copyright = "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct"
-* caseSensitive = true
-* compositional = true
 * versionNeeded = false
 * content = #fragment
 * filter[+].code = #concept
@@ -290,6 +288,8 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.code = #900000000000509007
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].designation[=].extension[dialect].valueCodeableConcept.coding.display = "United States of America English language reference set"
+* concept[=].designation[=].modifierExtension[designationStatus].extension[active].valueBoolean = true
+* concept[=].designation[=].modifierExtension[designationStatus].extension[effectiveTime].valueDateTime = "2025-07-08T10:00:00Z"
 * concept[=].designation[=].use[+].system = "http://snomed.info/sct"
 * concept[=].designation[=].use[=].code = #900000000000013009
 * concept[=].designation[=].use[=].display = "Synonym"

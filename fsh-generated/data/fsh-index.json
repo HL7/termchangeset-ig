@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "Example_HL7VariableRole_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 38
   },
   {
     "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Example_LOINC_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 215
+    "endLine": 213
   },
   {
     "outputFile": "CodeSystem-snomedct413839001ChangeSet.json",
@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 145
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -125,7 +125,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_LOINCChangeSet.fsh",
     "startLine": 1,
-    "endLine": 791
+    "endLine": 784
   },
   {
     "outputFile": "StructureDefinition-owl-expression.json",

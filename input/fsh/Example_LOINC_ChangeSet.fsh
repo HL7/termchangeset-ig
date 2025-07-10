@@ -15,8 +15,6 @@ Description: "Example of LOINC Change Set including 3 new attachment terms from 
 * contact.telecom[=].value = "http://ikm.dev"
 * description = "Example of LOINC Change Set including all new Document Attachments defined in LOINC 2.77 for pre-adoption on 2.76 implementations"
 * copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* caseSensitive = false
-* compositional = false
 * versionNeeded = false
 * content = #fragment
 * filter[+].code = #parent

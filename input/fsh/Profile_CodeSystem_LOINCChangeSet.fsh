@@ -13,13 +13,6 @@ Description: "Profile of CodeSystem to enable lossless representation of a LOINC
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
-* caseSensitive 0..1
-* caseSensitive only boolean
-* caseSensitive = false (exactly)
-* caseSensitive ^short = "If code comparison is case sensitive"
-* caseSensitive ^definition = "If code comparison is case sensitive when codes within this system are compared to each other."
-* caseSensitive ^comment = "If this value is missing, then it is not specified whether a code system is case sensitive or not. When the rule is not known, Postel's law should be followed: produce codes with the correct case, and accept codes in any case. This element is primarily provided to support validation software."
-* caseSensitive ^mustSupport = false
 * property 0..* MS
 * property ^slicing.discriminator[0].type = #value
 * property ^slicing.discriminator[0].path = "code"

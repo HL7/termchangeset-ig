@@ -26,7 +26,8 @@
         "path": "Extension",
         "short": "Designation Status",
         "definition": "Complex extension to convey the status of a designation (active vs. inactive) and a timestamp for that status.",
-        "isModifier": true
+        "isModifier": true,
+        "isModifierReason": "A designation that is not active should not be used by implementers in most cases"
       },
       {
         "id": "Extension.extension",
@@ -40,8 +41,7 @@
         "short": "Boolean value indicating that the designation is active (true) or inactive (false)",
         "definition": "Boolean value indicating that the designation is active (true) or inactive (false)",
         "min": 1,
-        "max": "1",
-        "isModifier": true
+        "max": "1"
       },
       {
         "id": "Extension.extension:active.extension",

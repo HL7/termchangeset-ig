@@ -92,13 +92,13 @@ Title:     "Designation Status"
 Description: "Complex extension to convey the status of a designation (active vs. inactive) and a timestamp for that status."
 // Limit the context to CodeSystem.concept.designation
 * . ^isModifier = true
+* . ^isModifierReason = "A designation that is not active should not be used by implementers in most cases"
 * ^context[+].type = #element
 * ^context[=].expression = "CodeSystem.concept.designation"
 * extension contains
     active 1..1 and
     effectiveTime 0..1
 * extension[active].value[x] only boolean
-* extension[active] ^isModifier = true
 * extension[active] ^short = "Boolean value indicating that the designation is active (true) or inactive (false)"
 * extension[active] ^definition = "Boolean value indicating that the designation is active (true) or inactive (false)"
 * extension[effectiveTime].value[x] only dateTime

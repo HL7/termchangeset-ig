@@ -29,6 +29,10 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
 * hierarchyMeaning 0..0
 * hierarchyMeaning ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included."
+* caseSensitive 0..0
+* caseSensitive ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included."
+* compositional 0..0
+* compositional ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included."
 * content 1..1
 * content only code
 * content = #fragment (exactly)
