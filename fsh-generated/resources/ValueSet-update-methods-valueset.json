@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "UpdateMethodsVS",
+  "id": "update-methods-valueset",
+  "title": "Terminology Server Update Methods ValueSet",
+  "description": "A ValueSet containing all codes from the UpdateMethods CodeSystem.",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/update-methods-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem"
+      }
+    ]
+  }
+}

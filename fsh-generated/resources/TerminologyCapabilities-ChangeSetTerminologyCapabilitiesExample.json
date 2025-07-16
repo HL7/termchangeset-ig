@@ -1,0 +1,165 @@
+{
+  "resourceType": "TerminologyCapabilities",
+  "id": "ChangeSetTerminologyCapabilitiesExample",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-terminologycapabilities-profile"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/update-methods",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem",
+            "code": "RF2",
+            "display": "Release Format 2"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/update-methods",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem",
+            "code": "FHIRChangeSet",
+            "display": "FHIR ChangeSet"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "http://tx.fhir.org/r4/TerminologyCapabilities/tx",
+  "version": "2.0.0",
+  "name": "ChangeSet TerminologyCapabilities Example",
+  "status": "active",
+  "date": "2025-07-16T12:34:07.198Z",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthintersections.com.au/"
+        }
+      ]
+    }
+  ],
+  "kind": "instance",
+  "implementation": {
+    "description": "TX.FHIR.ORG Terminology Server",
+    "url": "http://tx.fhir.org/r4/"
+  },
+  "codeSystem": [
+    {
+      "uri": "http://cap.org/eCP",
+      "version": [
+        {
+          "code": "4.000.001"
+        }
+      ]
+    },
+    {
+      "uri": "http://cds-hooks.hl7.org/CodeSystem/indicator",
+      "version": [
+        {
+          "code": "4.0.1"
+        }
+      ]
+    },
+    {
+      "uri": "http://devices.fhir.org/CodeSystem/MDC-concept-status"
+    },
+    {
+      "uri": "http://devices.fhir.org/CodeSystem/MDC-designation-use"
+    }
+  ],
+  "expansion": {
+    "parameter": [
+      {
+        "name": "cache-id",
+        "documentation": "This server supports caching terminology resources between calls. Clients only need to send value sets and codesystems once; there after they are automatically in scope for calls with the same cache-id. The cache is retained for 30 min from last call"
+      },
+      {
+        "name": "tx-resource",
+        "documentation": "Additional valuesets needed for evaluation e.g. value sets referred to from the import statement of the value set being expanded"
+      },
+      {
+        "name": "_incomplete"
+      },
+      {
+        "name": "abstract"
+      },
+      {
+        "name": "activeOnly"
+      },
+      {
+        "name": "check-system-version"
+      },
+      {
+        "name": "count"
+      },
+      {
+        "name": "default-to-latest-version"
+      },
+      {
+        "name": "displayLanguage"
+      },
+      {
+        "name": "excludeNested"
+      },
+      {
+        "name": "excludeNotForUI"
+      },
+      {
+        "name": "excludePostCoordinated"
+      },
+      {
+        "name": "force-system-version"
+      },
+      {
+        "name": "inactive"
+      },
+      {
+        "name": "includeAlternateCodes"
+      },
+      {
+        "name": "includeDefinition"
+      },
+      {
+        "name": "includeDesignations"
+      },
+      {
+        "name": "incomplete-ok"
+      },
+      {
+        "name": "limitedExpansion"
+      },
+      {
+        "name": "mode",
+        "documentation": "=lenient-display-validation"
+      },
+      {
+        "name": "no-cache"
+      },
+      {
+        "name": "offset"
+      },
+      {
+        "name": "profile"
+      },
+      {
+        "name": "property"
+      },
+      {
+        "name": "system-version"
+      },
+      {
+        "name": "valueSetMode",
+        "documentation": "= CHECK_MEMBERSHIP_ONLY | NO_MEMBERSHIP_CHECK"
+      }
+    ]
+  }
+}

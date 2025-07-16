@@ -105,3 +105,13 @@ Description: "Complex extension to convey the status of a designation (active vs
 * extension[effectiveTime] ^short = "dateTime value indicating when the status of the designation was set to its current value"
 * extension[effectiveTime] ^definition = "dateTime value indicating when the status of the designation was set to its current value"
 
+Extension: UpdateMethods
+Id:	   update-methods
+Title:	   "Update Methods"
+Description: "Coded value indicating the methods the terminology server supports to process updates to its content"
+* ^context[+].type = #element
+* ^context[=].expression = "Element"
+* value[x] only CodeableConcept
+* value[x] from UpdateMethodsVS (example)
+* value[x] ^short = "A method the terminology server supports to process updates to its content"
+

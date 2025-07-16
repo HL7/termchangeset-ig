@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "UpdateMethodsCS",
+  "id": "update-methods-codesystem",
+  "title": "Terminology Server Update Methods CodeSystem",
+  "description": "A CodeSystem containing update methods applicable to a Terminology Server",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem",
+  "concept": [
+    {
+      "code": "FHIRChangeSet",
+      "display": "FHIR ChangeSet"
+    },
+    {
+      "code": "RF2",
+      "display": "Release Format 2"
+    }
+  ],
+  "count": 2
+}

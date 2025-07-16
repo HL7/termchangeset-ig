@@ -54,3 +54,11 @@ Description:  "Codes representing the type of change to an element for a concept
 * include http://terminology.hl7.org/CodeSystem/v3-DataOperation#DELETE
 * include http://terminology.hl7.org/CodeSystem/v3-DataOperation#UPDATE
 * include http://terminology.hl7.org/CodeSystem/v3-DataOperation#DEPRECATE
+
+ValueSet: UpdateMethodsVS
+Id: update-methods-valueset
+Title: "Terminology Server Update Methods ValueSet"
+Description: "A ValueSet containing all codes from the UpdateMethods CodeSystem."
+* ^status = #active
+* include codes from system update-methods-codesystem
+

@@ -16,12 +16,28 @@
     "endLine": 213
   },
   {
+    "outputFile": "CodeSystem-snomedct23036009changeSet.json",
+    "fshName": "SNOMEDCTChangeSetRoleGroupExample",
+    "fshType": "Instance",
+    "fshFile": "Example_SNOMED_ChangeSet_RoleGroups.fsh",
+    "startLine": 1,
+    "endLine": 356
+  },
+  {
     "outputFile": "CodeSystem-snomedct413839001ChangeSet.json",
     "fshName": "SNOMEDCTChangeSetExample",
     "fshType": "Instance",
     "fshFile": "Example_SNOMED_ChangeSet.fsh",
     "startLine": 1,
     "endLine": 356
+  },
+  {
+    "outputFile": "CodeSystem-update-methods-codesystem.json",
+    "fshName": "UpdateMethodsCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem_UpdateMethods.fsh",
+    "startLine": 1,
+    "endLine": 9
   },
   {
     "outputFile": "Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.json",
@@ -62,6 +78,14 @@
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
     "endLine": 149
+  },
+  {
+    "outputFile": "StructureDefinition-changeset-terminologycapabilities-profile.json",
+    "fshName": "ChangeSetTerminologyCapabilities",
+    "fshType": "Profile",
+    "fshFile": "Profile_TerminologyCapabilities_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -160,6 +184,22 @@
     "endLine": 54
   },
   {
+    "outputFile": "StructureDefinition-update-methods.json",
+    "fshName": "UpdateMethods",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 108,
+    "endLine": 116
+  },
+  {
+    "outputFile": "TerminologyCapabilities-ChangeSetTerminologyCapabilitiesExample.json",
+    "fshName": "ChangeSetTerminologyCapabilitiesExample",
+    "fshType": "Instance",
+    "fshFile": "Example_ChangeSet_TerminologyCapabilities.fsh",
+    "startLine": 1,
+    "endLine": 59
+  },
+  {
     "outputFile": "ValueSet-case-significance-vs.json",
     "fshName": "CaseSignificanceVS",
     "fshType": "ValueSet",
@@ -206,5 +246,13 @@
     "fshFile": "ValueSets.fsh",
     "startLine": 30,
     "endLine": 36
+  },
+  {
+    "outputFile": "ValueSet-update-methods-valueset.json",
+    "fshName": "UpdateMethodsVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 58,
+    "endLine": 63
   }
 ]

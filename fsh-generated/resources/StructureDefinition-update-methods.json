@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "update-methods",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/update-methods",
+  "version": "1.0.0",
+  "name": "UpdateMethods",
+  "title": "Update Methods",
+  "status": "draft",
+  "description": "Coded value indicating the methods the terminology server supports to process updates to its content",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Update Methods",
+        "definition": "Coded value indicating the methods the terminology server supports to process updates to its content"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/update-methods"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "A method the terminology server supports to process updates to its content",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/update-methods-valueset"
+        }
+      }
+    ]
+  }
+}
