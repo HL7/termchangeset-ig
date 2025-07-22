@@ -17,7 +17,7 @@
   	<a href="StructureDefinition-designation-case-sensitivity.html">Concept designation case sensitivity</a> - to identify the case sensitivity applicable to the designation to retain its meaning.  For example, "HIV" (for Human Immunodeficiency Virus) must remain uppercase and therefore is "Case Sensitive", whereas "diabetes mellitus" can be shown as "Diabetes Mellitus," "DIABETES MELLITUS," etc. and therefore is "Case Insensitive".
   	</li>
   	<li>
-  	<a href="StructureDefinition-designation-acceptability.html">Concept designation acceptability</a> - to identify the relative suitability across several designations for a given concept.  For example, for the SNOMED CT concept <b> 22298006 |Myocardial infarction (disorder)</b>, a "Preferred" designation for use is "Myocardial infarction", but "Heart attack" is an "Acceptable" designation.
+  	<a href="StructureDefinition-designation-acceptability.html">Concept designation acceptability</a> - to identify the relative suitability across several designations for a given concept.  For example, for the SNOMED CT concept <b> 22298006 | Myocardial infarction (disorder)</b>, a "Preferred" designation for use is "Myocardial infarction", but "Heart attack" is an "Acceptable" designation.
   	</li>
   </ul>
   <a name="ConceptPropertyAttributes"></a>
@@ -27,13 +27,13 @@
   </p>
   <ul>
   	<li>
-  	<a href="StructureDefinition-defining-relationship-type.html">Concept property defining relationship type</a> - to clarify if the property was explicitly "stated" by a terminologist, or "inferred" through some deductive process, such as a description logic classifier. For example in SNOMED CT, <b>205237003 |Pneumonitis (disorder)</b> is Stated to be a <b>64572001 |Disease (disorder)</b>, but can be inferred to be a <b>19829001 |Disorder of lung (disorder)</b>.
+  	<a href="StructureDefinition-defining-relationship-type.html">Concept property defining relationship type</a> - to clarify if the property was explicitly "stated" by a terminologist, or "inferred" through some deductive process, such as a description logic classifier. For example in SNOMED CT, <b>205237003 | Pneumonitis (disorder)</b> is Stated to be a <b>64572001 | Disease (disorder)</b>, but can be inferred to be a <b>19829001 | Disorder of lung (disorder)</b>.
   	</li>
   	<li>
   	<a href="StructureDefinition-el-profile-set-operator.html">Concept property EL++ profile set (Necessary vs. Sufficient)</a> - to clarify if the property is "necessary" or "sufficient" in defining the concept. For an example of how SNOMED CT applies these concepts, see here: <a href="https://confluence.ihtsdotools.org/display/DOCRELFMT/D.2+Necessary+and+Sufficient+-+Examples">https://confluence.ihtsdotools.org/display/DOCRELFMT/D.2+Necessary+and+Sufficient+-+Examples</a>
   	</li>
   	<li>
-  	<a href="StructureDefinition-role-group.html">Concept SNOMED CT Role Group</a> - to identify which role group to which a given property belongs in defining the concept. Role groups are constructs used to group related attributes together within a clinical concept, ensuring that the relationships between those attributes are accurately represented and unambiguously interpreted. For example, the SNOMED CT concept 23036009 |Open reduction of fracture of radius and ulna has 2 seperate role groups. Role Group 1 contains 426530000 | Open reduction - action (qualifer value) , 23416004 | Bone structure of ulna (body structure), and 72704001 | Fracture (morphologic abnormality). Role Group 2 contains 426530000 | Open reduction - action (qualifier value), 62413002 | Bone structure of radius (body structure) and 72704001 | Fracture (morphologic abnormality).
+  	<a href="StructureDefinition-role-group.html">Concept SNOMED CT Role Group</a> - to identify which role group to which a given property belongs in defining the concept. Role groups are constructs used to group related attributes together within a clinical concept, ensuring that the relationships between those attributes are accurately represented and unambiguously interpreted. For example, the SNOMED CT concept <b>23036009 | Open reduction of fracture of radius and ulna</b> has 2 seperate role groups. Role Group 1 contains <b>426530000 | Open reduction - action (qualifer value)</b> , <b>23416004 | Bone structure of ulna (body structure)</b>, and <b>72704001 | Fracture (morphologic abnormality)</b>. Role Group 2 contains <b>426530000 | Open reduction - action (qualifier value)</b>, <b>62413002 | Bone structure of radius (body structure)</b> and <b>72704001 | Fracture (morphologic abnormality)</b>.
   	</li>
   </ul>
   <a name="OtherLimitations"></a>
