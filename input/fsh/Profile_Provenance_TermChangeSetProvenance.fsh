@@ -1,5 +1,5 @@
-Profile: TerminologyChangeSetProvenance
-Id: terminology-changeset-provenance-profile
+Profile: CodeSystemChangeSetProvenance
+Id: codesystem-change-set-provenance
 Parent: Provenance
 Title: "CodeSystem Change Set Provenance"
 Description: "Profile of Provenance to use in concert with Terminology Change Sets compliant with Tinkar information model requirements"

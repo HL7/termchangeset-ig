@@ -1,5 +1,5 @@
 Instance: LOINCChangeSetProvenanceExample
-InstanceOf: TerminologyChangeSetProvenance
+InstanceOf: CodeSystemChangeSetProvenance
 Description: "Example of Provenance to support a LOINC Change Set"
 * id = "52b1a1d2-80ab-460b-b5fc-341edd35b032"
 * target.reference = "CodeSystem/loinc277attachmentsChangeSet"

@@ -1,5 +1,5 @@
-Profile: ChangeSet
-Id: changeset-profile
+Profile: CodeSystemChangeSet
+Id: codesystem-change-set
 Parent: http://hl7.org/fhir/StructureDefinition/shareablecodesystem
 Title: "CodeSystem Change Set"
 Description: "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements"
