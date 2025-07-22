@@ -1,7 +1,7 @@
 Profile: TerminologyChangeSetProvenance
 Id: terminology-changeset-provenance-profile
 Parent: Provenance
-Title: "Terminology Change Set Provenance (Provenance)"
+Title: "CodeSystem Change Set Provenance"
 Description: "Profile of Provenance to use in concert with Terminology Change Sets compliant with Tinkar information model requirements"
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"

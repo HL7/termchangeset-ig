@@ -1,5 +1,5 @@
 Instance: HL7VariableRoleChangeSetExample
-InstanceOf: ChangeSet
+InstanceOf: CodeSystemChangeSet
 Description: "Example of HL7 VariableRole code system Change Set based on UTG-427 https://jira.hl7.org/browse/UP-427"
 * id = "HL7VariableRoleChangeSet"
 * url = "http://terminology.hl7.org/CodeSystem/variable-role_ChangeSetUTG427"

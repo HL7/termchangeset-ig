@@ -1,5 +1,5 @@
 Instance: HL7VariableRoleChangeSetProvenanceExample
-InstanceOf: TerminologyChangeSetProvenance
+InstanceOf: CodeSystemChangeSetProvenance
 Description: "Example of Provenance to support HL7 VariableRole code system Change Set based on UTG-427 https://jira.hl7.org/browse/UP-427"
 * id = "7e4f317e-8c13-46ba-b79a-9913da2afa2c"
 * target.reference = "CodeSystem/HL7VariableRoleChangeSet"
