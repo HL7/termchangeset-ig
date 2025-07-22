@@ -1,6 +1,6 @@
 Profile: LOINCChangeSet
 Id: loinc-changeset-profile
-Parent: changeset-profile
+Parent: CodeSystemChangeSet
 Title: "LOINC Change Set (CodeSystem)"
 Description: "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
 * ^version = "0.1.0"

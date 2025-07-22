@@ -1,6 +1,6 @@
 Profile: SNOMEDCTChangeSet
 Id: snomed-changeset-profile
-Parent: changeset-profile
+Parent: CodeSystemChangeSet
 Title: "SNOMED CT Change Set (CodeSystem)"
 Description: "Profile of CodeSystem to enable lossless representation of a SNOMED CT change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
 * property ^short = "Property values should follow the SNOMED CT-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
