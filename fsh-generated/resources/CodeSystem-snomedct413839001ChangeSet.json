@@ -9,6 +9,12 @@
   "content": "fragment",
   "concept": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(:413839001 |Chronic lung disease (disorder)|\tObjectIntersectionOf(:64572001 |Disease (disorder)|ObjectSomeValuesFrom(:609096000 |Role group (attribute)|ObjectSomeValuesFrom(:263502005 |Clinical course (attribute)|\t:90734009 |Chronic (qualifier value)|))\tObjectSomeValuesFrom(:609096000 |Role group (attribute)|ObjectSomeValuesFrom(:363698007 |Finding site (attribute)|:39607008 |Lung structure (body structure)|))))"
+        }
+      ],
       "designation": [
         {
           "extension": [

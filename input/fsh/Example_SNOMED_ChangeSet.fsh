@@ -273,6 +273,7 @@ Description: "Example of SNOMED CT Change Set"
 * property[=].type = #boolean
 * concept[+].id = "61da7e50-f606-5ba0-a0df-83fd524951e7"
 * concept[=].code = #413839001
+* concept[=].extension[OWLExpression].valueString = "EquivalentClasses(:413839001 |Chronic lung disease (disorder)|	ObjectIntersectionOf(:64572001 |Disease (disorder)|ObjectSomeValuesFrom(:609096000 |Role group (attribute)|ObjectSomeValuesFrom(:263502005 |Clinical course (attribute)|	:90734009 |Chronic (qualifier value)|))	ObjectSomeValuesFrom(:609096000 |Role group (attribute)|ObjectSomeValuesFrom(:363698007 |Finding site (attribute)|:39607008 |Lung structure (body structure)|))))"
 * concept[=].display = "Chronic lung disease (Disorder)"
 * concept[=].definition = "Chronic lung disease (Disorder)"
 * concept[=].designation[+].language = #en-US

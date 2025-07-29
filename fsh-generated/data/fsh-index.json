@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "Example_SNOMED_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 356
+    "endLine": 357
   },
   {
     "outputFile": "CodeSystem-update-methods-codesystem.json",
