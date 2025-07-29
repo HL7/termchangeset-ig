@@ -83,7 +83,7 @@
     "outputFile": "StructureDefinition-codesystem-change-set-provenance.json",
     "fshName": "CodeSystemChangeSetProvenance",
     "fshType": "Profile",
-    "fshFile": "Profile_Provenance_TermChangeSetProvenance.fsh",
+    "fshFile": "Profile_Provenance_CodeSystemChangeSetProvenance.fsh",
     "startLine": 1,
     "endLine": 54
   },

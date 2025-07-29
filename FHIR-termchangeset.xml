@@ -11,7 +11,7 @@
 <artifact id="StructureDefinition/change-type" key="StructureDefinition-change-type" name="Change Type"/>
 <artifact id="ValueSet/changetype-vs" key="ValueSet-changetype-vs" name="Change Type Value Set"/>
 <artifact id="TerminologyCapabilities/ChangeSetTerminologyCapabilitiesExample" key="TerminologyCapabilities-ChangeSetTerminologyCapabilitiesExample" name="ChangeSet TerminologyCapabilities Example"/>
-<artifact id="StructureDefinition/codesystem-change-set" key="StructureDefinition-codesystem-change-set" name="CodeSystem Change Set"/>
+<artifact id="StructureDefinition/codesystem-change-set" key="StructureDefinition-codesystem-change-set" name="CodeSystem Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/codesystem-change-set-provenance" key="StructureDefinition-codesystem-change-set-provenance" name="CodeSystem Change Set Provenance"/>
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="ValueSet/defining-relationship-type-vs" key="ValueSet-defining-relationship-type-vs" name="Defining Relationship Type Value Set"/>

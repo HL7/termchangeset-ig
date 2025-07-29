@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set",
   "version": "0.1.0",
   "name": "CodeSystemChangeSet",
-  "title": "CodeSystem Change Set",
+  "title": "CodeSystem Change Set (CodeSystem)",
   "status": "draft",
   "experimental": false,
   "date": "2024-08-11",
@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements",
+  "description": "Profile of CodeSystem to enable lossless representation of a CodeSystem Change Set aligned with Tinkar information model requirements",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -114,19 +114,19 @@
       {
         "id": "CodeSystem.caseSensitive",
         "path": "CodeSystem.caseSensitive",
-        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included.",
+        "short": "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included.",
         "max": "0"
       },
       {
         "id": "CodeSystem.hierarchyMeaning",
         "path": "CodeSystem.hierarchyMeaning",
-        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included.",
+        "short": "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included.",
         "max": "0"
       },
       {
         "id": "CodeSystem.compositional",
         "path": "CodeSystem.compositional",
-        "short": "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included.",
+        "short": "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included.",
         "max": "0"
       },
       {
@@ -541,7 +541,7 @@
       {
         "id": "CodeSystem.concept.concept",
         "path": "CodeSystem.concept.concept",
-        "comment": "For Terminology Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
+        "comment": "For CodeSystem Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements",
         "max": "0",
         "mustSupport": false
       }

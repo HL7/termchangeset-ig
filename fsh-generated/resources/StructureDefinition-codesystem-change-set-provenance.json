@@ -6,7 +6,7 @@
   "name": "CodeSystemChangeSetProvenance",
   "title": "CodeSystem Change Set Provenance",
   "status": "draft",
-  "description": "Profile of Provenance to use in concert with Terminology Change Sets compliant with Tinkar information model requirements",
+  "description": "Profile of Provenance to use in concert with CodeSystem Change Sets compliant with Tinkar information model requirements",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -65,7 +65,7 @@
       {
         "id": "Provenance.activity",
         "path": "Provenance.activity",
-        "short": "For a Terminology Change Set, this should always be an update to a terminology",
+        "short": "For a CodeSystem Change Set, this should always be an update to a terminology",
         "min": 1
       },
       {
@@ -96,7 +96,7 @@
         "id": "Provenance.agent:author",
         "path": "Provenance.agent",
         "sliceName": "author",
-        "short": "The individual(s) who contributed changes reflected in the Terminology Change Set",
+        "short": "The individual(s) who contributed changes reflected in the CodeSystem Change Set",
         "min": 1,
         "max": "*"
       },
@@ -137,7 +137,7 @@
         "id": "Provenance.agent:custodian",
         "path": "Provenance.agent",
         "sliceName": "custodian",
-        "short": "The entity that is accountable for maintaining a true and accurate copy of the Terminology Change Set",
+        "short": "The entity that is accountable for maintaining a true and accurate copy of the CodeSystem Change Set",
         "min": 1,
         "max": "1"
       },

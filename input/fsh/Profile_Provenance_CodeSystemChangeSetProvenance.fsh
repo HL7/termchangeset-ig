@@ -2,7 +2,7 @@ Profile: CodeSystemChangeSetProvenance
 Id: codesystem-change-set-provenance
 Parent: Provenance
 Title: "CodeSystem Change Set Provenance"
-Description: "Profile of Provenance to use in concert with Terminology Change Sets compliant with Tinkar information model requirements"
+Description: "Profile of Provenance to use in concert with CodeSystem Change Sets compliant with Tinkar information model requirements"
 * ^mapping[+].identity = "tinkar"
 * ^mapping[=].uri = "https://hl7.org/fhir/uv/tinkar"
 * ^mapping[=].name = "Tinkar Reference Model"
@@ -14,14 +14,14 @@ Description: "Profile of Provenance to use in concert with Terminology Change Se
 * activity 1..1
 * activity.coding.code = #UPDATE (exactly)
 * activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation" (exactly)
-* activity ^short = "For a Terminology Change Set, this should always be an update to a terminology"
+* activity ^short = "For a CodeSystem Change Set, this should always be an update to a terminology"
 * agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "type.coding.code"
 * agent ^slicing.rules = #openAtEnd
 * agent contains
 	author 1..* and
 	custodian 1..1
-* agent[author] ^short = "The individual(s) who contributed changes reflected in the Terminology Change Set"
+* agent[author] ^short = "The individual(s) who contributed changes reflected in the CodeSystem Change Set"
 * agent[author].type 1..1
 * agent[author].type.coding 1..1
 * agent[author].type.coding.system 1..1
@@ -29,7 +29,7 @@ Description: "Profile of Provenance to use in concert with Terminology Change Se
 * agent[author].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type" (exactly)
 * agent[author].who.display ^mapping.identity = "tinkar"
 * agent[author].who.display ^mapping.map = "Author"
-* agent[custodian] ^short = "The entity that is accountable for maintaining a true and accurate copy of the Terminology Change Set"
+* agent[custodian] ^short = "The entity that is accountable for maintaining a true and accurate copy of the CodeSystem Change Set"
 * agent[custodian].type 1..1
 * agent[custodian].type.coding 1..1
 * agent[custodian].type.coding.system 1..1

@@ -1,8 +1,8 @@
 Profile: CodeSystemChangeSet
 Id: codesystem-change-set
 Parent: http://hl7.org/fhir/StructureDefinition/shareablecodesystem
-Title: "CodeSystem Change Set"
-Description: "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements"
+Title: "CodeSystem Change Set (CodeSystem)"
+Description: "Profile of CodeSystem to enable lossless representation of a CodeSystem Change Set aligned with Tinkar information model requirements"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
@@ -28,11 +28,11 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * copyright 1..1
 * copyright ^comment = "... Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
 * hierarchyMeaning 0..0
-* hierarchyMeaning ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included."
+* hierarchyMeaning ^short = "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, hierarchyMeaning should not be included."
 * caseSensitive 0..0
-* caseSensitive ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included."
+* caseSensitive ^short = "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, caseSensitive should not be included."
 * compositional 0..0
-* compositional ^short = "NOTE: As a Terminology Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included."
+* compositional ^short = "NOTE: As a CodeSystem Change Set should not be fundamentally altering the design and operation of the terminology as a whole therefore, compositional should not be included."
 * content 1..1
 * content only code
 * content = #fragment (exactly)
@@ -143,7 +143,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a Termi
 * concept.concept 0..0
 * concept.concept ^short = "Child Concepts (is-a/contains/categorizes)"
 * concept.concept ^definition = "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) - see hierarchyMeaning."
-* concept.concept ^comment = "For Terminology Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
+* concept.concept ^comment = "For CodeSystem Change Sets, relationships to child concepts should be done through concept.property values, not concept.concept elements"
 * concept.concept ^mustSupport = false
 * supplements 0..0
 * supplements ^short = "The source terminology from which the Change Set was derived should be conveyed via a Provenance resource, not CodeSystem.supplements"
