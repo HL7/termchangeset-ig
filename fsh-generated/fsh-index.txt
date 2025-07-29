@@ -8,8 +8,9 @@ Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.json                  SNOMEDChan
 Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032.json                  LOINCChangeSetProvenanceExample            Instance    Example_LOINC_ChangeSet_Provenance.fsh            1 - 20
 Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c.json                  HL7VariableRoleChangeSetProvenanceExample  Instance    Example_HL7VariableRole_ChangeSet_Provenance.fsh  1 - 20
 StructureDefinition-change-type.json                                  ChangeType                                 Extension   Extensions.fsh                                    79 - 87
-StructureDefinition-changeset-profile.json                            ChangeSet                                  Profile     Profile_CodeSystem_ChangeSet.fsh                  1 - 149
 StructureDefinition-changeset-terminologycapabilities-profile.json    ChangeSetTerminologyCapabilities           Profile     Profile_TerminologyCapabilities_ChangeSet.fsh     1 - 14
+StructureDefinition-codesystem-change-set-provenance.json             CodeSystemChangeSetProvenance              Profile     Profile_Provenance_TermChangeSetProvenance.fsh    1 - 54
+StructureDefinition-codesystem-change-set.json                        CodeSystemChangeSet                        Profile     Profile_CodeSystem_ChangeSet.fsh                  1 - 149
 StructureDefinition-defining-relationship-type.json                   DefiningRelationshipType                   Extension   Extensions.fsh                                    30 - 38
 StructureDefinition-designation-acceptability.json                    DesignationAcceptability                   Extension   Extensions.fsh                                    11 - 19
 StructureDefinition-designation-case-sensitivity.json                 DesignationCaseSensitivity                 Extension   Extensions.fsh                                    1 - 9
@@ -21,7 +22,6 @@ StructureDefinition-loinc-changeset-profile.json                      LOINCChang
 StructureDefinition-owl-expression.json                               OWLExpression                              Extension   Extensions.fsh                                    60 - 67
 StructureDefinition-role-group.json                                   SNOMEDRoleGroup                            Extension   Extensions.fsh                                    21 - 28
 StructureDefinition-snomed-changeset-profile.json                     SNOMEDCTChangeSet                          Profile     Profile_CodeSystem_SNOMEDChangeSet.fsh            1 - 733
-StructureDefinition-terminology-changeset-provenance-profile.json     TerminologyChangeSetProvenance             Profile     Profile_Provenance_TermChangeSetProvenance.fsh    1 - 54
 StructureDefinition-update-methods.json                               UpdateMethods                              Extension   Extensions.fsh                                    108 - 116
 TerminologyCapabilities-ChangeSetTerminologyCapabilitiesExample.json  ChangeSetTerminologyCapabilitiesExample    Instance    Example_ChangeSet_TerminologyCapabilities.fsh     1 - 59
 ValueSet-case-significance-vs.json                                    CaseSignificanceVS                         ValueSet    ValueSets.fsh                                     3 - 9

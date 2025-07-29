@@ -3,7 +3,7 @@
   "id": "HL7VariableRoleChangeSet",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile"
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set"
     ]
   },
   "content": "fragment",

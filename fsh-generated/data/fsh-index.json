@@ -72,20 +72,28 @@
     "endLine": 87
   },
   {
-    "outputFile": "StructureDefinition-changeset-profile.json",
-    "fshName": "ChangeSet",
-    "fshType": "Profile",
-    "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
-    "startLine": 1,
-    "endLine": 149
-  },
-  {
     "outputFile": "StructureDefinition-changeset-terminologycapabilities-profile.json",
     "fshName": "ChangeSetTerminologyCapabilities",
     "fshType": "Profile",
     "fshFile": "Profile_TerminologyCapabilities_ChangeSet.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-codesystem-change-set-provenance.json",
+    "fshName": "CodeSystemChangeSetProvenance",
+    "fshType": "Profile",
+    "fshFile": "Profile_Provenance_TermChangeSetProvenance.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-codesystem-change-set.json",
+    "fshName": "CodeSystemChangeSet",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
+    "startLine": 1,
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -174,14 +182,6 @@
     "fshFile": "Profile_CodeSystem_SNOMEDChangeSet.fsh",
     "startLine": 1,
     "endLine": 733
-  },
-  {
-    "outputFile": "StructureDefinition-terminology-changeset-provenance-profile.json",
-    "fshName": "TerminologyChangeSetProvenance",
-    "fshType": "Profile",
-    "fshFile": "Profile_Provenance_TermChangeSetProvenance.fsh",
-    "startLine": 1,
-    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-update-methods.json",

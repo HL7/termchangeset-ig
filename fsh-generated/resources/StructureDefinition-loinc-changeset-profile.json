@@ -24,7 +24,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "CodeSystem",
-  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/changeset-profile",
+  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set",
   "derivation": "constraint",
   "differential": {
     "element": [
