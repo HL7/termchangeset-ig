@@ -60,7 +60,7 @@ In this example, a terminology publishing organization is making an incremental 
 	
 	<ol>
 	<li>	
-	Export and post the change set including underlying smenaitcs as CodeSystem and Provenance resources on a FHIR server
+	Export and post the change set including underlying semantics as <a href="CodeSystem-snomedct413839001ChangeSet.html">CodeSystem</a> and <a href="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.html">Provenance</a> resources on a FHIR server
 	</li>
 	</ol>
 	

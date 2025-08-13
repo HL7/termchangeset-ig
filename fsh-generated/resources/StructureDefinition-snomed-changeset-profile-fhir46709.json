@@ -1,0 +1,85 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "snomed-changeset-profile-fhir46709",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile-fhir46709",
+  "version": "1.0.0",
+  "name": "SNOMEDCTChangeSetFHIR46709",
+  "title": "SNOMED CT Change Set (CodeSystem) FHIR46709 Prototype",
+  "status": "draft",
+  "description": "Profile of CodeSystem to enable lossless representation of a SNOMED CT change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.property",
+        "path": "CodeSystem.property",
+        "short": "Property values should follow the SNOMED CT-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
+      },
+      {
+        "id": "CodeSystem.property.code",
+        "path": "CodeSystem.property.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mapping": [
+          {
+            "identity": "tinkar",
+            "map": "SNOMED CT IDENTIFER SOURCE"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension",
+        "path": "CodeSystem.concept.designation.extension",
+        "min": 2
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension:caseSensitivity",
+        "path": "CodeSystem.concept.designation.extension",
+        "sliceName": "caseSensitivity",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.designation.extension:acceptability",
+        "path": "CodeSystem.concept.designation.extension",
+        "sliceName": "acceptability",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property.extension",
+        "path": "CodeSystem.concept.property.extension",
+        "min": 2
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:DefiningRelationshipType",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "DefiningRelationshipType",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property.extension:elProfileSetOperator",
+        "path": "CodeSystem.concept.property.extension",
+        "sliceName": "elProfileSetOperator",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.concept.property.code",
+        "path": "CodeSystem.concept.property.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+        }
+      }
+    ]
+  }
+}

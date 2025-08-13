@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem"
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-cs"
       }
     ]
   }

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CodeSystemPropertyVS",
+  "id": "codesystem-property-valueset",
+  "title": "CodeSystem Property ValueSet",
+  "description": "A ValueSet containing CodeSystem property concepts",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/codesystem-property-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/codesystem-properties-cs"
+      }
+    ]
+  }
+}

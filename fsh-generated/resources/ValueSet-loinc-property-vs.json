@@ -1,0 +1,268 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LOINCPropertyVS",
+  "id": "loinc-property-vs",
+  "title": "LOINC Property ValueSet",
+  "description": "A ValueSet containing property concepts for use with LOINC when represented as a FHIR CodeSystem",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/codesystem-properties-cs",
+        "concept": [
+          {
+            "code": "parent"
+          },
+          {
+            "code": "child"
+          },
+          {
+            "code": "COMPONENT"
+          },
+          {
+            "code": "PROPERTY"
+          },
+          {
+            "code": "TIME_ASPCT"
+          },
+          {
+            "code": "SYSTEM"
+          },
+          {
+            "code": "SCALE_TYP"
+          },
+          {
+            "code": "METHOD_TYP"
+          },
+          {
+            "code": "CLASS"
+          },
+          {
+            "code": "VersionLastChanged"
+          },
+          {
+            "code": "CHNG_TYPE"
+          },
+          {
+            "code": "DefinitionDescription"
+          },
+          {
+            "code": "STATUS"
+          },
+          {
+            "code": "CONSUMER_NAME"
+          },
+          {
+            "code": "CLASSTYPE"
+          },
+          {
+            "code": "FORMULA"
+          },
+          {
+            "code": "EXMPL_ANSWERS"
+          },
+          {
+            "code": "SURVEY_QUEST_TEXT"
+          },
+          {
+            "code": "SURVEY_QUEST_SRC"
+          },
+          {
+            "code": "UNITSREQUIRED"
+          },
+          {
+            "code": "RELATEDNAMES2"
+          },
+          {
+            "code": "SHORTNAME"
+          },
+          {
+            "code": "ORDER_OBS"
+          },
+          {
+            "code": "HL7_FIELD_SUBFIELD_ID"
+          },
+          {
+            "code": "EXTERNAL_COPYRIGHT_NOTICE"
+          },
+          {
+            "code": "EXAMPLE_UNITS"
+          },
+          {
+            "code": "LONG_COMMON_NAME"
+          },
+          {
+            "code": "EXAMPLE_UCUM_UNITS"
+          },
+          {
+            "code": "STATUS_REASON"
+          },
+          {
+            "code": "STATUS_TEXT"
+          },
+          {
+            "code": "CHANGE_REASON_PUBLIC"
+          },
+          {
+            "code": "COMMON_TEST_RANK"
+          },
+          {
+            "code": "COMMON_ORDER_RANK"
+          },
+          {
+            "code": "HL7_ATTACHMENT_STRUCTURE"
+          },
+          {
+            "code": "EXTERNAL_COPYRIGHT_LINK"
+          },
+          {
+            "code": "PanelType"
+          },
+          {
+            "code": "AskAtOrderEntry"
+          },
+          {
+            "code": "AssociatedObservations"
+          },
+          {
+            "code": "VersionFirstReleased"
+          },
+          {
+            "code": "ValidHL7AttachmentRequest"
+          },
+          {
+            "code": "DisplayName"
+          },
+          {
+            "code": "answer-list"
+          },
+          {
+            "code": "MAP_TO"
+          },
+          {
+            "code": "analyte"
+          },
+          {
+            "code": "analyte-core"
+          },
+          {
+            "code": "analyte-suffix"
+          },
+          {
+            "code": "analyte-numerator"
+          },
+          {
+            "code": "analyte-divisor"
+          },
+          {
+            "code": "analyte-divisor-suffix"
+          },
+          {
+            "code": "challenge"
+          },
+          {
+            "code": "adjustment"
+          },
+          {
+            "code": "count"
+          },
+          {
+            "code": "time-core"
+          },
+          {
+            "code": "time-modifier"
+          },
+          {
+            "code": "system-core"
+          },
+          {
+            "code": "super-system"
+          },
+          {
+            "code": "analyte-gene"
+          },
+          {
+            "code": "category"
+          },
+          {
+            "code": "search"
+          },
+          {
+            "code": "rad-modality-modality-type"
+          },
+          {
+            "code": "rad-modality-modality-subtype"
+          },
+          {
+            "code": "rad-anatomic-location-region-imaged"
+          },
+          {
+            "code": "rad-anatomic-location-imaging-focus"
+          },
+          {
+            "code": "rad-anatomic-location-laterality-presence"
+          },
+          {
+            "code": "rad-anatomic-location-laterality"
+          },
+          {
+            "code": "rad-view-aggregation"
+          },
+          {
+            "code": "rad-view-view-type"
+          },
+          {
+            "code": "rad-maneuver-maneuver-type"
+          },
+          {
+            "code": "rad-timing"
+          },
+          {
+            "code": "rad-pharmaceutical-substance-given"
+          },
+          {
+            "code": "rad-pharmaceutical-route"
+          },
+          {
+            "code": "rad-reason-for-exam"
+          },
+          {
+            "code": "rad-guidance-for-presence"
+          },
+          {
+            "code": "rad-guidance-for-approach"
+          },
+          {
+            "code": "rad-guidance-for-action"
+          },
+          {
+            "code": "rad-guidance-for-object"
+          },
+          {
+            "code": "rad-subject"
+          },
+          {
+            "code": "document-kind"
+          },
+          {
+            "code": "document-role"
+          },
+          {
+            "code": "document-setting"
+          },
+          {
+            "code": "document-subject-matter-domain"
+          },
+          {
+            "code": "document-type-of-service"
+          },
+          {
+            "code": "answers-for"
+          }
+        ]
+      }
+    ]
+  }
+}

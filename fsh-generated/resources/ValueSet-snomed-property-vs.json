@@ -1,0 +1,260 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SNOMEDPropertyVS",
+  "id": "snomed-property-vs",
+  "title": "SNOMED Property ValueSet",
+  "description": "A ValueSet containing property concepts for use with SNOMED when represented as a FHIR CodeSystem",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/codesystem-properties-cs",
+        "concept": [
+          {
+            "code": "inactive"
+          },
+          {
+            "code": "definitionStatusId"
+          },
+          {
+            "code": "parent"
+          },
+          {
+            "code": "moduleId"
+          },
+          {
+            "code": "Due to"
+          },
+          {
+            "code": "Associated with"
+          },
+          {
+            "code": "Associated morphology"
+          },
+          {
+            "code": "Has specimen"
+          },
+          {
+            "code": "Specimen source morphology"
+          },
+          {
+            "code": "Specimen source topography"
+          },
+          {
+            "code": "Specimen source identity"
+          },
+          {
+            "code": "Specimen procedure"
+          },
+          {
+            "code": "Part of"
+          },
+          {
+            "code": "Has active ingredient"
+          },
+          {
+            "code": "Subject of information"
+          },
+          {
+            "code": "Causative agent"
+          },
+          {
+            "code": "Associated finding"
+          },
+          {
+            "code": "Component"
+          },
+          {
+            "code": "Severity"
+          },
+          {
+            "code": "Occurrence"
+          },
+          {
+            "code": "Episodicity"
+          },
+          {
+            "code": "Technique"
+          },
+          {
+            "code": "Revision status"
+          },
+          {
+            "code": "Units"
+          },
+          {
+            "code": "After"
+          },
+          {
+            "code": "Access"
+          },
+          {
+            "code": "Method"
+          },
+          {
+            "code": "Priority"
+          },
+          {
+            "code": "Clinical course"
+          },
+          {
+            "code": "Laterality"
+          },
+          {
+            "code": "Associated procedure"
+          },
+          {
+            "code": "Finding site"
+          },
+          {
+            "code": "Direct morphology"
+          },
+          {
+            "code": "Direct substance"
+          },
+          {
+            "code": "Has focus"
+          },
+          {
+            "code": "Has intent"
+          },
+          {
+            "code": "Procedure site"
+          },
+          {
+            "code": "Has definitional manifestation"
+          },
+          {
+            "code": "Indirect morphology"
+          },
+          {
+            "code": "Indirect device"
+          },
+          {
+            "code": "Has interpretation"
+          },
+          {
+            "code": "Interprets"
+          },
+          {
+            "code": "Measurement method"
+          },
+          {
+            "code": "Property"
+          },
+          {
+            "code": "Recipient category"
+          },
+          {
+            "code": "Scale type"
+          },
+          {
+            "code": "Specimen substance"
+          },
+          {
+            "code": "Time aspect"
+          },
+          {
+            "code": "Pathological process"
+          },
+          {
+            "code": "Procedure site - Direct"
+          },
+          {
+            "code": "Procedure site - Indirect"
+          },
+          {
+            "code": "Procedure device"
+          },
+          {
+            "code": "Procedure morphology"
+          },
+          {
+            "code": "Finding context"
+          },
+          {
+            "code": "Temporal context"
+          },
+          {
+            "code": "Subject relationship context"
+          },
+          {
+            "code": "Route of administration"
+          },
+          {
+            "code": "Has dose form"
+          },
+          {
+            "code": "Finding method"
+          },
+          {
+            "code": "Finding informer"
+          },
+          {
+            "code": "Using device"
+          },
+          {
+            "code": "Using energy"
+          },
+          {
+            "code": "Using substance"
+          },
+          {
+            "code": "Surgical approach"
+          },
+          {
+            "code": "Using access device"
+          },
+          {
+            "code": "Role group"
+          },
+          {
+            "code": "Property type"
+          },
+          {
+            "code": "Inheres in"
+          },
+          {
+            "code": "Towards"
+          },
+          {
+            "code": "Characterizes"
+          },
+          {
+            "code": "Process agent"
+          },
+          {
+            "code": "Process duration"
+          },
+          {
+            "code": "Process output"
+          },
+          {
+            "code": "Relative to"
+          },
+          {
+            "code": "Precondition"
+          },
+          {
+            "code": "Direct site"
+          },
+          {
+            "code": "Specified by"
+          },
+          {
+            "code": "Observes"
+          },
+          {
+            "code": "Is about"
+          },
+          {
+            "code": "Defined"
+          }
+        ]
+      }
+    ]
+  }
+}

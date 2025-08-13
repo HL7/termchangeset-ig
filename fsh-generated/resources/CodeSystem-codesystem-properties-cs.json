@@ -1,0 +1,662 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CodeSystemPropertiesCS",
+  "id": "codesystem-properties-cs",
+  "title": "CodeSystem Properties CodeSystem",
+  "description": "A CodeSystem containing property concepts for use with FHIR CodeSystems",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/codesystem-properties-cs",
+  "concept": [
+    {
+      "code": "inactive",
+      "display": "inactive"
+    },
+    {
+      "code": "definitionStatusId",
+      "display": "definitionStatusId"
+    },
+    {
+      "code": "parent",
+      "display": "parent"
+    },
+    {
+      "code": "moduleId",
+      "display": "moduleId"
+    },
+    {
+      "code": "Due to",
+      "display": "Due to"
+    },
+    {
+      "code": "Associated with",
+      "display": "Associated with"
+    },
+    {
+      "code": "Associated morphology",
+      "display": "Associated morphology"
+    },
+    {
+      "code": "Has specimen",
+      "display": "Has specimen"
+    },
+    {
+      "code": "Specimen source morphology",
+      "display": "Specimen source morphology"
+    },
+    {
+      "code": "Specimen source topography",
+      "display": "Specimen source topography"
+    },
+    {
+      "code": "Specimen source identity",
+      "display": "Specimen source identity"
+    },
+    {
+      "code": "Specimen procedure",
+      "display": "Specimen procedure"
+    },
+    {
+      "code": "Part of",
+      "display": "Part of"
+    },
+    {
+      "code": "Has active ingredient",
+      "display": "Has active ingredient"
+    },
+    {
+      "code": "Subject of information",
+      "display": "Subject of information"
+    },
+    {
+      "code": "Causative agent",
+      "display": "Causative agent"
+    },
+    {
+      "code": "Associated finding",
+      "display": "Associated finding"
+    },
+    {
+      "code": "Component",
+      "display": "Component"
+    },
+    {
+      "code": "Severity",
+      "display": "Severity"
+    },
+    {
+      "code": "Occurrence",
+      "display": "Occurrence"
+    },
+    {
+      "code": "Episodicity",
+      "display": "Episodicity"
+    },
+    {
+      "code": "Technique",
+      "display": "Technique"
+    },
+    {
+      "code": "Revision status",
+      "display": "Revision status"
+    },
+    {
+      "code": "Units",
+      "display": "Units"
+    },
+    {
+      "code": "After",
+      "display": "After"
+    },
+    {
+      "code": "Access",
+      "display": "Access"
+    },
+    {
+      "code": "Method",
+      "display": "Method"
+    },
+    {
+      "code": "Priority",
+      "display": "Priority"
+    },
+    {
+      "code": "Clinical course",
+      "display": "Clinical course"
+    },
+    {
+      "code": "Laterality",
+      "display": "Laterality"
+    },
+    {
+      "code": "Associated procedure",
+      "display": "Associated procedure"
+    },
+    {
+      "code": "Finding site",
+      "display": "Finding site"
+    },
+    {
+      "code": "Direct morphology",
+      "display": "Direct morphology"
+    },
+    {
+      "code": "Direct substance",
+      "display": "Direct substance"
+    },
+    {
+      "code": "Has focus",
+      "display": "Has focus"
+    },
+    {
+      "code": "Has intent",
+      "display": "Has intent"
+    },
+    {
+      "code": "Procedure site",
+      "display": "Procedure site"
+    },
+    {
+      "code": "Has definitional manifestation",
+      "display": "Has definitional manifestation"
+    },
+    {
+      "code": "Indirect morphology",
+      "display": "Indirect morphology"
+    },
+    {
+      "code": "Indirect device",
+      "display": "Indirect device"
+    },
+    {
+      "code": "Has interpretation",
+      "display": "Has interpretation"
+    },
+    {
+      "code": "Interprets",
+      "display": "Interprets"
+    },
+    {
+      "code": "Measurement method",
+      "display": "Measurement method"
+    },
+    {
+      "code": "Property",
+      "display": "Property"
+    },
+    {
+      "code": "Recipient category",
+      "display": "Recipient category"
+    },
+    {
+      "code": "Scale type",
+      "display": "Scale type"
+    },
+    {
+      "code": "Specimen substance",
+      "display": "Specimen substance"
+    },
+    {
+      "code": "Time aspect",
+      "display": "Time aspect"
+    },
+    {
+      "code": "Pathological process",
+      "display": "Pathological process"
+    },
+    {
+      "code": "Procedure site - Direct",
+      "display": "Procedure site - Direct"
+    },
+    {
+      "code": "Procedure site - Indirect",
+      "display": "Procedure site - Indirect"
+    },
+    {
+      "code": "Procedure device",
+      "display": "Procedure device"
+    },
+    {
+      "code": "Procedure morphology",
+      "display": "Procedure morphology"
+    },
+    {
+      "code": "Finding context",
+      "display": "Finding context"
+    },
+    {
+      "code": "Temporal context",
+      "display": "Temporal context"
+    },
+    {
+      "code": "Subject relationship context",
+      "display": "Subject relationship context"
+    },
+    {
+      "code": "Route of administration",
+      "display": "Route of administration"
+    },
+    {
+      "code": "Has dose form",
+      "display": "Has dose form"
+    },
+    {
+      "code": "Finding method",
+      "display": "Finding method"
+    },
+    {
+      "code": "Finding informer",
+      "display": "Finding informer"
+    },
+    {
+      "code": "Using device",
+      "display": "Using device"
+    },
+    {
+      "code": "Using energy",
+      "display": "Using energy"
+    },
+    {
+      "code": "Using substance",
+      "display": "Using substance"
+    },
+    {
+      "code": "Surgical approach",
+      "display": "Surgical approach"
+    },
+    {
+      "code": "Using access device",
+      "display": "Using access device"
+    },
+    {
+      "code": "Role group",
+      "display": "Role group"
+    },
+    {
+      "code": "Property type",
+      "display": "Property type"
+    },
+    {
+      "code": "Inheres in",
+      "display": "Inheres in"
+    },
+    {
+      "code": "Towards",
+      "display": "Towards"
+    },
+    {
+      "code": "Characterizes",
+      "display": "Characterizes"
+    },
+    {
+      "code": "Process agent",
+      "display": "Process agent"
+    },
+    {
+      "code": "Process duration",
+      "display": "Process duration"
+    },
+    {
+      "code": "Process output",
+      "display": "Process output"
+    },
+    {
+      "code": "Relative to",
+      "display": "Relative to"
+    },
+    {
+      "code": "Precondition",
+      "display": "Precondition"
+    },
+    {
+      "code": "Direct site",
+      "display": "Direct site"
+    },
+    {
+      "code": "Specified by",
+      "display": "Specified by"
+    },
+    {
+      "code": "Observes",
+      "display": "Observes"
+    },
+    {
+      "code": "Is about",
+      "display": "Is about"
+    },
+    {
+      "code": "Defined",
+      "display": "Defined"
+    },
+    {
+      "code": "child",
+      "display": "child"
+    },
+    {
+      "code": "COMPONENT",
+      "display": "COMPONENT"
+    },
+    {
+      "code": "PROPERTY",
+      "display": "PROPERTY"
+    },
+    {
+      "code": "TIME_ASPCT",
+      "display": "TIME_ASPCT"
+    },
+    {
+      "code": "SYSTEM",
+      "display": "SYSTEM"
+    },
+    {
+      "code": "SCALE_TYP",
+      "display": "SCALE_TYP"
+    },
+    {
+      "code": "METHOD_TYP",
+      "display": "METHOD_TYP"
+    },
+    {
+      "code": "CLASS",
+      "display": "CLASS"
+    },
+    {
+      "code": "VersionLastChanged",
+      "display": "VersionLastChanged"
+    },
+    {
+      "code": "CHNG_TYPE",
+      "display": "CHNG_TYPE"
+    },
+    {
+      "code": "DefinitionDescription",
+      "display": "DefinitionDescription"
+    },
+    {
+      "code": "STATUS",
+      "display": "STATUS"
+    },
+    {
+      "code": "CONSUMER_NAME",
+      "display": "CONSUMER_NAME"
+    },
+    {
+      "code": "CLASSTYPE",
+      "display": "CLASSTYPE"
+    },
+    {
+      "code": "FORMULA",
+      "display": "FORMULA"
+    },
+    {
+      "code": "EXMPL_ANSWERS",
+      "display": "EXMPL_ANSWERS"
+    },
+    {
+      "code": "SURVEY_QUEST_TEXT",
+      "display": "SURVEY_QUEST_TEXT"
+    },
+    {
+      "code": "SURVEY_QUEST_SRC",
+      "display": "SURVEY_QUEST_SRC"
+    },
+    {
+      "code": "UNITSREQUIRED",
+      "display": "UNITSREQUIRED"
+    },
+    {
+      "code": "RELATEDNAMES2",
+      "display": "RELATEDNAMES2"
+    },
+    {
+      "code": "SHORTNAME",
+      "display": "SHORTNAME"
+    },
+    {
+      "code": "ORDER_OBS",
+      "display": "ORDER_OBS"
+    },
+    {
+      "code": "HL7_FIELD_SUBFIELD_ID",
+      "display": "HL7_FIELD_SUBFIELD_ID"
+    },
+    {
+      "code": "EXTERNAL_COPYRIGHT_NOTICE",
+      "display": "EXTERNAL_COPYRIGHT_NOTICE"
+    },
+    {
+      "code": "EXAMPLE_UNITS",
+      "display": "EXAMPLE_UNITS"
+    },
+    {
+      "code": "LONG_COMMON_NAME",
+      "display": "LONG_COMMON_NAME"
+    },
+    {
+      "code": "EXAMPLE_UCUM_UNITS",
+      "display": "EXAMPLE_UCUM_UNITS"
+    },
+    {
+      "code": "STATUS_REASON",
+      "display": "STATUS_REASON"
+    },
+    {
+      "code": "STATUS_TEXT",
+      "display": "STATUS_TEXT"
+    },
+    {
+      "code": "CHANGE_REASON_PUBLIC",
+      "display": "CHANGE_REASON_PUBLIC"
+    },
+    {
+      "code": "COMMON_TEST_RANK",
+      "display": "COMMON_TEST_RANK"
+    },
+    {
+      "code": "COMMON_ORDER_RANK",
+      "display": "COMMON_ORDER_RANK"
+    },
+    {
+      "code": "HL7_ATTACHMENT_STRUCTURE",
+      "display": "HL7_ATTACHMENT_STRUCTURE"
+    },
+    {
+      "code": "EXTERNAL_COPYRIGHT_LINK",
+      "display": "EXTERNAL_COPYRIGHT_LINK"
+    },
+    {
+      "code": "PanelType",
+      "display": "PanelType"
+    },
+    {
+      "code": "AskAtOrderEntry",
+      "display": "AskAtOrderEntry"
+    },
+    {
+      "code": "AssociatedObservations",
+      "display": "AssociatedObservations"
+    },
+    {
+      "code": "VersionFirstReleased",
+      "display": "VersionFirstReleased"
+    },
+    {
+      "code": "ValidHL7AttachmentRequest",
+      "display": "ValidHL7AttachmentRequest"
+    },
+    {
+      "code": "DisplayName",
+      "display": "DisplayName"
+    },
+    {
+      "code": "answer-list",
+      "display": "answer-list"
+    },
+    {
+      "code": "MAP_TO",
+      "display": "MAP_TO"
+    },
+    {
+      "code": "analyte",
+      "display": "analyte"
+    },
+    {
+      "code": "analyte-core",
+      "display": "analyte-core"
+    },
+    {
+      "code": "analyte-suffix",
+      "display": "analyte-suffix"
+    },
+    {
+      "code": "analyte-numerator",
+      "display": "analyte-numerator"
+    },
+    {
+      "code": "analyte-divisor",
+      "display": "analyte-divisor"
+    },
+    {
+      "code": "analyte-divisor-suffix",
+      "display": "analyte-divisor-suffix"
+    },
+    {
+      "code": "challenge",
+      "display": "challenge"
+    },
+    {
+      "code": "adjustment",
+      "display": "adjustment"
+    },
+    {
+      "code": "count",
+      "display": "count"
+    },
+    {
+      "code": "time-core",
+      "display": "time-core"
+    },
+    {
+      "code": "time-modifier",
+      "display": "time-modifier"
+    },
+    {
+      "code": "system-core",
+      "display": "system-core"
+    },
+    {
+      "code": "super-system",
+      "display": "super-system"
+    },
+    {
+      "code": "analyte-gene",
+      "display": "analyte-gene"
+    },
+    {
+      "code": "category",
+      "display": "category"
+    },
+    {
+      "code": "search",
+      "display": "search"
+    },
+    {
+      "code": "rad-modality-modality-type",
+      "display": "rad-modality-modality-type"
+    },
+    {
+      "code": "rad-modality-modality-subtype",
+      "display": "rad-modality-modality-subtype"
+    },
+    {
+      "code": "rad-anatomic-location-region-imaged",
+      "display": "rad-anatomic-location-region-imaged"
+    },
+    {
+      "code": "rad-anatomic-location-imaging-focus",
+      "display": "rad-anatomic-location-imaging-focus"
+    },
+    {
+      "code": "rad-anatomic-location-laterality-presence",
+      "display": "rad-anatomic-location-laterality-presence"
+    },
+    {
+      "code": "rad-anatomic-location-laterality",
+      "display": "rad-anatomic-location-laterality"
+    },
+    {
+      "code": "rad-view-aggregation",
+      "display": "rad-view-aggregation"
+    },
+    {
+      "code": "rad-view-view-type",
+      "display": "rad-view-view-type"
+    },
+    {
+      "code": "rad-maneuver-maneuver-type",
+      "display": "rad-maneuver-maneuver-type"
+    },
+    {
+      "code": "rad-timing",
+      "display": "rad-timing"
+    },
+    {
+      "code": "rad-pharmaceutical-substance-given",
+      "display": "rad-pharmaceutical-substance-given"
+    },
+    {
+      "code": "rad-pharmaceutical-route",
+      "display": "rad-pharmaceutical-route"
+    },
+    {
+      "code": "rad-reason-for-exam",
+      "display": "rad-reason-for-exam"
+    },
+    {
+      "code": "rad-guidance-for-presence",
+      "display": "rad-guidance-for-presence"
+    },
+    {
+      "code": "rad-guidance-for-approach",
+      "display": "rad-guidance-for-approach"
+    },
+    {
+      "code": "rad-guidance-for-action",
+      "display": "rad-guidance-for-action"
+    },
+    {
+      "code": "rad-guidance-for-object",
+      "display": "rad-guidance-for-object"
+    },
+    {
+      "code": "rad-subject",
+      "display": "rad-subject"
+    },
+    {
+      "code": "document-kind",
+      "display": "document-kind"
+    },
+    {
+      "code": "document-role",
+      "display": "document-role"
+    },
+    {
+      "code": "document-setting",
+      "display": "document-setting"
+    },
+    {
+      "code": "document-subject-matter-domain",
+      "display": "document-subject-matter-domain"
+    },
+    {
+      "code": "document-type-of-service",
+      "display": "document-type-of-service"
+    },
+    {
+      "code": "answers-for",
+      "display": "answers-for"
+    }
+  ],
+  "count": 162
+}

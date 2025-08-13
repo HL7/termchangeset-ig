@@ -8,6 +8,14 @@
     "endLine": 38
   },
   {
+    "outputFile": "CodeSystem-codesystem-properties-cs.json",
+    "fshName": "CodeSystemPropertiesCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem_CodeSystemProperties.fsh",
+    "startLine": 1,
+    "endLine": 174
+  },
+  {
     "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
     "fshName": "LOINCChangeSetExample",
     "fshType": "Instance",
@@ -32,7 +40,7 @@
     "endLine": 357
   },
   {
-    "outputFile": "CodeSystem-update-methods-codesystem.json",
+    "outputFile": "CodeSystem-update-methods-cs.json",
     "fshName": "UpdateMethodsCS",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem_UpdateMethods.fsh",
@@ -176,6 +184,14 @@
     "endLine": 28
   },
   {
+    "outputFile": "StructureDefinition-snomed-changeset-profile-fhir46709.json",
+    "fshName": "SNOMEDCTChangeSetFHIR46709",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_SNOMEDChangeSet_FHIR46709.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
     "outputFile": "StructureDefinition-snomed-changeset-profile.json",
     "fshName": "SNOMEDCTChangeSet",
     "fshType": "Profile",
@@ -216,6 +232,14 @@
     "endLine": 56
   },
   {
+    "outputFile": "ValueSet-codesystem-property-valueset.json",
+    "fshName": "CodeSystemPropertyVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 65,
+    "endLine": 70
+  },
+  {
     "outputFile": "ValueSet-defining-relationship-type-vs.json",
     "fshName": "DefiningRelationshipTypeVS",
     "fshType": "ValueSet",
@@ -246,6 +270,22 @@
     "fshFile": "ValueSets.fsh",
     "startLine": 30,
     "endLine": 36
+  },
+  {
+    "outputFile": "ValueSet-loinc-property-vs.json",
+    "fshName": "LOINCPropertyVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 158,
+    "endLine": 244
+  },
+  {
+    "outputFile": "ValueSet-snomed-property-vs.json",
+    "fshName": "SNOMEDPropertyVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 72,
+    "endLine": 156
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",

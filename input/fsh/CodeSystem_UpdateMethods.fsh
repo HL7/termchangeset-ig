@@ -1,5 +1,5 @@
 CodeSystem: UpdateMethodsCS
-Id: update-methods-codesystem
+Id: update-methods-cs
 Title: "Terminology Server Update Methods CodeSystem"
 Description: "A CodeSystem containing update methods applicable to a Terminology Server"
 * ^status = #active

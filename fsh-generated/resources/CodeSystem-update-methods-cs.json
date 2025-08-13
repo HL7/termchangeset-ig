@@ -3,11 +3,11 @@
   "status": "active",
   "content": "complete",
   "name": "UpdateMethodsCS",
-  "id": "update-methods-codesystem",
+  "id": "update-methods-cs",
   "title": "Terminology Server Update Methods CodeSystem",
   "description": "A CodeSystem containing update methods applicable to a Terminology Server",
   "version": "1.0.0",
-  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-codesystem",
+  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/update-methods-cs",
   "concept": [
     {
       "code": "FHIRChangeSet",
