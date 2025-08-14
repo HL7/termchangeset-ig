@@ -11,651 +11,1630 @@
   "concept": [
     {
       "code": "inactive",
-      "display": "inactive"
+      "display": "inactive",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "boolean"
+        }
+      ]
     },
     {
       "code": "definitionStatusId",
-      "display": "definitionStatusId"
+      "display": "definitionStatusId",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "parent",
-      "display": "parent"
+      "display": "parent",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "moduleId",
-      "display": "moduleId"
+      "display": "moduleId",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Due to",
-      "display": "Due to"
+      "display": "Due to",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Associated with",
-      "display": "Associated with"
+      "display": "Associated with",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Associated morphology",
-      "display": "Associated morphology"
+      "display": "Associated morphology",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has specimen",
-      "display": "Has specimen"
+      "display": "Has specimen",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specimen source morphology",
-      "display": "Specimen source morphology"
+      "display": "Specimen source morphology",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specimen source topography",
-      "display": "Specimen source topography"
+      "display": "Specimen source topography",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specimen source identity",
-      "display": "Specimen source identity"
+      "display": "Specimen source identity",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specimen procedure",
-      "display": "Specimen procedure"
+      "display": "Specimen procedure",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Part of",
-      "display": "Part of"
+      "display": "Part of",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has active ingredient",
-      "display": "Has active ingredient"
+      "display": "Has active ingredient",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Subject of information",
-      "display": "Subject of information"
+      "display": "Subject of information",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Causative agent",
-      "display": "Causative agent"
+      "display": "Causative agent",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Associated finding",
-      "display": "Associated finding"
+      "display": "Associated finding",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Component",
-      "display": "Component"
+      "display": "Component",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Severity",
-      "display": "Severity"
+      "display": "Severity",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Occurrence",
-      "display": "Occurrence"
+      "display": "Occurrence",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Episodicity",
-      "display": "Episodicity"
+      "display": "Episodicity",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Technique",
-      "display": "Technique"
+      "display": "Technique",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Revision status",
-      "display": "Revision status"
+      "display": "Revision status",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Units",
-      "display": "Units"
+      "display": "Units",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "After",
-      "display": "After"
+      "display": "After",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Access",
-      "display": "Access"
+      "display": "Access",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Method",
-      "display": "Method"
+      "display": "Method",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Priority",
-      "display": "Priority"
+      "display": "Priority",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Clinical course",
-      "display": "Clinical course"
+      "display": "Clinical course",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Laterality",
-      "display": "Laterality"
+      "display": "Laterality",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Associated procedure",
-      "display": "Associated procedure"
+      "display": "Associated procedure",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Finding site",
-      "display": "Finding site"
+      "display": "Finding site",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Direct morphology",
-      "display": "Direct morphology"
+      "display": "Direct morphology",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Direct substance",
-      "display": "Direct substance"
+      "display": "Direct substance",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has focus",
-      "display": "Has focus"
+      "display": "Has focus",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has intent",
-      "display": "Has intent"
+      "display": "Has intent",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Procedure site",
-      "display": "Procedure site"
+      "display": "Procedure site",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has definitional manifestation",
-      "display": "Has definitional manifestation"
+      "display": "Has definitional manifestation",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Indirect morphology",
-      "display": "Indirect morphology"
+      "display": "Indirect morphology",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Indirect device",
-      "display": "Indirect device"
+      "display": "Indirect device",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has interpretation",
-      "display": "Has interpretation"
+      "display": "Has interpretation",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Interprets",
-      "display": "Interprets"
+      "display": "Interprets",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Measurement method",
-      "display": "Measurement method"
+      "display": "Measurement method",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Property",
-      "display": "Property"
+      "display": "Property",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Recipient category",
-      "display": "Recipient category"
+      "display": "Recipient category",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Scale type",
-      "display": "Scale type"
+      "display": "Scale type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specimen substance",
-      "display": "Specimen substance"
+      "display": "Specimen substance",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Time aspect",
-      "display": "Time aspect"
+      "display": "Time aspect",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Pathological process",
-      "display": "Pathological process"
+      "display": "Pathological process",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Procedure site - Direct",
-      "display": "Procedure site - Direct"
+      "display": "Procedure site - Direct",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Procedure site - Indirect",
-      "display": "Procedure site - Indirect"
+      "display": "Procedure site - Indirect",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Procedure device",
-      "display": "Procedure device"
+      "display": "Procedure device",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Procedure morphology",
-      "display": "Procedure morphology"
+      "display": "Procedure morphology",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Finding context",
-      "display": "Finding context"
+      "display": "Finding context",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Temporal context",
-      "display": "Temporal context"
+      "display": "Temporal context",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Subject relationship context",
-      "display": "Subject relationship context"
+      "display": "Subject relationship context",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Route of administration",
-      "display": "Route of administration"
+      "display": "Route of administration",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Has dose form",
-      "display": "Has dose form"
+      "display": "Has dose form",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Finding method",
-      "display": "Finding method"
+      "display": "Finding method",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Finding informer",
-      "display": "Finding informer"
+      "display": "Finding informer",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Using device",
-      "display": "Using device"
+      "display": "Using device",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Using energy",
-      "display": "Using energy"
+      "display": "Using energy",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Using substance",
-      "display": "Using substance"
+      "display": "Using substance",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Surgical approach",
-      "display": "Surgical approach"
+      "display": "Surgical approach",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Using access device",
-      "display": "Using access device"
+      "display": "Using access device",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Role group",
-      "display": "Role group"
+      "display": "Role group",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Property type",
-      "display": "Property type"
+      "display": "Property type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Inheres in",
-      "display": "Inheres in"
+      "display": "Inheres in",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Towards",
-      "display": "Towards"
+      "display": "Towards",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Characterizes",
-      "display": "Characterizes"
+      "display": "Characterizes",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Process agent",
-      "display": "Process agent"
+      "display": "Process agent",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Process duration",
-      "display": "Process duration"
+      "display": "Process duration",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Process output",
-      "display": "Process output"
+      "display": "Process output",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Relative to",
-      "display": "Relative to"
+      "display": "Relative to",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Precondition",
-      "display": "Precondition"
+      "display": "Precondition",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Direct site",
-      "display": "Direct site"
+      "display": "Direct site",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Specified by",
-      "display": "Specified by"
+      "display": "Specified by",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Observes",
-      "display": "Observes"
+      "display": "Observes",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Is about",
-      "display": "Is about"
+      "display": "Is about",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "Defined",
-      "display": "Defined"
+      "display": "Defined",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "boolean"
+        }
+      ]
     },
     {
       "code": "child",
-      "display": "child"
+      "display": "child",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "code"
+        }
+      ]
     },
     {
       "code": "COMPONENT",
-      "display": "COMPONENT"
+      "display": "COMPONENT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "PROPERTY",
-      "display": "PROPERTY"
+      "display": "PROPERTY",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "TIME_ASPCT",
-      "display": "TIME_ASPCT"
+      "display": "TIME_ASPCT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "SYSTEM",
-      "display": "SYSTEM"
+      "display": "SYSTEM",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "SCALE_TYP",
-      "display": "SCALE_TYP"
+      "display": "SCALE_TYP",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "METHOD_TYP",
-      "display": "METHOD_TYP"
+      "display": "METHOD_TYP",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "CLASS",
-      "display": "CLASS"
+      "display": "CLASS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "VersionLastChanged",
-      "display": "VersionLastChanged"
+      "display": "VersionLastChanged",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "CHNG_TYPE",
-      "display": "CHNG_TYPE"
+      "display": "CHNG_TYPE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "DefinitionDescription",
-      "display": "DefinitionDescription"
+      "display": "DefinitionDescription",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "STATUS",
-      "display": "STATUS"
+      "display": "STATUS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "CONSUMER_NAME",
-      "display": "CONSUMER_NAME"
+      "display": "CONSUMER_NAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "CLASSTYPE",
-      "display": "CLASSTYPE"
+      "display": "CLASSTYPE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "FORMULA",
-      "display": "FORMULA"
+      "display": "FORMULA",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "EXMPL_ANSWERS",
-      "display": "EXMPL_ANSWERS"
+      "display": "EXMPL_ANSWERS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "SURVEY_QUEST_TEXT",
-      "display": "SURVEY_QUEST_TEXT"
+      "display": "SURVEY_QUEST_TEXT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "SURVEY_QUEST_SRC",
-      "display": "SURVEY_QUEST_SRC"
+      "display": "SURVEY_QUEST_SRC",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "UNITSREQUIRED",
-      "display": "UNITSREQUIRED"
+      "display": "UNITSREQUIRED",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "RELATEDNAMES2",
-      "display": "RELATEDNAMES2"
+      "display": "RELATEDNAMES2",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "SHORTNAME",
-      "display": "SHORTNAME"
+      "display": "SHORTNAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "ORDER_OBS",
-      "display": "ORDER_OBS"
+      "display": "ORDER_OBS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "HL7_FIELD_SUBFIELD_ID",
-      "display": "HL7_FIELD_SUBFIELD_ID"
+      "display": "HL7_FIELD_SUBFIELD_ID",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "EXTERNAL_COPYRIGHT_NOTICE",
-      "display": "EXTERNAL_COPYRIGHT_NOTICE"
+      "display": "EXTERNAL_COPYRIGHT_NOTICE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "EXAMPLE_UNITS",
-      "display": "EXAMPLE_UNITS"
+      "display": "EXAMPLE_UNITS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "LONG_COMMON_NAME",
-      "display": "LONG_COMMON_NAME"
+      "display": "LONG_COMMON_NAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "EXAMPLE_UCUM_UNITS",
-      "display": "EXAMPLE_UCUM_UNITS"
+      "display": "EXAMPLE_UCUM_UNITS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "STATUS_REASON",
-      "display": "STATUS_REASON"
+      "display": "STATUS_REASON",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "STATUS_TEXT",
-      "display": "STATUS_TEXT"
+      "display": "STATUS_TEXT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "CHANGE_REASON_PUBLIC",
-      "display": "CHANGE_REASON_PUBLIC"
+      "display": "CHANGE_REASON_PUBLIC",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "COMMON_TEST_RANK",
-      "display": "COMMON_TEST_RANK"
+      "display": "COMMON_TEST_RANK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "COMMON_ORDER_RANK",
-      "display": "COMMON_ORDER_RANK"
+      "display": "COMMON_ORDER_RANK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "HL7_ATTACHMENT_STRUCTURE",
-      "display": "HL7_ATTACHMENT_STRUCTURE"
+      "display": "HL7_ATTACHMENT_STRUCTURE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "EXTERNAL_COPYRIGHT_LINK",
-      "display": "EXTERNAL_COPYRIGHT_LINK"
+      "display": "EXTERNAL_COPYRIGHT_LINK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "PanelType",
-      "display": "PanelType"
+      "display": "PanelType",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "AskAtOrderEntry",
-      "display": "AskAtOrderEntry"
+      "display": "AskAtOrderEntry",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "AssociatedObservations",
-      "display": "AssociatedObservations"
+      "display": "AssociatedObservations",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "VersionFirstReleased",
-      "display": "VersionFirstReleased"
+      "display": "VersionFirstReleased",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "ValidHL7AttachmentRequest",
-      "display": "ValidHL7AttachmentRequest"
+      "display": "ValidHL7AttachmentRequest",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "DisplayName",
-      "display": "DisplayName"
+      "display": "DisplayName",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
     },
     {
       "code": "answer-list",
-      "display": "answer-list"
+      "display": "answer-list",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "MAP_TO",
-      "display": "MAP_TO"
+      "display": "MAP_TO",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte",
-      "display": "analyte"
+      "display": "analyte",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-core",
-      "display": "analyte-core"
+      "display": "analyte-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-suffix",
-      "display": "analyte-suffix"
+      "display": "analyte-suffix",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-numerator",
-      "display": "analyte-numerator"
+      "display": "analyte-numerator",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-divisor",
-      "display": "analyte-divisor"
+      "display": "analyte-divisor",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-divisor-suffix",
-      "display": "analyte-divisor-suffix"
+      "display": "analyte-divisor-suffix",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "challenge",
-      "display": "challenge"
+      "display": "challenge",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "adjustment",
-      "display": "adjustment"
+      "display": "adjustment",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "count",
-      "display": "count"
+      "display": "count",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "time-core",
-      "display": "time-core"
+      "display": "time-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "time-modifier",
-      "display": "time-modifier"
+      "display": "time-modifier",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "system-core",
-      "display": "system-core"
+      "display": "system-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "super-system",
-      "display": "super-system"
+      "display": "super-system",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "analyte-gene",
-      "display": "analyte-gene"
+      "display": "analyte-gene",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "category",
-      "display": "category"
+      "display": "category",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "search",
-      "display": "search"
+      "display": "search",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-modality-modality-type",
-      "display": "rad-modality-modality-type"
+      "display": "rad-modality-modality-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-modality-modality-subtype",
-      "display": "rad-modality-modality-subtype"
+      "display": "rad-modality-modality-subtype",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-anatomic-location-region-imaged",
-      "display": "rad-anatomic-location-region-imaged"
+      "display": "rad-anatomic-location-region-imaged",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-anatomic-location-imaging-focus",
-      "display": "rad-anatomic-location-imaging-focus"
+      "display": "rad-anatomic-location-imaging-focus",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-anatomic-location-laterality-presence",
-      "display": "rad-anatomic-location-laterality-presence"
+      "display": "rad-anatomic-location-laterality-presence",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-anatomic-location-laterality",
-      "display": "rad-anatomic-location-laterality"
+      "display": "rad-anatomic-location-laterality",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-view-aggregation",
-      "display": "rad-view-aggregation"
+      "display": "rad-view-aggregation",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-view-view-type",
-      "display": "rad-view-view-type"
+      "display": "rad-view-view-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-maneuver-maneuver-type",
-      "display": "rad-maneuver-maneuver-type"
+      "display": "rad-maneuver-maneuver-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-timing",
-      "display": "rad-timing"
+      "display": "rad-timing",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-pharmaceutical-substance-given",
-      "display": "rad-pharmaceutical-substance-given"
+      "display": "rad-pharmaceutical-substance-given",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-pharmaceutical-route",
-      "display": "rad-pharmaceutical-route"
+      "display": "rad-pharmaceutical-route",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-reason-for-exam",
-      "display": "rad-reason-for-exam"
+      "display": "rad-reason-for-exam",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-guidance-for-presence",
-      "display": "rad-guidance-for-presence"
+      "display": "rad-guidance-for-presence",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-guidance-for-approach",
-      "display": "rad-guidance-for-approach"
+      "display": "rad-guidance-for-approach",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-guidance-for-action",
-      "display": "rad-guidance-for-action"
+      "display": "rad-guidance-for-action",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-guidance-for-object",
-      "display": "rad-guidance-for-object"
+      "display": "rad-guidance-for-object",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "rad-subject",
-      "display": "rad-subject"
+      "display": "rad-subject",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "document-kind",
-      "display": "document-kind"
+      "display": "document-kind",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "document-role",
-      "display": "document-role"
+      "display": "document-role",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "document-setting",
-      "display": "document-setting"
+      "display": "document-setting",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "document-subject-matter-domain",
-      "display": "document-subject-matter-domain"
+      "display": "document-subject-matter-domain",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "document-type-of-service",
-      "display": "document-type-of-service"
+      "display": "document-type-of-service",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
     },
     {
       "code": "answers-for",
-      "display": "answers-for"
+      "display": "answers-for",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "code": "FHIRdatatype",
+      "description": "Indicates the FHIR data type associated with the concept.",
+      "type": "string"
     }
   ],
   "count": 162

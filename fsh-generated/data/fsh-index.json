@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem_CodeSystemProperties.fsh",
     "startLine": 1,
-    "endLine": 174
+    "endLine": 503
   },
   {
     "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
@@ -158,6 +158,14 @@
     "fshFile": "Extensions.fsh",
     "startLine": 69,
     "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-loinc-changeset-profile--fhir46709.json",
+    "fshName": "LOINCChangeSetFHIR46709",
+    "fshType": "Profile",
+    "fshFile": "Profile_CodeSystem_LOINCChangeSet_FHIR46709.fsh",
+    "startLine": 1,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-loinc-changeset-profile.json",

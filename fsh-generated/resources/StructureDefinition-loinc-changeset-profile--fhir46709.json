@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "loinc-changeset-profile--fhir46709",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/loinc-changeset-profile--fhir46709",
+  "version": "0.1.0",
+  "name": "LOINCChangeSetFHIR46709",
+  "title": "LOINC Change Set (CodeSystem) FHIR46709 Prototype",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-08-14",
+  "publisher": "HL7 International - Terminology Infrastructure Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/vocab/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.property.code",
+        "path": "CodeSystem.property.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.display",
+        "path": "CodeSystem.concept.display",
+        "short": "Text to display to the user",
+        "comment": "This contains the LOINC Long Name."
+      },
+      {
+        "id": "CodeSystem.concept.property.code",
+        "path": "CodeSystem.concept.property.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+        }
+      }
+    ]
+  }
+}

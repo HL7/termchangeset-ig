@@ -255,8 +255,8 @@
   "url": "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet",
   "identifier": [
     {
-      "system": "urn:ietf:rfc:3986",
-      "value": "urn:oid:2.16.840.1.113883.6.96"
+      "system": "http://ikm.dev/",
+      "value": "SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet"
     }
   ],
   "name": "SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet_92d189885cf14b5f888fb0ef691bfc53",

@@ -34,6 +34,7 @@
 <artifact id="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c" key="Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c" name="HL7 VariableRole Change Set Provenance Example"/>
 <artifact id="CodeSystem/loinc277attachmentsChangeSet" key="CodeSystem-loinc277attachmentsChangeSet" name="LOINC 2.77 Attachments Change Set for targetted redistribution"/>
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="LOINC Change Set (CodeSystem)"/>
+<artifact id="StructureDefinition/loinc-changeset-profile--fhir46709" key="StructureDefinition-loinc-changeset-profile--fhir46709" name="LOINC Change Set (CodeSystem) FHIR46709 Prototype"/>
 <artifact id="Provenance/52b1a1d2-80ab-460b-b5fc-341edd35b032" key="Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032" name="LOINC Change Set Provenance Example"/>
 <artifact id="ValueSet/loinc-property-vs" key="ValueSet-loinc-property-vs" name="LOINC Property ValueSet"/>
 <artifact id="StructureDefinition/owl-expression" key="StructureDefinition-owl-expression" name="OWL Expression"/>
