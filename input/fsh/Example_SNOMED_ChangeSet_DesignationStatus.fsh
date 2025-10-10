@@ -2,10 +2,11 @@ Instance: SNOMEDCTChangeSetInactiveDesignationExample
 InstanceOf: SNOMEDCTChangeSet
 Description: "Example of SNOMED CT Change Set with inactive designations"
 * id = "snomedct126785002ChangeSet"
+* version = "1.0.0"
 * url = "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_126785002_NeoplasmOfOralPartOfTongue_ChangeSet"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:oid:2.16.840.1.113883.6.96"
-* name = "SSNOMEDCT_126785002_NeoplasmOfOralPartOfTongue_ChangeSet_43d8c092715b4dccabdc9b9f47cdc8eb"
+* name = "SNOMEDCT_126785002_NeoplasmOfOralPartOfTongue_ChangeSet_43d8c092715b4dccabdc9b9f47cdc8eb"
 * title = "SNOMED CT 126785002 Neoplasm of oral part of tongue (disorder) Change Set 43d8c092715b4dccabdc9b9f47cdc8eb"
 * status = #active
 * experimental = false

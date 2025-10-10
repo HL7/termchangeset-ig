@@ -21,6 +21,35 @@
         "short": "Property values should follow the SNOMED CT-specific guidance available here: https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties"
       },
       {
+        "id": "CodeSystem.property.extension",
+        "path": "CodeSystem.property.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.property.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/codesystem-property-valueset"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.property.code",
         "path": "CodeSystem.property.code",
         "binding": {

@@ -42,6 +42,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a CodeS
 * property ^short = "Additional information supplied about each concept.  Property values should follow the guidance available in the terminology-specific links in the 'Use with HL7 Standards' column within the [HL7 Terminology External Code Systems page](https://terminology.hl7.org/external_terminologies.html)."
 * property ^definition = "A property defines additional semantic detail for each concept included in the change set"
 * property ^comment = "All properties referenced in the definitions of concepts within the change set must be defined first as a CodeSystem.property"
+* property.extension contains
+	http://hl7.org/fhir/StructureDefinition/codesystem-property-valueset named codeSystemPropertyValueSet 0..*
 * property.code 1..1
 * property.code ^short = "Identifies the property on the concepts, and when referred to in operations"
 * property.code ^definition = "A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also externally, such as in property filters."

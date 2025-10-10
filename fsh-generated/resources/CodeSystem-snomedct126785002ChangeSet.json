@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "snomedct23036009changeSet",
+  "id": "snomedct126785002ChangeSet",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile"
@@ -9,7 +9,75 @@
   "content": "fragment",
   "concept": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(:126785002 |Neoplasm of oral part of tongue (disorder)|ObjectIntersectionOf(:64572001 |Disease (disorder)|ObjectSomeValuesFrom(:609096000 |Role group (attribute)|ObjectIntersectionOf(ObjectSomeValuesFrom(:116676008 |Associated morphology (attribute)|:108369006 |Neoplasm (morphologic abnormality)|)ObjectSomeValuesFrom(:363698007 |Finding site (attribute)|:61344008 |Structure of oral part of tongue (body structure)|)))))"
+        }
+      ],
       "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Neoplasm of oral part of tongue (disorder)"
+        },
         {
           "extension": [
             {
@@ -70,10 +138,296 @@
             "code": "900000000000013009",
             "display": "Synonym"
           },
-          "value": "Chronic lung disease"
+          "value": "Neoplasm of oral part of tongue"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000549004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Acceptable (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Neoplasm of anterior two-thirds of tongue"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000549004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Acceptable (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Neoplasm of body of tongue"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000549004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Acceptable (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Tumor of anterior two-thirds of tongue"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Not Acceptable (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": false
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Neoplasm of anterior two-thirds of tongue (disorder)"
         }
       ],
       "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000073002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group",
+              "valueInteger": 0
+            }
+          ],
+          "code": "Is a",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "126778001",
+            "display": "Neoplasm of tongue (disorder)"
+          }
+        },
         {
           "extension": [
             {
@@ -108,8 +462,8 @@
           "code": "Finding site",
           "valueCoding": {
             "system": "http://snomed.info/sct",
-            "code": "39607008",
-            "display": "Lung Structure"
+            "code": "61344008",
+            "display": "Structure of oral part of tongue (body structure)"
           }
         },
         {
@@ -143,124 +497,30 @@
               "valueInteger": 2
             }
           ],
-          "code": "Clinical course",
+          "code": "Associated morphology",
           "valueCoding": {
             "system": "http://snomed.info/sct",
-            "code": "90734009",
-            "display": "Chronic"
+            "code": "108369006",
+            "display": "Neoplasm (morphologic abnormality)"
           }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000010007",
-                    "system": "http://snomed.info/sct",
-                    "display": "Stated relationship (core metadata concept)"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000073002",
-                    "system": "http://snomed.info/sct",
-                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
-                  }
-                ]
-              }
-            }
-          ],
-          "code": "parent",
-          "valueCoding": {
-            "system": "http://snomed.info/sct",
-            "code": "19829001",
-            "display": "Disorder of lung (disorder)"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000010007",
-                    "system": "http://snomed.info/sct",
-                    "display": "Stated relationship (core metadata concept)"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000073002",
-                    "system": "http://snomed.info/sct",
-                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
-                  }
-                ]
-              }
-            }
-          ],
-          "code": "inactive",
-          "valueBoolean": false
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000010007",
-                    "system": "http://snomed.info/sct",
-                    "display": "Stated relationship (core metadata concept)"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "900000000000073002",
-                    "system": "http://snomed.info/sct",
-                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
-                  }
-                ]
-              }
-            }
-          ],
-          "code": "Defined",
-          "valueBoolean": false
         }
       ],
-      "id": "61da7e50-f606-5ba0-a0df-83fd524951e7",
-      "code": "413839001",
-      "display": "Chronic lung disease (Disorder)",
-      "definition": "Chronic lung disease (Disorder)"
+      "id": "2b54565d-68c9-4389-bf30-2ab0d6026ac3",
+      "code": "126785002",
+      "display": "Neoplasm of oral part of tongue (disorder)",
+      "definition": "Neoplasm of oral part of tongue (disorder)"
     }
   ],
-  "version": "20230901.1",
-  "url": "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet",
+  "version": "1.0.0",
+  "url": "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_126785002_NeoplasmOfOralPartOfTongue_ChangeSet",
   "identifier": [
     {
-      "system": "http://ikm.dev/",
-      "value": "SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet"
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.96"
     }
   ],
-  "name": "SNOMEDCT_23036009_OpenReductionOfFracture_ChangeSet_92d189885cf14b5f888fb0ef691bfc53",
-  "title": "SNOMED CT 23036009 Open reduction of fracture of radius and ulna (procedure) Change Set 92d189885cf14b5f888fb0ef691bfc53",
+  "name": "SNOMEDCT_126785002_NeoplasmOfOralPartOfTongue_ChangeSet_43d8c092715b4dccabdc9b9f47cdc8eb",
+  "title": "SNOMED CT 126785002 Neoplasm of oral part of tongue (disorder) Change Set 43d8c092715b4dccabdc9b9f47cdc8eb",
   "status": "active",
   "experimental": false,
   "publisher": "Integrated Knowledge Management",
@@ -274,7 +534,7 @@
       ]
     }
   ],
-  "description": "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept",
+  "description": "Example of SNOMED CT Change Set including an update to the 126785002 Neoplasm of oral part of tongue (disorder) concept",
   "copyright": "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct",
   "versionNeeded": false,
   "filter": [
