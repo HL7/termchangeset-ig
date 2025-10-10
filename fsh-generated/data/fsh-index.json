@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 149
+    "endLine": 151
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -197,7 +197,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_SNOMEDChangeSet_FHIR46709.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-snomed-changeset-profile.json",

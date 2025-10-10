@@ -38,6 +38,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:inactive.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:inactive.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "inactive"
@@ -54,6 +59,11 @@
         "short": "Property slice to capture SNOMED CT definitionStatusId for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:definitionStatusId.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:definitionStatusId.code",
@@ -74,6 +84,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:parent.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:parent.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "parent"
@@ -90,6 +105,11 @@
         "short": "Property slice to capture SNOMED CT moduleId for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:moduleId.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:moduleId.code",
@@ -110,6 +130,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Due_to.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Due_to.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Due to"
@@ -126,6 +151,11 @@
         "short": "Property slice to capture SNOMED CT Associated with for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Associated_with.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Associated_with.code",
@@ -146,6 +176,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Associated_morphology.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Associated_morphology.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Associated morphology"
@@ -162,6 +197,11 @@
         "short": "Property slice to capture SNOMED CT Has specimen for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_specimen.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Has_specimen.code",
@@ -182,6 +222,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Specimen_source_morphology.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Specimen_source_morphology.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Specimen source morphology"
@@ -198,6 +243,11 @@
         "short": "Property slice to capture SNOMED CT Specimen source topography for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_source_topography.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Specimen_source_topography.code",
@@ -218,6 +268,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Specimen_source_identity.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Specimen_source_identity.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Specimen source identity"
@@ -234,6 +289,11 @@
         "short": "Property slice to capture SNOMED CT Specimen procedure for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specimen_procedure.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Specimen_procedure.code",
@@ -254,6 +314,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Part_of.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Part_of.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Part of"
@@ -270,6 +335,11 @@
         "short": "Property slice to capture SNOMED CT Has active ingredient for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_active_ingredient.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Has_active_ingredient.code",
@@ -290,6 +360,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Subject_of_information.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Subject_of_information.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Subject of information"
@@ -306,6 +381,11 @@
         "short": "Property slice to capture SNOMED CT Causative agent for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Causative_agent.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Causative_agent.code",
@@ -326,6 +406,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Associated_finding.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Associated_finding.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Associated finding"
@@ -342,6 +427,11 @@
         "short": "Property slice to capture SNOMED CT Component for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Component.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Component.code",
@@ -362,6 +452,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Severity.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Severity.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Severity"
@@ -378,6 +473,11 @@
         "short": "Property slice to capture SNOMED CT Occurrence for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Occurrence.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Occurrence.code",
@@ -398,6 +498,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Episodicity.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Episodicity.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Episodicity"
@@ -414,6 +519,11 @@
         "short": "Property slice to capture SNOMED CT  Technique for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Technique.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Technique.code",
@@ -434,6 +544,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Revision_status.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Revision_status.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Revision status"
@@ -450,6 +565,11 @@
         "short": "Property slice to capture SNOMED CT Units for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Units.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Units.code",
@@ -470,6 +590,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:After.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:After.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "After"
@@ -486,6 +611,11 @@
         "short": "Property slice to capture SNOMED CT Access for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Access.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Access.code",
@@ -506,6 +636,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Method.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Method.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Method"
@@ -522,6 +657,11 @@
         "short": "Property slice to capture SNOMED CT Priority for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Priority.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Priority.code",
@@ -542,6 +682,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Clinical_course.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Clinical_course.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Clinical course"
@@ -558,6 +703,11 @@
         "short": "Property slice to capture SNOMED CT Laterality for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Laterality.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Laterality.code",
@@ -578,6 +728,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Associated_procedure.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Associated_procedure.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Associated procedure"
@@ -594,6 +749,11 @@
         "short": "Property slice to capture SNOMED CT Finding site for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_site.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Finding_site.code",
@@ -614,6 +774,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Direct_morphology.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Direct_morphology.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Direct morphology"
@@ -630,6 +795,11 @@
         "short": "Property slice to capture SNOMED CT Direct substance for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Direct_substance.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Direct_substance.code",
@@ -650,6 +820,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Has_focus.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Has_focus.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Has focus"
@@ -666,6 +841,11 @@
         "short": "Property slice to capture SNOMED CT Has intent for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_intent.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Has_intent.code",
@@ -686,6 +866,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Procedure_site.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Procedure_site.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Procedure site"
@@ -702,6 +887,11 @@
         "short": "Property slice to capture SNOMED CT Has definitional manifestation for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_definitional_manifestation.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Has_definitional_manifestation.code",
@@ -722,6 +912,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Indirect_morphology.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Indirect_morphology.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Indirect morphology"
@@ -738,6 +933,11 @@
         "short": "Property slice to capture SNOMED CT Indirect device for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Indirect_device.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Indirect_device.code",
@@ -758,6 +958,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Has_interpretation.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Has_interpretation.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Has interpretation"
@@ -774,6 +979,11 @@
         "short": "Property slice to capture SNOMED CT Interprets for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Interprets.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Interprets.code",
@@ -794,6 +1004,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Measurement_method.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Measurement_method.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Measurement method"
@@ -810,6 +1025,11 @@
         "short": "Property slice to capture SNOMED CT Property for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Property.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Property.code",
@@ -830,6 +1050,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Recipient_category.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Recipient_category.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Recipient category"
@@ -846,6 +1071,11 @@
         "short": "Property slice to capture SNOMED CT Scale type for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Scale_type.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Scale_type.code",
@@ -866,6 +1096,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Specimen_substance.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Specimen_substance.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Specimen substance"
@@ -882,6 +1117,11 @@
         "short": "Property slice to capture SNOMED CT Time aspect for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Time_aspect.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Time_aspect.code",
@@ -902,6 +1142,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Pathological_process.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Pathological_process.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Pathological process"
@@ -918,6 +1163,11 @@
         "short": "Property slice to capture SNOMED CT Procedure site - Direct for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_site_-_Direct.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Procedure_site_-_Direct.code",
@@ -938,6 +1188,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Procedure_site_-_Indirect.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Procedure_site_-_Indirect.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Procedure site - Indirect"
@@ -954,6 +1209,11 @@
         "short": "Property slice to capture SNOMED CT Procedure device for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Procedure_device.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Procedure_device.code",
@@ -974,6 +1234,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Procedure_morphology.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Procedure_morphology.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Procedure morphology"
@@ -990,6 +1255,11 @@
         "short": "Property slice to capture SNOMED CT Finding context for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_context.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Finding_context.code",
@@ -1010,6 +1280,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Temporal_context.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Temporal_context.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Temporal context"
@@ -1026,6 +1301,11 @@
         "short": "Property slice to capture SNOMED CT Subject relationship context for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Subject_relationship_context.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Subject_relationship_context.code",
@@ -1046,6 +1326,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Route_of_administration.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Route_of_administration.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Route of administration"
@@ -1062,6 +1347,11 @@
         "short": "Property slice to capture SNOMED CT Has dose form for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Has_dose_form.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Has_dose_form.code",
@@ -1082,6 +1372,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Finding_method.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Finding_method.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Finding method"
@@ -1098,6 +1393,11 @@
         "short": "Property slice to capture SNOMED CT Finding informer for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Finding_informer.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Finding_informer.code",
@@ -1118,6 +1418,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Using_device.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Using_device.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Using device"
@@ -1134,6 +1439,11 @@
         "short": "Property slice to capture SNOMED CT Using energy for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Using_energy.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Using_energy.code",
@@ -1154,6 +1464,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Using_substance.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Using_substance.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Using substance"
@@ -1170,6 +1485,11 @@
         "short": "Property slice to capture SNOMED CT Surgical approach for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Surgical_approach.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Surgical_approach.code",
@@ -1190,6 +1510,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Using_access_device.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Using_access_device.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Using access device"
@@ -1206,6 +1531,11 @@
         "short": "Property slice to capture SNOMED CT Property type for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Property_type.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Property_type.code",
@@ -1226,6 +1556,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Inheres_in.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Inheres_in.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Inheres in"
@@ -1242,6 +1577,11 @@
         "short": "Property slice to capture SNOMED CT Towards for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Towards.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Towards.code",
@@ -1262,6 +1602,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Characterizes.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Characterizes.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Characterizes"
@@ -1278,6 +1623,11 @@
         "short": "Property slice to capture SNOMED CT Process agent for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Process_agent.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Process_agent.code",
@@ -1298,6 +1648,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Process_duration.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Process_duration.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Process duration"
@@ -1314,6 +1669,11 @@
         "short": "Property slice to capture SNOMED CT Process output for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Process_output.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Process_output.code",
@@ -1334,6 +1694,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Relative_to.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Relative_to.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Relative to"
@@ -1350,6 +1715,11 @@
         "short": "Property slice to capture SNOMED Precondition for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Precondition.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Precondition.code",
@@ -1370,6 +1740,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Direct_site.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Direct_site.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Direct site"
@@ -1386,6 +1761,11 @@
         "short": "Property slice to capture SNOMED CT Specified by for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Specified_by.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Specified_by.code",
@@ -1406,6 +1786,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Observes.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Observes.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Observes"
@@ -1424,6 +1809,11 @@
         "max": "1"
       },
       {
+        "id": "CodeSystem.property:Is_about.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
+      },
+      {
         "id": "CodeSystem.property:Is_about.code",
         "path": "CodeSystem.property.code",
         "fixedCode": "Is about"
@@ -1440,6 +1830,11 @@
         "short": "Property slice to capture SNOMED CT Defined for a concept",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "CodeSystem.property:Defined.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet"
       },
       {
         "id": "CodeSystem.property:Defined.code",

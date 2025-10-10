@@ -151,6 +151,35 @@
         "mustSupport": true
       },
       {
+        "id": "CodeSystem.property.extension",
+        "path": "CodeSystem.property.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.property.extension:codeSystemPropertyValueSet",
+        "path": "CodeSystem.property.extension",
+        "sliceName": "codeSystemPropertyValueSet",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/codesystem-property-valueset"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.property.uri",
         "path": "CodeSystem.property.uri",
         "definition": "Reference to the formal meaning of the property. One possible source of meaning is the [Concept Properties](codesystem-concept-properties.html) code system.",
