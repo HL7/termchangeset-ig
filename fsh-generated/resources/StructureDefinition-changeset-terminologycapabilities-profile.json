@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements",
+  "description": "Profile of TerminologyCapabilities to allow FHIR terminology servers to convey which update methods they support, including CodeSystem Change Sets",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile.",
+  "description": "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader CodeSystem Change Set profile.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

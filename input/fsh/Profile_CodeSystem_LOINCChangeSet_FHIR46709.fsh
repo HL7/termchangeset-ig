@@ -2,7 +2,7 @@ Profile: LOINCChangeSetFHIR46709
 Id: loinc-changeset-profile--fhir46709
 Parent: CodeSystemChangeSet
 Title: "LOINC Change Set (CodeSystem) FHIR46709 Prototype"
-Description: "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader Terminology Change Set profile."
+Description: "Profile of CodeSystem to enable lossless representation of a LOINC change set aligned with Tinkar information model requirements. This profile is a specialization of the broader CodeSystem Change Set profile."
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false

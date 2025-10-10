@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 <a name="fhirlimitations"></a>
   <h3>FHIR Limitations and Possible Solutions</h3>
-  <p> Recognizing that FHIR's Terminology resources were not designed to enable collaboration between terminology authoring entities, there are several limitations implementers should be aware of when using FHIR for Terminology Change Set Exchange. Many of these limitations can be addressed through FHIR's inherent extensibility, but others are more difficult to address.</p>
+  <p> Recognizing that FHIR's Terminology resources were not designed to enable collaboration between terminology authoring entities, there are several limitations implementers should be aware of when using FHIR for CodeSystem Change Set Exchange. Many of these limitations can be addressed through FHIR's inherent extensibility, but others are more difficult to address.</p>
   <a name="extensions"></a>
   <h3>Limitations addressed via Extensions</h3>
   <a name="ConceptDescriptionAttributes"></a>

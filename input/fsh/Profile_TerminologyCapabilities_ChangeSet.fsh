@@ -2,7 +2,7 @@ Profile: ChangeSetTerminologyCapabilities
 Id: changeset-terminologycapabilities-profile
 Parent: TerminologyCapabilities
 Title: "Change Set TerminologyCapabilities (TerminologyCapabilities)"
-Description: "Profile of CodeSystem to enable lossless representation of a Terminology Change Set aligned with Tinkar information model requirements"
+Description: "Profile of TerminologyCapabilities to allow FHIR terminology servers to convey which update methods they support, including CodeSystem Change Sets"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
