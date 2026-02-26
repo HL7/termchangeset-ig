@@ -1,0 +1,845 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "LOINCPropertyCS",
+  "id": "loinc-property-cs",
+  "title": "LOINC Property CodeSystem",
+  "description": "A CodeSystem containing property concepts for LOINC for use in FHIR CodeSystem representations",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/loinc-property-cs",
+  "concept": [
+    {
+      "code": "parent",
+      "display": "parent"
+    },
+    {
+      "code": "child",
+      "display": "child",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "code"
+        }
+      ]
+    },
+    {
+      "code": "COMPONENT",
+      "display": "COMPONENT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "PROPERTY",
+      "display": "PROPERTY",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "TIME_ASPCT",
+      "display": "TIME_ASPCT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "SYSTEM",
+      "display": "SYSTEM",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "SCALE_TYP",
+      "display": "SCALE_TYP",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "METHOD_TYP",
+      "display": "METHOD_TYP",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "CLASS",
+      "display": "CLASS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "VersionLastChanged",
+      "display": "VersionLastChanged",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "CHNG_TYPE",
+      "display": "CHNG_TYPE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "DefinitionDescription",
+      "display": "DefinitionDescription",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "STATUS",
+      "display": "STATUS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "CONSUMER_NAME",
+      "display": "CONSUMER_NAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "CLASSTYPE",
+      "display": "CLASSTYPE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "FORMULA",
+      "display": "FORMULA",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "EXMPL_ANSWERS",
+      "display": "EXMPL_ANSWERS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "SURVEY_QUEST_TEXT",
+      "display": "SURVEY_QUEST_TEXT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "SURVEY_QUEST_SRC",
+      "display": "SURVEY_QUEST_SRC",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "UNITSREQUIRED",
+      "display": "UNITSREQUIRED",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "RELATEDNAMES2",
+      "display": "RELATEDNAMES2",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "SHORTNAME",
+      "display": "SHORTNAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "ORDER_OBS",
+      "display": "ORDER_OBS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "HL7_FIELD_SUBFIELD_ID",
+      "display": "HL7_FIELD_SUBFIELD_ID",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "EXTERNAL_COPYRIGHT_NOTICE",
+      "display": "EXTERNAL_COPYRIGHT_NOTICE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "EXAMPLE_UNITS",
+      "display": "EXAMPLE_UNITS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "LONG_COMMON_NAME",
+      "display": "LONG_COMMON_NAME",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "EXAMPLE_UCUM_UNITS",
+      "display": "EXAMPLE_UCUM_UNITS",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "STATUS_REASON",
+      "display": "STATUS_REASON",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "STATUS_TEXT",
+      "display": "STATUS_TEXT",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "CHANGE_REASON_PUBLIC",
+      "display": "CHANGE_REASON_PUBLIC",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "COMMON_TEST_RANK",
+      "display": "COMMON_TEST_RANK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "COMMON_ORDER_RANK",
+      "display": "COMMON_ORDER_RANK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "HL7_ATTACHMENT_STRUCTURE",
+      "display": "HL7_ATTACHMENT_STRUCTURE",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "EXTERNAL_COPYRIGHT_LINK",
+      "display": "EXTERNAL_COPYRIGHT_LINK",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "PanelType",
+      "display": "PanelType",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "AskAtOrderEntry",
+      "display": "AskAtOrderEntry",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "AssociatedObservations",
+      "display": "AssociatedObservations",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "VersionFirstReleased",
+      "display": "VersionFirstReleased",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "ValidHL7AttachmentRequest",
+      "display": "ValidHL7AttachmentRequest",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "DisplayName",
+      "display": "DisplayName",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "answer-list",
+      "display": "answer-list",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "MAP_TO",
+      "display": "MAP_TO",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte",
+      "display": "analyte",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-core",
+      "display": "analyte-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-suffix",
+      "display": "analyte-suffix",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-numerator",
+      "display": "analyte-numerator",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-divisor",
+      "display": "analyte-divisor",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-divisor-suffix",
+      "display": "analyte-divisor-suffix",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "challenge",
+      "display": "challenge",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "adjustment",
+      "display": "adjustment",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "count",
+      "display": "count",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "time-core",
+      "display": "time-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "time-modifier",
+      "display": "time-modifier",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "system-core",
+      "display": "system-core",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "super-system",
+      "display": "super-system",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "analyte-gene",
+      "display": "analyte-gene",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "category",
+      "display": "category",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "search",
+      "display": "search",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-modality-modality-type",
+      "display": "rad-modality-modality-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-modality-modality-subtype",
+      "display": "rad-modality-modality-subtype",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-anatomic-location-region-imaged",
+      "display": "rad-anatomic-location-region-imaged",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-anatomic-location-imaging-focus",
+      "display": "rad-anatomic-location-imaging-focus",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-anatomic-location-laterality-presence",
+      "display": "rad-anatomic-location-laterality-presence",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-anatomic-location-laterality",
+      "display": "rad-anatomic-location-laterality",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-view-aggregation",
+      "display": "rad-view-aggregation",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-view-view-type",
+      "display": "rad-view-view-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-maneuver-maneuver-type",
+      "display": "rad-maneuver-maneuver-type",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-timing",
+      "display": "rad-timing",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-pharmaceutical-substance-given",
+      "display": "rad-pharmaceutical-substance-given",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-pharmaceutical-route",
+      "display": "rad-pharmaceutical-route",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-reason-for-exam",
+      "display": "rad-reason-for-exam",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-guidance-for-presence",
+      "display": "rad-guidance-for-presence",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-guidance-for-approach",
+      "display": "rad-guidance-for-approach",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-guidance-for-action",
+      "display": "rad-guidance-for-action",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-guidance-for-object",
+      "display": "rad-guidance-for-object",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "rad-subject",
+      "display": "rad-subject",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "document-kind",
+      "display": "document-kind",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "document-role",
+      "display": "document-role",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "document-setting",
+      "display": "document-setting",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "document-subject-matter-domain",
+      "display": "document-subject-matter-domain",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "document-type-of-service",
+      "display": "document-type-of-service",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    },
+    {
+      "code": "answers-for",
+      "display": "answers-for",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "Coding"
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "code": "FHIRdatatype",
+      "description": "Indicates the FHIR data type associated with the concept.",
+      "type": "string"
+    }
+  ],
+  "count": 83
+}

@@ -20,4 +20,4 @@ Description: "Profile of CodeSystem to enable lossless representation of a LOINC
 * concept.display ^definition = "A human readable string that is the recommended default way to present this concept to a user."
 * concept.display ^comment = "This contains the LOINC Long Name."
 * concept.property 0..* MS
-* concept.property.code from snomed-property-vs (extensible)
+* concept.property.code from loinc-property-vs (extensible)

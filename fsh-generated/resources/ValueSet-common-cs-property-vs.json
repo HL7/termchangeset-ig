@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CommonCSPropertyVS",
+  "id": "common-cs-property-vs",
+  "title": "Common CodeSystem Property ValueSet",
+  "description": "A ValueSet containing commonly used CodeSystem property concepts",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/common-cs-property-vs",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/concept-properties"
+      }
+    ]
+  }
+}

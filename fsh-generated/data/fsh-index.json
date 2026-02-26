@@ -16,6 +16,14 @@
     "endLine": 503
   },
   {
+    "outputFile": "CodeSystem-loinc-property-cs.json",
+    "fshName": "LOINCPropertyCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem_LOINCProperties.fsh",
+    "startLine": 1,
+    "endLine": 259
+  },
+  {
     "outputFile": "CodeSystem-loinc277attachmentsChangeSet.json",
     "fshName": "LOINCChangeSetExample",
     "fshType": "Instance",
@@ -240,12 +248,12 @@
     "endLine": 56
   },
   {
-    "outputFile": "ValueSet-codesystem-property-valueset.json",
-    "fshName": "CodeSystemPropertyVS",
+    "outputFile": "ValueSet-common-cs-property-vs.json",
+    "fshName": "CommonCSPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
     "startLine": 65,
-    "endLine": 70
+    "endLine": 72
   },
   {
     "outputFile": "ValueSet-defining-relationship-type-vs.json",
@@ -284,16 +292,16 @@
     "fshName": "LOINCPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 158,
-    "endLine": 244
+    "startLine": 250,
+    "endLine": 255
   },
   {
     "outputFile": "ValueSet-snomed-property-vs.json",
     "fshName": "SNOMEDPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 72,
-    "endLine": 156
+    "startLine": 258,
+    "endLine": 266
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",

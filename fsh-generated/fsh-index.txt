@@ -1,6 +1,7 @@
 Output File                                                           Name                                         Type        FSH File                                              Lines
 CodeSystem-HL7VariableRoleChangeSet.json                              HL7VariableRoleChangeSetExample              Instance    Example_HL7VariableRole_ChangeSet.fsh                 1 - 38
 CodeSystem-codesystem-properties-cs.json                              CodeSystemPropertiesCS                       CodeSystem  CodeSystem_CodeSystemProperties.fsh                   1 - 503
+CodeSystem-loinc-property-cs.json                                     LOINCPropertyCS                              CodeSystem  CodeSystem_LOINCProperties.fsh                        1 - 259
 CodeSystem-loinc277attachmentsChangeSet.json                          LOINCChangeSetExample                        Instance    Example_LOINC_ChangeSet.fsh                           1 - 213
 CodeSystem-snomedct126785002ChangeSet.json                            SNOMEDCTChangeSetInactiveDesignationExample  Instance    Example_SNOMED_ChangeSet_DesignationStatus.fsh        1 - 443
 CodeSystem-snomedct413839001ChangeSet.json                            SNOMEDCTChangeSetExample                     Instance    Example_SNOMED_ChangeSet.fsh                          1 - 357
@@ -29,11 +30,11 @@ StructureDefinition-update-methods.json                               UpdateMeth
 TerminologyCapabilities-ChangeSetTerminologyCapabilitiesExample.json  ChangeSetTerminologyCapabilitiesExample      Instance    Example_ChangeSet_TerminologyCapabilities.fsh         1 - 59
 ValueSet-case-significance-vs.json                                    CaseSignificanceVS                           ValueSet    ValueSets.fsh                                         3 - 9
 ValueSet-changetype-vs.json                                           ChangeTypeVS                                 ValueSet    ValueSets.fsh                                         48 - 56
-ValueSet-codesystem-property-valueset.json                            CodeSystemPropertyVS                         ValueSet    ValueSets.fsh                                         65 - 70
+ValueSet-common-cs-property-vs.json                                   CommonCSPropertyVS                           ValueSet    ValueSets.fsh                                         65 - 72
 ValueSet-defining-relationship-type-vs.json                           DefiningRelationshipTypeVS                   ValueSet    ValueSets.fsh                                         21 - 27
 ValueSet-designation-acceptability-vs.json                            DesignationAcceptabilityVS                   ValueSet    ValueSets.fsh                                         12 - 18
 ValueSet-dialect-vs.json                                              DialectVS                                    ValueSet    ValueSets.fsh                                         39 - 45
 ValueSet-el-profile-set-operator-vs.json                              ELProfileSetOperatorVS                       ValueSet    ValueSets.fsh                                         30 - 36
-ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         158 - 244
-ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         72 - 156
+ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         250 - 255
+ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         258 - 266
 ValueSet-update-methods-valueset.json                                 UpdateMethodsVS                              ValueSet    ValueSets.fsh                                         58 - 63

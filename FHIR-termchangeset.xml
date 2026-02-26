@@ -14,7 +14,7 @@
 <artifact id="StructureDefinition/codesystem-change-set" key="StructureDefinition-codesystem-change-set" name="CodeSystem Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/codesystem-change-set-provenance" key="StructureDefinition-codesystem-change-set-provenance" name="CodeSystem Change Set Provenance"/>
 <artifact id="CodeSystem/codesystem-properties-cs" key="CodeSystem-codesystem-properties-cs" name="CodeSystem Properties CodeSystem"/>
-<artifact id="ValueSet/codesystem-property-valueset" key="ValueSet-codesystem-property-valueset" name="CodeSystem Property ValueSet"/>
+<artifact id="ValueSet/common-cs-property-vs" key="ValueSet-common-cs-property-vs" name="Common CodeSystem Property ValueSet"/>
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="ValueSet/defining-relationship-type-vs" key="ValueSet-defining-relationship-type-vs" name="Defining Relationship Type Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/description-acceptability" key="StructureDefinition-description-acceptability" name="Description Acceptability"/>
@@ -36,6 +36,7 @@
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="LOINC Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/loinc-changeset-profile--fhir46709" key="StructureDefinition-loinc-changeset-profile--fhir46709" name="LOINC Change Set (CodeSystem) FHIR46709 Prototype"/>
 <artifact id="Provenance/52b1a1d2-80ab-460b-b5fc-341edd35b032" key="Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032" name="LOINC Change Set Provenance Example"/>
+<artifact id="CodeSystem/loinc-property-cs" key="CodeSystem-loinc-property-cs" name="LOINC Property CodeSystem"/>
 <artifact id="ValueSet/loinc-property-vs" key="ValueSet-loinc-property-vs" name="LOINC Property ValueSet"/>
 <artifact id="StructureDefinition/owl-expression" key="StructureDefinition-owl-expression" name="OWL Expression"/>
 <artifact id="CodeSystem/snomedct126785002ChangeSet" key="CodeSystem-snomedct126785002ChangeSet" name="SNOMED CT 126785002 Neoplasm of oral part of tongue (disorder) Change Set 43d8c092715b4dccabdc9b9f47cdc8eb"/>
@@ -43,7 +44,7 @@
 <artifact id="StructureDefinition/snomed-changeset-profile" key="StructureDefinition-snomed-changeset-profile" name="SNOMED CT Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/snomed-changeset-profile-fhir46709" key="StructureDefinition-snomed-changeset-profile-fhir46709" name="SNOMED CT Change Set (CodeSystem) FHIR46709 Prototype"/>
 <artifact id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="SNOMED CT Change Set Provenance Example"/>
-<artifact id="ValueSet/snomed-property-vs" key="ValueSet-snomed-property-vs" name="SNOMED Property ValueSet"/>
+<artifact id="ValueSet/snomed-property-vs" key="ValueSet-snomed-property-vs" name="SNOMED CT Property ValueSet"/>
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
 <artifact deprecated="true" id="StructureDefinition/changeset-profile" key="StructureDefinition-changeset-profile" name="Terminology Change Set (CodeSystem)"/>
 <artifact deprecated="true" id="StructureDefinition/terminology-changeset-provenance-profile" key="StructureDefinition-terminology-changeset-provenance-profile" name="Terminology Change Set Provenance (Provenance)"/>
