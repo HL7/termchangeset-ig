@@ -35,6 +35,6 @@ ValueSet-defining-relationship-type-vs.json                           DefiningRe
 ValueSet-designation-acceptability-vs.json                            DesignationAcceptabilityVS                   ValueSet    ValueSets.fsh                                         12 - 18
 ValueSet-dialect-vs.json                                              DialectVS                                    ValueSet    ValueSets.fsh                                         39 - 45
 ValueSet-el-profile-set-operator-vs.json                              ELProfileSetOperatorVS                       ValueSet    ValueSets.fsh                                         30 - 36
-ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         250 - 255
-ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         258 - 266
+ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         74 - 79
+ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         82 - 91
 ValueSet-update-methods-valueset.json                                 UpdateMethodsVS                              ValueSet    ValueSets.fsh                                         58 - 63

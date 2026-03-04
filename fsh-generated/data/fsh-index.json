@@ -292,16 +292,16 @@
     "fshName": "LOINCPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 250,
-    "endLine": 255
+    "startLine": 74,
+    "endLine": 79
   },
   {
     "outputFile": "ValueSet-snomed-property-vs.json",
     "fshName": "SNOMEDPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 258,
-    "endLine": 266
+    "startLine": 82,
+    "endLine": 91
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",

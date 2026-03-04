@@ -33,6 +33,10 @@
           {
             "code": "762705008",
             "display": "Concept model object attribute (attribute)"
+          },
+          {
+            "code": "410662002",
+            "display": "Concept model attribute (attribute)"
           }
         ]
       }
