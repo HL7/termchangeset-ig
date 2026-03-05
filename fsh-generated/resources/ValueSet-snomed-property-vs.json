@@ -20,6 +20,12 @@
             "value": "410662002"
           }
         ]
+      },
+      {
+        "system": "http://hl7.org/fhir/concept-properties"
+      },
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs"
       }
     ],
     "exclude": [

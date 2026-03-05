@@ -1,0 +1,121 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "HL7DefinedPropertyCS",
+  "id": "hl7-defined-property-cs",
+  "title": "HL7-Defined Property CodeSystem",
+  "description": "A CodeSystem containing HL7-defined property concepts for use with FHIR CodeSystems",
+  "version": "1.0.0",
+  "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs",
+  "concept": [
+    {
+      "code": "name",
+      "display": "name",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "version",
+      "display": "version",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "display",
+      "display": "display",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "designation",
+      "display": "designation",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "effectiveTime",
+      "display": "effectiveTime",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "dateTime"
+        }
+      ]
+    },
+    {
+      "code": "moduleId",
+      "display": "modeuleId",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "code"
+        }
+      ]
+    },
+    {
+      "code": "normalForm",
+      "display": "normalForm",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "normalFormTerse",
+      "display": "normalFormTerse",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "string"
+        }
+      ]
+    },
+    {
+      "code": "semanticTag",
+      "display": "semanticTag",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "code"
+        }
+      ]
+    },
+    {
+      "code": "sufficientlyDefined",
+      "display": "sufficientlyDefined",
+      "property": [
+        {
+          "code": "FHIRdatatype",
+          "valueString": "boolean"
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "code": "FHIRdatatype",
+      "description": "Indicates the FHIR data type associated with the concept.",
+      "type": "string"
+    }
+  ],
+  "count": 10
+}

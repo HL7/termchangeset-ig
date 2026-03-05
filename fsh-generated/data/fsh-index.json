@@ -8,18 +8,18 @@
     "endLine": 38
   },
   {
-    "outputFile": "CodeSystem-codesystem-properties-cs.json",
-    "fshName": "CodeSystemPropertiesCS",
+    "outputFile": "CodeSystem-hl7-defined-property-cs.json",
+    "fshName": "HL7DefinedPropertyCS",
     "fshType": "CodeSystem",
-    "fshFile": "CodeSystem_CodeSystemProperties.fsh",
+    "fshFile": "CodeSystem_HL7DefinedProperty.fsh",
     "startLine": 1,
-    "endLine": 503
+    "endLine": 48
   },
   {
     "outputFile": "CodeSystem-loinc-property-cs.json",
     "fshName": "LOINCPropertyCS",
     "fshType": "CodeSystem",
-    "fshFile": "CodeSystem_LOINCProperties.fsh",
+    "fshFile": "CodeSystem_LOINCProperty.fsh",
     "startLine": 1,
     "endLine": 259
   },
@@ -293,15 +293,15 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
     "startLine": 74,
-    "endLine": 79
+    "endLine": 84
   },
   {
     "outputFile": "ValueSet-snomed-property-vs.json",
     "fshName": "SNOMEDPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 82,
-    "endLine": 91
+    "startLine": 89,
+    "endLine": 104
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",

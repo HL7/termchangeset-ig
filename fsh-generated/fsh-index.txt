@@ -1,7 +1,7 @@
 Output File                                                           Name                                         Type        FSH File                                              Lines
 CodeSystem-HL7VariableRoleChangeSet.json                              HL7VariableRoleChangeSetExample              Instance    Example_HL7VariableRole_ChangeSet.fsh                 1 - 38
-CodeSystem-codesystem-properties-cs.json                              CodeSystemPropertiesCS                       CodeSystem  CodeSystem_CodeSystemProperties.fsh                   1 - 503
-CodeSystem-loinc-property-cs.json                                     LOINCPropertyCS                              CodeSystem  CodeSystem_LOINCProperties.fsh                        1 - 259
+CodeSystem-hl7-defined-property-cs.json                               HL7DefinedPropertyCS                         CodeSystem  CodeSystem_HL7DefinedProperty.fsh                     1 - 48
+CodeSystem-loinc-property-cs.json                                     LOINCPropertyCS                              CodeSystem  CodeSystem_LOINCProperty.fsh                          1 - 259
 CodeSystem-loinc277attachmentsChangeSet.json                          LOINCChangeSetExample                        Instance    Example_LOINC_ChangeSet.fsh                           1 - 213
 CodeSystem-snomedct126785002ChangeSet.json                            SNOMEDCTChangeSetInactiveDesignationExample  Instance    Example_SNOMED_ChangeSet_DesignationStatus.fsh        1 - 443
 CodeSystem-snomedct413839001ChangeSet.json                            SNOMEDCTChangeSetExample                     Instance    Example_SNOMED_ChangeSet.fsh                          1 - 357
@@ -35,6 +35,6 @@ ValueSet-defining-relationship-type-vs.json                           DefiningRe
 ValueSet-designation-acceptability-vs.json                            DesignationAcceptabilityVS                   ValueSet    ValueSets.fsh                                         12 - 18
 ValueSet-dialect-vs.json                                              DialectVS                                    ValueSet    ValueSets.fsh                                         39 - 45
 ValueSet-el-profile-set-operator-vs.json                              ELProfileSetOperatorVS                       ValueSet    ValueSets.fsh                                         30 - 36
-ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         74 - 79
-ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         82 - 91
+ValueSet-loinc-property-vs.json                                       LOINCPropertyVS                              ValueSet    ValueSets.fsh                                         74 - 84
+ValueSet-snomed-property-vs.json                                      SNOMEDPropertyVS                             ValueSet    ValueSets.fsh                                         89 - 104
 ValueSet-update-methods-valueset.json                                 UpdateMethodsVS                              ValueSet    ValueSets.fsh                                         58 - 63

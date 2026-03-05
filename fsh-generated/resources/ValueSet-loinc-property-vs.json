@@ -11,6 +11,29 @@
     "include": [
       {
         "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/loinc-property-cs"
+      },
+      {
+        "system": "http://hl7.org/fhir/concept-properties"
+      },
+      {
+        "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs",
+        "concept": [
+          {
+            "code": "name"
+          },
+          {
+            "code": "version",
+            "display": "version"
+          },
+          {
+            "code": "display",
+            "display": "display"
+          },
+          {
+            "code": "designation",
+            "display": "designation"
+          }
+        ]
       }
     ]
   }

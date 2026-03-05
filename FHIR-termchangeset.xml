@@ -13,7 +13,6 @@
 <artifact id="TerminologyCapabilities/ChangeSetTerminologyCapabilitiesExample" key="TerminologyCapabilities-ChangeSetTerminologyCapabilitiesExample" name="ChangeSet TerminologyCapabilities Example"/>
 <artifact id="StructureDefinition/codesystem-change-set" key="StructureDefinition-codesystem-change-set" name="CodeSystem Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/codesystem-change-set-provenance" key="StructureDefinition-codesystem-change-set-provenance" name="CodeSystem Change Set Provenance"/>
-<artifact id="CodeSystem/codesystem-properties-cs" key="CodeSystem-codesystem-properties-cs" name="CodeSystem Properties CodeSystem"/>
 <artifact id="ValueSet/common-cs-property-vs" key="ValueSet-common-cs-property-vs" name="Common CodeSystem Property ValueSet"/>
 <artifact id="StructureDefinition/defining-relationship-type" key="StructureDefinition-defining-relationship-type" name="Defining Relationship Type"/>
 <artifact id="ValueSet/defining-relationship-type-vs" key="ValueSet-defining-relationship-type-vs" name="Defining Relationship Type Value Set"/>
@@ -32,6 +31,7 @@
 <artifact id="CodeSystem/HL7VariableRoleChangeSet" key="CodeSystem-HL7VariableRoleChangeSet" name="EvidenceVariableRole UTG-247 Change Set"/>
 <artifact id="StructureDefinition/extends-codesystem" key="StructureDefinition-extends-codesystem" name="Extends CodeSystem"/>
 <artifact id="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c" key="Provenance-7e4f317e-8c13-46ba-b79a-9913da2afa2c" name="HL7 VariableRole Change Set Provenance Example"/>
+<artifact id="CodeSystem/hl7-defined-property-cs" key="CodeSystem-hl7-defined-property-cs" name="HL7-Defined Property CodeSystem"/>
 <artifact id="CodeSystem/loinc277attachmentsChangeSet" key="CodeSystem-loinc277attachmentsChangeSet" name="LOINC 2.77 Attachments Change Set for targetted redistribution"/>
 <artifact id="StructureDefinition/loinc-changeset-profile" key="StructureDefinition-loinc-changeset-profile" name="LOINC Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/loinc-changeset-profile--fhir46709" key="StructureDefinition-loinc-changeset-profile--fhir46709" name="LOINC Change Set (CodeSystem) FHIR46709 Prototype"/>

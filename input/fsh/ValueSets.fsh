@@ -77,17 +77,31 @@ Title: "LOINC Property ValueSet"
 Description: "A ValueSet containing property concepts for use with LOINC when represented as a FHIR CodeSystem"
 * ^status = #active
 * include codes from system loinc-property-cs
+* include codes from system http://hl7.org/fhir/concept-properties
+* include hl7-defined-property-cs#name
+* include hl7-defined-property-cs#version "version"
+* include hl7-defined-property-cs#display "display"
+* include hl7-defined-property-cs#designation "designation"
+
+
 
 
 ValueSet: SNOMEDPropertyVS
 Id: snomed-property-vs
 Title: "SNOMED CT Property ValueSet"
 Description: "All SNOMED CT concepts that can be used as properties in FHIR CodeSystem representations"
+//  Following guidance from the following sources:
+//	https://build.fhir.org/ig/HL7/UTG/en/SNOMEDCT.html#snomed-ct-properties
+//	https://hl7.org/fhir/terminology-service.html#standard-props
+//	https://hl7.org/fhir/codesystem.html#defined-props
 * insert SNOMEDCTCopyrightForVS
 * ^experimental = false
 * include codes from system SCT where concept is-a #410662002 "Concept model attribute (attribute)"
 * exclude SCT#762706009 "Concept model data attribute (attribute)"
 * exclude SCT#762705008 "Concept model object attribute (attribute)"
 * exclude SCT#410662002 "Concept model attribute (attribute)"
+* include codes from system http://hl7.org/fhir/concept-properties
+* include codes from system hl7-defined-property-cs
+
 
 
