@@ -56,13 +56,6 @@ In 2021, HL7 published the HL7 Logical Model: Standardized Terminology Knowledge
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
     <resource>
       <reference>
-        <reference value="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4"/>
-      </reference>
-      <name value="SNOMED CT Change Set Provenance Example"/>
-      <description value="An example Provenance instance referring to a Change Set derived from SNOMED CT"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Provenance/7e4f317e-8c13-46ba-b79a-9913da2afa2c"/>
       </reference>
       <name value="HL7 VariableRole Change Set Provenance Example"/>

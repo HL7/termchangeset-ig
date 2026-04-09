@@ -43,7 +43,7 @@
 <artifact id="CodeSystem/snomedct413839001ChangeSet" key="CodeSystem-snomedct413839001ChangeSet" name="SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set 46dc8ea230544ceba51145f774fe9fdd"/>
 <artifact id="StructureDefinition/snomed-changeset-profile" key="StructureDefinition-snomed-changeset-profile" name="SNOMED CT Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/snomed-changeset-profile-fhir46709" key="StructureDefinition-snomed-changeset-profile-fhir46709" name="SNOMED CT Change Set (CodeSystem) FHIR46709 Prototype"/>
-<artifact id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="SNOMED CT Change Set Provenance Example"/>
+<artifact deprecated="true" id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="SNOMED CT Change Set Provenance Example"/>
 <artifact id="ValueSet/snomed-property-vs" key="ValueSet-snomed-property-vs" name="SNOMED CT Property ValueSet"/>
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
 <artifact deprecated="true" id="StructureDefinition/changeset-profile" key="StructureDefinition-changeset-profile" name="Terminology Change Set (CodeSystem)"/>

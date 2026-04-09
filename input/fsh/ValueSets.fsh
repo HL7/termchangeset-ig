@@ -83,9 +83,6 @@ Description: "A ValueSet containing property concepts for use with LOINC when re
 * include hl7-defined-property-cs#display "display"
 * include hl7-defined-property-cs#designation "designation"
 
-
-
-
 ValueSet: SNOMEDPropertyVS
 Id: snomed-property-vs
 Title: "SNOMED CT Property ValueSet"
@@ -96,10 +93,8 @@ Description: "All SNOMED CT concepts that can be used as properties in FHIR Code
 //	https://hl7.org/fhir/codesystem.html#defined-props
 * insert SNOMEDCTCopyrightForVS
 * ^experimental = false
-* include codes from system SCT where concept is-a #410662002 "Concept model attribute (attribute)"
-* exclude SCT#762706009 "Concept model data attribute (attribute)"
-* exclude SCT#762705008 "Concept model object attribute (attribute)"
-* exclude SCT#410662002 "Concept model attribute (attribute)"
+* include codes from system SCT where concept descendent-of #762706009 "Concept model data attribute (attribute)"
+* include codes from system SCT where concept descendent-of #762705008 "Concept model object attribute (attribute)"
 * include codes from system http://hl7.org/fhir/concept-properties
 * include codes from system hl7-defined-property-cs
 

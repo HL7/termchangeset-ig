@@ -1,4 +1,4 @@
-Instance: SNOMEDCTChangeSetExample
+Instance: SNOMEDCTChangeSetExample_FHIR46709
 InstanceOf: SNOMEDCTChangeSet
 Description: "Example of SNOMED CT Change Set"
 * id = "snomedct413839001ChangeSet"
@@ -17,259 +17,27 @@ Description: "Example of SNOMED CT Change Set"
 * copyright = "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct"
 * versionNeeded = false
 * content = #fragment
-* filter[+].code = #concept
-* filter[=].description = "Filter that includes concepts based on their logical definition. e.g. [concept] [is-a] [x] - include all concepts with an is-a relationship to concept x, or [concept] [in] [x]- include all concepts in the reference set identified by concept x"
-* filter[=].operator[+] = #is-a
-* filter[=].operator[+] = #in
-* filter[=].value = "A SNOMED CT code"
-* filter[+].code = #expression
-* filter[=].description = "The result of the filter is the result of executing the given SNOMED CT Expression Constraint"
-* filter[=].operator[+] = #=
-* filter[=].value = "A SNOMED CT ECL expression (see http://snomed.org/ecl)"
-* filter[+].code = #expressions
-* filter[=].description = "Whether post-coordinated expressions are included in the value set"
-* filter[=].operator[+] = #=
-* filter[=].value = "true or false"
+* contained[+] = SNOMEDChangeSetProvenanceExample
 * property[+].code = #inactive
-* property[=].uri = "http://snomed.info/field/Concept.active"
-* property[=].description = "Whether the code is active or not (defaults to false). Not the same as deprecated"
+* property[=].uri = "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-inactive"
+* property[=].description = "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false"
 * property[=].type = #boolean
-* property[+].code = #definitionStatusId
-* property[=].uri = "http://snomed.info/field/Concept.definitionStatusId"
-* property[=].description = "Either of the codes that are descendants of 900000000000444006"
-* property[=].type = #Coding
+
 * property[+].code = #parent
-* property[=].uri = "http://.........?"
-* property[=].description = "A SNOMED CT concept id that has the target of a direct is-a relationship from the concept"
+* property[=].uri = "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-parent"
+* property[=].description = "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute"
 * property[=].type = #Coding
-* property[+].code = #moduleId
-* property[=].uri = "http://snomed.info/field/Concept.moduleId"
-* property[=].description = "The SNOMED CT concept id of the module that the concept belongs to."
-* property[=].type = #Coding
-* property[+].code = #"Due to"
-* property[=].uri = "http://snomed.info/id/42752001"
-* property[=].type = #Coding
-* property[+].code = #"Associated with"
-* property[=].uri = "http://snomed.info/id/47429007"
-* property[=].type = #Coding
-* property[+].code = #"Associated morphology"
-* property[=].uri = "http://snomed.info/id/116676008"
-* property[=].type = #Coding
-* property[+].code = #"Has specimen"
-* property[=].uri = "http://snomed.info/id/116686009"
-* property[=].type = #Coding
-* property[+].code = #"Specimen source morphology"
-* property[=].uri = "http://snomed.info/id/118168003"
-* property[=].type = #Coding
-* property[+].code = #"Specimen source topography"
-* property[=].uri = "http://snomed.info/id/118169006"
-* property[=].type = #Coding
-* property[+].code = #"Specimen source identity"
-* property[=].uri = "http://snomed.info/id/118170007"
-* property[=].type = #Coding
-* property[+].code = #"Specimen procedure"
-* property[=].uri = "http://snomed.info/id/118171006"
-* property[=].type = #Coding
-* property[+].code = #"Part of"
-* property[=].uri = "http://snomed.info/id/123005000"
-* property[=].type = #Coding
-* property[+].code = #"Has active ingredient"
-* property[=].uri = "http://snomed.info/id/127489000"
-* property[=].type = #Coding
-* property[+].code = #"Subject of information"
-* property[=].uri = "http://snomed.info/id/131195008"
-* property[=].type = #Coding
-* property[+].code = #"Causative agent"
-* property[=].uri = "http://snomed.info/id/246075003"
-* property[=].type = #Coding
-* property[+].code = #"Associated finding"
-* property[=].uri = "http://snomed.info/id/246090004"
-* property[=].type = #Coding
-* property[+].code = #Component
-* property[=].uri = "http://snomed.info/id/246093002"
-* property[=].type = #Coding
-* property[+].code = #Severity
-* property[=].uri = "http://snomed.info/id/246112005"
-* property[=].type = #Coding
-* property[+].code = #Occurrence
-* property[=].uri = "http://snomed.info/id/246454002"
-* property[=].type = #Coding
-* property[+].code = #Episodicity
-* property[=].uri = "http://snomed.info/id/246456000"
-* property[=].type = #Coding
-* property[+].code = #Technique
-* property[=].uri = "http://snomed.info/id/246501002"
-* property[=].type = #Coding
-* property[+].code = #"Revision status"
-* property[=].uri = "http://snomed.info/id/246513007"
-* property[=].type = #Coding
-* property[+].code = #Units
-* property[=].uri = "http://snomed.info/id/246514001"
-* property[=].type = #Coding
-* property[+].code = #After
-* property[=].uri = "http://snomed.info/id/255234002"
-* property[=].type = #Coding
-* property[+].code = #Access
-* property[=].uri = "http://snomed.info/id/260507000"
-* property[=].type = #Coding
-* property[+].code = #Method
-* property[=].uri = "http://snomed.info/id/260686004"
-* property[=].type = #Coding
-* property[+].code = #Priority
-* property[=].uri = "http://snomed.info/id/260870009"
-* property[=].type = #Coding
+
 * property[+].code = #"Clinical course"
 * property[=].uri = "http://snomed.info/id/263502005"
 * property[=].type = #Coding
-* property[+].code = #Laterality
-* property[=].uri = "http://snomed.info/id/272741003"
-* property[=].type = #Coding
-* property[+].code = #"Associated procedure"
-* property[=].uri = "http://snomed.info/id/363589002"
-* property[=].type = #Coding
+
 * property[+].code = #"Finding site"
 * property[=].uri = "http://snomed.info/id/363698007"
 * property[=].type = #Coding
-* property[+].code = #"Direct morphology"
-* property[=].uri = "http://snomed.info/id/363700003"
-* property[=].type = #Coding
-* property[+].code = #"Direct substance"
-* property[=].uri = "http://snomed.info/id/363701004"
-* property[=].type = #Coding
-* property[+].code = #"Has focus"
-* property[=].uri = "http://snomed.info/id/363702006"
-* property[=].type = #Coding
-* property[+].code = #"Has intent"
-* property[=].uri = "http://snomed.info/id/363703001"
-* property[=].type = #Coding
-* property[+].code = #"Procedure site"
-* property[=].uri = "http://snomed.info/id/363704007"
-* property[=].type = #Coding
-* property[+].code = #"Has definitional manifestation"
-* property[=].uri = "http://snomed.info/id/363705008"
-* property[=].type = #Coding
-* property[+].code = #"Indirect morphology"
-* property[=].uri = "http://snomed.info/id/363709002"
-* property[=].type = #Coding
-* property[+].code = #"Indirect device"
-* property[=].uri = "http://snomed.info/id/363710007"
-* property[=].type = #Coding
-* property[+].code = #"Has interpretation"
-* property[=].uri = "http://snomed.info/id/363713009"
-* property[=].type = #Coding
-* property[+].code = #Interprets
-* property[=].uri = "http://snomed.info/id/363714003"
-* property[=].type = #Coding
-* property[+].code = #"Measurement method"
-* property[=].uri = "http://snomed.info/id/370129005"
-* property[=].type = #Coding
-* property[+].code = #Property
-* property[=].uri = "http://snomed.info/id/370130000"
-* property[=].type = #Coding
-* property[+].code = #"Recipient category"
-* property[=].uri = "http://snomed.info/id/370131001"
-* property[=].type = #Coding
-* property[+].code = #"Scale type"
-* property[=].uri = "http://snomed.info/id/370132008"
-* property[=].type = #Coding
-* property[+].code = #"Specimen substance"
-* property[=].uri = "http://snomed.info/id/370133003"
-* property[=].type = #Coding
-* property[+].code = #"Time aspect"
-* property[=].uri = "http://snomed.info/id/370134009"
-* property[=].type = #Coding
-* property[+].code = #"Pathological process"
-* property[=].uri = "http://snomed.info/id/370135005"
-* property[=].type = #Coding
-* property[+].code = #"Procedure site - Direct"
-* property[=].uri = "http://snomed.info/id/405813007"
-* property[=].type = #Coding
-* property[+].code = #"Procedure site - Indirect"
-* property[=].uri = "http://snomed.info/id/405814001"
-* property[=].type = #Coding
-* property[+].code = #"Procedure device"
-* property[=].uri = "http://snomed.info/id/405815000"
-* property[=].type = #Coding
-* property[+].code = #"Procedure morphology"
-* property[=].uri = "http://snomed.info/id/405816004"
-* property[=].type = #Coding
-* property[+].code = #"Finding context"
-* property[=].uri = "http://snomed.info/id/408729009"
-* property[=].type = #Coding
-* property[+].code = #"Temporal context"
-* property[=].uri = "http://snomed.info/id/408731000"
-* property[=].type = #Coding
-* property[+].code = #"Subject relationship context"
-* property[=].uri = "http://snomed.info/id/408732007"
-* property[=].type = #Coding
-* property[+].code = #"Route of administration"
-* property[=].uri = "http://snomed.info/id/410675002"
-* property[=].type = #Coding
-* property[+].code = #"Has dose form"
-* property[=].uri = "http://snomed.info/id/411116001"
-* property[=].type = #Coding
-* property[+].code = #"Finding method"
-* property[=].uri = "http://snomed.info/id/418775008"
-* property[=].type = #Coding
-* property[+].code = #"Finding informer"
-* property[=].uri = "http://snomed.info/id/419066007"
-* property[=].type = #Coding
-* property[+].code = #"Using device"
-* property[=].uri = "http://snomed.info/id/424226004"
-* property[=].type = #Coding
-* property[+].code = #"Using energy"
-* property[=].uri = "http://snomed.info/id/424244007"
-* property[=].type = #Coding
-* property[+].code = #"Using substance"
-* property[=].uri = "http://snomed.info/id/424361007"
-* property[=].type = #Coding
-* property[+].code = #"Surgical approach"
-* property[=].uri = "http://snomed.info/id/424876005"
-* property[=].type = #Coding
-* property[+].code = #"Using access device"
-* property[=].uri = "http://snomed.info/id/425391005"
-* property[=].type = #Coding
-* property[+].code = #"Property type"
-* property[=].uri = "http://snomed.info/id/704318007"
-* property[=].type = #Coding
-* property[+].code = #"Inheres in"
-* property[=].uri = "http://snomed.info/id/704319004"
-* property[=].type = #Coding
-* property[+].code = #Towards
-* property[=].uri = "http://snomed.info/id/704320005"
-* property[=].type = #Coding
-* property[+].code = #Characterizes
-* property[=].uri = "http://snomed.info/id/704321009"
-* property[=].type = #Coding
-* property[+].code = #"Process agent"
-* property[=].uri = "http://snomed.info/id/704322002"
-* property[=].type = #Coding
-* property[+].code = #"Process duration"
-* property[=].uri = "http://snomed.info/id/704323007"
-* property[=].type = #Coding
-* property[+].code = #"Process output"
-* property[=].uri = "http://snomed.info/id/704324001"
-* property[=].type = #Coding
-* property[+].code = #"Relative to"
-* property[=].uri = "http://snomed.info/id/704325000"
-* property[=].type = #Coding
-* property[+].code = #Precondition
-* property[=].uri = "http://snomed.info/id/704326004"
-* property[=].type = #Coding
-* property[+].code = #"Direct site"
-* property[=].uri = "http://snomed.info/id/704327008"
-* property[=].type = #Coding
-* property[+].code = #"Specified by"
-* property[=].uri = "http://snomed.info/id/704346009"
-* property[=].type = #Coding
-* property[+].code = #Observes
-* property[=].uri = "http://snomed.info/id/704347000"
-* property[=].type = #Coding
-* property[+].code = #"Is about"
-* property[=].uri = "http://snomed.info/id/704647008"
-* property[=].type = #Coding
-* property[+].code = #Defined
-* property[=].uri = "http://snomed.info/id/900000000000073002"
+
+* property[+].code = #sufficientlyDefined
+* property[=].uri = "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs/hl7-defined-property-cs-sufficientlyDefined"
 * property[=].type = #boolean
 * concept[+].id = "61da7e50-f606-5ba0-a0df-83fd524951e7"
 * concept[=].code = #413839001

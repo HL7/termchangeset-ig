@@ -283,176 +283,94 @@
   "description": "Example of SNOMED CT Change Set including an update to the 413839001 Chronic lung disease (Disorder) concept",
   "copyright": "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct",
   "versionNeeded": false,
-  "filter": [
+  "contained": [
     {
-      "code": "concept",
-      "description": "Filter that includes concepts based on their logical definition. e.g. [concept] [is-a] [x] - include all concepts with an is-a relationship to concept x, or [concept] [in] [x]- include all concepts in the reference set identified by concept x",
-      "operator": [
-        "is-a",
-        "in"
+      "resourceType": "Provenance",
+      "id": "053f26d4-b805-4ff2-8c42-866459d5f1f4",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set-provenance"
+        ]
+      },
+      "entity": [
+        {
+          "role": "revision",
+          "what": {
+            "identifier": {
+              "value": "http://snomed.info/sct/900000000000207008/version/20190901"
+            },
+            "display": "SNOMED CT International Edition, September 2019 Edition"
+          }
+        }
       ],
-      "value": "A SNOMED CT code"
-    },
-    {
-      "code": "expression",
-      "description": "The result of the filter is the result of executing the given SNOMED CT Expression Constraint",
-      "operator": [
-        "="
+      "agent": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code": "author"
+              }
+            ]
+          },
+          "who": {
+            "display": "Raja Cholan"
+          }
+        },
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code": "custodian"
+              }
+            ]
+          },
+          "who": {
+            "display": "Integrated Knowledge Management"
+          }
+        }
       ],
-      "value": "A SNOMED CT ECL expression (see http://snomed.org/ecl)"
-    },
-    {
-      "code": "expressions",
-      "description": "Whether post-coordinated expressions are included in the value set",
-      "operator": [
-        "="
+      "activity": {
+        "coding": [
+          {
+            "code": "UPDATE",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+          }
+        ]
+      },
+      "target": [
+        {
+          "reference": "CodeSystem/snomedct413839001ChangeSet"
+        }
       ],
-      "value": "true or false"
+      "occurredPeriod": {
+        "end": "2020-05-18"
+      },
+      "recorded": "2020-05-18T11:13:55+10:00",
+      "reason": [
+        {
+          "coding": [
+            {
+              "code": "METAMGT",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+            }
+          ]
+        }
+      ]
     }
   ],
   "property": [
     {
       "code": "inactive",
-      "uri": "http://snomed.info/field/Concept.active",
-      "description": "Whether the code is active or not (defaults to false). Not the same as deprecated",
+      "uri": "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-inactive",
+      "description": "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false",
       "type": "boolean"
     },
     {
-      "code": "definitionStatusId",
-      "uri": "http://snomed.info/field/Concept.definitionStatusId",
-      "description": "Either of the codes that are descendants of 900000000000444006",
-      "type": "Coding"
-    },
-    {
       "code": "parent",
-      "uri": "http://.........?",
-      "description": "A SNOMED CT concept id that has the target of a direct is-a relationship from the concept",
-      "type": "Coding"
-    },
-    {
-      "code": "moduleId",
-      "uri": "http://snomed.info/field/Concept.moduleId",
-      "description": "The SNOMED CT concept id of the module that the concept belongs to.",
-      "type": "Coding"
-    },
-    {
-      "code": "Due to",
-      "uri": "http://snomed.info/id/42752001",
-      "type": "Coding"
-    },
-    {
-      "code": "Associated with",
-      "uri": "http://snomed.info/id/47429007",
-      "type": "Coding"
-    },
-    {
-      "code": "Associated morphology",
-      "uri": "http://snomed.info/id/116676008",
-      "type": "Coding"
-    },
-    {
-      "code": "Has specimen",
-      "uri": "http://snomed.info/id/116686009",
-      "type": "Coding"
-    },
-    {
-      "code": "Specimen source morphology",
-      "uri": "http://snomed.info/id/118168003",
-      "type": "Coding"
-    },
-    {
-      "code": "Specimen source topography",
-      "uri": "http://snomed.info/id/118169006",
-      "type": "Coding"
-    },
-    {
-      "code": "Specimen source identity",
-      "uri": "http://snomed.info/id/118170007",
-      "type": "Coding"
-    },
-    {
-      "code": "Specimen procedure",
-      "uri": "http://snomed.info/id/118171006",
-      "type": "Coding"
-    },
-    {
-      "code": "Part of",
-      "uri": "http://snomed.info/id/123005000",
-      "type": "Coding"
-    },
-    {
-      "code": "Has active ingredient",
-      "uri": "http://snomed.info/id/127489000",
-      "type": "Coding"
-    },
-    {
-      "code": "Subject of information",
-      "uri": "http://snomed.info/id/131195008",
-      "type": "Coding"
-    },
-    {
-      "code": "Causative agent",
-      "uri": "http://snomed.info/id/246075003",
-      "type": "Coding"
-    },
-    {
-      "code": "Associated finding",
-      "uri": "http://snomed.info/id/246090004",
-      "type": "Coding"
-    },
-    {
-      "code": "Component",
-      "uri": "http://snomed.info/id/246093002",
-      "type": "Coding"
-    },
-    {
-      "code": "Severity",
-      "uri": "http://snomed.info/id/246112005",
-      "type": "Coding"
-    },
-    {
-      "code": "Occurrence",
-      "uri": "http://snomed.info/id/246454002",
-      "type": "Coding"
-    },
-    {
-      "code": "Episodicity",
-      "uri": "http://snomed.info/id/246456000",
-      "type": "Coding"
-    },
-    {
-      "code": "Technique",
-      "uri": "http://snomed.info/id/246501002",
-      "type": "Coding"
-    },
-    {
-      "code": "Revision status",
-      "uri": "http://snomed.info/id/246513007",
-      "type": "Coding"
-    },
-    {
-      "code": "Units",
-      "uri": "http://snomed.info/id/246514001",
-      "type": "Coding"
-    },
-    {
-      "code": "After",
-      "uri": "http://snomed.info/id/255234002",
-      "type": "Coding"
-    },
-    {
-      "code": "Access",
-      "uri": "http://snomed.info/id/260507000",
-      "type": "Coding"
-    },
-    {
-      "code": "Method",
-      "uri": "http://snomed.info/id/260686004",
-      "type": "Coding"
-    },
-    {
-      "code": "Priority",
-      "uri": "http://snomed.info/id/260870009",
+      "uri": "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-parent",
+      "description": "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute",
       "type": "Coding"
     },
     {
@@ -461,253 +379,13 @@
       "type": "Coding"
     },
     {
-      "code": "Laterality",
-      "uri": "http://snomed.info/id/272741003",
-      "type": "Coding"
-    },
-    {
-      "code": "Associated procedure",
-      "uri": "http://snomed.info/id/363589002",
-      "type": "Coding"
-    },
-    {
       "code": "Finding site",
       "uri": "http://snomed.info/id/363698007",
       "type": "Coding"
     },
     {
-      "code": "Direct morphology",
-      "uri": "http://snomed.info/id/363700003",
-      "type": "Coding"
-    },
-    {
-      "code": "Direct substance",
-      "uri": "http://snomed.info/id/363701004",
-      "type": "Coding"
-    },
-    {
-      "code": "Has focus",
-      "uri": "http://snomed.info/id/363702006",
-      "type": "Coding"
-    },
-    {
-      "code": "Has intent",
-      "uri": "http://snomed.info/id/363703001",
-      "type": "Coding"
-    },
-    {
-      "code": "Procedure site",
-      "uri": "http://snomed.info/id/363704007",
-      "type": "Coding"
-    },
-    {
-      "code": "Has definitional manifestation",
-      "uri": "http://snomed.info/id/363705008",
-      "type": "Coding"
-    },
-    {
-      "code": "Indirect morphology",
-      "uri": "http://snomed.info/id/363709002",
-      "type": "Coding"
-    },
-    {
-      "code": "Indirect device",
-      "uri": "http://snomed.info/id/363710007",
-      "type": "Coding"
-    },
-    {
-      "code": "Has interpretation",
-      "uri": "http://snomed.info/id/363713009",
-      "type": "Coding"
-    },
-    {
-      "code": "Interprets",
-      "uri": "http://snomed.info/id/363714003",
-      "type": "Coding"
-    },
-    {
-      "code": "Measurement method",
-      "uri": "http://snomed.info/id/370129005",
-      "type": "Coding"
-    },
-    {
-      "code": "Property",
-      "uri": "http://snomed.info/id/370130000",
-      "type": "Coding"
-    },
-    {
-      "code": "Recipient category",
-      "uri": "http://snomed.info/id/370131001",
-      "type": "Coding"
-    },
-    {
-      "code": "Scale type",
-      "uri": "http://snomed.info/id/370132008",
-      "type": "Coding"
-    },
-    {
-      "code": "Specimen substance",
-      "uri": "http://snomed.info/id/370133003",
-      "type": "Coding"
-    },
-    {
-      "code": "Time aspect",
-      "uri": "http://snomed.info/id/370134009",
-      "type": "Coding"
-    },
-    {
-      "code": "Pathological process",
-      "uri": "http://snomed.info/id/370135005",
-      "type": "Coding"
-    },
-    {
-      "code": "Procedure site - Direct",
-      "uri": "http://snomed.info/id/405813007",
-      "type": "Coding"
-    },
-    {
-      "code": "Procedure site - Indirect",
-      "uri": "http://snomed.info/id/405814001",
-      "type": "Coding"
-    },
-    {
-      "code": "Procedure device",
-      "uri": "http://snomed.info/id/405815000",
-      "type": "Coding"
-    },
-    {
-      "code": "Procedure morphology",
-      "uri": "http://snomed.info/id/405816004",
-      "type": "Coding"
-    },
-    {
-      "code": "Finding context",
-      "uri": "http://snomed.info/id/408729009",
-      "type": "Coding"
-    },
-    {
-      "code": "Temporal context",
-      "uri": "http://snomed.info/id/408731000",
-      "type": "Coding"
-    },
-    {
-      "code": "Subject relationship context",
-      "uri": "http://snomed.info/id/408732007",
-      "type": "Coding"
-    },
-    {
-      "code": "Route of administration",
-      "uri": "http://snomed.info/id/410675002",
-      "type": "Coding"
-    },
-    {
-      "code": "Has dose form",
-      "uri": "http://snomed.info/id/411116001",
-      "type": "Coding"
-    },
-    {
-      "code": "Finding method",
-      "uri": "http://snomed.info/id/418775008",
-      "type": "Coding"
-    },
-    {
-      "code": "Finding informer",
-      "uri": "http://snomed.info/id/419066007",
-      "type": "Coding"
-    },
-    {
-      "code": "Using device",
-      "uri": "http://snomed.info/id/424226004",
-      "type": "Coding"
-    },
-    {
-      "code": "Using energy",
-      "uri": "http://snomed.info/id/424244007",
-      "type": "Coding"
-    },
-    {
-      "code": "Using substance",
-      "uri": "http://snomed.info/id/424361007",
-      "type": "Coding"
-    },
-    {
-      "code": "Surgical approach",
-      "uri": "http://snomed.info/id/424876005",
-      "type": "Coding"
-    },
-    {
-      "code": "Using access device",
-      "uri": "http://snomed.info/id/425391005",
-      "type": "Coding"
-    },
-    {
-      "code": "Property type",
-      "uri": "http://snomed.info/id/704318007",
-      "type": "Coding"
-    },
-    {
-      "code": "Inheres in",
-      "uri": "http://snomed.info/id/704319004",
-      "type": "Coding"
-    },
-    {
-      "code": "Towards",
-      "uri": "http://snomed.info/id/704320005",
-      "type": "Coding"
-    },
-    {
-      "code": "Characterizes",
-      "uri": "http://snomed.info/id/704321009",
-      "type": "Coding"
-    },
-    {
-      "code": "Process agent",
-      "uri": "http://snomed.info/id/704322002",
-      "type": "Coding"
-    },
-    {
-      "code": "Process duration",
-      "uri": "http://snomed.info/id/704323007",
-      "type": "Coding"
-    },
-    {
-      "code": "Process output",
-      "uri": "http://snomed.info/id/704324001",
-      "type": "Coding"
-    },
-    {
-      "code": "Relative to",
-      "uri": "http://snomed.info/id/704325000",
-      "type": "Coding"
-    },
-    {
-      "code": "Precondition",
-      "uri": "http://snomed.info/id/704326004",
-      "type": "Coding"
-    },
-    {
-      "code": "Direct site",
-      "uri": "http://snomed.info/id/704327008",
-      "type": "Coding"
-    },
-    {
-      "code": "Specified by",
-      "uri": "http://snomed.info/id/704346009",
-      "type": "Coding"
-    },
-    {
-      "code": "Observes",
-      "uri": "http://snomed.info/id/704347000",
-      "type": "Coding"
-    },
-    {
-      "code": "Is about",
-      "uri": "http://snomed.info/id/704647008",
-      "type": "Coding"
-    },
-    {
-      "code": "Defined",
-      "uri": "http://snomed.info/id/900000000000073002",
+      "code": "sufficientlyDefined",
+      "uri": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs/hl7-defined-property-cs-sufficientlyDefined",
       "type": "boolean"
     }
   ]

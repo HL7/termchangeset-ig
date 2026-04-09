@@ -5,7 +5,7 @@
   "name": "HL7DefinedPropertyCS",
   "id": "hl7-defined-property-cs",
   "title": "HL7-Defined Property CodeSystem",
-  "description": "A CodeSystem containing HL7-defined property concepts for use with FHIR CodeSystems",
+  "description": "A CodeSystem containing HL7-defined property concepts for use with FHIR CodeSystems. Content for this codesystem is drawn from the following references:  1) https://hl7.org/fhir/terminology-service.html#standard-props  2) https://terminology.hl7.org/SNOMEDCT.html#snomed-ct-properties",
   "version": "1.0.0",
   "url": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs",
   "concept": [
@@ -17,7 +17,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "The name of the code system"
     },
     {
       "code": "version",
@@ -27,7 +28,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "The version of the code system used for the look up operation"
     },
     {
       "code": "display",
@@ -37,7 +39,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "The recommended display for the concept, if one is known"
     },
     {
       "code": "designation",
@@ -47,7 +50,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "Other designations for the concept"
     },
     {
       "code": "effectiveTime",
@@ -57,17 +61,19 @@
           "code": "FHIRdatatype",
           "valueString": "dateTime"
         }
-      ]
+      ],
+      "definition": "This is the effectiveTime value from the RF2 concepts file (from the snapshot)."
     },
     {
       "code": "moduleId",
-      "display": "modeuleId",
+      "display": "moduleId",
       "property": [
         {
           "code": "FHIRdatatype",
           "valueString": "code"
         }
-      ]
+      ],
+      "definition": "The SNOMED CT concept id of the module that the concept belongs to."
     },
     {
       "code": "normalForm",
@@ -77,7 +83,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "Generated Necessary Normal Form expression for the provided code or expression, with terms. The normal form expressions are not suitable for use in subsumption testing."
     },
     {
       "code": "normalFormTerse",
@@ -87,7 +94,8 @@
           "code": "FHIRdatatype",
           "valueString": "string"
         }
-      ]
+      ],
+      "definition": "Generated Necessary Normal form expression for the provided code or expression, concept ids only. The normal form expressions are not suitable for use in subsumption testing."
     },
     {
       "code": "semanticTag",
@@ -97,7 +105,8 @@
           "code": "FHIRdatatype",
           "valueString": "code"
         }
-      ]
+      ],
+      "definition": "The phrase inside the last set of brackets of its Fully Specified Name."
     },
     {
       "code": "sufficientlyDefined",
@@ -107,7 +116,8 @@
           "code": "FHIRdatatype",
           "valueString": "boolean"
         }
-      ]
+      ],
+      "definition": "True if the description logic definition of the concept includes sufficient conditions. This is derived from the definitionStatusId value in the Concept file of the RF2 distribution (i.e. If 900000000000073002 |Sufficiently defined concept definition status| then true)."
     }
   ],
   "property": [

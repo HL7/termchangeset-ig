@@ -1,5 +1,6 @@
 Instance: SNOMEDChangeSetProvenanceExample
 InstanceOf: CodeSystemChangeSetProvenance
+Usage: #inline
 Description: "Example of Provenance to support a SNOMED CT Change Set"
 * id = "053f26d4-b805-4ff2-8c42-866459d5f1f4"
 * target.reference = "CodeSystem/snomedct413839001ChangeSet"

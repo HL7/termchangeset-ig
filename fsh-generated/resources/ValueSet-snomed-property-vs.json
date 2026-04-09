@@ -16,8 +16,18 @@
         "filter": [
           {
             "property": "concept",
-            "op": "is-a",
-            "value": "410662002"
+            "op": "descendent-of",
+            "value": "762706009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "762705008"
           }
         ]
       },
@@ -26,25 +36,6 @@
       },
       {
         "system": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs"
-      }
-    ],
-    "exclude": [
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "762706009",
-            "display": "Concept model data attribute (attribute)"
-          },
-          {
-            "code": "762705008",
-            "display": "Concept model object attribute (attribute)"
-          },
-          {
-            "code": "410662002",
-            "display": "Concept model attribute (attribute)"
-          }
-        ]
       }
     ]
   }

@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem_HL7DefinedProperty.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 58
   },
   {
     "outputFile": "CodeSystem-loinc-property-cs.json",
@@ -41,11 +41,11 @@
   },
   {
     "outputFile": "CodeSystem-snomedct413839001ChangeSet.json",
-    "fshName": "SNOMEDCTChangeSetExample",
+    "fshName": "SNOMEDCTChangeSetExample_FHIR46709",
     "fshType": "Instance",
     "fshFile": "Example_SNOMED_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 357
+    "endLine": 125
   },
   {
     "outputFile": "CodeSystem-update-methods-cs.json",
@@ -54,14 +54,6 @@
     "fshFile": "CodeSystem_UpdateMethods.fsh",
     "startLine": 1,
     "endLine": 9
-  },
-  {
-    "outputFile": "Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4.json",
-    "fshName": "SNOMEDChangeSetProvenanceExample",
-    "fshType": "Instance",
-    "fshFile": "Example_SNOMED_ChangeSet_Provenance.fsh",
-    "startLine": 1,
-    "endLine": 20
   },
   {
     "outputFile": "Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032.json",
@@ -300,8 +292,8 @@
     "fshName": "SNOMEDPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 89,
-    "endLine": 104
+    "startLine": 86,
+    "endLine": 99
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",
