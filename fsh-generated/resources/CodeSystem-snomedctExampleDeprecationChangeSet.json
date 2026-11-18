@@ -1,0 +1,1442 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "snomedctExampleDeprecationChangeSet",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/snomed-changeset-profile"
+    ]
+  },
+  "content": "fragment",
+  "concept": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "1343560004 |Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft (procedure)|"
+        },
+        {
+          "extension": [
+            {
+              "url": "conceptMap",
+              "valueReference": {
+                "reference": "ConceptMap/snomedctExampleLaparoscopicRepairReplacementConceptMap"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/replacement-mapping"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": true
+        }
+      ],
+      "id": "788fc652-3fee-46fa-978b-bfe7abaa1655",
+      "code": "1343560004",
+      "display": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft (procedure)",
+      "definition": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft (procedure)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "1343561000 |Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis (procedure)|"
+        },
+        {
+          "extension": [
+            {
+              "url": "conceptMap",
+              "valueReference": {
+                "reference": "ConceptMap/snomedctExampleLaparoscopicRepairReplacementConceptMap"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/replacement-mapping"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": true
+        }
+      ],
+      "id": "788fc652-3fee-46fa-978b-bfe7abaa1655",
+      "code": "1343561000",
+      "display": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis (procedure)",
+      "definition": "Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis (procedure)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(\n\t:1351936006 |Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with graft (procedure)|\n\tObjectIntersectionOf(\n\t\t:71388002 |Procedure (procedure)|\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129287005 |Incision - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:59380008 |Anterior abdominal wall structure (body structure)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129433002 |Inspection - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:818983003 |Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:86174004 |Laparoscope, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281145005 |Structure of right inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:714577002 |Graft, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281146006 |Structure of left inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:714577002 |Graft, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:15971701000119103 |Right direct inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:15971861000119106 |Indirect left inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t)\n)"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with graft (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with graft"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": false
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "parent",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "71388002",
+            "display": "Procedure (procedure)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "sufficientlyDefined",
+          "valueBoolean": true
+        }
+      ],
+      "id": "788fc652-3fee-46fa-978b-bfe7abaa1655",
+      "code": "1351936006",
+      "display": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with graft (procedure)",
+      "definition": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with graft (procedure)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(\n\t:1351937002 |Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with prosthesis (procedure)|\n\tObjectIntersectionOf(\n\t\t:71388002 |Procedure (procedure)|\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129287005 |Incision - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:59380008 |Anterior abdominal wall structure (body structure)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129433002 |Inspection - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:818983003 |Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:86174004 |Laparoscope, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281145005 |Structure of right inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:53350007 |Prosthesis, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281146006 |Structure of left inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:53350007 |Prosthesis, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:15971901000119100 |Indirect right inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:783253009 |Left direct inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t)\n)"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with prosthesis (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with prosthesis"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": false
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "parent",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "71388002",
+            "display": "Procedure (procedure)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "sufficientlyDefined",
+          "valueBoolean": true
+        }
+      ],
+      "id": "2a7f3c91-4e8b-4d6a-9b0e-c3d5f7a1e295",
+      "code": "1351937002",
+      "display": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with prosthesis (procedure)",
+      "definition": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with prosthesis (procedure)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(\n\t:1351935005 |Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with graft (procedure)|\n\tObjectIntersectionOf(\n\t\t:71388002 |Procedure (procedure)|\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129287005 |Incision - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:59380008 |Anterior abdominal wall structure (body structure)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129433002 |Inspection - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:818983003 |Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:86174004 |Laparoscope, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281145005 |Structure of right inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:714577002 |Graft, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281146006 |Structure of left inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:714577002 |Graft, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:15971901000119100 |Indirect right inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:783253009 |Left direct inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t)\n)"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with graft (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with graft"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": false
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "parent",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "71388002",
+            "display": "Procedure (procedure)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "sufficientlyDefined",
+          "valueBoolean": true
+        }
+      ],
+      "id": "5b8e1d47-7c3a-4f9b-8e2d-a4c6e9b3f017",
+      "code": "1351935005",
+      "display": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with graft (procedure)",
+      "definition": "Laparoscopic repair of left direct inguinal hernia and right indirect inguinal hernia with graft (procedure)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/owl-expression",
+          "valueString": "EquivalentClasses(\n\t:1351938007 |Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with prosthesis (procedure)|\n\tObjectIntersectionOf(\n\t\t:71388002 |Procedure (procedure)|\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129287005 |Incision - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:59380008 |Anterior abdominal wall structure (body structure)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:129433002 |Inspection - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:818983003 |Structure of abdominopelvic cavity and/or content of abdominopelvic cavity and/or anterior abdominal wall (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:86174004 |Laparoscope, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281145005 |Structure of right inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:53350007 |Prosthesis, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectIntersectionOf(\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:260686004 |Method (attribute)|\n\t\t\t\t\t:257903006 |Repair - action (qualifier value)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:363700003 |Direct morphology (attribute)|\n\t\t\t\t\t:414402003 |Hernial opening (morphologic abnormality)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:405813007 |Procedure site - Direct (attribute)|\n\t\t\t\t\t:281146006 |Structure of left inguinal canal (body structure)|\n\t\t\t\t)\n\t\t\t\tObjectSomeValuesFrom(\n\t\t\t\t\t:424226004 |Using device (attribute)|\n\t\t\t\t\t:53350007 |Prosthesis, device (physical object)|\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:15971701000119103 |Right direct inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t\tObjectSomeValuesFrom(\n\t\t\t:609096000 |Role group (attribute)|\n\t\t\tObjectSomeValuesFrom(\n\t\t\t\t:363702006 |Has focus (attribute)|\n\t\t\t\t:65626001 |Indirect inguinal hernia (disorder)|\n\t\t\t)\n\t\t)\n\t)\n)"
+        }
+      ],
+      "designation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with prosthesis (procedure)"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-case-sensitivity",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000020002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Only initial character case insensitive (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-acceptability",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000548007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Preferred (foundation metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-dialect",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000509007",
+                    "system": "http://snomed.info/sct",
+                    "display": "United States of America English language reference set"
+                  }
+                ]
+              }
+            }
+          ],
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "active",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "effectiveTime",
+                  "valueDateTime": "2025-07-08T10:00:00Z"
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/designation-status"
+            }
+          ],
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with prosthesis"
+        }
+      ],
+      "property": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "inactive",
+          "valueBoolean": false
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "parent",
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "71388002",
+            "display": "Procedure (procedure)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/defining-relationship-type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "900000000000010007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Stated relationship (core metadata concept)"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "sufficientlyDefined",
+                    "system": "http://snomed.info/sct",
+                    "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
+                  }
+                ]
+              }
+            }
+          ],
+          "code": "sufficientlyDefined",
+          "valueBoolean": true
+        }
+      ],
+      "id": "9c1a4e73-2d8f-4b7c-a5e3-b7d9f1c5e483",
+      "code": "1351938007",
+      "display": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with prosthesis (procedure)",
+      "definition": "Laparoscopic repair of right direct inguinal hernia and left indirect inguinal hernia with prosthesis (procedure)"
+    }
+  ],
+  "version": "20241201.1",
+  "url": "http://ikm.dev/changesets/CodeSystem/SNOMEDCT_1343560004_1343561000_LaproscopicRepairInguinalHernia_ChangeSet",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.96"
+    }
+  ],
+  "name": "SNOMEDCT_1343560004_1343561000_LaproscopicRepairInguinalHernia_ChangeSet_a42aa0b79f0346ae8e51871f05e6b72e",
+  "title": "SNOMED CT 1343560004 1343561000 LaproscopicRepairInguinalHernia Change Set a42aa0b79f0346ae8e51871f05e6b72e",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Integrated Knowledge Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ikm.dev"
+        }
+      ]
+    }
+  ],
+  "description": "Example of SNOMED CT Change Set including deprecation of 1343560004 Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with graft (procedure) and 1343561000 Laparoscopic repair of bilateral, one direct and one indirect, inguinal hernia with prosthesis (procedure)",
+  "copyright": "Copyright-free government work developed using SNOMED CT content under affiliate license agreement. © 2002-2016 International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. \"SNOMED\" and \"SNOMED CT\" are registered trademarks of the IHTSDO http://www.ihtsdo.org/snomed-ct/get-snomed-ct",
+  "versionNeeded": false,
+  "contained": [
+    {
+      "resourceType": "Provenance",
+      "id": "053f26d4-b805-4ff2-8c42-866459d5f1f4",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/codesystem-change-set-provenance"
+        ]
+      },
+      "entity": [
+        {
+          "role": "revision",
+          "what": {
+            "identifier": {
+              "value": "http://snomed.info/sct/900000000000207008/version/20190901"
+            },
+            "display": "SNOMED CT International Edition, September 2019 Edition"
+          }
+        }
+      ],
+      "agent": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code": "author"
+              }
+            ]
+          },
+          "who": {
+            "display": "IKM Editor"
+          }
+        },
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                "code": "custodian"
+              }
+            ]
+          },
+          "who": {
+            "display": "Integrated Knowledge Management"
+          }
+        }
+      ],
+      "activity": {
+        "coding": [
+          {
+            "code": "UPDATE",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
+          }
+        ]
+      },
+      "target": [
+        {
+          "reference": "CodeSystem/snomedct413839001ChangeSet"
+        }
+      ],
+      "occurredPeriod": {
+        "end": "2020-05-18"
+      },
+      "recorded": "2020-05-18T11:13:55+10:00",
+      "reason": [
+        {
+          "coding": [
+            {
+              "code": "METAMGT",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-inactive",
+      "description": "True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/R4/codesystem-concept-properties.html#concept-properties-parent",
+      "description": "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute",
+      "type": "Coding"
+    },
+    {
+      "code": "Clinical course",
+      "uri": "http://snomed.info/id/263502005",
+      "type": "Coding"
+    },
+    {
+      "code": "Finding site",
+      "uri": "http://snomed.info/id/363698007",
+      "type": "Coding"
+    },
+    {
+      "code": "sufficientlyDefined",
+      "uri": "http://hl7.org/fhir/uv/termchangeset/CodeSystem/hl7-defined-property-cs/hl7-defined-property-cs-sufficientlyDefined",
+      "type": "boolean"
+    }
+  ]
+}

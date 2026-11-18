@@ -6,7 +6,7 @@
   "title": "LOINC Property ValueSet",
   "description": "A ValueSet containing property concepts for use with LOINC when represented as a FHIR CodeSystem",
   "version": "1.0.0",
-  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs",
+  "url": "http://terminology.hl7.org/ValueSet/loinc-properties",
   "compose": {
     "include": [
       {

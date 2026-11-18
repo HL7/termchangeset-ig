@@ -12,7 +12,7 @@ Description: "Example of Provenance to support a SNOMED CT Change Set"
 * activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DataOperation"
 * agent[author].type.coding.code = #author
 * agent[author].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
-* agent[author].who.display = "Raja Cholan"
+* agent[author].who.display = "IKM Editor"
 * agent[custodian].type.coding.code = #custodian
 * agent[custodian].type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
 * agent[custodian].who.display = "Integrated Knowledge Management"

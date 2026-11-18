@@ -48,12 +48,28 @@
     "endLine": 125
   },
   {
+    "outputFile": "CodeSystem-snomedctExampleDeprecationChangeSet.json",
+    "fshName": "SNOMEDCTChangeSetExample_LaparoscopicRepairDeprecation",
+    "fshType": "Instance",
+    "fshFile": "Example_SNOMED_ChangeSet_LaparoscopicRepairDeprecation.fsh",
+    "startLine": 1,
+    "endLine": 841
+  },
+  {
     "outputFile": "CodeSystem-update-methods-cs.json",
     "fshName": "UpdateMethodsCS",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem_UpdateMethods.fsh",
     "startLine": 1,
     "endLine": 9
+  },
+  {
+    "outputFile": "ConceptMap-snomedctExampleLaparoscopicRepairReplacementConceptMap.json",
+    "fshName": "SNOMEDCTConceptMapExample_LaparoscopicRepairDeprecation",
+    "fshType": "Instance",
+    "fshFile": "Example_SNOMED_ConceptMap_LaparoscopicRepairDeprecation.fsh",
+    "startLine": 1,
+    "endLine": 44
   },
   {
     "outputFile": "Provenance-52b1a1d2-80ab-460b-b5fc-341edd35b032.json",
@@ -101,7 +117,7 @@
     "fshType": "Profile",
     "fshFile": "Profile_CodeSystem_ChangeSet.fsh",
     "startLine": 1,
-    "endLine": 151
+    "endLine": 152
   },
   {
     "outputFile": "StructureDefinition-defining-relationship-type.json",
@@ -184,6 +200,14 @@
     "endLine": 67
   },
   {
+    "outputFile": "StructureDefinition-replacement-mapping.json",
+    "fshName": "ReplacementMapping",
+    "fshType": "Extension",
+    "fshFile": "Extensions.fsh",
+    "startLine": 118,
+    "endLine": 128
+  },
+  {
     "outputFile": "StructureDefinition-role-group.json",
     "fshName": "SNOMEDRoleGroup",
     "fshType": "Extension",
@@ -229,78 +253,78 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
     "startLine": 3,
-    "endLine": 9
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-changetype-vs.json",
     "fshName": "ChangeTypeVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 48,
-    "endLine": 56
+    "startLine": 53,
+    "endLine": 62
   },
   {
     "outputFile": "ValueSet-common-cs-property-vs.json",
     "fshName": "CommonCSPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 65,
-    "endLine": 72
+    "startLine": 72,
+    "endLine": 80
   },
   {
     "outputFile": "ValueSet-defining-relationship-type-vs.json",
     "fshName": "DefiningRelationshipTypeVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 21,
-    "endLine": 27
+    "startLine": 23,
+    "endLine": 30
   },
   {
     "outputFile": "ValueSet-designation-acceptability-vs.json",
     "fshName": "DesignationAcceptabilityVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 12,
-    "endLine": 18
+    "startLine": 13,
+    "endLine": 20
   },
   {
     "outputFile": "ValueSet-dialect-vs.json",
     "fshName": "DialectVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 39,
-    "endLine": 45
+    "startLine": 43,
+    "endLine": 50
   },
   {
     "outputFile": "ValueSet-el-profile-set-operator-vs.json",
     "fshName": "ELProfileSetOperatorVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 30,
-    "endLine": 36
+    "startLine": 33,
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-loinc-property-vs.json",
     "fshName": "LOINCPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 74,
-    "endLine": 84
+    "startLine": 82,
+    "endLine": 93
   },
   {
     "outputFile": "ValueSet-snomed-property-vs.json",
     "fshName": "SNOMEDPropertyVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 86,
-    "endLine": 99
+    "startLine": 95,
+    "endLine": 110
   },
   {
     "outputFile": "ValueSet-update-methods-valueset.json",
     "fshName": "UpdateMethodsVS",
     "fshType": "ValueSet",
     "fshFile": "ValueSets.fsh",
-    "startLine": 58,
-    "endLine": 63
+    "startLine": 64,
+    "endLine": 70
   }
 ]

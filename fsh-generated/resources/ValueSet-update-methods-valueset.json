@@ -6,7 +6,7 @@
   "title": "Terminology Server Update Methods ValueSet",
   "description": "A ValueSet containing all codes from the UpdateMethods CodeSystem.",
   "version": "1.0.0",
-  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/update-methods-valueset",
+  "url": "http://terminology.hl7.org/ValueSet/terminology-server-update-methods",
   "compose": {
     "include": [
       {

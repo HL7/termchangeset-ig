@@ -25,7 +25,7 @@
         "path": "CodeSystem.property.code",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/snomed-properties"
         }
       },
       {
@@ -77,7 +77,7 @@
         "path": "CodeSystem.concept.property.code",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/snomed-properties"
         }
       }
     ]

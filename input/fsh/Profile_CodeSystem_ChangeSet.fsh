@@ -64,7 +64,8 @@ Description: "Profile of CodeSystem to enable lossless representation of a CodeS
 * concept ^comment = "For a change set, concepts must be defined and included in the CodeSystem instance"
 * concept.extension contains
 	owl-expression named OWLExpression 0..* and
-	change-type named changeType 0..1
+	change-type named changeType 0..1 and
+	replacement-mapping named replacementMapping 0..1
 * concept.id ^short = "Unique internal identifier maintained by the entity distributing the change set for the concept represented by the terminology-specific concept.code"
 * concept.id ^mapping.identity = "tinkar"
 * concept.id ^mapping.map = "Identifier Value of Identifier Semantic where Identifier Source = UNIVERSALLY_UNIQUE_IDENTIFIER"

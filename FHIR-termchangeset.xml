@@ -39,11 +39,14 @@
 <artifact id="CodeSystem/loinc-property-cs" key="CodeSystem-loinc-property-cs" name="LOINC Property CodeSystem"/>
 <artifact id="ValueSet/loinc-property-vs" key="ValueSet-loinc-property-vs" name="LOINC Property ValueSet"/>
 <artifact id="StructureDefinition/owl-expression" key="StructureDefinition-owl-expression" name="OWL Expression"/>
+<artifact id="StructureDefinition/replacement-mapping" key="StructureDefinition-replacement-mapping" name="Replacement Mapping"/>
 <artifact id="CodeSystem/snomedct126785002ChangeSet" key="CodeSystem-snomedct126785002ChangeSet" name="SNOMED CT 126785002 Neoplasm of oral part of tongue (disorder) Change Set 43d8c092715b4dccabdc9b9f47cdc8eb"/>
+<artifact id="CodeSystem/snomedctExampleDeprecationChangeSet" key="CodeSystem-snomedctExampleDeprecationChangeSet" name="SNOMED CT 1343560004 1343561000 LaproscopicRepairInguinalHernia Change Set a42aa0b79f0346ae8e51871f05e6b72e"/>
 <artifact id="CodeSystem/snomedct413839001ChangeSet" key="CodeSystem-snomedct413839001ChangeSet" name="SNOMED CT 413839001 Chronic lung disease (Disorder) Change Set 46dc8ea230544ceba51145f774fe9fdd"/>
 <artifact id="StructureDefinition/snomed-changeset-profile" key="StructureDefinition-snomed-changeset-profile" name="SNOMED CT Change Set (CodeSystem)"/>
 <artifact id="StructureDefinition/snomed-changeset-profile-fhir46709" key="StructureDefinition-snomed-changeset-profile-fhir46709" name="SNOMED CT Change Set (CodeSystem) FHIR46709 Prototype"/>
 <artifact deprecated="true" id="Provenance/053f26d4-b805-4ff2-8c42-866459d5f1f4" key="Provenance-053f26d4-b805-4ff2-8c42-866459d5f1f4" name="SNOMED CT Change Set Provenance Example"/>
+<artifact id="ConceptMap/snomedctExampleLaparoscopicRepairReplacementConceptMap" key="ConceptMap-snomedctExampleLaparoscopicRepairReplacementConceptMap" name="SNOMED CT Laparoscopic Repair Inguinal Hernia Replacement Mapping"/>
 <artifact id="ValueSet/snomed-property-vs" key="ValueSet-snomed-property-vs" name="SNOMED CT Property ValueSet"/>
 <artifact id="StructureDefinition/role-group" key="StructureDefinition-role-group" name="SNOMED Role Group"/>
 <artifact deprecated="true" id="StructureDefinition/changeset-profile" key="StructureDefinition-changeset-profile" name="Terminology Change Set (CodeSystem)"/>

@@ -6,17 +6,17 @@
   "title": "Common CodeSystem Property ValueSet",
   "description": "A ValueSet containing commonly used CodeSystem property concepts",
   "version": "1.0.0",
-  "url": "http://hl7.org/fhir/uv/termchangeset/ValueSet/common-cs-property-vs",
+  "url": "http://terminology.hl7.org/ValueSet/common-codesystem-properties",
   "compose": {
     "include": [
       {
         "valueSet": [
-          "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs"
+          "http://terminology.hl7.org/ValueSet/loinc-properties"
         ]
       },
       {
         "valueSet": [
-          "http://hl7.org/fhir/uv/termchangeset/ValueSet/snomed-property-vs"
+          "http://terminology.hl7.org/ValueSet/snomed-properties"
         ]
       },
       {

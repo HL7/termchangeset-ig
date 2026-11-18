@@ -48,7 +48,7 @@
         ],
         "binding": {
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/update-methods-valueset"
+          "valueSet": "http://terminology.hl7.org/ValueSet/terminology-server-update-methods"
         }
       }
     ]

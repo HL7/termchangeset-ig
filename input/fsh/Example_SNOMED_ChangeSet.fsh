@@ -69,7 +69,7 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
 * concept[=].property[=].extension[elProfileSetOperator].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
-* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #sufficientlyDefined
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].extension[roleGroup].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
@@ -83,7 +83,7 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
 * concept[=].property[=].extension[elProfileSetOperator].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
-* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #sufficientlyDefined
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].extension[roleGroup].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/role-group"
@@ -97,7 +97,7 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
 * concept[=].property[=].extension[elProfileSetOperator].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
-* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #sufficientlyDefined
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueCoding[+].system = "http://snomed.info/sct"
@@ -109,7 +109,7 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
 * concept[=].property[=].extension[elProfileSetOperator].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
-* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #sufficientlyDefined
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueBoolean = false
@@ -119,7 +119,7 @@ Description: "Example of SNOMED CT Change Set"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[DefiningRelationshipType].valueCodeableConcept.coding.display = "Stated relationship (core metadata concept)"
 * concept[=].property[=].extension[elProfileSetOperator].url = "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/el-profile-set-operator"
-* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #900000000000073002
+* concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.code = #sufficientlyDefined
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * concept[=].property[=].extension[elProfileSetOperator].valueCodeableConcept.coding.display = "Sufficiently defined by necessary conditions definition status (core metadata concept)"
 * concept[=].property[=].valueBoolean = false

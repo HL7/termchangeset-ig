@@ -47,7 +47,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/case-significance-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/case-significance"
         }
       }
     ]

@@ -115,3 +115,14 @@ Description: "Coded value indicating the methods the terminology server supports
 * value[x] from UpdateMethodsVS (example)
 * value[x] ^short = "A method the terminology server supports to process updates to its content"
 
+Extension: ReplacementMapping
+Id:	   replacement-mapping
+Title:	   "Replacement Mapping"
+Description: "Reference to a ConceptMap containing the replacement mapping for a concept"
+* ^context[+].type = #element
+* ^context[=].expression = "CodeSystem.concept"
+* extension contains 
+	http://hl7.org/fhir/StructureDefinition/data-absent-reason named DataAbsentReason 0..1 and
+	conceptMap 0..1
+* extension[conceptMap].value[x] only Reference(ConceptMap)
+* extension[conceptMap] ^short = "The ConceptMap containing the replacement mapping for a concept"

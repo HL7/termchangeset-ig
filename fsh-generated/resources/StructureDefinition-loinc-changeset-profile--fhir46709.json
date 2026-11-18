@@ -33,7 +33,7 @@
         "path": "CodeSystem.property.code",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/loinc-properties"
         }
       },
       {
@@ -47,7 +47,7 @@
         "path": "CodeSystem.concept.property.code",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/loinc-property-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/loinc-properties"
         }
       }
     ]

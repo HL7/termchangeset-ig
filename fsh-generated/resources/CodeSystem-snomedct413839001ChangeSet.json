@@ -99,7 +99,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "900000000000073002",
+                    "code": "sufficientlyDefined",
                     "system": "http://snomed.info/sct",
                     "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
                   }
@@ -137,7 +137,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "900000000000073002",
+                    "code": "sufficientlyDefined",
                     "system": "http://snomed.info/sct",
                     "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
                   }
@@ -175,7 +175,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "900000000000073002",
+                    "code": "sufficientlyDefined",
                     "system": "http://snomed.info/sct",
                     "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
                   }
@@ -209,7 +209,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "900000000000073002",
+                    "code": "sufficientlyDefined",
                     "system": "http://snomed.info/sct",
                     "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
                   }
@@ -239,7 +239,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "code": "900000000000073002",
+                    "code": "sufficientlyDefined",
                     "system": "http://snomed.info/sct",
                     "display": "Sufficiently defined by necessary conditions definition status (core metadata concept)"
                   }
@@ -314,7 +314,7 @@
             ]
           },
           "who": {
-            "display": "Raja Cholan"
+            "display": "IKM Editor"
           }
         },
         {

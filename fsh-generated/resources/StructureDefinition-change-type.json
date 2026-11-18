@@ -48,7 +48,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/uv/termchangeset/ValueSet/changetype-vs"
+          "valueSet": "http://terminology.hl7.org/ValueSet/element-change-type"
         }
       }
     ]

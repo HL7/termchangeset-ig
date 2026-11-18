@@ -259,6 +259,21 @@
         ]
       },
       {
+        "id": "CodeSystem.concept.extension:replacementMapping",
+        "path": "CodeSystem.concept.extension",
+        "sliceName": "replacementMapping",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/replacement-mapping"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CodeSystem.concept.code",
         "path": "CodeSystem.concept.code",
         "mapping": [

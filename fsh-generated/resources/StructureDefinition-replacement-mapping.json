@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "replacement-mapping",
+  "url": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/replacement-mapping",
+  "version": "1.0.0",
+  "name": "ReplacementMapping",
+  "title": "Replacement Mapping",
+  "status": "draft",
+  "description": "Reference to a ConceptMap containing the replacement mapping for a concept",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem.concept"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Replacement Mapping",
+        "definition": "Reference to a ConceptMap containing the replacement mapping for a concept"
+      },
+      {
+        "id": "Extension.extension:DataAbsentReason",
+        "path": "Extension.extension",
+        "sliceName": "DataAbsentReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:conceptMap",
+        "path": "Extension.extension",
+        "sliceName": "conceptMap",
+        "short": "The ConceptMap containing the replacement mapping for a concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:conceptMap.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:conceptMap.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "conceptMap"
+      },
+      {
+        "id": "Extension.extension:conceptMap.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ConceptMap"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/termchangeset/StructureDefinition/replacement-mapping"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
