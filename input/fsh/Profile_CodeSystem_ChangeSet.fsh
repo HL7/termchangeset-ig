@@ -57,7 +57,7 @@ Description: "Profile of CodeSystem to enable lossless representation of a CodeS
 * property.type 1..1
 * property.type only code
 * property.type ^short = "code | Coding | string | integer | boolean | dateTime"
-* property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to anotherr defined concept)."
+* property.type ^definition = "The type of the property value. Properties of type \"code\" contain a code defined by the code system (e.g. a reference to another defined concept). Must match the FHIR datatype defined for the associated property where possible. A more formal approach for binding property.type will be included in a future version of this IG."
 * concept 1..*
 * concept ^short = "Concepts in the change set for the code system"
 * concept ^definition = "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
